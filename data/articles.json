@@ -1,0 +1,47 @@
+[
+  {
+    "id": "daily-2026-10-02",
+    "title": "Daily Pulse: The 4-Hour Maker Block: Engineering Deep Work for High Output",
+    "slug": "daily-pulse-2026-10-02-the-4-hour-maker-block-engine",
+    "excerpt": "Daily edition for October 02, 2026: Exploring practical insights, modern techniques, and takeaways in productivity.",
+    "content": "# Daily Pulse: The 4-Hour Maker Block: Engineering Deep Work for High Output\n\n*Published on October 02, 2026 by Alex Rivera*\n\n## Protecting the Maker's Schedule\n\nPaul Graham famously distinguished between the *Manager's Schedule* (divided into 30-minute meetings) and the *Maker's Schedule* (requiring blocks of at least half a day to build non-trivial systems).\n\nWhen a maker's day is fragmented by calendar check-ins, architectural focus evaporates.\n\n### Constructing the Unbroken Morning Block:\n- **9:00 AM - 9:15 AM**: System setup, terminal review, defining the single core deliverable.\n- **9:15 AM - 12:00 PM**: Full disconnection from chat notifications. Deep execution.\n- **12:00 PM - 12:30 PM**: Code commit, automated test verification, and documentation.\n\n> [!TIP]\n> Always conclude your deep work block by writing the very first line of code or task comment for the next session. This eliminates morning startup resistance.\n\nTry booking a recurring 4-hour morning block on Tuesday and Thursday this week. Treat it as non-negotiable production infrastructure.",
+    "cover": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    "category": "Productivity",
+    "tags": [
+      "DeepWork",
+      "Productivity",
+      "MentalModels",
+      "FlowState",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_alex",
+      "name": "Alex Rivera",
+      "handle": "@alexrivera",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "bio": "Staff Frontend Engineer & Design Systems Architect."
+    },
+    "publishedAt": "2026-10-02T14:31:52.866130+00:00",
+    "readTime": "2 min read",
+    "likes": 23,
+    "views": 301,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-02-1",
+        "author": {
+          "id": "user_elena",
+          "name": "Elena Rostova",
+          "handle": "@elenadesign",
+          "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+          "bio": "Product Designer & Creative Director. Focused on calm interfaces."
+        },
+        "text": "Spot on! Really appreciate the daily perspectives on deepwork.",
+        "createdAt": "2026-10-02T14:31:52.866130+00:00",
+        "likes": 4
+      }
+    ]
+  }
+]
