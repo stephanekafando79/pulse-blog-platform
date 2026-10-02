@@ -242,6 +242,18 @@ class DataStore {
     }
     if (!localStorage.getItem(STORAGE_KEYS.CURRENT_USER)) {
       localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(DEFAULT_USERS[0]));
+    } else {
+      // Ensure Stephane is the default active user if previous demo session exists
+      const curr = this.getCurrentUser();
+      if (!curr || curr.id === 'user_alex') {
+        localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(DEFAULT_USERS[0]));
+      }
+    }
+    // Update users array to include Stephane as first entry
+    const existingUsers = this.getAllUsers();
+    if (!existingUsers.find(u => u.id === 'user_stephane')) {
+      existingUsers.unshift(DEFAULT_USERS[0]);
+      localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(existingUsers));
     }
     if (!localStorage.getItem(STORAGE_KEYS.BOOKMARKS)) {
       localStorage.setItem(STORAGE_KEYS.BOOKMARKS, JSON.stringify(['art-1']));
