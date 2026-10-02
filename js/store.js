@@ -12,17 +12,19 @@ const STORAGE_KEYS = {
   BOOKMARKS: 'pulse_bookmarks_v1'
 };
 
+const VERIFIED_PLATFORM_OWNER = Object.freeze({
+  id: 'user_stephane',
+  name: 'Stephane Kafando',
+  handle: '@stephanekafando79',
+  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80',
+  bio: 'Founder, Lead Architect & Platform Owner of Pulse.',
+  isOwner: true,
+  badge: 'Platform Owner',
+  followers: 5280
+});
+
 const DEFAULT_USERS = [
-  {
-    id: 'user_stephane',
-    name: 'Stephane Kafando',
-    handle: '@stephanekafando79',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80',
-    bio: 'Founder, Lead Architect & Platform Owner of Pulse.',
-    isOwner: true,
-    badge: 'Platform Owner',
-    followers: 5280
-  },
+  VERIFIED_PLATFORM_OWNER,
   {
     id: 'user_alex',
     name: 'Alex Rivera',
@@ -447,20 +449,31 @@ class DataStore {
   getCurrentUser() {
     try {
       const user = localStorage.getItem(STORAGE_KEYS.CURRENT_USER);
-      return user ? JSON.parse(user) : DEFAULT_USERS[0];
+      const parsed = user ? JSON.parse(user) : VERIFIED_PLATFORM_OWNER;
+      if (parsed && parsed.id === VERIFIED_PLATFORM_OWNER.id) {
+        return VERIFIED_PLATFORM_OWNER;
+      }
+      return parsed;
     } catch {
-      return DEFAULT_USERS[0];
+      return VERIFIED_PLATFORM_OWNER;
     }
   }
 
   setCurrentUser(user) {
+    if (user && user.id === VERIFIED_PLATFORM_OWNER.id) {
+      localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(VERIFIED_PLATFORM_OWNER));
+      return;
+    }
     localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(user));
   }
 
   getAllUsers() {
     try {
       const users = localStorage.getItem(STORAGE_KEYS.USERS);
-      return users ? JSON.parse(users) : DEFAULT_USERS;
+      let list = users ? JSON.parse(users) : DEFAULT_USERS;
+      list = list.filter(u => u.id !== VERIFIED_PLATFORM_OWNER.id);
+      list.unshift(VERIFIED_PLATFORM_OWNER);
+      return list;
     } catch {
       return DEFAULT_USERS;
     }
@@ -516,11 +529,25 @@ class DataStore {
   resetAll() {
     localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(INITIAL_ARTICLES));
     localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(DEFAULT_USERS));
-    localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(DEFAULT_USERS[0]));
+    localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(VERIFIED_PLATFORM_OWNER));
     localStorage.setItem(STORAGE_KEYS.BOOKMARKS, JSON.stringify(['art-1']));
     localStorage.removeItem(STORAGE_KEYS.DRAFT);
   }
 }
 
-// Global singleton instance
-window.Store = new DataStore();
+// Global immutable singleton instance
+const globalStore = new DataStore();
+try {
+  Object.defineProperty(window, 'Store', {
+    value: globalStore,
+    writable: false,
+    configurable: false
+  });
+  Object.defineProperty(globalStore, 'OWNER', {
+    value: VERIFIED_PLATFORM_OWNER,
+    writable: false,
+    configurable: false
+  });
+} catch {
+  window.Store = globalStore;
+}

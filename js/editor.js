@@ -53,11 +53,17 @@ class MarkdownEngine {
     // Inline Code
     html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
 
-    // Images
-    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<figure class="article-image"><img src="$2" alt="$1" loading="lazy" /><figcaption>$1</figcaption></figure>');
+    // Images with URL protocol sanitization
+    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, url) => {
+      const cleanUrl = MarkdownEngine.sanitizeUrl(url);
+      return `<figure class="article-image"><img src="${cleanUrl}" alt="${alt}" loading="lazy" onerror="this.style.display='none'" /><figcaption>${alt}</figcaption></figure>`;
+    });
 
-    // Links
-    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    // Links with protocol sanitization and secure rel attributes
+    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, label, url) => {
+      const cleanUrl = MarkdownEngine.sanitizeUrl(url);
+      return `<a href="${cleanUrl}" target="_blank" rel="noopener noreferrer nofollow">${label}</a>`;
+    });
 
     // Unordered lists
     html = html.replace(/^\s*[-*]\s+(.*)$/gim, '<li>$1</li>');
@@ -76,6 +82,20 @@ class MarkdownEngine {
     }).join('\n');
 
     return html;
+  }
+
+  /**
+   * Validates URLs against XSS schemes (blocks javascript:, vbscript:, data:text/html)
+   */
+  static sanitizeUrl(url) {
+    if (!url) return '#';
+    const trimmed = url.trim();
+    // Allow safe protocols or relative paths
+    if (/^(https?:\/\/|mailto:|\/|#)/i.test(trimmed)) {
+      return trimmed;
+    }
+    // Block dangerous schemes
+    return '#unsafe-link-blocked';
   }
 }
 

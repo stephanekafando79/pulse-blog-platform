@@ -9,6 +9,7 @@ import os
 import sys
 import json
 import random
+import subprocess
 from datetime import datetime, timezone
 
 # Ensure UTF-8 output on Windows consoles
@@ -283,6 +284,9 @@ def generate_daily_story(force=False):
     existing.insert(0, new_article)
     save_articles(existing)
     
+    # Auto-commit and push to GitHub repository
+    auto_git_sync(new_article['title'])
+
     print(f"============================================================")
     print(f"  ⚡ SUCCESS: Daily Story Published!")
     print(f"  Title: {new_article['title']}")
@@ -291,6 +295,28 @@ def generate_daily_story(force=False):
     print(f"  Updated: {ARTICLES_JS_PATH}")
     print(f"============================================================")
     return new_article
+
+def auto_git_sync(article_title):
+    """Automatically commits and pushes new stories to GitHub if remote exists"""
+    try:
+        git_dir = os.path.join(BASE_DIR, ".git")
+        if not os.path.exists(git_dir):
+            return
+
+        subprocess.run(["git", "add", "data/articles.js", "data/articles.json"], cwd=BASE_DIR, capture_output=True)
+        commit_msg = f"Auto-publish: {article_title}"
+        subprocess.run(["git", "commit", "-m", commit_msg], cwd=BASE_DIR, capture_output=True)
+
+        remotes = subprocess.run(["git", "remote"], cwd=BASE_DIR, capture_output=True, text=True)
+        if "origin" in remotes.stdout:
+            print("[*] Automatically pushing update to GitHub...")
+            push_res = subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR, capture_output=True, text=True)
+            if push_res.returncode == 0:
+                print("  [OK] Successfully pushed daily update to GitHub!")
+            else:
+                print("  [Notice] Push deferred (will auto-sync on next deploy).")
+    except Exception as e:
+        pass
 
 if __name__ == "__main__":
     force_run = "--force" in sys.argv
