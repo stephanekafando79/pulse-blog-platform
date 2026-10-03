@@ -1,8 +1,53 @@
 /**
  * Pulse Auto-Generated Daily Articles
- * Last Updated: 2026-10-02T14:31:52.866130+00:00
+ * Last Updated: 2026-10-03T13:12:30.002171+00:00
  */
 window.PULSE_DAILY_ARTICLES = [
+  {
+    "id": "daily-2026-10-03",
+    "title": "Daily Pulse: Local-First Software: Why Sync is Replacing the Cloud Database",
+    "slug": "daily-pulse-2026-10-03-local-first-software-why-sync",
+    "excerpt": "Daily edition for October 03, 2026: Exploring practical insights, modern techniques, and takeaways in technology.",
+    "content": "# Daily Pulse: Local-First Software: Why Sync is Replacing the Cloud Database\n\n*Published on October 03, 2026 by Stephane Kafando*\n\n## The Shift Toward Client-First Architecture\n\nFor the past fifteen years, the prevailing consensus was clear: store all state on centralized servers and treat client browsers as thin rendering terminals. However, as network latencies fluctuate and device capabilities soar, a paradigm shift is happening.\n\n**Local-first software** guarantees that:\n- Reads and writes occur instantly against local disk or memory\n- Applications work completely offline with zero degradation\n- Data synchronization happens opportunistically in the background via Conflict-free Replicated Data Types (CRDTs)\n\n> \"When data lives locally, your application never waits for a round-trip latency to feel responsive. Speed becomes a default property rather than an afterthought.\"\n\n### A Minimal CRDT State Vector Example\n\n```javascript\n// Synchronizing distributed local state without lock contention\nclass StateVector {\n  constructor(peerId) {\n    this.peerId = peerId;\n    this.clock = 0;\n    this.entries = new Map();\n  }\n\n  update(key, value) {\n    this.clock += 1;\n    this.entries.set(key, { value, clock: this.clock, peer: this.peerId });\n    return this.serialize();\n  }\n\n  merge(incoming) {\n    for (const [k, remote] of incoming.entries) {\n      const local = this.entries.get(k);\n      if (!local || remote.clock > local.clock) {\n        this.entries.set(k, remote);\n      }\n    }\n  }\n}\n```\n\n### Actionable Takeaway\nAudit your current web apps. Identify features that can persist and resolve locally in `IndexedDB` or `localStorage` before initiating network round-trips. Your users will immediately feel the difference.",
+    "cover": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "category": "Technology",
+    "tags": [
+      "LocalFirst",
+      "WebDev",
+      "Architecture",
+      "DataSync",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_stephane",
+      "name": "Stephane Kafando",
+      "handle": "@stephanekafando79",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "bio": "Founder, Lead Architect & Platform Owner of Pulse."
+    },
+    "publishedAt": "2026-10-03T13:12:30.001903+00:00",
+    "readTime": "2 min read",
+    "likes": 43,
+    "views": 204,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-03-1",
+        "author": {
+          "id": "user_alex",
+          "name": "Alex Rivera",
+          "handle": "@alexrivera",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Staff Frontend Engineer & Design Systems Architect."
+        },
+        "text": "Spot on! Really appreciate the daily perspectives on localfirst.",
+        "createdAt": "2026-10-03T13:12:30.001923+00:00",
+        "likes": 7
+      }
+    ]
+  },
   {
     "id": "daily-2026-10-02",
     "title": "Daily Pulse: The 4-Hour Maker Block: Engineering Deep Work for High Output",
@@ -30,7 +75,7 @@ window.PULSE_DAILY_ARTICLES = [
     "readTime": "2 min read",
     "likes": 23,
     "views": 301,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
