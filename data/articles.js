@@ -1,8 +1,53 @@
 /**
  * Pulse Auto-Generated Daily Articles
- * Last Updated: 2026-10-07T15:24:53.396599+00:00
+ * Last Updated: 2026-10-08T15:26:40.514669+00:00
  */
 window.PULSE_DAILY_ARTICLES = [
+  {
+    "id": "daily-2026-10-08",
+    "title": "Daily Pulse: Self-Healing Test Suites: How Code Agents Repair Flaky Tests",
+    "slug": "daily-pulse-2026-10-08-self-healing-test-suites-how-",
+    "excerpt": "Daily edition for October 08, 2026: Exploring practical insights, modern techniques, and takeaways in ai & engineering.",
+    "content": "# Daily Pulse: Self-Healing Test Suites: How Code Agents Repair Flaky Tests\n\n*Published on October 08, 2026 by Elena Rostova*\n\n## Eliminating the CI Flakiness Tax\n\nEvery engineering team has experienced the frustration of intermittent CI failures: tests that fail not because of legitimate logic regressions, but because of race conditions, timing variations, or outdated UI selectors.\n\nIn modern continuous integration pipelines, automated agentic repair routines inspect execution logs in real time to classify and heal failures:\n\n### The Diagnostic Triage Workflow\n1. **Failure Signature Analysis**: Categorizes whether the failure is deterministic (code syntax/type mismatch) or transient (network/clock jitter).\n2. **Context Reconstruction**: Correlates git diffs with AST nodes touched in the failing assertion.\n3. **Speculative Patch Generation**: Automatically proposes selector updates or idempotent retry policies.\n\n```python\n# Automated verification hook in CI\ndef verify_and_repair_step(test_result):\n    if test_result.failed and test_result.is_transient:\n        fix = agent.generate_patch(\n            stack_trace=test_result.trace,\n            diff=git.get_diff()\n        )\n        if fix.passes_dry_run():\n            git.commit_amend(fix)\n            return \"Repaired automatically.\"\n    return \"Manual review required.\"\n```\n\n> [!NOTE] \n> Automated healing should always record an audit trail in the PR comments so human reviewers can verify architectural intent.\n\nEngineering velocity thrives when routine diagnostic toil is delegated to autonomous subagents.",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    "category": "AI & Engineering",
+    "tags": [
+      "AI",
+      "Testing",
+      "DevOps",
+      "SoftwareEngineering",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_elena",
+      "name": "Elena Rostova",
+      "handle": "@elenadesign",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+      "bio": "Product Designer & Creative Director. Focused on calm interfaces."
+    },
+    "publishedAt": "2026-10-08T15:26:40.513706+00:00",
+    "readTime": "2 min read",
+    "likes": 25,
+    "views": 253,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-08-1",
+        "author": {
+          "id": "user_marcus",
+          "name": "Marcus Chen",
+          "handle": "@marcuschen_ai",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "AI Researcher & Open Source Contributor."
+        },
+        "text": "Spot on! Really appreciate the daily perspectives on ai.",
+        "createdAt": "2026-10-08T15:26:40.513735+00:00",
+        "likes": 3
+      }
+    ]
+  },
   {
     "id": "daily-2026-10-07",
     "title": "Daily Pulse: Local-First Software: Why Sync is Replacing the Cloud Database",
@@ -30,7 +75,7 @@ window.PULSE_DAILY_ARTICLES = [
     "readTime": "2 min read",
     "likes": 25,
     "views": 121,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
