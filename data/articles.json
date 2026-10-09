@@ -1,5 +1,51 @@
 [
   {
+    "id": "daily-2026-10-09",
+    "title": "Daily Pulse: Linux 6.12 Kernel & PREEMPT_RT: The Evolution of Real-Time Unix Systems",
+    "slug": "daily-pulse-2026-10-09-linux-6.12-kernel-&-preempt_rt",
+    "excerpt": "Daily edition for October 09, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in OS.",
+    "content": "# Daily Pulse: Linux 6.12 Kernel & PREEMPT_RT: The Evolution of Real-Time Unix Systems\n\n*Published on October 09, 2026 by The Pulse Collective*\n\n## Real-Time Computing Meets the Mainline Kernel\n\nAfter over two decades of out-of-tree maintenance, the `PREEMPT_RT` patchset has officially been mainlined into the core Linux kernel. For industrial robotics, low-latency audio processing, financial trading desks, and mission-critical embedded systems, this marks a monumental milestone.\n\n### What Real-Time Linux Actually Means\nMany developers conflate \"fast\" with \"real-time\":\n- **Throughput Computing**: Process the maximum number of transactions per second.\n- **Deterministic (Real-Time) Computing**: Guarantee that a thread responds to an external hardware interrupt within a guaranteed upper bound of microseconds, 100% of the time.\n\n```bash\n# Verify PREEMPT_RT capability on running kernel\nuname -a\n# Linux pulse-node-01 6.12.0-rt #1 SMP PREEMPT_RT x86_64 GNU/Linux\n\n# Inspect high-resolution timer latency jitter\ncyclictest --smp -p99 -m -d0\n```\n\n> \"Real-time guarantees are not about average speed; they are about eliminating catastrophic latency spikes when system load peaks.\"\n\n### Key Architectural Shifts:\n1. **Threaded Interrupt Handlers**: Hardware IRQs are handled by schedulable kernel threads with distinct priorities.\n2. **Sleeping Spinlocks**: Spinlocks that previously disabled preemption can now yield to higher-priority real-time tasks.\n3. **Priority Inheritance**: Prevents low-priority processes from starving critical watchdog loops.\n\nThe future of operating systems is deterministic, auditable, and open-source.",
+    "cover": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Linux",
+      "Kernel",
+      "RealTime",
+      "OpenSource",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_pulse_collective",
+      "name": "The Pulse Collective",
+      "handle": "@pulsecollective",
+      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80",
+      "bio": "Global Tech Collective & Open IT Engineering Community."
+    },
+    "publishedAt": "2026-10-09T21:15:53.241862+00:00",
+    "readTime": "3 min read",
+    "likes": 30,
+    "views": 376,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-09-1",
+        "author": {
+          "id": "user_alex",
+          "name": "Alex Rivera",
+          "handle": "@alexrivera",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Staff Systems Engineer & Linux Kernel Contributor."
+        },
+        "text": "Crucial insights on OS. High-signal perspective for IT and engineering teams.",
+        "createdAt": "2026-10-09T21:15:53.241862+00:00",
+        "likes": 6
+      }
+    ]
+  },
+  {
     "id": "daily-2026-10-02",
     "title": "Daily Pulse: The 4-Hour Maker Block: Engineering Deep Work for High Output",
     "slug": "daily-pulse-2026-10-02-the-4-hour-maker-block-engine",
@@ -26,7 +72,7 @@
     "readTime": "2 min read",
     "likes": 23,
     "views": 301,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
