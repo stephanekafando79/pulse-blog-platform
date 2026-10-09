@@ -1,5 +1,50 @@
 [
   {
+    "id": "daily-2026-10-09",
+    "title": "Daily Pulse: The Aesthetics of Restraint: Modern Minimalist Interfaces",
+    "slug": "daily-pulse-2026-10-09-the-aesthetics-of-restraint-m",
+    "excerpt": "Daily edition for October 09, 2026: Exploring practical insights, modern techniques, and takeaways in design.",
+    "content": "# Daily Pulse: The Aesthetics of Restraint: Modern Minimalist Interfaces\n\n*Published on October 09, 2026 by Alex Rivera*\n\n## Subtraction as an Innovation Driver\n\nIn a digital landscape filled with animated banners, floating action badges, and complex modal flows, visual restraint has become the ultimate competitive advantage.\n\nWhen you remove non-essential ornamentation, what remains must be executed with impeccable precision:\n- **Typographic Hierarchy**: Scale and weight do the communicative work that borders and boxes used to do.\n- **Negative Space**: Generous margins convey confidence and allow the eye to rest.\n- **Systematic Color Accents**: A single dominant accent hue guides intention without cognitive friction.\n\n```css\n/* Clean fluid typography without breakpoint jumps */\n:root {\n  --fluid-h1: clamp(2.25rem, 5vw + 1rem, 3.75rem);\n  --fluid-body: clamp(1rem, 0.5vw + 0.9rem, 1.2rem);\n  --fluid-space-lg: clamp(2rem, 4vw, 4rem);\n}\n\n.story-header {\n  font-size: var(--fluid-h1);\n  letter-spacing: -0.03em;\n  margin-bottom: var(--fluid-space-lg);\n}\n```\n\n> \"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.\" — Antoine de Saint-Exupéry\n\nFocus your next UI iteration on asking what you can remove rather than what you can add.",
+    "cover": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
+    "category": "Design",
+    "tags": [
+      "UIUX",
+      "Minimalism",
+      "DesignSystems",
+      "Accessibility",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_alex",
+      "name": "Alex Rivera",
+      "handle": "@alexrivera",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+      "bio": "Staff Frontend Engineer & Design Systems Architect."
+    },
+    "publishedAt": "2026-10-09T15:09:22.725467+00:00",
+    "readTime": "2 min read",
+    "likes": 24,
+    "views": 170,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-09-1",
+        "author": {
+          "id": "user_elena",
+          "name": "Elena Rostova",
+          "handle": "@elenadesign",
+          "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+          "bio": "Product Designer & Creative Director. Focused on calm interfaces."
+        },
+        "text": "Spot on! Really appreciate the daily perspectives on uiux.",
+        "createdAt": "2026-10-09T15:09:22.725484+00:00",
+        "likes": 7
+      }
+    ]
+  },
+  {
     "id": "daily-2026-10-08",
     "title": "Daily Pulse: Self-Healing Test Suites: How Code Agents Repair Flaky Tests",
     "slug": "daily-pulse-2026-10-08-self-healing-test-suites-how-",
@@ -26,7 +71,7 @@
     "readTime": "2 min read",
     "likes": 25,
     "views": 253,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
