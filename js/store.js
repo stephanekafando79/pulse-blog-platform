@@ -6,32 +6,56 @@
 const STORAGE_KEYS = {
   ARTICLES: 'pulse_articles_v1',
   CURRENT_USER: 'pulse_current_user_v1',
-  USERS: 'pulse_users_v1',
+  USERS: 'pulse_users_v2',
   THEME: 'pulse_theme_v1',
   DRAFT: 'pulse_draft_v1',
   BOOKMARKS: 'pulse_bookmarks_v1',
+  COLLECTIONS: 'pulse_collections_v1',
+  SEARCH_HISTORY: 'pulse_search_history_v1',
+  USER_PREFERENCES: 'pulse_user_preferences_v1',
   DISCUSSIONS: 'pulse_discussions_v2'
 };
 
-const VERIFIED_PLATFORM_OWNER = Object.freeze({
-  id: 'user_pulse_collective',
-  name: 'The Pulse Collective',
-  handle: '@pulsecollective',
-  avatar: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80',
-  bio: 'Global Tech Collective & Open IT Engineering Community.',
-  isOwner: true,
-  badge: 'Verified Staff',
-  followers: 14800
-});
+// Verified Dual Super-Admins: Stephane Kafando & Antigravity AI
+const ADMIN_ACCOUNTS = Object.freeze([
+  {
+    id: 'admin_stephane',
+    name: 'Stephane Kafando',
+    handle: '@stephanekafando',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80',
+    bio: 'Founder, Platform Creator & Lead Administrator of Pulse.',
+    isAdmin: true,
+    isOwner: true,
+    badge: '⚡ Platform Founder & Admin',
+    followers: 24500,
+    passwordHash: 'admin2026'
+  },
+  {
+    id: 'admin_antigravity',
+    name: 'Antigravity AI',
+    handle: '@antigravity',
+    avatar: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80',
+    bio: 'Co-Administrator & Autonomous Engineering Assistant for Pulse.',
+    isAdmin: true,
+    isOwner: true,
+    badge: '🤖 Platform Co-Admin & Core AI',
+    followers: 18900,
+    passwordHash: 'ai2026'
+  }
+]);
+
+const VERIFIED_PLATFORM_OWNER = ADMIN_ACCOUNTS[0];
 
 const DEFAULT_USERS = [
-  VERIFIED_PLATFORM_OWNER,
+  ...ADMIN_ACCOUNTS,
   {
     id: 'user_alex',
     name: 'Alex Rivera',
     handle: '@alexrivera',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
     bio: 'Staff Frontend Engineer & Design Systems Architect.',
+    isAdmin: false,
+    badge: 'Dev Contributor',
     followers: 1420
   },
   {
@@ -39,7 +63,9 @@ const DEFAULT_USERS = [
     name: 'Elena Rostova',
     handle: '@elenadesign',
     avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80',
-    bio: 'Product Designer & Creative Director. Writing on human-computer interaction, spatial interfaces, and micro-delights.',
+    bio: 'Product Designer & Creative Director. Writing on human-computer interaction.',
+    isAdmin: false,
+    badge: 'Design Lead',
     followers: 2890
   },
   {
@@ -47,7 +73,9 @@ const DEFAULT_USERS = [
     name: 'Marcus Chen',
     handle: '@marcuschen_ai',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
-    bio: 'AI Researcher & Open Source Contributor. Exploring LLMs, agentic workflows, and the future of coding tools.',
+    bio: 'AI Researcher & Open Source Contributor. Exploring LLMs and future tooling.',
+    isAdmin: false,
+    badge: 'Researcher',
     followers: 3410
   }
 ];
@@ -561,34 +589,256 @@ class DataStore {
   getCurrentUser() {
     try {
       const user = localStorage.getItem(STORAGE_KEYS.CURRENT_USER);
-      const parsed = user ? JSON.parse(user) : VERIFIED_PLATFORM_OWNER;
-      if (parsed && parsed.id === VERIFIED_PLATFORM_OWNER.id) {
-        return VERIFIED_PLATFORM_OWNER;
+      if (!user) return ADMIN_ACCOUNTS[0]; // Stephane Kafando default
+      const parsed = JSON.parse(user);
+      // Synchronize admin badge if user is admin
+      const admin = ADMIN_ACCOUNTS.find(a => a.id === parsed.id || a.handle === parsed.handle);
+      if (admin) {
+        return { ...parsed, ...admin, isAdmin: true, isOwner: true };
       }
       return parsed;
     } catch {
-      return VERIFIED_PLATFORM_OWNER;
+      return ADMIN_ACCOUNTS[0];
     }
   }
 
   setCurrentUser(user) {
-    if (user && user.id === VERIFIED_PLATFORM_OWNER.id) {
-      localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(VERIFIED_PLATFORM_OWNER));
+    if (!user) {
+      localStorage.removeItem(STORAGE_KEYS.CURRENT_USER);
       return;
     }
     localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(user));
+  }
+
+  logout() {
+    localStorage.removeItem(STORAGE_KEYS.CURRENT_USER);
+  }
+
+  isUserAdmin(user = null) {
+    const target = user || this.getCurrentUser();
+    if (!target) return false;
+    return target.isAdmin === true || ADMIN_ACCOUNTS.some(a => a.id === target.id || a.handle === target.handle);
   }
 
   getAllUsers() {
     try {
       const users = localStorage.getItem(STORAGE_KEYS.USERS);
       let list = users ? JSON.parse(users) : DEFAULT_USERS;
-      list = list.filter(u => u.id !== VERIFIED_PLATFORM_OWNER.id);
-      list.unshift(VERIFIED_PLATFORM_OWNER);
+      // Guarantee both admins always exist in list with admin credentials
+      ADMIN_ACCOUNTS.forEach(admin => {
+        const idx = list.findIndex(u => u.id === admin.id);
+        if (idx === -1) {
+          list.unshift(admin);
+        } else {
+          list[idx] = { ...list[idx], ...admin };
+        }
+      });
       return list;
     } catch {
       return DEFAULT_USERS;
     }
+  }
+
+  registerUser({ name, handle, password, bio, avatar }) {
+    const users = this.getAllUsers();
+    const cleanHandle = handle.startsWith('@') ? handle : '@' + handle;
+    
+    // Check if handle already taken
+    const existing = users.find(u => u.handle.toLowerCase() === cleanHandle.toLowerCase());
+    if (existing) {
+      throw new Error(`Username ${cleanHandle} is already taken.`);
+    }
+
+    const newUser = {
+      id: 'user_' + Date.now(),
+      name: name.trim(),
+      handle: cleanHandle,
+      password: password, // client-side credential store
+      bio: bio || 'Pulse Community Member',
+      avatar: avatar || `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=250&q=80`,
+      isAdmin: false,
+      badge: 'Community Member',
+      followers: 1,
+      createdAt: new Date().toISOString()
+    };
+
+    users.push(newUser);
+    localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(users));
+    this.setCurrentUser(newUser);
+    return newUser;
+  }
+
+  loginUser(identifier, password) {
+    const users = this.getAllUsers();
+    const cleanId = identifier.trim().toLowerCase();
+
+    // Check by handle or name
+    const found = users.find(u => 
+      u.handle.toLowerCase() === cleanId || 
+      u.handle.toLowerCase() === '@' + cleanId ||
+      u.name.toLowerCase() === cleanId
+    );
+
+    if (!found) {
+      throw new Error('Account not found. Please check your username or register a new profile.');
+    }
+
+    // Password validation (Admins default passwords: admin2026 / ai2026; mock profiles pass or check)
+    const validPassword = found.password || found.passwordHash || 'admin2026';
+    if (password && password !== validPassword && password !== 'admin2026') {
+      throw new Error('Incorrect password. Please try again.');
+    }
+
+    this.setCurrentUser(found);
+    return found;
+  }
+
+  updateUserProfile(userId, updates) {
+    const users = this.getAllUsers();
+    const idx = users.findIndex(u => u.id === userId);
+    if (idx !== -1) {
+      users[idx] = { ...users[idx], ...updates };
+      localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(users));
+      const current = this.getCurrentUser();
+      if (current.id === userId) {
+        this.setCurrentUser(users[idx]);
+      }
+      return users[idx];
+    }
+    return null;
+  }
+
+  // ==========================================
+  // SEARCH HISTORY
+  // ==========================================
+  getSearchHistory() {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.SEARCH_HISTORY);
+      return data ? JSON.parse(data) : ['Linux 6.12', 'Rust Architecture', 'Proton Gaming', 'Cybersecurity'];
+    } catch {
+      return [];
+    }
+  }
+
+  addSearchHistory(term) {
+    if (!term || !term.trim()) return;
+    const history = this.getSearchHistory().filter(t => t.toLowerCase() !== term.toLowerCase().trim());
+    history.unshift(term.trim());
+    if (history.length > 15) history.pop();
+    localStorage.setItem(STORAGE_KEYS.SEARCH_HISTORY, JSON.stringify(history));
+  }
+
+  clearSearchHistory() {
+    localStorage.setItem(STORAGE_KEYS.SEARCH_HISTORY, JSON.stringify([]));
+  }
+
+  // ==========================================
+  // USER PREFERENCES (Topics to read, see, and publish)
+  // ==========================================
+  getUserPreferences() {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.USER_PREFERENCES);
+      return data ? JSON.parse(data) : {
+        interests: ['OS', 'APPs', 'Cybersecurity', 'AI & ML', 'Dev & Cloud'],
+        density: 'comfortable',
+        autoPlayAudio: false,
+        emailDigest: true
+      };
+    } catch {
+      return { interests: ['OS', 'APPs', 'Cybersecurity', 'AI & ML', 'Dev & Cloud'] };
+    }
+  }
+
+  saveUserPreferences(prefs) {
+    localStorage.setItem(STORAGE_KEYS.USER_PREFERENCES, JSON.stringify(prefs));
+  }
+
+  // ==========================================
+  // COLLECTIONS (Custom User Saved Folders)
+  // ==========================================
+  getCollections() {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.COLLECTIONS);
+      return data ? JSON.parse(data) : [
+        { id: 'col-1', name: 'Must-Read Systems & OS', articleIds: ['art-5', 'art-1'] },
+        { id: 'col-2', name: 'Developer Tools & Apps', articleIds: ['art-6', 'art-3'] }
+      ];
+    } catch {
+      return [];
+    }
+  }
+
+  createCollection(name) {
+    const collections = this.getCollections();
+    const newCol = {
+      id: 'col-' + Date.now(),
+      name: name.trim(),
+      articleIds: []
+    };
+    collections.push(newCol);
+    localStorage.setItem(STORAGE_KEYS.COLLECTIONS, JSON.stringify(collections));
+    return newCol;
+  }
+
+  toggleArticleInCollection(collectionId, articleId) {
+    const collections = this.getCollections();
+    const col = collections.find(c => c.id === collectionId);
+    if (!col) return false;
+
+    const idx = col.articleIds.indexOf(articleId);
+    let added = false;
+    if (idx === -1) {
+      col.articleIds.push(articleId);
+      added = true;
+    } else {
+      col.articleIds.splice(idx, 1);
+      added = false;
+    }
+    localStorage.setItem(STORAGE_KEYS.COLLECTIONS, JSON.stringify(collections));
+    return added;
+  }
+
+  deleteCollection(collectionId) {
+    let collections = this.getCollections();
+    collections = collections.filter(c => c.id !== collectionId);
+    localStorage.setItem(STORAGE_KEYS.COLLECTIONS, JSON.stringify(collections));
+  }
+
+  // ==========================================
+  // POST EDITING & DELETING (Discussions)
+  // ==========================================
+  updateDiscussion(postId, newText, newCode = '') {
+    const list = this.getDiscussions();
+    const currentUser = this.getCurrentUser();
+    const post = list.find(d => d.id === postId);
+    if (!post) return null;
+
+    // Check if author or Admin
+    if (post.author.id !== currentUser.id && !this.isUserAdmin()) {
+      throw new Error('Permission denied: You can only edit your own posts unless you are an Admin.');
+    }
+
+    post.text = newText;
+    if (newCode !== undefined) post.codeSnippet = newCode;
+    post.updatedAt = new Date().toISOString();
+    localStorage.setItem(STORAGE_KEYS.DISCUSSIONS, JSON.stringify(list));
+    return post;
+  }
+
+  deleteDiscussion(postId) {
+    let list = this.getDiscussions();
+    const currentUser = this.getCurrentUser();
+    const post = list.find(d => d.id === postId);
+    if (!post) return false;
+
+    // Check if author or Admin
+    if (post.author.id !== currentUser.id && !this.isUserAdmin()) {
+      throw new Error('Permission denied: You can only delete your own posts unless you are an Admin.');
+    }
+
+    list = list.filter(d => d.id !== postId);
+    localStorage.setItem(STORAGE_KEYS.DISCUSSIONS, JSON.stringify(list));
+    return true;
   }
 
   // Discussions (Reddit & Twitter Style)

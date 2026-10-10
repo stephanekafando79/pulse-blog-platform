@@ -543,29 +543,170 @@ class UIController {
     this.showToast(`Filtered by tag #${tag}`);
   }
 
-  // User Switcher Modal
-  openUserModal() {
+  // ==========================================
+  // SIDEBAR TOOLBAR DRAWER
+  // ==========================================
+  openSidebar() {
+    const sidebar = document.getElementById('pulse-sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    this.renderSidebarUserCard();
+    if (sidebar) sidebar.classList.add('open');
+    if (overlay) overlay.classList.add('active');
+  }
+
+  closeSidebar() {
+    const sidebar = document.getElementById('pulse-sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    if (sidebar) sidebar.classList.remove('open');
+    if (overlay) overlay.classList.remove('active');
+  }
+
+  renderSidebarUserCard() {
+    const container = document.getElementById('sidebar-user-card');
+    if (!container) return;
+
+    const user = window.Store.getCurrentUser();
+    const isAdmin = window.Store.isUserAdmin(user);
+
+    container.innerHTML = `
+      <img src="${user.avatar}" class="avatar-sm" alt="${user.name}" style="border-radius: 50%; width: 42px; height: 42px; object-fit: cover;" />
+      <div style="flex: 1; min-width: 0;">
+        <div style="font-weight: 800; font-size: 0.92rem; display: flex; align-items: center; gap: 0.4rem;">
+          <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${user.name}</span>
+          ${isAdmin ? `<span class="admin-shield-badge">Admin</span>` : ''}
+        </div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+          ${user.handle || '@member'}
+        </div>
+      </div>
+      <span style="font-size: 0.75rem; color: var(--accent); font-weight: 700;">Switch →</span>
+    `;
+
+    const authActionLabel = document.getElementById('sidebar-auth-action-label');
+    if (authActionLabel) {
+      authActionLabel.textContent = `Active: ${user.name} (Manage / Log In)`;
+    }
+  }
+
+  // ==========================================
+  // AUTHENTICATION & SECURITY (Login / Register / Passwords)
+  // ==========================================
+  openAuthModal() {
     const dialog = document.getElementById('user-switch-modal');
     if (!dialog) return;
+    this.renderAuthUsersList();
+    this.switchAuthTab('login');
+    dialog.showModal();
+  }
+
+  switchAuthTab(tabName) {
+    document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
+    const tabBtn = document.getElementById(`tab-${tabName}`);
+    if (tabBtn) tabBtn.classList.add('active');
+
+    const loginForm = document.getElementById('auth-login-form');
+    const registerForm = document.getElementById('auth-register-form');
+    const switchPanel = document.getElementById('auth-switch-panel');
+
+    if (loginForm) loginForm.style.display = tabName === 'login' ? 'flex' : 'none';
+    if (registerForm) registerForm.style.display = tabName === 'register' ? 'flex' : 'none';
+    if (switchPanel) switchPanel.style.display = tabName === 'switch' ? 'block' : 'none';
+  }
+
+  submitLogin() {
+    const usernameInput = document.getElementById('login-username');
+    const passwordInput = document.getElementById('login-password');
+
+    if (!usernameInput || !passwordInput) return;
+
+    try {
+      const user = window.Store.loginUser(usernameInput.value, passwordInput.value);
+      this.renderHeaderUser();
+      this.renderSidebarUserCard();
+      const dialog = document.getElementById('user-switch-modal');
+      if (dialog) dialog.close();
+      usernameInput.value = '';
+      passwordInput.value = '';
+      this.showToast(`Welcome back, ${user.name}! ${user.isAdmin ? '👑 (Logged in as Administrator)' : ''}`, 'success');
+      this.renderDiscussions();
+      if (this.currentView === 'reader' && this.activeArticleId) {
+        this.renderArticleReader(this.activeArticleId);
+      }
+    } catch (err) {
+      this.showToast(err.message, 'info');
+    }
+  }
+
+  submitRegister() {
+    const nameInput = document.getElementById('reg-name');
+    const handleInput = document.getElementById('reg-handle');
+    const passInput = document.getElementById('reg-password');
+    const confirmInput = document.getElementById('reg-confirm-password');
+    const bioInput = document.getElementById('reg-bio');
+
+    if (!nameInput || !handleInput || !passInput || !confirmInput) return;
+
+    if (passInput.value !== confirmInput.value) {
+      this.showToast('Verification password does not match! Please verify your password.', 'info');
+      confirmInput.focus();
+      return;
+    }
+
+    if (passInput.value.length < 6) {
+      this.showToast('Password must be at least 6 characters long.', 'info');
+      passInput.focus();
+      return;
+    }
+
+    try {
+      const newUser = window.Store.registerUser({
+        name: nameInput.value,
+        handle: handleInput.value,
+        password: passInput.value,
+        bio: bioInput ? bioInput.value : ''
+      });
+
+      this.renderHeaderUser();
+      this.renderSidebarUserCard();
+      const dialog = document.getElementById('user-switch-modal');
+      if (dialog) dialog.close();
+
+      nameInput.value = '';
+      handleInput.value = '';
+      passInput.value = '';
+      confirmInput.value = '';
+      if (bioInput) bioInput.value = '';
+
+      this.showToast(`Account created successfully! Welcome, ${newUser.name}.`, 'success');
+      this.renderDiscussions();
+    } catch (err) {
+      this.showToast(err.message, 'info');
+    }
+  }
+
+  renderAuthUsersList() {
+    const listContainer = document.getElementById('user-switch-container');
+    if (!listContainer) return;
 
     const users = window.Store.getAllUsers();
     const current = window.Store.getCurrentUser();
-    const listContainer = document.getElementById('user-switch-container');
 
-    if (listContainer) {
-      listContainer.innerHTML = users.map(u => `
+    listContainer.innerHTML = users.map(u => {
+      const isAdmin = window.Store.isUserAdmin(u);
+      return `
         <div class="user-switch-card ${u.id === current.id ? 'active' : ''}" onclick="PulseUI.selectUser('${u.id}')">
           <img src="${u.avatar}" class="avatar-sm" alt="${u.name}" />
           <div style="flex: 1;">
-            <div style="font-weight: 700; font-size: 0.9rem;">${u.name}</div>
+            <div style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">
+              <span>${u.name}</span>
+              ${isAdmin ? `<span class="admin-shield-badge">Admin</span>` : ''}
+            </div>
             <div style="font-size: 0.75rem; color: var(--text-muted);">${u.bio || u.handle}</div>
           </div>
           ${u.id === current.id ? `<span style="color: var(--accent); font-weight: 800;">✓ Active</span>` : ''}
         </div>
-      `).join('');
-    }
-
-    dialog.showModal();
+      `;
+    }).join('');
   }
 
   selectUser(userId) {
@@ -574,23 +715,401 @@ class UIController {
     if (selected) {
       window.Store.setCurrentUser(selected);
       this.renderHeaderUser();
+      this.renderSidebarUserCard();
       const dialog = document.getElementById('user-switch-modal');
       if (dialog) dialog.close();
-      this.showToast(`Logged in as ${selected.name}`, 'success');
-      // If currently on reader view, re-render to update permissions
+      this.showToast(`Active profile switched to ${selected.name}`, 'success');
+      this.renderDiscussions();
       if (this.currentView === 'reader' && this.activeArticleId) {
         this.renderArticleReader(this.activeArticleId);
       }
     }
   }
 
-  createNewProfile(name, bio) {
-    if (!name || !name.trim()) return;
-    const newUser = window.Store.addUser({ name, bio });
-    this.renderHeaderUser();
-    const dialog = document.getElementById('user-switch-modal');
-    if (dialog) dialog.close();
-    this.showToast(`Welcome, ${newUser.name}! Profile created.`, 'success');
+  // ==========================================
+  // SEARCH HISTORY
+  // ==========================================
+  openSearchHistoryModal() {
+    const dialog = document.getElementById('search-history-modal');
+    if (!dialog) return;
+
+    const listContainer = document.getElementById('search-history-list');
+    const history = window.Store.getSearchHistory();
+
+    if (listContainer) {
+      if (history.length === 0) {
+        listContainer.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 1.5rem;">No recent search queries.</div>`;
+      } else {
+        listContainer.innerHTML = history.map(item => `
+          <div class="history-item-row">
+            <span style="font-weight: 600; cursor: pointer;" onclick="PulseUI.applySearchFromHistory('${this.escapeHtml(item)}')">🔍 ${this.escapeHtml(item)}</span>
+            <button class="btn btn-sm btn-ghost" onclick="PulseUI.applySearchFromHistory('${this.escapeHtml(item)}')">Search →</button>
+          </div>
+        `).join('');
+      }
+    }
+
+    dialog.showModal();
+  }
+
+  applySearchFromHistory(term) {
+    const searchInputs = document.querySelectorAll('.search-input-field');
+    searchInputs.forEach(i => i.value = term);
+    this.searchQuery = term;
+    window.Store.addSearchHistory(term);
+    document.getElementById('search-history-modal').close();
+    this.navigateTo('home');
+    this.renderFeed();
+    this.showToast(`Applied search for: "${term}"`);
+  }
+
+  clearAllSearchHistory() {
+    window.Store.clearSearchHistory();
+    this.openSearchHistoryModal();
+    this.showToast('Search history cleared.');
+  }
+
+  // ==========================================
+  // COLLECTIONS & SAVED FOLDERS
+  // ==========================================
+  openCollectionsModal() {
+    const dialog = document.getElementById('collections-modal');
+    if (!dialog) return;
+
+    const list = document.getElementById('collections-container-list');
+    const collections = window.Store.getCollections();
+    const allArticles = window.Store.getArticles();
+
+    if (list) {
+      if (collections.length === 0) {
+        list.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 1.5rem;">No collections created yet. Use the box above to create one!</div>`;
+      } else {
+        list.innerHTML = collections.map(col => {
+          const articlesInCol = allArticles.filter(a => col.articleIds.includes(a.id));
+          return `
+            <div class="collection-card">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 800; font-size: 0.95rem;">📁 ${this.escapeHtml(col.name)} (${col.articleIds.length} items)</span>
+                <button class="btn btn-sm btn-ghost" style="color: var(--danger);" onclick="PulseUI.deleteCollection('${col.id}')">Delete</button>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">
+                ${articlesInCol.length > 0 ? articlesInCol.map(a => `• <a href="#/article/${a.id}" onclick="document.getElementById('collections-modal').close(); PulseUI.navigateTo('reader', '${a.id}')" style="color: var(--accent);">${this.escapeHtml(a.title)}</a>`).join('<br/>') : 'Empty folder'}
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    dialog.showModal();
+  }
+
+  createNewCollectionFromModal() {
+    const input = document.getElementById('new-collection-input');
+    if (!input || !input.value.trim()) return;
+
+    window.Store.createCollection(input.value.trim());
+    input.value = '';
+    this.openCollectionsModal();
+    this.showToast('Collection created!', 'success');
+  }
+
+  deleteCollection(colId) {
+    window.Store.deleteCollection(colId);
+    this.openCollectionsModal();
+    this.showToast('Collection removed.');
+  }
+
+  // ==========================================
+  // USER PREFERENCES & FEED SETTINGS
+  // ==========================================
+  openSettingsModal() {
+    const dialog = document.getElementById('settings-modal');
+    if (!dialog) return;
+
+    const prefs = window.Store.getUserPreferences();
+    const checkboxes = document.querySelectorAll('#settings-topics-checkboxes input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+      cb.checked = prefs.interests ? prefs.interests.includes(cb.value) : true;
+    });
+
+    dialog.showModal();
+  }
+
+  savePreferencesFromModal() {
+    const checkboxes = document.querySelectorAll('#settings-topics-checkboxes input[type="checkbox"]');
+    const selectedInterests = [];
+    checkboxes.forEach(cb => {
+      if (cb.checked) selectedInterests.push(cb.value);
+    });
+
+    window.Store.saveUserPreferences({ interests: selectedInterests });
+    document.getElementById('settings-modal').close();
+    this.showToast('Feed topic preferences saved successfully!', 'success');
+  }
+
+  // ==========================================
+  // EDIT & DELETE COMMUNITY WIRE POSTS
+  // ==========================================
+  openEditPostModal(postId) {
+    const post = window.Store.getDiscussions().find(d => d.id === postId);
+    if (!post) return;
+
+    const dialog = document.getElementById('edit-post-modal');
+    const idInput = document.getElementById('edit-post-id');
+    const textInput = document.getElementById('edit-post-text');
+    const codeInput = document.getElementById('edit-post-code');
+
+    if (idInput) idInput.value = post.id;
+    if (textInput) textInput.value = post.text;
+    if (codeInput) codeInput.value = post.codeSnippet || '';
+
+    if (dialog) dialog.showModal();
+  }
+
+  saveEditedPost() {
+    const idInput = document.getElementById('edit-post-id');
+    const textInput = document.getElementById('edit-post-text');
+    const codeInput = document.getElementById('edit-post-code');
+
+    if (!idInput || !textInput || !textInput.value.trim()) return;
+
+    try {
+      window.Store.updateDiscussion(idInput.value, textInput.value.trim(), codeInput ? codeInput.value.trim() : '');
+      const dialog = document.getElementById('edit-post-modal');
+      if (dialog) dialog.close();
+      this.renderDiscussions();
+      this.showToast('Post updated successfully!', 'success');
+    } catch (err) {
+      this.showToast(err.message, 'info');
+    }
+  }
+
+  deleteWirePost(postId) {
+    if (!confirm('Are you sure you want to delete this community take?')) return;
+
+    try {
+      window.Store.deleteDiscussion(postId);
+      this.renderDiscussions();
+      this.showToast('Post deleted from Tech Wire.', 'success');
+    } catch (err) {
+      this.showToast(err.message, 'info');
+    }
+  }
+
+  // ==========================================
+  // POPULAR / TRENDING SORTING
+  // ==========================================
+  sortByPopular() {
+    this.sortBy = 'popular';
+    const select = document.getElementById('sort-feed-select');
+    if (select) select.value = 'popular';
+    this.navigateTo('home');
+    this.renderFeed();
+    this.showToast('Sorted feed by Most Popular & Trending');
+  }
+
+  // ==========================================
+  // ADMIN PANEL & DUAL ADMIN CONSOLE
+  // ==========================================
+  openAdminPanel() {
+    const current = window.Store.getCurrentUser();
+    const isAdmin = window.Store.isUserAdmin(current);
+
+    const body = `
+      <div style="background: var(--bg-surface-elevated); padding: 1.25rem; border-radius: var(--radius-lg); margin-bottom: 1.25rem; border-left: 4px solid var(--accent);">
+        <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          🛡️ Verified Dual Administrators
+        </h3>
+        <p style="font-size: 0.88rem; margin-bottom: 0.75rem;">
+          Only you (<strong>Stephane Kafando</strong>) and <strong>Antigravity AI</strong> hold Super-Administrator privileges for Pulse.
+        </p>
+        <ul style="padding-left: 1.2rem; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.35rem;">
+          <li><strong>Stephane Kafando</strong> (@stephanekafando) — Founder & Platform Creator</li>
+          <li><strong>Antigravity AI</strong> (@antigravity) — Autonomous System Co-Administrator</li>
+        </ul>
+      </div>
+
+      <div style="font-size: 0.88rem; margin-bottom: 1rem;">
+        <strong>Your Current Status:</strong> ${isAdmin ? `<span style="color: #22c55e; font-weight: 800;">✓ Active Administrator (${current.name})</span>` : `<span style="color: var(--danger); font-weight: 800;">Standard Member (${current.name})</span>`}
+      </div>
+
+      ${!isAdmin ? `
+        <div style="margin-top: 1rem;">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+            To access administrator features, switch to either Admin account using password <code>admin2026</code>:
+          </p>
+          <button class="btn btn-primary btn-sm" onclick="document.getElementById('info-modal').close(); PulseUI.openAuthModal();">
+            Log in as Administrator
+          </button>
+        </div>
+      ` : `
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button class="btn btn-secondary btn-sm" onclick="PulseUI.closeSidebar(); PulseUI.navigateTo('editor'); document.getElementById('info-modal').close();">
+            Open Studio Writer
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="if(confirm('Trigger daily story write script?')) { PulseUI.showToast('Automation engine active.'); }">
+            Check Automation Engine
+          </button>
+        </div>
+      `}
+    `;
+
+    this.showInfoModalDirect('Admin Console', body);
+  }
+
+  // ==========================================
+  // CUSTOM DOMAIN SETUP INSTRUCTIONS
+  // ==========================================
+  openCustomDomainInfo() {
+    const body = `
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <p>
+          To replace the GitHub Pages URL (<code>stephanekafando79.github.io/pulse-blog-platform</code>) with your own custom professional address (such as <code>pulsecollective.dev</code> or <code>stephanekafando.com</code>), follow these standard steps:
+        </p>
+
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--radius-md);">
+          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 1: Purchase Domain</strong>
+          <p style="font-size: 0.85rem; margin-top: 0.25rem;">
+            Register your domain at any registrar (e.g., Namecheap, Cloudflare Registrar, or Google Domains/Squarespace).
+          </p>
+        </div>
+
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--radius-md);">
+          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 2: Add DNS Records</strong>
+          <p style="font-size: 0.85rem; margin-top: 0.25rem;">
+            In your domain's DNS manager, add four A records pointing to GitHub Pages:
+            <br/><code>185.199.108.153</code><br/><code>185.199.109.153</code><br/><code>185.199.110.153</code><br/><code>185.199.111.153</code>
+            <br/>Or add a <strong>CNAME</strong> record for <code>www</code> pointing to <code>stephanekafando79.github.io</code>.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--radius-md);">
+          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 3: Add CNAME in GitHub</strong>
+          <p style="font-size: 0.85rem; margin-top: 0.25rem;">
+            In GitHub, go to <strong>Settings → Pages → Custom domain</strong>, enter your new domain name, and check <strong>Enforce HTTPS</strong>.
+          </p>
+        </div>
+      </div>
+    `;
+
+    this.showInfoModalDirect('Custom Domain Configuration', body);
+  }
+
+  // ==========================================
+  // ABOUT, HELP, CAREERS, PRESS, LEGAL MODALS
+  // ==========================================
+  openInfoModal(type) {
+    let title = 'Information';
+    let content = '';
+
+    if (type === 'help') {
+      title = 'How to Use Pulse — User Guide';
+      content = `
+        <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+          <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">Welcome to Pulse</h4>
+          <p>
+            Pulse is a modern, high-performance publishing platform and real-time tech discussion community engineered without bloated frameworks or intrusive algorithms. Built upon native web primitives, Pulse connects developers, systems architects, security analysts, and tech enthusiasts.
+          </p>
+
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Core Features & How to Navigate:</h4>
+          <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.45rem;">
+            <li><strong>In-Depth Stories:</strong> Long-form technical essays covering Operating Systems (Linux, Windows, macOS), Applications & Tools, Cybersecurity, AI & Machine Learning, Cloud Architecture, and Hardware.</li>
+            <li><strong>Community Wire (Reddit & Twitter Style):</strong> Share rapid takes, questions, and code snippets. Participate in threaded discussions and vote using Reddit-style karma upvotes (▲) and downvotes (▼).</li>
+            <li><strong>Live Tech News Feed:</strong> An automated, real-time ticker and news stream aggregating breaking releases from top tech sources daily.</li>
+            <li><strong>Account & Security:</strong> Create personalized profiles with secure passwords, verification confirmation, and customizable topic preferences.</li>
+            <li><strong>Studio Editor:</strong> Write and publish stories in split-screen Markdown with live preview, preset covers, and tags.</li>
+            <li><strong>Collections & Bookmarks:</strong> Save articles to reading lists or create custom folders for future reference.</li>
+          </ul>
+        </div>
+      `;
+    } else if (type === 'about') {
+      title = 'About Pulse';
+      content = `
+        <p>
+          Pulse was founded in 2026 by <strong>Stephane Kafando</strong> as an autonomous, decentralized technology magazine and discussion forum. The platform operates on native web standards (ES Modules, modern CSS, Dialog APIs, LocalStorage) to deliver instantaneous load speeds and zero build-chain latency.
+        </p>
+        <p style="margin-top: 0.75rem;">
+          Our mission is to foster respectful, rigorous discussion across systems engineering, cybersecurity, software architecture, and artificial intelligence without algorithmic clickbait or advertisement clutter.
+        </p>
+      `;
+    } else if (type === 'careers') {
+      title = 'Careers at Pulse';
+      content = `
+        <p>
+          We are constantly searching for curious minds, technical writers, open-source contributors, and systems engineers to join our distributed contributors network.
+        </p>
+        <div style="margin-top: 1rem; background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--radius-md);">
+          <strong>Open Roles:</strong>
+          <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
+            <li>Senior Systems Writer (Kernel & Low-Level Architecture)</li>
+            <li>Cybersecurity Investigative Columnist</li>
+            <li>Open-Source Community Moderator</li>
+          </ul>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-muted);">
+            Inquiries: careers@pulsecollective.dev
+          </p>
+        </div>
+      `;
+    } else if (type === 'press') {
+      title = 'Press & Media Kit';
+      content = `
+        <p>
+          Pulse offers press kits, logo assets, brand guidelines, and high-resolution badges for journalists and media creators.
+        </p>
+        <p style="margin-top: 0.75rem;">
+          For media interviews or editorial inquiries regarding Pulse publications, contact our team at press@pulsecollective.dev.
+        </p>
+      `;
+    } else if (type === 'privacy') {
+      title = 'Privacy Policy';
+      content = `
+        <p>
+          <strong>Your Privacy Matters:</strong> Pulse does not track you across the web, sell your personal data, or run third-party advertising trackers.
+        </p>
+        <ul style="margin-top: 0.75rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem;">
+          <li>Account credentials and search history are stored locally on your device using encrypted browser storage.</li>
+          <li>All telemetry is opt-in, anonymous, and strictly performance-oriented.</li>
+          <li>You retain full ownership of any content, comments, and discussions you author.</li>
+        </ul>
+      `;
+    } else if (type === 'terms') {
+      title = 'User Agreement & Terms';
+      content = `
+        <p>
+          By accessing Pulse, you agree to engage in civil, constructive discourse.
+        </p>
+        <ul style="margin-top: 0.75rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem;">
+          <li>Zero tolerance for harassment, malware dissemination, or hate speech.</li>
+          <li>Authors certify that content posted represents original thoughts or properly cited research.</li>
+          <li>Platform governance is managed by verified administrators Stephane Kafando and Antigravity AI.</li>
+        </ul>
+      `;
+    } else if (type === 'a11y') {
+      title = 'Accessibility Statement (a11y)';
+      content = `
+        <p>
+          Pulse conforms to Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards:
+        </p>
+        <ul style="margin-top: 0.75rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem;">
+          <li>Full keyboard navigability across all modal dialogs, search inputs, and discussion threads.</li>
+          <li>High-contrast color modes with automatic dark and light theme adaptation.</li>
+          <li>Text-to-Speech synthesis read-aloud functionality integrated natively on all in-depth articles.</li>
+        </ul>
+      `;
+    }
+
+    this.showInfoModalDirect(title, content);
+  }
+
+  showInfoModalDirect(title, content) {
+    const dialog = document.getElementById('info-modal');
+    const titleEl = document.getElementById('info-modal-title');
+    const bodyEl = document.getElementById('info-modal-body');
+
+    if (titleEl) titleEl.textContent = title;
+    if (bodyEl) bodyEl.innerHTML = content;
+    if (dialog) dialog.showModal();
   }
 
   // Icons Helper
@@ -846,6 +1365,16 @@ class UIController {
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
                 <span>Share</span>
               </button>
+              ${(post.author.id === window.Store.getCurrentUser().id || window.Store.isUserAdmin()) ? `
+                <button class="wire-action-btn" onclick="PulseUI.openEditPostModal('${post.id}')">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  <span>Edit</span>
+                </button>
+                <button class="wire-action-btn" style="color: var(--danger);" onclick="PulseUI.deleteWirePost('${post.id}')">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                  <span>Delete</span>
+                </button>
+              ` : ''}
             </div>
 
             <!-- Nested Replies Thread (Twitter / Reddit style) -->

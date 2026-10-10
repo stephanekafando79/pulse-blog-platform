@@ -206,36 +206,20 @@ function setupEditorActions() {
   }
 }
 
-// Auth & User Switcher Dialog
+// Auth & User Switcher Dialog and Sidebar
 function setupAuthDialogEvents() {
   const userMenuBtn = document.getElementById('user-menu-trigger');
-  const userModal = document.getElementById('user-switch-modal');
-  const closeModalBtn = document.getElementById('btn-close-user-modal');
-  const createProfileForm = document.getElementById('create-profile-form');
+  const sidebarToggleBtn = document.getElementById('sidebar-toggle-btn');
+
+  if (sidebarToggleBtn) {
+    sidebarToggleBtn.addEventListener('click', () => {
+      window.PulseUI.openSidebar();
+    });
+  }
 
   if (userMenuBtn) {
     userMenuBtn.addEventListener('click', () => {
-      window.PulseUI.openUserModal();
-    });
-  }
-
-  if (closeModalBtn && userModal) {
-    closeModalBtn.addEventListener('click', () => {
-      userModal.close();
-    });
-  }
-
-  if (createProfileForm) {
-    createProfileForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const nameInput = document.getElementById('new-user-name');
-      const bioInput = document.getElementById('new-user-bio');
-
-      if (nameInput && nameInput.value.trim()) {
-        window.PulseUI.createNewProfile(nameInput.value.trim(), bioInput ? bioInput.value.trim() : '');
-        nameInput.value = '';
-        if (bioInput) bioInput.value = '';
-      }
+      window.PulseUI.openAuthModal();
     });
   }
 }
