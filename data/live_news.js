@@ -1,8 +1,24 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-10T04:31:33.571913+00:00
+ * Last Updated: 2026-10-10T05:15:36.800949+00:00
  */
 window.PULSE_LIVE_NEWS = [
+  {
+    "id": "hn-50029630",
+    "title": "Lobbying",
+    "url": "https://geohot.github.io//blog/jekyll/update/2026/10/10/lobbying.html",
+    "domain": "blog",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "blog",
+    "score": 78,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-10T05:15:35.634850+00:00"
+  },
   {
     "id": "hn-50028275",
     "title": "REA Reverse – Engineer Anything",
@@ -15,9 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "rea.tools",
-    "score": 203,
-    "commentsCount": 17,
-    "publishedAt": "2026-10-10T04:31:32.371685+00:00"
+    "score": 230,
+    "commentsCount": 19,
+    "publishedAt": "2026-10-10T05:15:35.793289+00:00"
   },
   {
     "id": "hn-50019911",
@@ -31,9 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "deno.com",
-    "score": 1118,
-    "commentsCount": 136,
-    "publishedAt": "2026-10-10T04:31:32.520553+00:00"
+    "score": 1131,
+    "commentsCount": 137,
+    "publishedAt": "2026-10-10T05:15:35.985775+00:00"
   },
   {
     "id": "hn-50022292",
@@ -47,9 +63,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "minesweeper.mikelacher.com",
-    "score": 766,
-    "commentsCount": 95,
-    "publishedAt": "2026-10-10T04:31:32.665000+00:00"
+    "score": 790,
+    "commentsCount": 97,
+    "publishedAt": "2026-10-10T05:15:36.156053+00:00"
   },
   {
     "id": "hn-49997481",
@@ -63,9 +79,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "usenix.org",
-    "score": 43,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-10T04:31:32.836072+00:00"
+    "score": 67,
+    "commentsCount": 7,
+    "publishedAt": "2026-10-10T05:15:36.329327+00:00"
+  },
+  {
+    "id": "hn-50029123",
+    "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
+    "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
+    "domain": "beaksec.github.io",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "beaksec.github.io",
+    "score": 26,
+    "commentsCount": 4,
+    "publishedAt": "2026-10-10T05:15:36.488985+00:00"
   },
   {
     "id": "hn-50021410",
@@ -79,9 +111,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "blog.janestreet.com",
-    "score": 39,
-    "commentsCount": 5,
-    "publishedAt": "2026-10-10T04:31:32.996888+00:00"
+    "score": 45,
+    "commentsCount": 7,
+    "publishedAt": "2026-10-10T05:15:36.653654+00:00"
   },
   {
     "id": "hn-50024499",
@@ -95,40 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "carrierexplode.com",
-    "score": 241,
+    "score": 254,
     "commentsCount": 17,
-    "publishedAt": "2026-10-10T04:31:33.186399+00:00"
-  },
-  {
-    "id": "hn-50023450",
-    "title": "Typesafe AI raises $870M at $7.5B",
-    "url": "https://typesafe.ai/blog/series-ai",
-    "domain": "typesafe.ai",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "typesafe.ai",
-    "score": 306,
-    "commentsCount": 36,
-    "publishedAt": "2026-10-10T04:31:33.358389+00:00"
-  },
-  {
-    "id": "hn-50027853",
-    "title": "Compiling Rust to readable C with Eurydice",
-    "url": "https://lwn.net/Articles/1055211/",
-    "domain": "lwn.net",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "lwn.net",
-    "score": 38,
-    "commentsCount": 3,
-    "publishedAt": "2026-10-10T04:31:33.569918+00:00"
+    "publishedAt": "2026-10-10T05:15:36.799964+00:00"
   }
 ];

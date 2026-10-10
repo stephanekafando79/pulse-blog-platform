@@ -1,0 +1,42 @@
+name: Weekly Autonomous Maintenance & Health Daemon
+
+on:
+  schedule:
+    # Runs automatically every Sunday at 00:00 UTC (Weekly auto-update)
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab anytime
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-maintenance:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Weekly Maintenance & Health Audit
+        run: |
+          python weekly_maintenance.py
+
+      - name: Commit and Push Weekly Updates
+        run: |
+          git config user.name "Antigravity AI (Pulse Co-Admin Bot)"
+          git config user.email "bot@pulsecollective.dev"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No weekly maintenance changes to commit."
+          else
+            git commit -m "Auto-maintenance: Weekly Health Audit & News Refresh [skip ci]"
+            git push origin main
+          fi
