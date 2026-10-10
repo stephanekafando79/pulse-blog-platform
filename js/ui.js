@@ -6,17 +6,25 @@
 class UIController {
   constructor() {
     this.currentView = 'home';
+    this.homeMode = 'stories'; // 'stories' | 'discussions' | 'news'
+    this.wireSort = 'hot'; // 'hot' | 'top' | 'new'
     this.activeArticleId = null;
     this.selectedCategory = 'all';
     this.searchQuery = '';
     this.sortBy = 'latest';
     this.isSpeaking = false;
+    this.tickerInterval = null;
+    this.tickerIndex = 0;
   }
 
   init() {
     this.renderHeaderUser();
     this.renderFeed();
+    this.renderDiscussions();
+    this.renderLiveNews();
+    this.initTicker();
     this.setupThemeToggle();
+    this.setupWireComposerEvents();
   }
 
   // Toast Notification System
@@ -592,6 +600,360 @@ class UIController {
 
   getMoonIcon() {
     return `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>`;
+  }
+
+  // ==========================================
+  // MODE SWITCHER (Stories / Community Wire / Live News)
+  // ==========================================
+  switchHomeMode(mode) {
+    this.homeMode = mode;
+
+    const storiesFeed = document.getElementById('articles-feed');
+    const controlsBar = document.getElementById('controls-bar');
+    const discussionsContainer = document.getElementById('discussions-feed-container');
+    const liveNewsContainer = document.getElementById('live-news-feed-container');
+
+    // Update tab active classes
+    document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+    const activeTab = document.getElementById(`tab-mode-${mode}`);
+    if (activeTab) activeTab.classList.add('active');
+
+    if (mode === 'stories') {
+      if (storiesFeed) storiesFeed.style.display = 'grid';
+      if (controlsBar) controlsBar.style.display = 'flex';
+      if (discussionsContainer) discussionsContainer.style.display = 'none';
+      if (liveNewsContainer) liveNewsContainer.style.display = 'none';
+      this.renderFeed();
+    } else if (mode === 'discussions') {
+      if (storiesFeed) storiesFeed.style.display = 'none';
+      if (controlsBar) controlsBar.style.display = 'none';
+      if (discussionsContainer) discussionsContainer.style.display = 'flex';
+      if (liveNewsContainer) liveNewsContainer.style.display = 'none';
+      this.renderDiscussions();
+    } else if (mode === 'news') {
+      if (storiesFeed) storiesFeed.style.display = 'none';
+      if (controlsBar) controlsBar.style.display = 'none';
+      if (discussionsContainer) discussionsContainer.style.display = 'none';
+      if (liveNewsContainer) liveNewsContainer.style.display = 'flex';
+      this.renderLiveNews();
+    }
+
+    // Ensure we are in home view
+    if (this.currentView !== 'home') {
+      this.navigateTo('home');
+    }
+  }
+
+  // ==========================================
+  // REDDIT & TWITTER/X TECH WIRE
+  // ==========================================
+  setWireSort(sortMode) {
+    this.wireSort = sortMode;
+    document.querySelectorAll('.wire-subtab').forEach(t => {
+      t.classList.toggle('active', t.dataset.wiresort === sortMode);
+    });
+    this.renderDiscussions();
+  }
+
+  toggleWireCodeBox() {
+    const box = document.getElementById('wire-code-container');
+    if (!box) return;
+    box.style.display = (box.style.display === 'none' || !box.style.display) ? 'block' : 'none';
+    if (box.style.display === 'block') {
+      const textarea = document.getElementById('wire-code-input');
+      if (textarea) textarea.focus();
+    }
+  }
+
+  setupWireComposerEvents() {
+    const textarea = document.getElementById('wire-post-input');
+    const charCount = document.getElementById('wire-char-count');
+    if (textarea && charCount) {
+      textarea.addEventListener('input', () => {
+        const remaining = 600 - textarea.value.length;
+        charCount.textContent = remaining;
+        charCount.style.color = remaining < 50 ? 'var(--danger)' : 'var(--text-muted)';
+      });
+    }
+  }
+
+  submitWirePost() {
+    const textInput = document.getElementById('wire-post-input');
+    const codeInput = document.getElementById('wire-code-input');
+    const categorySelect = document.getElementById('wire-post-category');
+    const tagsInput = document.getElementById('wire-post-tags');
+
+    if (!textInput || !textInput.value.trim()) {
+      this.showToast('Please write your take or question first.', 'info');
+      return;
+    }
+
+    const text = textInput.value.trim();
+    const codeSnippet = codeInput ? codeInput.value.trim() : '';
+    const category = categorySelect ? categorySelect.value : 'Technology';
+    const tags = tagsInput && tagsInput.value.trim() 
+      ? tagsInput.value.split(',').map(t => t.trim().replace(/^#/, '')).filter(Boolean)
+      : [category, 'TechWire'];
+
+    const newPost = window.Store.addDiscussion({
+      text,
+      codeSnippet,
+      category,
+      tags
+    });
+
+    // Reset inputs
+    textInput.value = '';
+    if (codeInput) {
+      codeInput.value = '';
+      document.getElementById('wire-code-container').style.display = 'none';
+    }
+    if (tagsInput) tagsInput.value = '';
+    const charCount = document.getElementById('wire-char-count');
+    if (charCount) charCount.textContent = '600';
+
+    this.renderDiscussions();
+    this.showToast('Posted to Community Tech Wire!', 'success');
+  }
+
+  handleWireVote(postId, direction) {
+    const updatedPost = window.Store.voteDiscussion(postId, direction);
+    if (!updatedPost) return;
+
+    // Refresh vote count & buttons in DOM
+    const card = document.querySelector(`[data-wirepost-id="${postId}"]`);
+    if (card) {
+      const scoreEl = card.querySelector('.wire-score');
+      const upBtn = card.querySelector('.btn-karma-up');
+      const downBtn = card.querySelector('.btn-karma-down');
+
+      if (scoreEl) {
+        scoreEl.textContent = updatedPost.votes;
+        scoreEl.className = `wire-score ${updatedPost.votes > 0 ? 'score-positive' : updatedPost.votes < 0 ? 'score-negative' : ''}`;
+      }
+      if (upBtn) upBtn.classList.toggle('upvoted', updatedPost.userVote === 1);
+      if (downBtn) downBtn.classList.toggle('downvoted', updatedPost.userVote === -1);
+    }
+  }
+
+  toggleReplies(postId) {
+    const thread = document.getElementById(`replies-thread-${postId}`);
+    if (thread) {
+      thread.style.display = (thread.style.display === 'none' || !thread.style.display) ? 'flex' : 'none';
+    }
+  }
+
+  submitWireReply(postId) {
+    const input = document.getElementById(`reply-input-${postId}`);
+    if (!input || !input.value.trim()) return;
+
+    const text = input.value.trim();
+    window.Store.addDiscussionReply(postId, text);
+    input.value = '';
+    this.renderDiscussions();
+    this.showToast('Reply added to thread!', 'success');
+  }
+
+  renderDiscussions() {
+    const container = document.getElementById('discussions-list');
+    const badge = document.getElementById('wire-count-badge');
+    if (!container) return;
+
+    let discussions = window.Store.getDiscussions();
+    if (badge) badge.textContent = discussions.length;
+
+    // Sort discussions
+    if (this.wireSort === 'top') {
+      discussions.sort((a, b) => b.votes - a.votes);
+    } else if (this.wireSort === 'new') {
+      discussions.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    } else {
+      // 'hot' algorithm: votes combined with recency and replies
+      discussions.sort((a, b) => {
+        const scoreA = a.votes + ((a.replies ? a.replies.length : 0) * 3);
+        const scoreB = b.votes + ((b.replies ? b.replies.length : 0) * 3);
+        return scoreB - scoreA;
+      });
+    }
+
+    if (discussions.length === 0) {
+      container.innerHTML = `
+        <div class="empty-state" style="padding: 3rem 1rem; text-align: center;">
+          <h3>No discussions yet</h3>
+          <p>Be the first to share a question, take, or code snippet with the tech community!</p>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = discussions.map(post => {
+      const upClass = post.userVote === 1 ? 'upvoted' : '';
+      const downClass = post.userVote === -1 ? 'downvoted' : '';
+      const scoreClass = post.votes > 0 ? 'score-positive' : post.votes < 0 ? 'score-negative' : '';
+      const replyCount = (post.replies && post.replies.length) || 0;
+
+      const codeBlockHtml = post.codeSnippet ? `
+        <div class="wire-post-code">
+          <pre><code>${this.escapeHtml(post.codeSnippet)}</code></pre>
+        </div>
+      ` : '';
+
+      const tagsHtml = (post.tags || []).map(t => `<span class="wire-tag-chip">#${t}</span>`).join('');
+
+      const repliesListHtml = (post.replies || []).map(r => `
+        <div class="wire-reply-card">
+          <img src="${r.author.avatar}" class="avatar-sm" alt="${r.author.name}" />
+          <div class="wire-reply-body">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span style="font-weight: 700; font-size: 0.82rem;">${r.author.name}</span>
+              <span style="color: var(--text-muted); font-size: 0.75rem;">${r.author.handle}</span>
+            </div>
+            <div style="font-size: 0.88rem; line-height: 1.45; color: var(--text-primary);">${this.escapeHtml(r.text)}</div>
+          </div>
+        </div>
+      `).join('');
+
+      return `
+        <div class="wire-post-card" data-wirepost-id="${post.id}">
+          <!-- Reddit-style Karma Voting -->
+          <div class="wire-vote-col">
+            <button class="btn-karma-vote btn-karma-up ${upClass}" title="Upvote (Reddit Karma)" onclick="PulseUI.handleWireVote('${post.id}', 1)">▲</button>
+            <span class="wire-score ${scoreClass}">${post.votes}</span>
+            <button class="btn-karma-vote btn-karma-down ${downClass}" title="Downvote" onclick="PulseUI.handleWireVote('${post.id}', -1)">▼</button>
+          </div>
+
+          <!-- Post Content -->
+          <div class="wire-post-body">
+            <div class="wire-post-meta">
+              <img src="${post.author.avatar}" class="wire-author-avatar" alt="${post.author.name}" />
+              <span class="wire-author-name">${post.author.name}</span>
+              <span class="wire-author-handle">${post.author.handle}</span>
+              ${post.author.badge ? `<span class="wire-badge">${post.author.badge}</span>` : ''}
+              <span class="wire-domain-pill">${post.category}</span>
+            </div>
+
+            <div class="wire-post-text">${this.escapeHtml(post.text)}</div>
+            ${codeBlockHtml}
+
+            <div class="wire-tag-row">${tagsHtml}</div>
+
+            <div class="wire-actions-row">
+              <button class="wire-action-btn" onclick="PulseUI.toggleReplies('${post.id}')">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span>${replyCount} ${replyCount === 1 ? 'Reply' : 'Replies'}</span>
+              </button>
+              <button class="wire-action-btn" onclick="navigator.clipboard.writeText(location.href); PulseUI.showToast('Post link copied to clipboard!');">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+            </div>
+
+            <!-- Nested Replies Thread (Twitter / Reddit style) -->
+            <div id="replies-thread-${post.id}" class="wire-replies-thread" style="${replyCount > 0 ? 'display: flex;' : 'display: none;'}">
+              ${repliesListHtml}
+              <div class="wire-reply-input-row">
+                <input type="text" id="reply-input-${post.id}" class="wire-reply-input" placeholder="Tweet your reply or comment..." onkeydown="if(event.key==='Enter') PulseUI.submitWireReply('${post.id}')" />
+                <button class="btn btn-primary btn-sm" onclick="PulseUI.submitWireReply('${post.id}')">Reply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // ==========================================
+  // AUTOMATED LIVE TECH NEWS FEED & TICKER
+  // ==========================================
+  renderLiveNews() {
+    const container = document.getElementById('live-news-grid');
+    if (!container) return;
+
+    const newsItems = window.Store.getLiveNews();
+    if (!newsItems || newsItems.length === 0) {
+      container.innerHTML = `<div class="empty-state" style="grid-column: 1 / -1;">No live news items found.</div>`;
+      return;
+    }
+
+    container.innerHTML = newsItems.map(item => {
+      const timeAgo = this.formatRelativeTime(item.publishedAt);
+      return `
+        <div class="live-news-card">
+          <div>
+            <div class="live-news-meta-top">
+              <span class="news-domain-tag">${item.category || 'Technology'}</span>
+              <span class="news-source-tag">${item.source || item.domain}</span>
+            </div>
+            <h3 class="live-news-title">
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer">
+                ${this.escapeHtml(item.title)} ↗
+              </a>
+            </h3>
+          </div>
+          <div class="live-news-footer">
+            <span style="font-size: 0.75rem;">${timeAgo}</span>
+            <div class="live-news-metrics">
+              <span>▲ ${item.score || 0}</span>
+              <span>💬 ${item.commentsCount || 0}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  refreshLiveNews() {
+    this.renderLiveNews();
+    this.initTicker();
+    this.showToast('Live news stream updated with latest items.', 'success');
+  }
+
+  initTicker() {
+    const rotator = document.getElementById('ticker-headline-rotator');
+    if (!rotator) return;
+
+    const newsItems = window.Store.getLiveNews();
+    if (!newsItems || newsItems.length === 0) return;
+
+    if (this.tickerInterval) clearInterval(this.tickerInterval);
+
+    const updateHeadline = () => {
+      const item = newsItems[this.tickerIndex % newsItems.length];
+      rotator.innerHTML = `
+        <a href="${item.url}" target="_blank" class="ticker-item" rel="noopener noreferrer">
+          <strong>[${item.category}]</strong> ${this.escapeHtml(item.title)} — <em>${item.source || item.domain}</em> (▲ ${item.score || 0} points) ↗
+        </a>
+      `;
+      this.tickerIndex++;
+    };
+
+    updateHeadline();
+    this.tickerInterval = setInterval(updateHeadline, 5000);
+  }
+
+  formatRelativeTime(isoString) {
+    try {
+      const date = new Date(isoString);
+      const diffMs = Date.now() - date.getTime();
+      const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
+      if (diffHrs < 1) return 'Just now';
+      if (diffHrs === 1) return '1 hour ago';
+      if (diffHrs < 24) return `${diffHrs} hours ago`;
+      const diffDays = Math.floor(diffHrs / 24);
+      return `${diffDays}d ago`;
+    } catch (e) {
+      return 'Recently';
+    }
+  }
+
+  escapeHtml(str) {
+    if (!str) return '';
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
   }
 }
 

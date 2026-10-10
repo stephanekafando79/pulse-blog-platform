@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-09T21:15:53.239385+00:00
+ * Last Updated: 2026-10-09T21:25:57.193486+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "borretti.me",
-    "score": 107,
-    "commentsCount": 22,
-    "publishedAt": "2026-10-09T21:15:51.868035+00:00"
+    "score": 128,
+    "commentsCount": 24,
+    "publishedAt": "2026-10-09T21:25:55.905973+00:00"
+  },
+  {
+    "id": "hn-50026555",
+    "title": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
+    "url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
+    "domain": "gizmodo.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "gizmodo.com",
+    "score": 34,
+    "commentsCount": 1,
+    "publishedAt": "2026-10-09T21:25:56.081818+00:00"
   },
   {
     "id": "hn-50019911",
@@ -31,9 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "deno.com",
-    "score": 926,
+    "score": 934,
     "commentsCount": 122,
-    "publishedAt": "2026-10-09T21:15:52.167829+00:00"
+    "publishedAt": "2026-10-09T21:25:56.243883+00:00"
   },
   {
     "id": "hn-50022292",
@@ -47,9 +63,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "minesweeper.mikelacher.com",
-    "score": 341,
-    "commentsCount": 53,
-    "publishedAt": "2026-10-09T21:15:52.342094+00:00"
+    "score": 357,
+    "commentsCount": 55,
+    "publishedAt": "2026-10-09T21:25:56.409479+00:00"
   },
   {
     "id": "hn-50024499",
@@ -65,7 +81,7 @@ window.PULSE_LIVE_NEWS = [
     "source": "carrierexplode.com",
     "score": 127,
     "commentsCount": 10,
-    "publishedAt": "2026-10-09T21:15:52.526031+00:00"
+    "publishedAt": "2026-10-09T21:25:56.561030+00:00"
   },
   {
     "id": "hn-50020014",
@@ -79,9 +95,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "oxide.computer",
-    "score": 516,
+    "score": 521,
     "commentsCount": 35,
-    "publishedAt": "2026-10-09T21:15:52.687806+00:00"
+    "publishedAt": "2026-10-09T21:25:56.774282+00:00"
   },
   {
     "id": "hn-50023450",
@@ -95,9 +111,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "typesafe.ai",
-    "score": 170,
-    "commentsCount": 26,
-    "publishedAt": "2026-10-09T21:15:52.883057+00:00"
+    "score": 178,
+    "commentsCount": 27,
+    "publishedAt": "2026-10-09T21:25:57.019483+00:00"
   },
   {
     "id": "hn-50024571",
@@ -111,24 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "experimental-history.com",
-    "score": 61,
+    "score": 64,
     "commentsCount": 13,
-    "publishedAt": "2026-10-09T21:15:53.054544+00:00"
-  },
-  {
-    "id": "hn-50019056",
-    "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
-    "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
-    "domain": "jessewaites.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "jessewaites.com",
-    "score": 69,
-    "commentsCount": 12,
-    "publishedAt": "2026-10-09T21:15:53.238388+00:00"
+    "publishedAt": "2026-10-09T21:25:57.190495+00:00"
   }
 ];

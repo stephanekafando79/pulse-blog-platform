@@ -9,18 +9,19 @@ const STORAGE_KEYS = {
   USERS: 'pulse_users_v1',
   THEME: 'pulse_theme_v1',
   DRAFT: 'pulse_draft_v1',
-  BOOKMARKS: 'pulse_bookmarks_v1'
+  BOOKMARKS: 'pulse_bookmarks_v1',
+  DISCUSSIONS: 'pulse_discussions_v2'
 };
 
 const VERIFIED_PLATFORM_OWNER = Object.freeze({
-  id: 'user_stephane',
-  name: 'Stephane Kafando',
-  handle: '@stephanekafando79',
-  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80',
-  bio: 'Founder, Lead Architect & Platform Owner of Pulse.',
+  id: 'user_pulse_collective',
+  name: 'The Pulse Collective',
+  handle: '@pulsecollective',
+  avatar: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80',
+  bio: 'Global Tech Collective & Open IT Engineering Community.',
   isOwner: true,
-  badge: 'Platform Owner',
-  followers: 5280
+  badge: 'Verified Staff',
+  followers: 14800
 });
 
 const DEFAULT_USERS = [
@@ -227,6 +228,100 @@ Start small: test a 90-minute morning deep work block tomorrow without email or 
     views: 620,
     featured: false,
     comments: []
+  },
+  {
+    id: 'art-5',
+    title: 'Linux 6.12 Kernel & PREEMPT_RT: Real-Time Deterministic Unix is Finally Here',
+    slug: 'linux-6-12-kernel-preempt-rt-real-time',
+    excerpt: 'After two decades of development, real-time deterministic computing is officially mainlined into the core Linux kernel. Here is what it means for systems engineering.',
+    content: `## Determinism Meets the General-Purpose Kernel
+
+For decades, applications demanding microsecond-level latency guarantees had to rely on specialized RTOS kernels or custom out-of-tree patches.
+
+With Linux 6.12, \`PREEMPT_RT\` is officially mainlined:
+- **Threaded Interrupts**: Hardware interrupts run as standard prioritized kernel threads.
+- **Sleeping Spinlocks**: Low-priority locks yield without stalling high-priority real-time loops.
+- **Priority Inheritance**: Protects critical tasks against inverted priority deadlocks.
+
+\`\`\`bash
+# Checking real-time capabilities
+uname -v
+# SMP PREEMPT_RT Linux Kernel 6.12.0
+\`\`\`
+
+The boundary between industrial embedded systems and modern cloud servers is officially erased.`,
+    cover: 'https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80',
+    category: 'OS',
+    tags: ['OS', 'Linux', 'Kernel', 'Unix'],
+    author: DEFAULT_USERS[0],
+    publishedAt: '2026-10-08T09:00:00.000Z',
+    readTime: '4 min read',
+    likes: 188,
+    views: 1420,
+    featured: false,
+    comments: []
+  },
+  {
+    id: 'art-6',
+    title: 'The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers',
+    slug: 'modern-desktop-app-renaissance-moving-past-electron',
+    excerpt: 'How Tauri 2.0, Zig, and GPU-native UI toolkits are bringing lightning-fast, 10MB memory footprints back to desktop computing.',
+    content: `## Reclaiming Your Computer's RAM
+
+Why should a simple note-taking or chat tool require 800MB of RAM and a full embedded Chromium browser engine?
+
+A new wave of desktop APPs is revolutionizing performance:
+1. **Tauri 2.0 & Wry**: Reuses native operating system webviews with bare-metal Rust backends.
+2. **GPU Native Text Engines**: Ghostty and Zed rendering at locked 120 FPS.
+3. **Local-First SQLite Storage**: Sub-millisecond queries on disk without remote latency.
+
+Software craft is back in fashion.`,
+    cover: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80',
+    category: 'APPs',
+    tags: ['APPs', 'Software', 'DevTools', 'Performance'],
+    author: DEFAULT_USERS[0],
+    publishedAt: '2026-10-07T14:20:00.000Z',
+    readTime: '3 min read',
+    likes: 154,
+    views: 1190,
+    featured: false,
+    comments: []
+  },
+  {
+    id: 'art-7',
+    title: 'Zero-Trust Identity: Why Hardware Passkeys Are Replacing Passwords and SMS 2FA',
+    slug: 'zero-trust-identity-passkeys-replacing-sms-2fa',
+    excerpt: 'Phishing-resistant authentication is no longer optional. How FIDO2 cryptographic tokens eliminate credential replay attacks mechanically.',
+    content: `## Cryptographic Binding to Origin
+
+Modern reverse-proxy phishing kits effortlessly clone login interfaces and steal 6-digit SMS or authenticator codes in real time.
+
+**Passkeys solve this problem at the cryptographic protocol level:**
+- The private key stays in the secure hardware TPM / enclave.
+- The browser will only sign challenges if the exact registered domain matches the address bar.
+- Even if a user is completely fooled by a lookalike website, the hardware simply refuses to generate a valid signature.
+
+\`\`\`javascript
+// Browser WebAuthn Origin Verification
+const credential = await navigator.credentials.get({
+  publicKey: {
+    challenge: new Uint8Array([/* challenge */]),
+    rpId: "pulse.io"
+  }
+});
+\`\`\`
+
+The era of remembering passwords and typing SMS codes is coming to a close.`,
+    cover: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80',
+    category: 'Cybersecurity',
+    tags: ['Cybersecurity', 'Passkeys', 'InfoSec', 'ZeroTrust'],
+    author: DEFAULT_USERS[0],
+    publishedAt: '2026-10-06T11:00:00.000Z',
+    readTime: '4 min read',
+    likes: 210,
+    views: 1650,
+    featured: false,
+    comments: []
   }
 ];
 
@@ -242,25 +337,42 @@ class DataStore {
     if (!localStorage.getItem(STORAGE_KEYS.USERS)) {
       localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(DEFAULT_USERS));
     }
-    if (!localStorage.getItem(STORAGE_KEYS.CURRENT_USER)) {
+    const curr = this.getCurrentUser();
+    if (!curr || curr.id === 'user_stephane' || curr.id === 'user_alex') {
       localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(DEFAULT_USERS[0]));
-    } else {
-      // Ensure Stephane is the default active user if previous demo session exists
-      const curr = this.getCurrentUser();
-      if (!curr || curr.id === 'user_alex') {
-        localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(DEFAULT_USERS[0]));
-      }
     }
-    // Update users array to include Stephane as first entry
-    const existingUsers = this.getAllUsers();
-    if (!existingUsers.find(u => u.id === 'user_stephane')) {
-      existingUsers.unshift(DEFAULT_USERS[0]);
-      localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(existingUsers));
+    // Update users array to include The Pulse Collective as primary verified owner
+    let existingUsers = this.getAllUsers().filter(u => u.id !== 'user_stephane');
+    if (!existingUsers.find(u => u.id === VERIFIED_PLATFORM_OWNER.id)) {
+      existingUsers.unshift(VERIFIED_PLATFORM_OWNER);
     }
+    localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(existingUsers));
+
     if (!localStorage.getItem(STORAGE_KEYS.BOOKMARKS)) {
       localStorage.setItem(STORAGE_KEYS.BOOKMARKS, JSON.stringify(['art-1']));
     }
+    if (!localStorage.getItem(STORAGE_KEYS.DISCUSSIONS)) {
+      const initialDiscussions = window.PULSE_COMMUNITY_DISCUSSIONS || [];
+      localStorage.setItem(STORAGE_KEYS.DISCUSSIONS, JSON.stringify(initialDiscussions));
+    }
     this.syncDailyArticles();
+    this.syncCommunityDiscussions();
+  }
+
+  syncCommunityDiscussions() {
+    if (window.PULSE_COMMUNITY_DISCUSSIONS && Array.isArray(window.PULSE_COMMUNITY_DISCUSSIONS)) {
+      const current = this.getDiscussions();
+      let updated = false;
+      for (const disc of window.PULSE_COMMUNITY_DISCUSSIONS) {
+        if (!current.some(d => d.id === disc.id)) {
+          current.push(disc);
+          updated = true;
+        }
+      }
+      if (updated) {
+        localStorage.setItem(STORAGE_KEYS.DISCUSSIONS, JSON.stringify(current));
+      }
+    }
   }
 
   syncDailyArticles() {
@@ -477,6 +589,94 @@ class DataStore {
     } catch {
       return DEFAULT_USERS;
     }
+  }
+
+  // Discussions (Reddit & Twitter Style)
+  getDiscussions() {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.DISCUSSIONS);
+      return data ? JSON.parse(data) : (window.PULSE_COMMUNITY_DISCUSSIONS || []);
+    } catch {
+      return window.PULSE_COMMUNITY_DISCUSSIONS || [];
+    }
+  }
+
+  addDiscussion({ text, category, tags, codeSnippet }) {
+    const list = this.getDiscussions();
+    const currentUser = this.getCurrentUser();
+    const newPost = {
+      id: 'post-' + Date.now(),
+      author: {
+        id: currentUser.id,
+        name: currentUser.name,
+        handle: currentUser.handle,
+        avatar: currentUser.avatar,
+        badge: currentUser.badge || (currentUser.isOwner ? 'Verified Staff' : 'Member')
+      },
+      category: category || 'OS',
+      tags: tags && tags.length ? tags : [category || 'Tech'],
+      text: text.trim(),
+      codeSnippet: codeSnippet ? codeSnippet.trim() : '',
+      votes: 1,
+      userVote: 1,
+      replies: [],
+      createdAt: new Date().toISOString()
+    };
+    list.unshift(newPost);
+    localStorage.setItem(STORAGE_KEYS.DISCUSSIONS, JSON.stringify(list));
+    return newPost;
+  }
+
+  voteDiscussion(discussionId, direction) {
+    const list = this.getDiscussions();
+    const post = list.find(d => d.id === discussionId);
+    if (!post) return { votes: 0, userVote: 0 };
+
+    const currentVote = post.userVote || 0;
+    let delta = 0;
+
+    if (direction === currentVote) {
+      // Toggle off vote
+      delta = -currentVote;
+      post.userVote = 0;
+    } else {
+      delta = direction - currentVote;
+      post.userVote = direction;
+    }
+
+    post.votes = (post.votes || 0) + delta;
+    localStorage.setItem(STORAGE_KEYS.DISCUSSIONS, JSON.stringify(list));
+    return { votes: post.votes, userVote: post.userVote };
+  }
+
+  addDiscussionReply(discussionId, text) {
+    const list = this.getDiscussions();
+    const post = list.find(d => d.id === discussionId);
+    if (!post) return null;
+
+    const currentUser = this.getCurrentUser();
+    const reply = {
+      id: 'rep-' + Date.now(),
+      author: {
+        name: currentUser.name,
+        handle: currentUser.handle,
+        avatar: currentUser.avatar,
+        badge: currentUser.badge || (currentUser.isOwner ? 'Verified Staff' : 'Member')
+      },
+      text: text.trim(),
+      votes: 1,
+      createdAt: new Date().toISOString()
+    };
+
+    if (!post.replies) post.replies = [];
+    post.replies.push(reply);
+    localStorage.setItem(STORAGE_KEYS.DISCUSSIONS, JSON.stringify(list));
+    return reply;
+  }
+
+  // Live Tech News
+  getLiveNews() {
+    return window.PULSE_LIVE_NEWS || [];
   }
 
   addUser(userData) {

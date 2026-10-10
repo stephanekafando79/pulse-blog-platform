@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulse — Modern Publishing & Community Platform</title>
   <meta name="description" content="A fast, lightweight, and modern publishing platform built with native web standards. Zero build step, full markdown studio, instant search, and community discussions.">
-  <meta name="author" content="Stephane Kafando">
-  <meta name="creator" content="Stephane Kafando (@stephanekafando79)">
-  <meta name="copyright" content="© 2026 Stephane Kafando. All rights reserved.">
-  <meta property="og:site_name" content="Pulse — Created & Owned by Stephane Kafando">
+  <meta name="author" content="The Pulse Collective">
+  <meta name="creator" content="The Pulse Collective (@pulsecollective)">
+  <meta name="copyright" content="© 2026 The Pulse Collective. All rights reserved.">
+  <meta property="og:site_name" content="Pulse — Open IT & Tech Community">
   <!-- Advanced Client-Side Security Directives -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
@@ -52,8 +52,8 @@
 
         <!-- Current User Account Avatar -->
         <button class="user-menu-btn" id="user-menu-trigger" title="Switch profile or sign in" aria-label="User profile">
-          <img id="header-user-avatar" class="avatar-sm" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Profile" />
-          <span id="header-user-name" class="user-name-label">Alex</span>
+          <img id="header-user-avatar" class="avatar-sm" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=120&q=80" alt="Profile" />
+          <span id="header-user-name" class="user-name-label">Pulse Collective</span>
         </button>
       </div>
     </div>
@@ -97,14 +97,45 @@
         </div>
       </section>
 
-      <!-- Category & Sort Controls Bar -->
-      <div class="controls-bar">
+      <!-- Breaking Live Tech News Ticker -->
+      <div class="tech-ticker-bar" id="tech-ticker-bar">
+        <div class="ticker-badge"><span class="ticker-dot"></span> LIVE TECH WIRE</div>
+        <div class="ticker-content" id="ticker-headline-rotator">
+          <span class="ticker-item">⚡ Loading real-time tech news feed...</span>
+        </div>
+        <button class="ticker-action-btn" onclick="PulseUI.switchHomeMode('news')">View All News →</button>
+      </div>
+
+      <!-- Mode Switcher Tabs (In-depth Stories vs Community Wire vs Live News) -->
+      <div class="mode-switcher-container">
+        <div class="mode-tabs">
+          <button class="mode-tab active" id="tab-mode-stories" onclick="PulseUI.switchHomeMode('stories')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span>In-Depth Stories</span>
+          </button>
+          <button class="mode-tab" id="tab-mode-discussions" onclick="PulseUI.switchHomeMode('discussions')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Community Wire (Reddit / X)</span>
+            <span class="count-badge" id="wire-count-badge">4</span>
+          </button>
+          <button class="mode-tab" id="tab-mode-news" onclick="PulseUI.switchHomeMode('news')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            <span>Live Tech News</span>
+            <span class="live-dot-pulse"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Category & Sort Controls Bar (Expanded IT & Tech Domains) -->
+      <div class="controls-bar" id="controls-bar">
         <div class="category-tabs" role="tablist">
-          <button class="category-tab active" data-cat="all">All Topics</button>
-          <button class="category-tab" data-cat="Technology">Technology</button>
-          <button class="category-tab" data-cat="Design">Design</button>
-          <button class="category-tab" data-cat="AI & Engineering">AI & Engineering</button>
-          <button class="category-tab" data-cat="Productivity">Productivity</button>
+          <button class="category-tab active" data-cat="all">All IT Topics</button>
+          <button class="category-tab" data-cat="OS">OS (Linux/Win/Mac)</button>
+          <button class="category-tab" data-cat="APPs">APPs & Tools</button>
+          <button class="category-tab" data-cat="Cybersecurity">Cybersecurity</button>
+          <button class="category-tab" data-cat="AI & ML">AI & ML</button>
+          <button class="category-tab" data-cat="Dev & Cloud">Dev & Cloud</button>
+          <button class="category-tab" data-cat="Hardware">Hardware</button>
         </div>
 
         <div class="controls-right">
@@ -122,9 +153,84 @@
         <button id="clear-filter-notice-btn" class="filter-badge-clear">✕ Return to all articles</button>
       </div>
 
-      <!-- Articles Grid -->
+      <!-- 1. Stories Grid View -->
       <div class="articles-grid" id="articles-feed">
         <!-- Rendered dynamically by js/ui.js -->
+      </div>
+
+      <!-- 2. Community Tech Wire View (Reddit & Twitter / X style) -->
+      <div id="discussions-feed-container" class="discussions-view-container" style="display: none;">
+        <!-- Micro-post composer -->
+        <div class="wire-composer-card">
+          <div class="composer-header">
+            <img id="composer-user-avatar" class="avatar-sm" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=120&q=80" alt="Avatar" />
+            <span class="composer-title">Start a Tech Discussion or Post a Take</span>
+          </div>
+          <textarea id="wire-post-input" class="wire-textarea" placeholder="What's on your mind in tech? Ask an OS question, debate an app stack, or share a hot take..." maxlength="600"></textarea>
+          
+          <!-- Optional code snippet input -->
+          <div id="wire-code-container" style="display: none; margin-top: 0.5rem;">
+            <textarea id="wire-code-input" class="wire-code-textarea" placeholder="# Optional code or terminal command snippet..."></textarea>
+          </div>
+
+          <div class="composer-footer">
+            <div class="composer-options">
+              <select id="wire-post-category" class="composer-select" title="Domain">
+                <option value="OS">Domain: OS</option>
+                <option value="APPs">Domain: APPs</option>
+                <option value="Cybersecurity">Domain: Cybersecurity</option>
+                <option value="AI & ML">Domain: AI & ML</option>
+                <option value="Dev & Cloud">Domain: Dev & Cloud</option>
+                <option value="Hardware">Domain: Hardware</option>
+              </select>
+              <button type="button" class="btn btn-sm btn-ghost" id="wire-toggle-code-btn" onclick="PulseUI.toggleWireCodeBox()">
+                <code>&lt;/&gt; Code</code>
+              </button>
+              <input type="text" id="wire-post-tags" class="composer-tags-input" placeholder="Tags (e.g. Linux, Kernel)" />
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span id="wire-char-count" class="char-count">600</span>
+              <button class="btn btn-primary btn-sm" id="btn-post-wire" onclick="PulseUI.submitWirePost()">Post to Wire</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter tabs for discussions (Hot / Top / New) -->
+        <div class="wire-sort-bar">
+          <div class="wire-subtabs">
+            <button class="wire-subtab active" data-wiresort="hot" onclick="PulseUI.setWireSort('hot')">🔥 Hot Discussions</button>
+            <button class="wire-subtab" data-wiresort="top" onclick="PulseUI.setWireSort('top')">▲ Top Voted (Reddit Karma)</button>
+            <button class="wire-subtab" data-wiresort="new" onclick="PulseUI.setWireSort('new')">⚡ Newest Takes</button>
+          </div>
+        </div>
+
+        <!-- Discussions Stream List -->
+        <div id="discussions-list" class="discussions-stream">
+          <!-- Rendered dynamically by js/ui.js -->
+        </div>
+      </div>
+
+      <!-- 3. Automated Live Tech News View -->
+      <div id="live-news-feed-container" class="live-news-view-container" style="display: none;">
+        <div class="live-news-header-card">
+          <div>
+            <h2 style="font-size: 1.35rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="live-dot-pulse"></span>
+              Live IT & Technology News Feed
+            </h2>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">
+              Automated feed covering OS, APPs, Cybersecurity, AI, Cloud, and Hardware releases. Updated daily via GitHub Actions.
+            </p>
+          </div>
+          <button class="btn btn-secondary btn-sm" onclick="PulseUI.refreshLiveNews()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            Refresh Feed
+          </button>
+        </div>
+
+        <div id="live-news-grid" class="live-news-grid">
+          <!-- Rendered dynamically by js/ui.js -->
+        </div>
       </div>
     </div>
 
@@ -164,9 +270,14 @@
             <div class="form-group">
               <label class="form-label" for="editor-category">Category</label>
               <select id="editor-category" class="form-input">
-                <option value="Technology">Technology</option>
-                <option value="Design">Design</option>
-                <option value="AI & Engineering">AI & Engineering</option>
+                <option value="OS">OS (Linux, Windows, macOS)</option>
+                <option value="APPs">APPs & Software</option>
+                <option value="Cybersecurity">Cybersecurity & Privacy</option>
+                <option value="AI & ML">AI & Machine Learning</option>
+                <option value="Dev & Cloud">Dev & Cloud Computing</option>
+                <option value="Hardware">Hardware & Chips</option>
+                <option value="Technology">Technology (General)</option>
+                <option value="Design">Design & UI/UX</option>
                 <option value="Productivity">Productivity</option>
               </select>
             </div>
@@ -275,15 +386,17 @@
         <a href="javascript:void(0)" onclick="if(confirm('Reset all sample data and articles back to initial state?')) { window.Store.resetAll(); location.reload(); }">Reset Demo Data</a>
       </div>
       <div style="font-size: 0.85rem; color: var(--text-secondary); text-align: center;">
-        <div>© 2026 <strong>Stephane Kafando</strong> (<a href="https://github.com/stephanekafando79" target="_blank" style="color: var(--accent); font-weight: 600;">@stephanekafando79</a>). All Rights Reserved.</div>
+        <div>© 2026 <strong>The Pulse Collective</strong> (<span style="color: var(--accent); font-weight: 600;">@pulsecollective</span>). All Rights Reserved.</div>
         <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">
-          Verified Original Author & Platform Owner • Protected by International Copyright Law
+          Verified Open Technology & Engineering Collective • Distributed Global News & Tech Wire
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
+  <script src="data/live_news.js"></script>
+  <script src="data/discussions.js"></script>
   <script src="data/articles.js"></script>
   <script src="js/store.js"></script>
   <script src="js/editor.js"></script>

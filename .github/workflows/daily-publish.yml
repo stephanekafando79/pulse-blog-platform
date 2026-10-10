@@ -31,8 +31,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config user.name "Stephane Kafando (Pulse Bot)"
-          git config user.email "stephanekafando79@gmail.com"
+          git config user.name "The Pulse Collective (Pulse Bot)"
+          git config user.email "bot@pulsecollective.dev"
           git add data/
           if git diff --staged --quiet; then
             echo "No changes to commit (today's story already published)."
