@@ -1,35 +1,19 @@
 [
   {
-    "id": "hn-50025935",
-    "title": "No Man Is an Island",
-    "url": "https://borretti.me/article/no-man-is-an-island",
-    "domain": "borretti.me",
+    "id": "hn-50028275",
+    "title": "REA Reverse – Engineer Anything",
+    "url": "https://rea.tools/",
+    "domain": "rea.tools",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "borretti.me",
-    "score": 128,
-    "commentsCount": 24,
-    "publishedAt": "2026-10-09T21:25:55.905973+00:00"
-  },
-  {
-    "id": "hn-50026555",
-    "title": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
-    "url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
-    "domain": "gizmodo.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "gizmodo.com",
-    "score": 34,
-    "commentsCount": 1,
-    "publishedAt": "2026-10-09T21:25:56.081818+00:00"
+    "source": "rea.tools",
+    "score": 203,
+    "commentsCount": 17,
+    "publishedAt": "2026-10-10T04:31:32.371685+00:00"
   },
   {
     "id": "hn-50019911",
@@ -43,9 +27,9 @@
       "TechNews"
     ],
     "source": "deno.com",
-    "score": 934,
-    "commentsCount": 122,
-    "publishedAt": "2026-10-09T21:25:56.243883+00:00"
+    "score": 1118,
+    "commentsCount": 136,
+    "publishedAt": "2026-10-10T04:31:32.520553+00:00"
   },
   {
     "id": "hn-50022292",
@@ -59,9 +43,41 @@
       "TechNews"
     ],
     "source": "minesweeper.mikelacher.com",
-    "score": 357,
-    "commentsCount": 55,
-    "publishedAt": "2026-10-09T21:25:56.409479+00:00"
+    "score": 766,
+    "commentsCount": 95,
+    "publishedAt": "2026-10-10T04:31:32.665000+00:00"
+  },
+  {
+    "id": "hn-49997481",
+    "title": "Eye of Sauron: Long-Range Hidden Spy Camera Detection",
+    "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-qibo",
+    "domain": "usenix.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "usenix.org",
+    "score": 43,
+    "commentsCount": 6,
+    "publishedAt": "2026-10-10T04:31:32.836072+00:00"
+  },
+  {
+    "id": "hn-50021410",
+    "title": "Can you use autoregressive diffusion to generate market data?",
+    "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/",
+    "domain": "blog.janestreet.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "blog.janestreet.com",
+    "score": 39,
+    "commentsCount": 5,
+    "publishedAt": "2026-10-10T04:31:32.996888+00:00"
   },
   {
     "id": "hn-50024499",
@@ -75,25 +91,9 @@
       "TechNews"
     ],
     "source": "carrierexplode.com",
-    "score": 127,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-09T21:25:56.561030+00:00"
-  },
-  {
-    "id": "hn-50020014",
-    "title": "Our $445M Series D",
-    "url": "https://oxide.computer/blog/our-445m-series-d",
-    "domain": "oxide.computer",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "oxide.computer",
-    "score": 521,
-    "commentsCount": 35,
-    "publishedAt": "2026-10-09T21:25:56.774282+00:00"
+    "score": 241,
+    "commentsCount": 17,
+    "publishedAt": "2026-10-10T04:31:33.186399+00:00"
   },
   {
     "id": "hn-50023450",
@@ -107,24 +107,24 @@
       "TechNews"
     ],
     "source": "typesafe.ai",
-    "score": 178,
-    "commentsCount": 27,
-    "publishedAt": "2026-10-09T21:25:57.019483+00:00"
+    "score": 306,
+    "commentsCount": 36,
+    "publishedAt": "2026-10-10T04:31:33.358389+00:00"
   },
   {
-    "id": "hn-50024571",
-    "title": "Ideas aren't getting harder to find, anyone who tells you otherwise is a coward",
-    "url": "https://www.experimental-history.com/p/ideas-arent-getting-harder-to-find",
-    "domain": "experimental-history.com",
+    "id": "hn-50027853",
+    "title": "Compiling Rust to readable C with Eurydice",
+    "url": "https://lwn.net/Articles/1055211/",
+    "domain": "lwn.net",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "experimental-history.com",
-    "score": 64,
-    "commentsCount": 13,
-    "publishedAt": "2026-10-09T21:25:57.190495+00:00"
+    "source": "lwn.net",
+    "score": 38,
+    "commentsCount": 3,
+    "publishedAt": "2026-10-10T04:31:33.569918+00:00"
   }
 ]
