@@ -1,8 +1,54 @@
 /**
  * Pulse Auto-Generated Daily Articles
- * Last Updated: 2026-10-11T14:49:11.170274+00:00
+ * Last Updated: 2026-10-12T17:38:58.620604+00:00
  */
 window.PULSE_DAILY_ARTICLES = [
+  {
+    "id": "daily-2026-10-12",
+    "title": "Daily Pulse: The Death of SMS 2FA: Why Hardware Passkeys Are Now Non-Negotiable",
+    "slug": "daily-pulse-2026-10-12-the-death-of-sms-2fa-why-hard",
+    "excerpt": "Daily edition for October 12, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Cybersecurity.",
+    "content": "# Daily Pulse: The Death of SMS 2FA: Why Hardware Passkeys Are Now Non-Negotiable\n\n*Published on October 12, 2026 by Marcus Chen*\n\n## Phishing-Resistant Authentication in Modern IT\n\nTraditional authentication methods—passwords combined with SMS verification codes or authenticator app 6-digit OTPs—are increasingly compromised by modern reverse-proxy phishing kits (like Evilginx).\n\nThese kits intercept the OTP token in real time and replay it against legitimate authentication endpoints.\n\n### Why FIDO2 / Passkeys Solve Phishing Mechanically:\nPasskeys are cryptographically bound to the specific domain (Origin) in the browser URL bar:\n- If a user is tricked into visiting `auth.fake-domain.com`, the browser's cryptographic module will **refuse** to sign the authentication challenge because the domain does not match the registered origin.\n- The private key never leaves the device's Secure Enclave / TPM hardware.\n\n```javascript\n// Native WebAuthn Passkey Registration\nconst credential = await navigator.credentials.create({\n  publicKey: {\n    challenge: new Uint8Array([/* server random bytes */]),\n    rp: { name: \"Pulse Platform\", id: \"pulse.io\" },\n    user: {\n      id: Uint8Array.from(\"user_id\", c => c.charCodeAt(0)),\n      name: \"developer@pulse.io\",\n      displayName: \"Dev Lead\"\n    },\n    pubKeyCredParams: [{ alg: -7, type: \"public-key\" }], // ES256\n    authenticatorSelection: {\n      residentKey: \"required\",\n      userVerification: \"preferred\"\n    }\n  }\n});\n```\n\nMigrating internal enterprise systems and personal accounts to hardware passkeys eliminates credential theft at the network layer.",
+    "cover": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "Passkeys",
+      "FIDO2",
+      "ZeroTrust",
+      "InfoSec",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_marcus",
+      "name": "Marcus Chen",
+      "handle": "@marcuschen_ai",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "bio": "Cybersecurity & Edge AI Researcher."
+    },
+    "publishedAt": "2026-10-12T17:38:58.620164+00:00",
+    "readTime": "3 min read",
+    "likes": 57,
+    "views": 439,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-12-1",
+        "author": {
+          "id": "user_pulse_collective",
+          "name": "The Pulse Collective",
+          "handle": "@pulsecollective",
+          "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80",
+          "bio": "Global Tech Collective & Open IT Engineering Community."
+        },
+        "text": "Crucial insights on Cybersecurity. High-signal perspective for IT and engineering teams.",
+        "createdAt": "2026-10-12T17:38:58.620182+00:00",
+        "likes": 9
+      }
+    ]
+  },
   {
     "id": "daily-2026-10-11",
     "title": "Daily Pulse: The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers",
@@ -31,7 +77,7 @@ window.PULSE_DAILY_ARTICLES = [
     "readTime": "3 min read",
     "likes": 29,
     "views": 490,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
