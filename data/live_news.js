@@ -1,118 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-12T17:38:58.619794+00:00
+ * Last Updated: 2026-10-13T15:47:31.694211+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50058507",
-    "title": "GLM-Legal",
-    "url": "https://z.ai/blog/glm-legal",
-    "domain": "z.ai",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "z.ai",
-    "score": 140,
-    "commentsCount": 20,
-    "publishedAt": "2026-10-12T17:38:57.650994+00:00"
-  },
-  {
-    "id": "hn-50058528",
-    "title": "A Modern Web App in C",
-    "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
-    "domain": "prophitt.me",
+    "id": "hn-50071017",
+    "title": "Apple HomeView",
+    "url": "https://www.apple.com/apple-homeview/",
+    "domain": "apple.com",
     "category": "APPs",
     "tags": [
       "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "prophitt.me",
-    "score": 77,
-    "commentsCount": 15,
-    "publishedAt": "2026-10-12T17:38:57.752828+00:00"
+    "source": "apple.com",
+    "score": 299,
+    "commentsCount": 130,
+    "publishedAt": "2026-10-13T15:47:30.091070+00:00"
   },
   {
-    "id": "hn-50059204",
-    "title": "Thinking Will Become a Hobby",
-    "url": "https://www.spinellis.gr/blog/20261008/?li261008",
-    "domain": "spinellis.gr",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "spinellis.gr",
-    "score": 14,
-    "commentsCount": 0,
-    "publishedAt": "2026-10-12T17:38:57.951197+00:00"
-  },
-  {
-    "id": "hn-50036287",
-    "title": "The Making Of Super Mario 64 – full Giles Goddard interview (2001)",
-    "url": "https://pixelatron.com/blog/the-making-of-super-mario-64-full-giles-goddard-interview-ngc/",
-    "domain": "pixelatron.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "pixelatron.com",
-    "score": 156,
-    "commentsCount": 17,
-    "publishedAt": "2026-10-12T17:38:58.057317+00:00"
-  },
-  {
-    "id": "hn-50059523",
-    "title": "AI coding agents generate more code, but not more software",
-    "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-    "domain": "arstechnica.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "arstechnica.com",
-    "score": 5,
-    "commentsCount": 1,
-    "publishedAt": "2026-10-12T17:38:58.260199+00:00"
-  },
-  {
-    "id": "hn-50055593",
-    "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
-    "url": "https://github.com/h0m3us3r/w1700k-sdr",
+    "id": "hn-50069499",
+    "title": "11 year old unsoundness bugs found in Rust borrow checker",
+    "url": "https://github.com/rust-lang/rust/issues/164250",
     "domain": "github.com",
-    "category": "APPs",
+    "category": "Technology",
     "tags": [
-      "APPs",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
     "source": "github.com",
-    "score": 67,
-    "commentsCount": 8,
-    "publishedAt": "2026-10-12T17:38:58.417759+00:00"
+    "score": 461,
+    "commentsCount": 31,
+    "publishedAt": "2026-10-13T15:47:30.202929+00:00"
   },
   {
-    "id": "hn-50057668",
-    "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
-    "url": "https://taylor.town/kk-ai-2026",
-    "domain": "taylor.town",
+    "id": "hn-50069971",
+    "title": "We turned EmbeddingGemma 2 into a speech-to-text model",
+    "url": "https://eg2.haku.sh/",
+    "domain": "eg2.haku.sh",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "taylor.town",
-    "score": 20,
-    "commentsCount": 3,
-    "publishedAt": "2026-10-12T17:38:58.619407+00:00"
+    "source": "eg2.haku.sh",
+    "score": 259,
+    "commentsCount": 26,
+    "publishedAt": "2026-10-13T15:47:30.313520+00:00"
+  },
+  {
+    "id": "hn-50070593",
+    "title": "A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+    "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+    "domain": "machinelearning.apple.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "machinelearning.apple.com",
+    "score": 139,
+    "commentsCount": 26,
+    "publishedAt": "2026-10-13T15:47:30.423021+00:00"
+  },
+  {
+    "id": "hn-50071310",
+    "title": "New Apple TV 4K",
+    "url": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
+    "domain": "apple.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "apple.com",
+    "score": 78,
+    "commentsCount": 45,
+    "publishedAt": "2026-10-13T15:47:31.038079+00:00"
+  },
+  {
+    "id": "hn-50073221",
+    "title": "I posted to HN, and then my website was flooded with AI BOT traffic",
+    "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+    "domain": "sammystraus.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "sammystraus.com",
+    "score": 10,
+    "commentsCount": 2,
+    "publishedAt": "2026-10-13T15:47:31.320070+00:00"
+  },
+  {
+    "id": "hn-50073455",
+    "title": "Now That Information Is Free, What's a College Campus For?",
+    "url": "https://commonedge.org/now-that-information-is-free-whats-a-college-campus-for/",
+    "domain": "commonedge.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "commonedge.org",
+    "score": 6,
+    "commentsCount": 1,
+    "publishedAt": "2026-10-13T15:47:31.563974+00:00"
+  },
+  {
+    "id": "hn-50070287",
+    "title": "A Visual Intro to Complex Numbers",
+    "url": "https://photonlines.substack.com/p/a-visual-intro-to-complex-numbers",
+    "domain": "photonlines.substack.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "photonlines.substack.com",
+    "score": 57,
+    "commentsCount": 17,
+    "publishedAt": "2026-10-13T15:47:31.693711+00:00"
   }
 ];
