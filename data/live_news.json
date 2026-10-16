@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50102923",
-    "title": "Libreboot 26.10 \"Ominous Olive\" released with UEFI, Chromebook support",
-    "url": "https://libreboot.org/news/libreboot2610.html",
-    "domain": "libreboot.org",
+    "id": "hn-50077225",
+    "title": "Yet another way to invoke functions without parentheses",
+    "url": "https://blog.ikaes.de/yet-another-way-to-invoke-functions-without-parentheses/",
+    "domain": "blog.ikaes.de",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "libreboot.org",
-    "score": 25,
-    "commentsCount": 0,
-    "publishedAt": "2026-10-15T13:14:24.860233+00:00"
+    "source": "blog.ikaes.de",
+    "score": 123,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-16T13:07:51.066581+00:00"
   },
   {
-    "id": "hn-50102247",
-    "title": "Show HN: Unfenced – Land for sale that borders public land",
-    "url": "https://unfenced.land/",
-    "domain": "unfenced.land",
+    "id": "hn-50065859",
+    "title": "Woman who rescued injured crow keeps getting 'thank-you gifts' from birds [video]",
+    "url": "https://www.youtube.com/watch?v=sjNpfz4UzqU",
+    "domain": "youtube.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "unfenced.land",
-    "score": 44,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-15T13:14:24.945666+00:00"
+    "source": "youtube.com",
+    "score": 501,
+    "commentsCount": 34,
+    "publishedAt": "2026-10-16T13:07:51.171759+00:00"
   },
   {
-    "id": "hn-50093568",
-    "title": "Things to know when you get cancer",
-    "url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
-    "domain": "jjmaxwell4.com",
+    "id": "hn-50111852",
+    "title": "Meta’s new commercial terms will allow the scraping of news sites: experts",
+    "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
+    "domain": "niemanlab.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "jjmaxwell4.com",
-    "score": 1607,
-    "commentsCount": 108,
-    "publishedAt": "2026-10-15T13:14:25.027754+00:00"
+    "source": "niemanlab.org",
+    "score": 372,
+    "commentsCount": 38,
+    "publishedAt": "2026-10-16T13:07:51.327719+00:00"
   },
   {
-    "id": "hn-50070625",
-    "title": "Wanted to download an ISO, ended up writing a kernel exploit",
-    "url": "https://blog.dfb.sh/blog/eap770-root-for-two-zeros/",
-    "domain": "blog.dfb.sh",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.dfb.sh",
-    "score": 198,
-    "commentsCount": 19,
-    "publishedAt": "2026-10-15T13:14:25.107961+00:00"
-  },
-  {
-    "id": "hn-50103000",
-    "title": "Israeli firm's digital ads enabling installation of 'zero-click' spyware",
-    "url": "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say",
-    "domain": "theguardian.com",
+    "id": "hn-50084790",
+    "title": "The Economic Complexity of the Western Roman Empire",
+    "url": "https://www.michelecoscia.com/?p=2613",
+    "domain": "michelecoscia.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "theguardian.com",
-    "score": 30,
-    "commentsCount": 3,
-    "publishedAt": "2026-10-15T13:14:25.188872+00:00"
-  },
-  {
-    "id": "hn-50094994",
-    "title": "OpenCode 2.0",
-    "url": "https://anoma.ly/notes/opencode-2-0/",
-    "domain": "anoma.ly",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "anoma.ly",
-    "score": 711,
-    "commentsCount": 94,
-    "publishedAt": "2026-10-15T13:14:25.274684+00:00"
-  },
-  {
-    "id": "hn-50079701",
-    "title": "The First Social Network: In rural Argentina residents send messages w AM radio",
-    "url": "https://www.newyorker.com/magazine/2026/10/19/the-first-social-network",
-    "domain": "newyorker.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "newyorker.com",
+    "source": "michelecoscia.com",
     "score": 66,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-15T13:14:25.365595+00:00"
+    "commentsCount": 6,
+    "publishedAt": "2026-10-16T13:07:51.459403+00:00"
   },
   {
-    "id": "hn-50096142",
-    "title": "Tiny Little Office",
-    "url": "https://tinylittleoffice.com/",
-    "domain": "tinylittleoffice.com",
+    "id": "hn-50107379",
+    "title": "Muse Spark Open",
+    "url": "https://research.meta.ai/blog/muse-spark-open",
+    "domain": "research.meta.ai",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "tinylittleoffice.com",
-    "score": 516,
-    "commentsCount": 41,
-    "publishedAt": "2026-10-15T13:14:25.443974+00:00"
+    "source": "research.meta.ai",
+    "score": 855,
+    "commentsCount": 89,
+    "publishedAt": "2026-10-16T13:07:51.590726+00:00"
+  },
+  {
+    "id": "hn-50117746",
+    "title": "I Love Software Rendering",
+    "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
+    "domain": "jamesfmackenzie.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "jamesfmackenzie.com",
+    "score": 4,
+    "commentsCount": 0,
+    "publishedAt": "2026-10-16T13:07:51.741480+00:00"
+  },
+  {
+    "id": "hn-50072485",
+    "title": "Two-Stack Sliding-Window Aggregation",
+    "url": "https://orlp.net/blog/two-stack-sliding-window-aggregation/",
+    "domain": "orlp.net",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "orlp.net",
+    "score": 65,
+    "commentsCount": 5,
+    "publishedAt": "2026-10-16T13:07:51.893629+00:00"
+  },
+  {
+    "id": "hn-50105647",
+    "title": "Neural networks are clean",
+    "url": "https://already-clean.goodfire.com/",
+    "domain": "already-clean.goodfire.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "already-clean.goodfire.com",
+    "score": 743,
+    "commentsCount": 60,
+    "publishedAt": "2026-10-16T13:07:52.053514+00:00"
   }
 ]
