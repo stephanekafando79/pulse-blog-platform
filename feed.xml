@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pulse — Tech Publishing &amp; Community Platform</title>
+    <link>https://stephanekafando79.github.io/pulse-blog-platform/</link>
+    <description>Curated high-signal engineering, OS, applications, and cybersecurity publication.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Oct 2026 19:13:25 GMT</lastBuildDate>
+    <atom:link href="https://stephanekafando79.github.io/pulse-blog-platform/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Pulse: The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers</title>
+      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-17</link>
+      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-17</guid>
+      <category>APPs</category>
+      <description>Daily edition for October 17, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in APPs.</description>
+      <pubDate>Sat, 17 Oct 2026 19:13:25 GMT</pubDate>
+    </item>
+    <item>
+      <title>Daily Pulse: Modern Windows Architecture: How Microsoft is Rewriting Core Subsystems in Rust</title>
+      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-10</link>
+      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-10</guid>
+      <category>OS</category>
+      <description>Daily edition for October 10, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in OS.</description>
+      <pubDate>Sat, 17 Oct 2026 19:13:25 GMT</pubDate>
+    </item>
+    <item>
+      <title>Daily Pulse: Linux 6.12 Kernel &amp; PREEMPT_RT: The Evolution of Real-Time Unix Systems</title>
+      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-09</link>
+      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-09</guid>
+      <category>OS</category>
+      <description>Daily edition for October 09, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in OS.</description>
+      <pubDate>Sat, 17 Oct 2026 19:13:25 GMT</pubDate>
+    </item>
+    <item>
+      <title>Daily Pulse: The 4-Hour Maker Block: Engineering Deep Work for High Output</title>
+      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-02</link>
+      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-10-02</guid>
+      <category>Productivity</category>
+      <description>Daily edition for October 02, 2026: Exploring practical insights, modern techniques, and takeaways in productivity.</description>
+      <pubDate>Sat, 17 Oct 2026 19:13:25 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

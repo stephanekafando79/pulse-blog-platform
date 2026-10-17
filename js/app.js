@@ -13,7 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEditorActions();
   setupAuthDialogEvents();
   setupHashRouting();
+  registerServiceWorker();
 });
+
+// Register Progressive Web App Service Worker
+function registerServiceWorker() {
+  if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register('./sw.js').then((reg) => {
+      console.log('[Pulse PWA] Service Worker registered:', reg.scope);
+    }).catch((err) => {
+      console.log('[Pulse PWA] Service Worker registration note:', err);
+    });
+  }
+}
 
 // Setup Hash Routing (SPA feel with browser back/forward)
 function setupHashRouting() {

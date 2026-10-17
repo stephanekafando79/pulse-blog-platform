@@ -276,6 +276,46 @@ def save_articles(articles):
     with open(ARTICLES_JS_PATH, "w", encoding="utf-8") as f:
         f.write(js_content)
 
+    generate_rss_feed(articles)
+
+def generate_rss_feed(articles):
+    """Generates standard RSS 2.0 XML feed for feed readers (Feedly, NetNewsWire, Slack)"""
+    rss_path = os.path.join(BASE_DIR, "feed.xml")
+    build_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+    
+    items_xml = []
+    for a in articles[:15]:
+        title = a.get("title", "Pulse Story").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        excerpt = a.get("excerpt", "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        link = f"https://stephanekafando79.github.io/pulse-blog-platform/#/article/{a.get('id', '')}"
+        category = a.get("category", "Technology")
+        items_xml.append(f"""    <item>
+      <title>{title}</title>
+      <link>{link}</link>
+      <guid isPermaLink="true">{link}</guid>
+      <category>{category}</category>
+      <description>{excerpt}</description>
+      <pubDate>{build_date}</pubDate>
+    </item>""")
+
+    items_block = "\n".join(items_xml)
+    rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pulse — Tech Publishing &amp; Community Platform</title>
+    <link>https://stephanekafando79.github.io/pulse-blog-platform/</link>
+    <description>Curated high-signal engineering, OS, applications, and cybersecurity publication.</description>
+    <language>en-us</language>
+    <lastBuildDate>{build_date}</lastBuildDate>
+    <atom:link href="https://stephanekafando79.github.io/pulse-blog-platform/feed.xml" rel="self" type="application/rss+xml" />
+{items_block}
+  </channel>
+</rss>
+"""
+    with open(rss_path, "w", encoding="utf-8") as f:
+        f.write(rss_content)
+    print(f"  [✓] Standard RSS feed updated: {rss_path}")
+
 def fetch_and_update_live_news():
     """Fetches real-time tech news from public APIs or keeps curated live tech news feed updated"""
     print("[*] Fetching and aggregating latest live tech news...")
