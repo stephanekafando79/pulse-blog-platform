@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50029630",
-    "title": "Lobbying",
-    "url": "https://geohot.github.io//blog/jekyll/update/2026/10/10/lobbying.html",
-    "domain": "blog",
-    "category": "Technology",
+    "id": "hn-50132950",
+    "title": "Development statistics for the 7.2 kernel",
+    "url": "https://lwn.net/Articles/1088776/",
+    "domain": "lwn.net",
+    "category": "OS",
     "tags": [
-      "Technology",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "blog",
-    "score": 78,
+    "source": "lwn.net",
+    "score": 83,
     "commentsCount": 9,
-    "publishedAt": "2026-10-10T05:15:35.634850+00:00"
+    "publishedAt": "2026-10-17T19:13:24.428279+00:00"
   },
   {
-    "id": "hn-50028275",
-    "title": "REA Reverse – Engineer Anything",
-    "url": "https://rea.tools/",
-    "domain": "rea.tools",
+    "id": "hn-50126253",
+    "title": "Bleached corals thrive within days when touching healthy neighbour",
+    "url": "https://www.nature.com/articles/d41586-026-03266-x",
+    "domain": "nature.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "rea.tools",
-    "score": 230,
-    "commentsCount": 19,
-    "publishedAt": "2026-10-10T05:15:35.793289+00:00"
+    "source": "nature.com",
+    "score": 23,
+    "commentsCount": 0,
+    "publishedAt": "2026-10-17T19:13:24.577685+00:00"
   },
   {
-    "id": "hn-50019911",
-    "title": "Cloudflare acquires Deno",
-    "url": "https://deno.com/blog/cloudflare",
-    "domain": "deno.com",
-    "category": "Dev & Cloud",
+    "id": "hn-50100366",
+    "title": "The Commodore 64 hardware simulator: break chips and pins, see the results",
+    "url": "https://github.com/antirez/c64-hw-simulator",
+    "domain": "github.com",
+    "category": "Hardware",
     "tags": [
-      "Dev & Cloud",
+      "Hardware",
       "Breaking",
       "TechNews"
     ],
-    "source": "deno.com",
-    "score": 1131,
-    "commentsCount": 137,
-    "publishedAt": "2026-10-10T05:15:35.985775+00:00"
+    "source": "github.com",
+    "score": 43,
+    "commentsCount": 6,
+    "publishedAt": "2026-10-17T19:13:24.726629+00:00"
   },
   {
-    "id": "hn-50022292",
-    "title": "Triple-A Minesweeper",
-    "url": "https://minesweeper.mikelacher.com/",
-    "domain": "minesweeper.mikelacher.com",
+    "id": "hn-50100994",
+    "title": "Furifont, a Japanese font that shows furigana",
+    "url": "https://furifont.antfu.me/",
+    "domain": "furifont.antfu.me",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "minesweeper.mikelacher.com",
-    "score": 790,
-    "commentsCount": 97,
-    "publishedAt": "2026-10-10T05:15:36.156053+00:00"
+    "source": "furifont.antfu.me",
+    "score": 109,
+    "commentsCount": 11,
+    "publishedAt": "2026-10-17T19:13:24.884629+00:00"
   },
   {
-    "id": "hn-49997481",
-    "title": "Eye of Sauron: Long-Range Hidden Spy Camera Detection",
-    "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-qibo",
-    "domain": "usenix.org",
+    "id": "hn-50131213",
+    "title": "Making chicken transparent using Dorito dust",
+    "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
+    "domain": "chillphysicsenjoyer.substack.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "usenix.org",
-    "score": 67,
-    "commentsCount": 7,
-    "publishedAt": "2026-10-10T05:15:36.329327+00:00"
+    "source": "chillphysicsenjoyer.substack.com",
+    "score": 185,
+    "commentsCount": 21,
+    "publishedAt": "2026-10-17T19:13:25.064708+00:00"
   },
   {
-    "id": "hn-50029123",
-    "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
-    "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
-    "domain": "beaksec.github.io",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "beaksec.github.io",
-    "score": 26,
-    "commentsCount": 4,
-    "publishedAt": "2026-10-10T05:15:36.488985+00:00"
-  },
-  {
-    "id": "hn-50021410",
-    "title": "Can you use autoregressive diffusion to generate market data?",
-    "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/",
-    "domain": "blog.janestreet.com",
+    "id": "hn-50129045",
+    "title": "DeepSeek-v4.1-Flash-1017",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "domain": "huggingface.co",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "blog.janestreet.com",
-    "score": 45,
-    "commentsCount": 7,
-    "publishedAt": "2026-10-10T05:15:36.653654+00:00"
+    "source": "huggingface.co",
+    "score": 506,
+    "commentsCount": 71,
+    "publishedAt": "2026-10-17T19:13:25.242826+00:00"
   },
   {
-    "id": "hn-50024499",
-    "title": "Show HN: Carrier-Explode: iPhone, Pixel and Galaxy carrier settings decoded",
-    "url": "https://carrierexplode.com/",
-    "domain": "carrierexplode.com",
+    "id": "hn-50132870",
+    "title": "Gold is now the top U.S. export",
+    "url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
+    "domain": "numismaticnews.net",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "carrierexplode.com",
-    "score": 254,
-    "commentsCount": 17,
-    "publishedAt": "2026-10-10T05:15:36.799964+00:00"
+    "source": "numismaticnews.net",
+    "score": 22,
+    "commentsCount": 2,
+    "publishedAt": "2026-10-17T19:13:25.393832+00:00"
+  },
+  {
+    "id": "hn-50132911",
+    "title": "tsc-ts: TypeScript written in TypeScript",
+    "url": "https://github.com/vercel-labs/tsc-ts",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 18,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-17T19:13:25.629226+00:00"
   }
 ]
