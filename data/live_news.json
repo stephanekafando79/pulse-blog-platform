@@ -1,130 +1,114 @@
 [
   {
-    "id": "hn-50077225",
-    "title": "Yet another way to invoke functions without parentheses",
-    "url": "https://blog.ikaes.de/yet-another-way-to-invoke-functions-without-parentheses/",
-    "domain": "blog.ikaes.de",
+    "id": "hn-50129121",
+    "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+    "domain": "openrouter.ai",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "blog.ikaes.de",
-    "score": 123,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-16T13:07:51.066581+00:00"
+    "source": "openrouter.ai",
+    "score": 240,
+    "commentsCount": 18,
+    "publishedAt": "2026-10-17T12:04:00.512945+00:00"
   },
   {
-    "id": "hn-50065859",
-    "title": "Woman who rescued injured crow keeps getting 'thank-you gifts' from birds [video]",
-    "url": "https://www.youtube.com/watch?v=sjNpfz4UzqU",
-    "domain": "youtube.com",
+    "id": "hn-50106747",
+    "title": "Ultramarine 1 Flash",
+    "url": "https://www.paperinstruments.com/ultramarine",
+    "domain": "paperinstruments.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "youtube.com",
-    "score": 501,
-    "commentsCount": 34,
-    "publishedAt": "2026-10-16T13:07:51.171759+00:00"
+    "source": "paperinstruments.com",
+    "score": 269,
+    "commentsCount": 25,
+    "publishedAt": "2026-10-17T12:04:00.603350+00:00"
   },
   {
-    "id": "hn-50111852",
-    "title": "Meta’s new commercial terms will allow the scraping of news sites: experts",
-    "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
-    "domain": "niemanlab.org",
+    "id": "hn-50112657",
+    "title": "Tesla Roadster",
+    "url": "https://www.tesla.com/roadster",
+    "domain": "tesla.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "niemanlab.org",
-    "score": 372,
-    "commentsCount": 38,
-    "publishedAt": "2026-10-16T13:07:51.327719+00:00"
+    "source": "tesla.com",
+    "score": 1463,
+    "commentsCount": 409,
+    "publishedAt": "2026-10-17T12:04:00.682926+00:00"
   },
   {
-    "id": "hn-50084790",
-    "title": "The Economic Complexity of the Western Roman Empire",
-    "url": "https://www.michelecoscia.com/?p=2613",
-    "domain": "michelecoscia.com",
+    "id": "hn-50100440",
+    "title": "We Still Use Paper",
+    "url": "https://humanpro.co/articles/we-still-use-paper/",
+    "domain": "humanpro.co",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "michelecoscia.com",
-    "score": 66,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-16T13:07:51.459403+00:00"
+    "source": "humanpro.co",
+    "score": 26,
+    "commentsCount": 8,
+    "publishedAt": "2026-10-17T12:04:00.765582+00:00"
   },
   {
-    "id": "hn-50107379",
-    "title": "Muse Spark Open",
-    "url": "https://research.meta.ai/blog/muse-spark-open",
-    "domain": "research.meta.ai",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "research.meta.ai",
-    "score": 855,
-    "commentsCount": 89,
-    "publishedAt": "2026-10-16T13:07:51.590726+00:00"
-  },
-  {
-    "id": "hn-50117746",
-    "title": "I Love Software Rendering",
-    "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
-    "domain": "jamesfmackenzie.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "jamesfmackenzie.com",
-    "score": 4,
-    "commentsCount": 0,
-    "publishedAt": "2026-10-16T13:07:51.741480+00:00"
-  },
-  {
-    "id": "hn-50072485",
-    "title": "Two-Stack Sliding-Window Aggregation",
-    "url": "https://orlp.net/blog/two-stack-sliding-window-aggregation/",
-    "domain": "orlp.net",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "orlp.net",
-    "score": 65,
-    "commentsCount": 5,
-    "publishedAt": "2026-10-16T13:07:51.893629+00:00"
-  },
-  {
-    "id": "hn-50105647",
-    "title": "Neural networks are clean",
-    "url": "https://already-clean.goodfire.com/",
-    "domain": "already-clean.goodfire.com",
+    "id": "hn-50127979",
+    "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+    "url": "https://llmspeed.dev/",
+    "domain": "llmspeed.dev",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "already-clean.goodfire.com",
-    "score": 743,
-    "commentsCount": 60,
-    "publishedAt": "2026-10-16T13:07:52.053514+00:00"
+    "source": "llmspeed.dev",
+    "score": 105,
+    "commentsCount": 18,
+    "publishedAt": "2026-10-17T12:04:00.847606+00:00"
+  },
+  {
+    "id": "hn-50129045",
+    "title": "DeepSeek-v4.1-Flash-1017",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "domain": "huggingface.co",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "huggingface.co",
+    "score": 220,
+    "commentsCount": 19,
+    "publishedAt": "2026-10-17T12:04:00.930434+00:00"
+  },
+  {
+    "id": "hn-50103255",
+    "title": "Intuitive concurrent programming in any language",
+    "url": "https://www.lf-lang.org/",
+    "domain": "lf-lang.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "lf-lang.org",
+    "score": 57,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-17T12:04:01.098687+00:00"
   }
 ]

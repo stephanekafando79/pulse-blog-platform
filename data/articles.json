@@ -1,5 +1,51 @@
 [
   {
+    "id": "daily-2026-10-17",
+    "title": "Daily Pulse: The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers",
+    "slug": "daily-pulse-2026-10-17-the-modern-desktop-app-renaiss",
+    "excerpt": "Daily edition for October 17, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in APPs.",
+    "content": "# Daily Pulse: The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers\n\n*Published on October 17, 2026 by Elena Rostova*\n\n## Lightweight Native Software Returns to the Desktop\n\nFor the past decade, desktop software was dominated by shipping an entire bundled Chromium instance and Node.js runtime for every single app—consuming hundreds of megabytes of RAM just to display a chat window or todo list.\n\nToday, a new generation of desktop APPs is proving that you can have modern UI ergonomics with tiny footprints:\n\n### The New Architecture Stack:\n1. **Tauri 2.0**: Uses the operating system's native WebKit/WebView2 control with a fast Rust or Zig backend. Binary sizes shrink from 120MB to under 8MB!\n2. **GPU-Accelerated Native Renderers**: Frameworks like GPUI (used by Zed) and Ghostty's custom Metal/Vulkan engines rendering text at 120+ FPS.\n3. **Local SQLite / CRDT Sync**: Storing user data locally on disk rather than requiring remote HTTP round-trips for every keypress.\n\n```toml\n# Modern lightweight desktop app configuration (Tauri 2.0)\n[build]\nrunner = \"cargo\"\ndistDir = \"../dist\"\n\n[bundle]\nactive = true\ntargets = [\"msi\", \"app\", \"deb\"]\nicon = [\"icons/icon.png\"]\n```\n\nUsers notice when their apps open instantly, consume 25MB of RAM instead of 800MB, and work flawlessly without internet connectivity.",
+    "cover": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Desktop",
+      "Performance",
+      "WebAssembly",
+      "Native",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_elena",
+      "name": "Elena Rostova",
+      "handle": "@elenadesign",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+      "bio": "Product Architect. Focused on Native App Performance & Ergonomics."
+    },
+    "publishedAt": "2026-10-17T12:04:01.099647+00:00",
+    "readTime": "3 min read",
+    "likes": 41,
+    "views": 317,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-17-1",
+        "author": {
+          "id": "user_marcus",
+          "name": "Marcus Chen",
+          "handle": "@marcuschen_ai",
+          "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+          "bio": "Cybersecurity & Edge AI Researcher."
+        },
+        "text": "Crucial insights on APPs. High-signal perspective for IT and engineering teams.",
+        "createdAt": "2026-10-17T12:04:01.099665+00:00",
+        "likes": 6
+      }
+    ]
+  },
+  {
     "id": "daily-2026-10-16",
     "title": "Daily Pulse: Modern Windows Architecture: How Microsoft is Rewriting Core Subsystems in Rust",
     "slug": "daily-pulse-2026-10-16-modern-windows-architecture-h",
@@ -27,7 +73,7 @@
     "readTime": "3 min read",
     "likes": 45,
     "views": 434,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
