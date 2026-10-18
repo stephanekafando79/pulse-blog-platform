@@ -1,5 +1,85 @@
 [
   {
+    "id": "hn-50138531",
+    "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+    "url": "https://api-docs.deepseek.com/guides/search/",
+    "domain": "api-docs.deepseek.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "api-docs.deepseek.com",
+    "score": 275,
+    "commentsCount": 27,
+    "publishedAt": "2026-10-18T12:32:01.218676+00:00"
+  },
+  {
+    "id": "hn-50139067",
+    "title": "Parser Combinators",
+    "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
+    "domain": "t3.at",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "t3.at",
+    "score": 60,
+    "commentsCount": 16,
+    "publishedAt": "2026-10-18T12:32:01.303743+00:00"
+  },
+  {
+    "id": "hn-50139692",
+    "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+    "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
+    "domain": "niemanlab.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "niemanlab.org",
+    "score": 20,
+    "commentsCount": 3,
+    "publishedAt": "2026-10-18T12:32:01.387273+00:00"
+  },
+  {
+    "id": "hn-50137620",
+    "title": "How the Elizabeth Holmes documentary “You Can See Everything” is deceiving",
+    "url": "https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything",
+    "domain": "readtheprofile.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "readtheprofile.com",
+    "score": 175,
+    "commentsCount": 41,
+    "publishedAt": "2026-10-18T12:32:01.646618+00:00"
+  },
+  {
+    "id": "hn-50137950",
+    "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+    "url": "https://sphinx-six-theta.vercel.app/",
+    "domain": "sphinx-six-theta.vercel.app",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "sphinx-six-theta.vercel.app",
+    "score": 161,
+    "commentsCount": 29,
+    "publishedAt": "2026-10-18T12:32:01.723092+00:00"
+  },
+  {
     "id": "hn-50126253",
     "title": "Bleached corals thrive within days when touching healthy neighbour",
     "url": "https://www.nature.com/articles/d41586-026-03266-x",
@@ -11,120 +91,40 @@
       "TechNews"
     ],
     "source": "nature.com",
-    "score": 367,
-    "commentsCount": 16,
-    "publishedAt": "2026-10-18T03:57:47.098990+00:00"
-  },
-  {
-    "id": "hn-50114758",
-    "title": "Lean now ships with verified kernels",
-    "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
-    "domain": "leodemoura.github.io",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "leodemoura.github.io",
-    "score": 48,
-    "commentsCount": 4,
-    "publishedAt": "2026-10-18T03:57:47.210898+00:00"
-  },
-  {
-    "id": "hn-50126312",
-    "title": "Dam removals are bringing fish back across the northeastern United States",
-    "url": "https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/",
-    "domain": "smithsonianmag.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "smithsonianmag.com",
-    "score": 231,
+    "score": 480,
     "commentsCount": 18,
-    "publishedAt": "2026-10-18T03:57:47.340357+00:00"
+    "publishedAt": "2026-10-18T12:32:01.803812+00:00"
   },
   {
-    "id": "hn-50129045",
-    "title": "DeepSeek-v4.1-Flash-1017",
-    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-    "domain": "huggingface.co",
+    "id": "hn-50124730",
+    "title": "Teal – A statically-typed dialect of Lua",
+    "url": "https://teal-language.org/",
+    "domain": "teal-language.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "huggingface.co",
-    "score": 750,
-    "commentsCount": 81,
-    "publishedAt": "2026-10-18T03:57:47.459125+00:00"
+    "source": "teal-language.org",
+    "score": 55,
+    "commentsCount": 3,
+    "publishedAt": "2026-10-18T12:32:01.881149+00:00"
   },
   {
-    "id": "hn-50132193",
-    "title": "Pele – Mermaid diagrams as themeable SVG",
-    "url": "https://pele.run/",
-    "domain": "pele.run",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "pele.run",
-    "score": 306,
-    "commentsCount": 12,
-    "publishedAt": "2026-10-18T03:57:47.569768+00:00"
-  },
-  {
-    "id": "hn-50100994",
-    "title": "Furifont, a Japanese font that shows furigana",
-    "url": "https://furifont.antfu.me/",
-    "domain": "furifont.antfu.me",
+    "id": "hn-50122671",
+    "title": "Regex visualized as 3D marble run",
+    "url": "https://www.regexmarblerun.com/",
+    "domain": "regexmarblerun.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "furifont.antfu.me",
-    "score": 297,
-    "commentsCount": 20,
-    "publishedAt": "2026-10-18T03:57:47.714339+00:00"
-  },
-  {
-    "id": "hn-50136536",
-    "title": "NY announces game ownership bill requiring ownership rather than licensing",
-    "url": "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends",
-    "domain": "tomshardware.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "tomshardware.com",
-    "score": 134,
-    "commentsCount": 12,
-    "publishedAt": "2026-10-18T03:57:47.832230+00:00"
-  },
-  {
-    "id": "hn-50131213",
-    "title": "Making chicken transparent using Dorito dust",
-    "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
-    "domain": "chillphysicsenjoyer.substack.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "chillphysicsenjoyer.substack.com",
-    "score": 275,
-    "commentsCount": 26,
-    "publishedAt": "2026-10-18T03:57:47.943216+00:00"
+    "source": "regexmarblerun.com",
+    "score": 22,
+    "commentsCount": 4,
+    "publishedAt": "2026-10-18T12:32:01.966084+00:00"
   }
 ]
