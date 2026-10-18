@@ -1,24 +1,8 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-17T19:13:25.630255+00:00
+ * Last Updated: 2026-10-18T03:57:47.943676+00:00
  */
 window.PULSE_LIVE_NEWS = [
-  {
-    "id": "hn-50132950",
-    "title": "Development statistics for the 7.2 kernel",
-    "url": "https://lwn.net/Articles/1088776/",
-    "domain": "lwn.net",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "lwn.net",
-    "score": 83,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-17T19:13:24.428279+00:00"
-  },
   {
     "id": "hn-50126253",
     "title": "Bleached corals thrive within days when touching healthy neighbour",
@@ -31,57 +15,41 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "nature.com",
-    "score": 23,
-    "commentsCount": 0,
-    "publishedAt": "2026-10-17T19:13:24.577685+00:00"
+    "score": 367,
+    "commentsCount": 16,
+    "publishedAt": "2026-10-18T03:57:47.098990+00:00"
   },
   {
-    "id": "hn-50100366",
-    "title": "The Commodore 64 hardware simulator: break chips and pins, see the results",
-    "url": "https://github.com/antirez/c64-hw-simulator",
-    "domain": "github.com",
-    "category": "Hardware",
+    "id": "hn-50114758",
+    "title": "Lean now ships with verified kernels",
+    "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
+    "domain": "leodemoura.github.io",
+    "category": "OS",
     "tags": [
-      "Hardware",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 43,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-17T19:13:24.726629+00:00"
+    "source": "leodemoura.github.io",
+    "score": 48,
+    "commentsCount": 4,
+    "publishedAt": "2026-10-18T03:57:47.210898+00:00"
   },
   {
-    "id": "hn-50100994",
-    "title": "Furifont, a Japanese font that shows furigana",
-    "url": "https://furifont.antfu.me/",
-    "domain": "furifont.antfu.me",
-    "category": "Technology",
+    "id": "hn-50126312",
+    "title": "Dam removals are bringing fish back across the northeastern United States",
+    "url": "https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/",
+    "domain": "smithsonianmag.com",
+    "category": "OS",
     "tags": [
-      "Technology",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "furifont.antfu.me",
-    "score": 109,
-    "commentsCount": 11,
-    "publishedAt": "2026-10-17T19:13:24.884629+00:00"
-  },
-  {
-    "id": "hn-50131213",
-    "title": "Making chicken transparent using Dorito dust",
-    "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
-    "domain": "chillphysicsenjoyer.substack.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "chillphysicsenjoyer.substack.com",
-    "score": 185,
-    "commentsCount": 21,
-    "publishedAt": "2026-10-17T19:13:25.064708+00:00"
+    "source": "smithsonianmag.com",
+    "score": 231,
+    "commentsCount": 18,
+    "publishedAt": "2026-10-18T03:57:47.340357+00:00"
   },
   {
     "id": "hn-50129045",
@@ -95,40 +63,72 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "huggingface.co",
-    "score": 506,
-    "commentsCount": 71,
-    "publishedAt": "2026-10-17T19:13:25.242826+00:00"
+    "score": 750,
+    "commentsCount": 81,
+    "publishedAt": "2026-10-18T03:57:47.459125+00:00"
   },
   {
-    "id": "hn-50132870",
-    "title": "Gold is now the top U.S. export",
-    "url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
-    "domain": "numismaticnews.net",
+    "id": "hn-50132193",
+    "title": "Pele – Mermaid diagrams as themeable SVG",
+    "url": "https://pele.run/",
+    "domain": "pele.run",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "pele.run",
+    "score": 306,
+    "commentsCount": 12,
+    "publishedAt": "2026-10-18T03:57:47.569768+00:00"
+  },
+  {
+    "id": "hn-50100994",
+    "title": "Furifont, a Japanese font that shows furigana",
+    "url": "https://furifont.antfu.me/",
+    "domain": "furifont.antfu.me",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "numismaticnews.net",
-    "score": 22,
-    "commentsCount": 2,
-    "publishedAt": "2026-10-17T19:13:25.393832+00:00"
+    "source": "furifont.antfu.me",
+    "score": 297,
+    "commentsCount": 20,
+    "publishedAt": "2026-10-18T03:57:47.714339+00:00"
   },
   {
-    "id": "hn-50132911",
-    "title": "tsc-ts: TypeScript written in TypeScript",
-    "url": "https://github.com/vercel-labs/tsc-ts",
-    "domain": "github.com",
+    "id": "hn-50136536",
+    "title": "NY announces game ownership bill requiring ownership rather than licensing",
+    "url": "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends",
+    "domain": "tomshardware.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 18,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-17T19:13:25.629226+00:00"
+    "source": "tomshardware.com",
+    "score": 134,
+    "commentsCount": 12,
+    "publishedAt": "2026-10-18T03:57:47.832230+00:00"
+  },
+  {
+    "id": "hn-50131213",
+    "title": "Making chicken transparent using Dorito dust",
+    "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
+    "domain": "chillphysicsenjoyer.substack.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "chillphysicsenjoyer.substack.com",
+    "score": 275,
+    "commentsCount": 26,
+    "publishedAt": "2026-10-18T03:57:47.943216+00:00"
   }
 ];
