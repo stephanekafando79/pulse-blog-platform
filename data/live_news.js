@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-18T12:32:01.966487+00:00
+ * Last Updated: 2026-10-19T15:25:41.758076+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50138531",
-    "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-    "url": "https://api-docs.deepseek.com/guides/search/",
-    "domain": "api-docs.deepseek.com",
+    "id": "hn-50152307",
+    "title": "Wine Ported to OpenBSD",
+    "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+    "domain": "marc.info",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "api-docs.deepseek.com",
-    "score": 275,
-    "commentsCount": 27,
-    "publishedAt": "2026-10-18T12:32:01.218676+00:00"
+    "source": "marc.info",
+    "score": 124,
+    "commentsCount": 14,
+    "publishedAt": "2026-10-19T15:25:40.878441+00:00"
   },
   {
-    "id": "hn-50139067",
-    "title": "Parser Combinators",
-    "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
-    "domain": "t3.at",
-    "category": "Technology",
+    "id": "hn-50149392",
+    "title": "Linux 7.3 Released",
+    "url": "https://lwn.net/Articles/1101143/",
+    "domain": "lwn.net",
+    "category": "OS",
     "tags": [
-      "Technology",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "t3.at",
-    "score": 60,
-    "commentsCount": 16,
-    "publishedAt": "2026-10-18T12:32:01.303743+00:00"
+    "source": "lwn.net",
+    "score": 462,
+    "commentsCount": 18,
+    "publishedAt": "2026-10-19T15:25:40.958114+00:00"
   },
   {
-    "id": "hn-50139692",
-    "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
-    "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
-    "domain": "niemanlab.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "niemanlab.org",
-    "score": 20,
-    "commentsCount": 3,
-    "publishedAt": "2026-10-18T12:32:01.387273+00:00"
-  },
-  {
-    "id": "hn-50137620",
-    "title": "How the Elizabeth Holmes documentary “You Can See Everything” is deceiving",
-    "url": "https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything",
-    "domain": "readtheprofile.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "readtheprofile.com",
-    "score": 175,
-    "commentsCount": 41,
-    "publishedAt": "2026-10-18T12:32:01.646618+00:00"
-  },
-  {
-    "id": "hn-50137950",
-    "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-    "url": "https://sphinx-six-theta.vercel.app/",
-    "domain": "sphinx-six-theta.vercel.app",
+    "id": "hn-50150434",
+    "title": "Timestral: Mistral release time-series foundation models",
+    "url": "https://mistral.ai/news/timestral/",
+    "domain": "mistral.ai",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "sphinx-six-theta.vercel.app",
-    "score": 161,
-    "commentsCount": 29,
-    "publishedAt": "2026-10-18T12:32:01.723092+00:00"
+    "source": "mistral.ai",
+    "score": 281,
+    "commentsCount": 13,
+    "publishedAt": "2026-10-19T15:25:41.037866+00:00"
   },
   {
-    "id": "hn-50126253",
-    "title": "Bleached corals thrive within days when touching healthy neighbour",
-    "url": "https://www.nature.com/articles/d41586-026-03266-x",
-    "domain": "nature.com",
+    "id": "hn-50150927",
+    "title": "Alternatives to Animal Testing Are Finally Taking Off",
+    "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+    "domain": "spectrum.ieee.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "nature.com",
-    "score": 480,
-    "commentsCount": 18,
-    "publishedAt": "2026-10-18T12:32:01.803812+00:00"
+    "source": "spectrum.ieee.org",
+    "score": 124,
+    "commentsCount": 16,
+    "publishedAt": "2026-10-19T15:25:41.128122+00:00"
   },
   {
-    "id": "hn-50124730",
-    "title": "Teal – A statically-typed dialect of Lua",
-    "url": "https://teal-language.org/",
-    "domain": "teal-language.org",
-    "category": "Technology",
+    "id": "hn-50150809",
+    "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
+    "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+    "domain": "community.letsencrypt.org",
+    "category": "AI & ML",
     "tags": [
-      "Technology",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "teal-language.org",
-    "score": 55,
-    "commentsCount": 3,
-    "publishedAt": "2026-10-18T12:32:01.881149+00:00"
+    "source": "community.letsencrypt.org",
+    "score": 124,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-19T15:25:41.207150+00:00"
   },
   {
-    "id": "hn-50122671",
-    "title": "Regex visualized as 3D marble run",
-    "url": "https://www.regexmarblerun.com/",
-    "domain": "regexmarblerun.com",
-    "category": "Technology",
+    "id": "hn-50152541",
+    "title": "Show HN: KiviDB, a faster Redis-compatible memory database and vector cache",
+    "url": "https://github.com/kividbio/kividb",
+    "domain": "github.com",
+    "category": "Dev & Cloud",
     "tags": [
-      "Technology",
+      "Dev & Cloud",
       "Breaking",
       "TechNews"
     ],
-    "source": "regexmarblerun.com",
-    "score": 22,
+    "source": "github.com",
+    "score": 25,
     "commentsCount": 4,
-    "publishedAt": "2026-10-18T12:32:01.966084+00:00"
+    "publishedAt": "2026-10-19T15:25:41.293560+00:00"
+  },
+  {
+    "id": "hn-50150935",
+    "title": "ESA's Hera Will View Asteroid Scars from DART's Strike",
+    "url": "https://spectrum.ieee.org/esa-hera-dimorphos-rendezvous",
+    "domain": "spectrum.ieee.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "spectrum.ieee.org",
+    "score": 45,
+    "commentsCount": 1,
+    "publishedAt": "2026-10-19T15:25:41.656895+00:00"
+  },
+  {
+    "id": "hn-50151928",
+    "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
+    "url": "https://100toolkit.com/blog/deslop-model/",
+    "domain": "100toolkit.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "100toolkit.com",
+    "score": 90,
+    "commentsCount": 22,
+    "publishedAt": "2026-10-19T15:25:41.757699+00:00"
   }
 ];
