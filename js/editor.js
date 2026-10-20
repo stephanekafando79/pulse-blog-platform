@@ -18,14 +18,18 @@ class MarkdownEngine {
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;');
 
-    // Code blocks with syntax container and copy button
+    // Code blocks with syntax container, Run in Sandbox, and copy button
     html = html.replace(/```([a-zA-Z0-9_+-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
       const cleanCode = code.trim();
+      const isRunnable = /^(javascript|js|python|py|bash|sh|html|css)/i.test(lang);
       return `
         <div class="code-block-wrapper">
           <div class="code-block-header">
             <span class="code-lang">${lang || 'plaintext'}</span>
-            <button class="btn-copy-code" onclick="navigator.clipboard.writeText(this.closest('.code-block-wrapper').querySelector('code').innerText); window.PulseUI.showToast('Code copied to clipboard!');">Copy</button>
+            <div style="display: flex; gap: 0.4rem;">
+              ${isRunnable ? `<button class="btn-copy-code" style="background: var(--accent); color: #fff; font-weight: 700;" onclick="window.PulseUI.openCodeSandbox(this.closest('.code-block-wrapper').querySelector('code').innerText, '${lang}')">▶ Run</button>` : ''}
+              <button class="btn-copy-code" onclick="navigator.clipboard.writeText(this.closest('.code-block-wrapper').querySelector('code').innerText); window.PulseUI.showToast('Code copied to clipboard!');">Copy</button>
+            </div>
           </div>
           <pre><code class="language-${lang}">${cleanCode}</code></pre>
         </div>

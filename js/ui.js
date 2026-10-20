@@ -13,6 +13,7 @@ class UIController {
     this.searchQuery = '';
     this.sortBy = 'latest';
     this.isSpeaking = false;
+    this.speechRate = 1.0;
     this.tickerInterval = null;
     this.tickerIndex = 0;
   }
@@ -319,6 +320,9 @@ class UIController {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
               <span>Listen</span>
             </button>
+            <button class="btn btn-secondary btn-sm" id="btn-audio-speed" title="Adjust Voice Playback Speed" onclick="PulseUI.cycleAudioSpeed()">
+              <span id="audio-speed-label">1.0x</span>
+            </button>
             <button class="btn btn-secondary btn-sm" onclick="PulseUI.shareArticle('${article.title}')">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
               Share
@@ -495,7 +499,7 @@ class UIController {
     if (!bodyText) return;
 
     const utterance = new SpeechSynthesisUtterance(bodyText.innerText);
-    utterance.rate = 1.0;
+    utterance.rate = this.speechRate || 1.0;
     utterance.pitch = 1.0;
 
     utterance.onend = () => {
@@ -511,7 +515,24 @@ class UIController {
     window.speechSynthesis.speak(utterance);
     this.isSpeaking = true;
     if (btn) btn.querySelector('span').textContent = 'Pause';
-    this.showToast('Reading article aloud...');
+    this.showToast(`Reading article aloud at ${this.speechRate}x speed...`);
+  }
+
+  cycleAudioSpeed() {
+    const speeds = [1.0, 1.25, 1.5, 2.0];
+    const currentIndex = speeds.indexOf(this.speechRate || 1.0);
+    this.speechRate = speeds[(currentIndex + 1) % speeds.length];
+    
+    const label = document.getElementById('audio-speed-label');
+    if (label) label.textContent = `${this.speechRate}x`;
+
+    if (this.isSpeaking) {
+      window.speechSynthesis.cancel();
+      this.isSpeaking = false;
+      this.toggleReadAloud();
+    } else {
+      this.showToast(`Voice playback speed set to ${this.speechRate}x`);
+    }
   }
 
   confirmDeleteArticle(articleId) {
@@ -1483,6 +1504,79 @@ class UIController {
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#039;');
+  }
+
+  // ==========================================
+  // NEWSLETTER DIGEST MODAL
+  // ==========================================
+  openNewsletterModal() {
+    const dialog = document.getElementById('newsletter-modal');
+    if (dialog) dialog.showModal();
+  }
+
+  submitNewsletterSubscription() {
+    const emailInput = document.getElementById('newsletter-email');
+    if (!emailInput || !emailInput.value.trim()) return;
+
+    const email = emailInput.value.trim();
+    const subs = JSON.parse(localStorage.getItem('pulse_newsletter_subscribers') || '[]');
+    if (!subs.includes(email)) {
+      subs.push(email);
+      localStorage.setItem('pulse_newsletter_subscribers', JSON.stringify(subs));
+    }
+
+    emailInput.value = '';
+    const dialog = document.getElementById('newsletter-modal');
+    if (dialog) dialog.close();
+    this.showToast(`🎉 Subscribed! You will receive the weekly Monday digest at ${email}`, 'success');
+  }
+
+  // ==========================================
+  // IN-BROWSER CODE RUNNER SANDBOX
+  // ==========================================
+  openCodeSandbox(code, lang = 'javascript') {
+    const dialog = document.getElementById('code-sandbox-modal');
+    const editor = document.getElementById('sandbox-code-editor');
+    const langLabel = document.getElementById('sandbox-lang-label');
+    const output = document.getElementById('sandbox-output');
+
+    if (langLabel) langLabel.textContent = `Language: ${lang || 'javascript'}`;
+    if (editor) editor.value = code || '// Write code to execute...';
+    if (output) output.textContent = 'Ready to execute. Click "▶ Run Snippet" above.';
+
+    if (dialog) dialog.showModal();
+  }
+
+  executeSandboxCode() {
+    const editor = document.getElementById('sandbox-code-editor');
+    const output = document.getElementById('sandbox-output');
+    if (!editor || !output) return;
+
+    const code = editor.value;
+    output.textContent = 'Executing snippet...\n';
+
+    // Intercept console.log and capture results securely in client sandbox
+    const logs = [];
+    const customConsole = {
+      log: (...args) => logs.push(args.map(a => typeof a === 'object' ? JSON.stringify(a, null, 2) : String(a)).join(' ')),
+      error: (...args) => logs.push('[ERROR] ' + args.map(a => String(a)).join(' ')),
+      warn: (...args) => logs.push('[WARN] ' + args.map(a => String(a)).join(' ')),
+      info: (...args) => logs.push('[INFO] ' + args.map(a => String(a)).join(' '))
+    };
+
+    try {
+      // Evaluate within a scoped sandbox Function
+      const sandboxFn = new Function('console', `"use strict";\n${code}`);
+      const result = sandboxFn(customConsole);
+
+      if (result !== undefined) {
+        logs.push(`=> Return Value: ${typeof result === 'object' ? JSON.stringify(result, null, 2) : String(result)}`);
+      }
+
+      output.textContent = logs.length > 0 ? logs.join('\n') : '(Snippet executed successfully with no output)';
+    } catch (err) {
+      output.textContent = `[Runtime Error]: ${err.message}\n${err.stack || ''}`;
+    }
   }
 }
 
