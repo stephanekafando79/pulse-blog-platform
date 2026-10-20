@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-19T15:25:41.758076+00:00
+ * Last Updated: 2026-10-20T13:28:10.681012+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50152307",
-    "title": "Wine Ported to OpenBSD",
-    "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
-    "domain": "marc.info",
+    "id": "hn-50163277",
+    "title": "DeepSeek just open-sourced its inference engine",
+    "url": "https://github.com/deepseek-ai/DeepInfer",
+    "domain": "github.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "marc.info",
-    "score": 124,
-    "commentsCount": 14,
-    "publishedAt": "2026-10-19T15:25:40.878441+00:00"
+    "source": "github.com",
+    "score": 957,
+    "commentsCount": 45,
+    "publishedAt": "2026-10-20T13:28:08.978168+00:00"
   },
   {
-    "id": "hn-50149392",
-    "title": "Linux 7.3 Released",
-    "url": "https://lwn.net/Articles/1101143/",
-    "domain": "lwn.net",
+    "id": "hn-50165276",
+    "title": "Demographic \"Doomsday\" Misses the Mark",
+    "url": "https://www.science.org/doi/10.1126/science.ael8752",
+    "domain": "science.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "science.org",
+    "score": 29,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-20T13:28:09.116404+00:00"
+  },
+  {
+    "id": "hn-50141581",
+    "title": "Nordwand Mono – A monospace font for coders and adventurers",
+    "url": "https://github.com/tywr/Nordwand-Mono",
+    "domain": "github.com",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "lwn.net",
-    "score": 462,
-    "commentsCount": 18,
-    "publishedAt": "2026-10-19T15:25:40.958114+00:00"
+    "source": "github.com",
+    "score": 386,
+    "commentsCount": 46,
+    "publishedAt": "2026-10-20T13:28:09.284720+00:00"
   },
   {
-    "id": "hn-50150434",
-    "title": "Timestral: Mistral release time-series foundation models",
-    "url": "https://mistral.ai/news/timestral/",
-    "domain": "mistral.ai",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "mistral.ai",
-    "score": 281,
-    "commentsCount": 13,
-    "publishedAt": "2026-10-19T15:25:41.037866+00:00"
-  },
-  {
-    "id": "hn-50150927",
-    "title": "Alternatives to Animal Testing Are Finally Taking Off",
-    "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
-    "domain": "spectrum.ieee.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "spectrum.ieee.org",
-    "score": 124,
-    "commentsCount": 16,
-    "publishedAt": "2026-10-19T15:25:41.128122+00:00"
-  },
-  {
-    "id": "hn-50150809",
-    "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
-    "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
-    "domain": "community.letsencrypt.org",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "community.letsencrypt.org",
-    "score": 124,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-19T15:25:41.207150+00:00"
-  },
-  {
-    "id": "hn-50152541",
-    "title": "Show HN: KiviDB, a faster Redis-compatible memory database and vector cache",
-    "url": "https://github.com/kividbio/kividb",
+    "id": "hn-50162177",
+    "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+    "url": "https://github.com/microg/GmsCore/wiki",
     "domain": "github.com",
-    "category": "Dev & Cloud",
+    "category": "OS",
     "tags": [
-      "Dev & Cloud",
+      "OS",
       "Breaking",
       "TechNews"
     ],
     "source": "github.com",
-    "score": 25,
-    "commentsCount": 4,
-    "publishedAt": "2026-10-19T15:25:41.293560+00:00"
+    "score": 190,
+    "commentsCount": 8,
+    "publishedAt": "2026-10-20T13:28:09.447605+00:00"
   },
   {
-    "id": "hn-50150935",
-    "title": "ESA's Hera Will View Asteroid Scars from DART's Strike",
-    "url": "https://spectrum.ieee.org/esa-hera-dimorphos-rendezvous",
-    "domain": "spectrum.ieee.org",
+    "id": "hn-50160494",
+    "title": "OpenBSD 8.0",
+    "url": "https://www.openbsd.org/80.html",
+    "domain": "openbsd.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "spectrum.ieee.org",
-    "score": 45,
-    "commentsCount": 1,
-    "publishedAt": "2026-10-19T15:25:41.656895+00:00"
+    "source": "openbsd.org",
+    "score": 377,
+    "commentsCount": 17,
+    "publishedAt": "2026-10-20T13:28:09.626000+00:00"
   },
   {
-    "id": "hn-50151928",
-    "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
-    "url": "https://100toolkit.com/blog/deslop-model/",
-    "domain": "100toolkit.com",
-    "category": "AI & ML",
+    "id": "hn-50159341",
+    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+    "domain": "redact.dev",
+    "category": "APPs",
     "tags": [
-      "AI & ML",
+      "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "100toolkit.com",
-    "score": 90,
-    "commentsCount": 22,
-    "publishedAt": "2026-10-19T15:25:41.757699+00:00"
+    "source": "redact.dev",
+    "score": 579,
+    "commentsCount": 36,
+    "publishedAt": "2026-10-20T13:28:09.758383+00:00"
+  },
+  {
+    "id": "hn-50132198",
+    "title": "Making a 88x31 button book using ImageMagick",
+    "url": "https://k.sosnierz.me/08-11-24/",
+    "domain": "k.sosnierz.me",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "k.sosnierz.me",
+    "score": 85,
+    "commentsCount": 10,
+    "publishedAt": "2026-10-20T13:28:10.531028+00:00"
+  },
+  {
+    "id": "hn-50154244",
+    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
+    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
+    "domain": "reuters.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "reuters.com",
+    "score": 378,
+    "commentsCount": 46,
+    "publishedAt": "2026-10-20T13:28:10.680599+00:00"
   }
 ];
