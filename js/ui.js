@@ -986,35 +986,35 @@ class UIController {
     const body = `
       <div style="display: flex; flex-direction: column; gap: 1rem;">
         <p>
-          To replace the GitHub Pages URL (<code>stephanekafando79.github.io/pulse-blog-platform</code>) with your own custom professional address (such as <code>pulsecollective.dev</code> or <code>stephanekafando.com</code>), follow these standard steps:
+          To replace the GitHub Pages URL (<code>stephanekafando79.github.io/pulse-blog-platform</code>) with your custom domain (<strong>pulsetopics.com</strong>):
         </p>
 
         <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--radius-md);">
-          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 1: Purchase Domain</strong>
+          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 1: Purchase Domain (pulsetopics.com)</strong>
           <p style="font-size: 0.85rem; margin-top: 0.25rem;">
-            Register your domain at any registrar (e.g., Namecheap, Cloudflare Registrar, or Google Domains/Squarespace).
+            Register <code>pulsetopics.com</code> at Cloudflare, Namecheap, or Porkbun.
           </p>
         </div>
 
         <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--radius-md);">
-          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 2: Add DNS Records</strong>
+          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 2: Add 4 A Records & 1 CNAME Record</strong>
           <p style="font-size: 0.85rem; margin-top: 0.25rem;">
-            In your domain's DNS manager, add four A records pointing to GitHub Pages:
+            In your registrar DNS settings, add these 4 <strong>A Records</strong> for <code>@</code>:
             <br/><code>185.199.108.153</code><br/><code>185.199.109.153</code><br/><code>185.199.110.153</code><br/><code>185.199.111.153</code>
-            <br/>Or add a <strong>CNAME</strong> record for <code>www</code> pointing to <code>stephanekafando79.github.io</code>.
+            <br/>And 1 <strong>CNAME Record</strong> for <code>www</code> pointing to: <code>stephanekafando79.github.io</code>
           </p>
         </div>
 
         <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--radius-md);">
-          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 3: Add CNAME in GitHub</strong>
+          <strong style="color: var(--text-primary); font-size: 0.95rem;">Step 3: Save in GitHub Pages</strong>
           <p style="font-size: 0.85rem; margin-top: 0.25rem;">
-            In GitHub, go to <strong>Settings → Pages → Custom domain</strong>, enter your new domain name, and check <strong>Enforce HTTPS</strong>.
+            In GitHub: <strong>Settings → Pages → Custom domain</strong>, enter <code>pulsetopics.com</code>, click <strong>Save</strong>, then check <strong>Enforce HTTPS</strong>.
           </p>
         </div>
       </div>
     `;
 
-    this.showInfoModalDirect('Custom Domain Configuration', body);
+    this.showInfoModalDirect('Custom Domain Configuration (pulsetopics.com)', body);
   }
 
   // ==========================================
