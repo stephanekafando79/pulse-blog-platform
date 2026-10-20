@@ -3,7 +3,7 @@
  * Caches core shell and runtime data for offline reading
  */
 
-const CACHE_NAME = 'pulse-offline-v1';
+const CACHE_NAME = 'pulse-offline-v2';
 const STATIC_ASSETS = [
   './',
   './index.html',
