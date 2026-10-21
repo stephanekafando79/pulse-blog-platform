@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-20T13:28:10.681012+00:00
+ * Last Updated: 2026-10-21T13:37:26.747779+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50163277",
-    "title": "DeepSeek just open-sourced its inference engine",
-    "url": "https://github.com/deepseek-ai/DeepInfer",
-    "domain": "github.com",
+    "id": "hn-50177916",
+    "title": "Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds",
+    "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
+    "domain": "scotthelme.co.uk",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 957,
-    "commentsCount": 45,
-    "publishedAt": "2026-10-20T13:28:08.978168+00:00"
+    "source": "scotthelme.co.uk",
+    "score": 399,
+    "commentsCount": 35,
+    "publishedAt": "2026-10-21T13:37:25.775421+00:00"
   },
   {
-    "id": "hn-50165276",
-    "title": "Demographic \"Doomsday\" Misses the Mark",
-    "url": "https://www.science.org/doi/10.1126/science.ael8752",
-    "domain": "science.org",
+    "id": "hn-50179706",
+    "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+    "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
+    "domain": "hirundo.io",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "science.org",
-    "score": 29,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-20T13:28:09.116404+00:00"
+    "source": "hirundo.io",
+    "score": 80,
+    "commentsCount": 21,
+    "publishedAt": "2026-10-21T13:37:25.915405+00:00"
   },
   {
-    "id": "hn-50141581",
-    "title": "Nordwand Mono – A monospace font for coders and adventurers",
-    "url": "https://github.com/tywr/Nordwand-Mono",
-    "domain": "github.com",
+    "id": "hn-50180444",
+    "title": "Most advice is right for the person giving it",
+    "url": "https://coached.com/essays/most-advice-is-right-for-the-person-giving-it/",
+    "domain": "coached.com",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 386,
-    "commentsCount": 46,
-    "publishedAt": "2026-10-20T13:28:09.284720+00:00"
+    "source": "coached.com",
+    "score": 15,
+    "commentsCount": 3,
+    "publishedAt": "2026-10-21T13:37:26.067656+00:00"
   },
   {
-    "id": "hn-50162177",
-    "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
-    "url": "https://github.com/microg/GmsCore/wiki",
-    "domain": "github.com",
-    "category": "OS",
+    "id": "hn-50179857",
+    "title": "LayerFS: The filesystem for AI coding agents",
+    "url": "https://layerfs.ai/",
+    "domain": "layerfs.ai",
+    "category": "AI & ML",
     "tags": [
-      "OS",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 190,
-    "commentsCount": 8,
-    "publishedAt": "2026-10-20T13:28:09.447605+00:00"
+    "source": "layerfs.ai",
+    "score": 15,
+    "commentsCount": 6,
+    "publishedAt": "2026-10-21T13:37:26.218317+00:00"
   },
   {
-    "id": "hn-50160494",
-    "title": "OpenBSD 8.0",
-    "url": "https://www.openbsd.org/80.html",
-    "domain": "openbsd.org",
+    "id": "hn-50175070",
+    "title": "The Future of CSS",
+    "url": "https://www.joshwcomeau.com/css/interop-2027/",
+    "domain": "joshwcomeau.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "openbsd.org",
-    "score": 377,
-    "commentsCount": 17,
-    "publishedAt": "2026-10-20T13:28:09.626000+00:00"
+    "source": "joshwcomeau.com",
+    "score": 471,
+    "commentsCount": 52,
+    "publishedAt": "2026-10-21T13:37:26.319832+00:00"
   },
   {
-    "id": "hn-50159341",
-    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-    "domain": "redact.dev",
+    "id": "hn-50178455",
+    "title": "Whatever Happened to Fire Escapes",
+    "url": "https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes",
+    "domain": "practical.engineering",
     "category": "APPs",
     "tags": [
       "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "redact.dev",
-    "score": 579,
-    "commentsCount": 36,
-    "publishedAt": "2026-10-20T13:28:09.758383+00:00"
+    "source": "practical.engineering",
+    "score": 81,
+    "commentsCount": 8,
+    "publishedAt": "2026-10-21T13:37:26.436570+00:00"
   },
   {
-    "id": "hn-50132198",
-    "title": "Making a 88x31 button book using ImageMagick",
-    "url": "https://k.sosnierz.me/08-11-24/",
-    "domain": "k.sosnierz.me",
-    "category": "Technology",
+    "id": "hn-50172041",
+    "title": "Upcoming critical PHP security release (CVE-2026-109618 / -109619)",
+    "url": "https://news-web.php.net/php.announce/509",
+    "domain": "news-web.php.net",
+    "category": "Cybersecurity",
     "tags": [
-      "Technology",
+      "Cybersecurity",
       "Breaking",
       "TechNews"
     ],
-    "source": "k.sosnierz.me",
-    "score": 85,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-20T13:28:10.531028+00:00"
+    "source": "news-web.php.net",
+    "score": 1289,
+    "commentsCount": 91,
+    "publishedAt": "2026-10-21T13:37:26.556714+00:00"
   },
   {
-    "id": "hn-50154244",
-    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
-    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
-    "domain": "reuters.com",
-    "category": "Technology",
+    "id": "hn-50179828",
+    "title": "Dutch National Cyber Security Center is Offline because it uses PHP",
+    "url": "https://www.ncsc.nl/actueel",
+    "domain": "ncsc.nl",
+    "category": "Cybersecurity",
     "tags": [
-      "Technology",
+      "Cybersecurity",
       "Breaking",
       "TechNews"
     ],
-    "source": "reuters.com",
-    "score": 378,
-    "commentsCount": 46,
-    "publishedAt": "2026-10-20T13:28:10.680599+00:00"
+    "source": "ncsc.nl",
+    "score": 156,
+    "commentsCount": 18,
+    "publishedAt": "2026-10-21T13:37:26.747411+00:00"
   }
 ];
