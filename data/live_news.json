@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50192900",
-    "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
-    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
-    "domain": "nvd.nist.gov",
-    "category": "Cybersecurity",
+    "id": "hn-50202285",
+    "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
+    "url": "https://edjefferson.com/localwiki/",
+    "domain": "edjefferson.com",
+    "category": "Technology",
     "tags": [
-      "Cybersecurity",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "nvd.nist.gov",
-    "score": 272,
-    "commentsCount": 25,
-    "publishedAt": "2026-10-22T13:39:18.861305+00:00"
+    "source": "edjefferson.com",
+    "score": 636,
+    "commentsCount": 84,
+    "publishedAt": "2026-10-23T13:15:04.447739+00:00"
   },
   {
-    "id": "hn-50192536",
-    "title": "Jailbreaking the Switch 2",
-    "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-    "domain": "pepsipu.com",
+    "id": "hn-50208099",
+    "title": "OpenSSL 4.1.0",
+    "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 18,
+    "commentsCount": 3,
+    "publishedAt": "2026-10-23T13:15:04.543230+00:00"
+  },
+  {
+    "id": "hn-50207405",
+    "title": "Swedish government offices to ban ChatGPT and Claude",
+    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+    "domain": "sverigesradio.se",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "pepsipu.com",
-    "score": 269,
-    "commentsCount": 18,
-    "publishedAt": "2026-10-22T13:39:18.941708+00:00"
+    "source": "sverigesradio.se",
+    "score": 120,
+    "commentsCount": 23,
+    "publishedAt": "2026-10-23T13:15:04.639759+00:00"
   },
   {
-    "id": "hn-50150163",
-    "title": "What Is Gridifcation",
-    "url": "https://musicalform.substack.com/p/what-is-gridifcation",
-    "domain": "musicalform.substack.com",
+    "id": "hn-50207115",
+    "title": "Is this the new cyber normal?",
+    "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
+    "domain": "drew.silcock.dev",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "musicalform.substack.com",
-    "score": 82,
-    "commentsCount": 14,
-    "publishedAt": "2026-10-22T13:39:19.039676+00:00"
+    "source": "drew.silcock.dev",
+    "score": 97,
+    "commentsCount": 34,
+    "publishedAt": "2026-10-23T13:15:04.731835+00:00"
   },
   {
-    "id": "hn-50193170",
-    "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
-    "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
-    "domain": "globus.software",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "globus.software",
-    "score": 104,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-22T13:39:19.122661+00:00"
-  },
-  {
-    "id": "hn-50190363",
-    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-    "domain": "simedw.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "simedw.com",
-    "score": 341,
-    "commentsCount": 47,
-    "publishedAt": "2026-10-22T13:39:19.202178+00:00"
-  },
-  {
-    "id": "hn-50193804",
-    "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
-    "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
-    "domain": "phoronix.com",
+    "id": "hn-50206840",
+    "title": "Job Loss and Cortisone Mania",
+    "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
+    "domain": "tilschuenemann.de",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "phoronix.com",
-    "score": 118,
-    "commentsCount": 12,
-    "publishedAt": "2026-10-22T13:39:19.278086+00:00"
+    "source": "tilschuenemann.de",
+    "score": 45,
+    "commentsCount": 5,
+    "publishedAt": "2026-10-23T13:15:04.838527+00:00"
   },
   {
-    "id": "hn-50157456",
-    "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
-    "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
-    "domain": "arstechnica.com",
+    "id": "hn-50202681",
+    "title": "Docker is weird",
+    "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+    "domain": "codeandcake.dev",
+    "category": "Dev & Cloud",
+    "tags": [
+      "Dev & Cloud",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "codeandcake.dev",
+    "score": 602,
+    "commentsCount": 51,
+    "publishedAt": "2026-10-23T13:15:04.945132+00:00"
+  },
+  {
+    "id": "hn-50205816",
+    "title": "Remove pgrust: the entry is cheating",
+    "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
+    "domain": "github.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "arstechnica.com",
-    "score": 46,
-    "commentsCount": 5,
-    "publishedAt": "2026-10-22T13:39:19.370026+00:00"
+    "source": "github.com",
+    "score": 80,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-23T13:15:05.040775+00:00"
   },
   {
-    "id": "hn-50194833",
-    "title": "Woman faces six years in prison over Cash App account she never opened",
-    "url": "https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html",
-    "domain": "techspot.com",
-    "category": "APPs",
+    "id": "hn-50207050",
+    "title": "No Need for Retirement When Utopia Is Around the Corner",
+    "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
+    "domain": "blog.jim-nielsen.com",
+    "category": "Technology",
     "tags": [
-      "APPs",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "techspot.com",
-    "score": 31,
-    "commentsCount": 7,
-    "publishedAt": "2026-10-22T13:39:19.457415+00:00"
+    "source": "blog.jim-nielsen.com",
+    "score": 13,
+    "commentsCount": 2,
+    "publishedAt": "2026-10-23T13:15:05.135078+00:00"
   }
 ]
