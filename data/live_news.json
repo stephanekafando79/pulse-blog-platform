@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50219666",
-    "title": "I Don't Understand Quantum Physics (2018)",
-    "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
-    "domain": "southampton.ac.uk",
+    "id": "hn-50227892",
+    "title": "Xbox Turns Down Netflix $500M Offer",
+    "url": "https://www.darkhorizons.com/xbox-turns-down-netflix-500-million-offer/",
+    "domain": "darkhorizons.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "southampton.ac.uk",
-    "score": 103,
-    "commentsCount": 25,
-    "publishedAt": "2026-10-24T12:32:58.927086+00:00"
+    "source": "darkhorizons.com",
+    "score": 43,
+    "commentsCount": 10,
+    "publishedAt": "2026-10-25T04:06:26.002026+00:00"
   },
   {
-    "id": "hn-50220540",
-    "title": "I can't believe we're still arguing over whether X is for jerks",
-    "url": "https://lexontech.org/i-cant-believe-were-still-arguing-over-whether-x-is-for-jerks",
-    "domain": "lexontech.org",
-    "category": "Technology",
+    "id": "hn-50225695",
+    "title": "We should be more ambitious with the software we build",
+    "url": "https://danluu.com/ambitious/",
+    "domain": "danluu.com",
+    "category": "APPs",
     "tags": [
-      "Technology",
+      "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "lexontech.org",
-    "score": 8,
-    "commentsCount": 1,
-    "publishedAt": "2026-10-24T12:32:59.024749+00:00"
+    "source": "danluu.com",
+    "score": 260,
+    "commentsCount": 43,
+    "publishedAt": "2026-10-25T04:06:26.101402+00:00"
   },
   {
-    "id": "hn-50218430",
-    "title": "OBS Studio 33",
-    "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
-    "domain": "github.com",
-    "category": "Technology",
+    "id": "hn-50227356",
+    "title": "Cerebras Deploys Trillion-Parameter AI Models",
+    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+    "domain": "cerebras.ai",
+    "category": "AI & ML",
     "tags": [
-      "Technology",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 209,
-    "commentsCount": 16,
-    "publishedAt": "2026-10-24T12:32:59.109028+00:00"
+    "source": "cerebras.ai",
+    "score": 33,
+    "commentsCount": 6,
+    "publishedAt": "2026-10-25T04:06:26.194306+00:00"
   },
   {
-    "id": "hn-50212065",
-    "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-    "domain": "kimi.ai",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "kimi.ai",
-    "score": 949,
-    "commentsCount": 107,
-    "publishedAt": "2026-10-24T12:32:59.191970+00:00"
-  },
-  {
-    "id": "hn-50186450",
-    "title": "Physicists trap a single antimatter particle for a month",
-    "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
-    "domain": "scientificamerican.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "scientificamerican.com",
-    "score": 95,
-    "commentsCount": 8,
-    "publishedAt": "2026-10-24T12:32:59.281135+00:00"
-  },
-  {
-    "id": "hn-50217495",
-    "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
-    "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-    "domain": "grapheneos.social",
+    "id": "hn-50224100",
+    "title": "The Goose Programming Language",
+    "url": "https://aardappel.github.io/goose/",
+    "domain": "aardappel.github.io",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "grapheneos.social",
-    "score": 205,
-    "commentsCount": 14,
-    "publishedAt": "2026-10-24T12:32:59.363192+00:00"
+    "source": "aardappel.github.io",
+    "score": 289,
+    "commentsCount": 46,
+    "publishedAt": "2026-10-25T04:06:26.286616+00:00"
   },
   {
-    "id": "hn-50211474",
-    "title": "Today, we hacked what we'd set out to hack: the iPhone",
-    "url": "https://blog.calif.io/p/iphone",
-    "domain": "blog.calif.io",
-    "category": "Cybersecurity",
+    "id": "hn-50226419",
+    "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+    "domain": "apricitas.io",
+    "category": "OS",
     "tags": [
-      "Cybersecurity",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "blog.calif.io",
-    "score": 930,
-    "commentsCount": 66,
-    "publishedAt": "2026-10-24T12:32:59.448159+00:00"
+    "source": "apricitas.io",
+    "score": 233,
+    "commentsCount": 35,
+    "publishedAt": "2026-10-25T04:06:26.377452+00:00"
   },
   {
-    "id": "hn-50217500",
-    "title": "Twelve years of distributed SQLite",
-    "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
-    "domain": "philipotoole.com",
+    "id": "hn-50224422",
+    "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
+    "url": "https://missileer.watch",
+    "domain": "missileer.watch",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "philipotoole.com",
-    "score": 237,
-    "commentsCount": 20,
-    "publishedAt": "2026-10-24T12:32:59.549117+00:00"
+    "source": "missileer.watch",
+    "score": 141,
+    "commentsCount": 18,
+    "publishedAt": "2026-10-25T04:06:26.462597+00:00"
+  },
+  {
+    "id": "hn-50225674",
+    "title": "Small Programs and Languages",
+    "url": "https://ratfactor.com/cards/pl-small",
+    "domain": "ratfactor.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "ratfactor.com",
+    "score": 60,
+    "commentsCount": 4,
+    "publishedAt": "2026-10-25T04:06:26.555421+00:00"
+  },
+  {
+    "id": "hn-50224210",
+    "title": "SpeedCrunch 1.1",
+    "url": "https://www.speedcrunch.org/",
+    "domain": "speedcrunch.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "speedcrunch.org",
+    "score": 99,
+    "commentsCount": 10,
+    "publishedAt": "2026-10-25T04:06:26.678700+00:00"
   }
 ]
