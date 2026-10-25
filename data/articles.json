@@ -1,5 +1,51 @@
 [
   {
+    "id": "daily-2026-10-25",
+    "title": "Daily Pulse: Edge Intelligence: Running High-Accuracy 8B LLMs Locally on Consumer Silicon",
+    "slug": "daily-pulse-2026-10-25-edge-intelligence-running-hig",
+    "excerpt": "Daily edition for October 25, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in AI & ML.",
+    "content": "# Daily Pulse: Edge Intelligence: Running High-Accuracy 8B LLMs Locally on Consumer Silicon\n\n*Published on October 25, 2026 by The Pulse Collective*\n\n## Sovereign Computing: Intelligence Without Cloud Surveillance\n\nIn 2023, running an LLM capable of code completion and architectural review required a multi-thousand-dollar server cluster.\n\nIn 2026, advances in **quantization (GGUF / AWQ / FP4)** and dedicated Neural Processing Units (NPUs) on modern laptops allow engineers to run top-tier 8B and 14B models completely offline at 40+ tokens per second.\n\n### Key Benefits of Local Model Runtimes:\n1. **Total Data Privacy**: Proprietary source code, customer databases, and medical logs never leave local memory.\n2. **Zero API Cost**: Run millions of inference tokens per day with zero billing invoices.\n3. **Zero Latency Jitter**: Inference begins immediately without DNS lookups, TLS handshakes, or queue delays.\n\n```bash\n# Run local high-performance code assistant via Ollama / llama.cpp\nollama run qwen2.5-coder:7b-instruct-q8_0\n\n# Test memory utilization and throughput\nollama ps\n# NAME               SIZE      PROCESSOR    UNTIL\n# qwen2.5-coder:7b   7.6 GB    100% GPU     Forever\n```\n\nSovereign local computing gives developers complete independence from centralized cloud platforms.",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    "category": "AI & ML",
+    "tags": [
+      "AI",
+      "LocalLLM",
+      "Silicon",
+      "Hardware",
+      "NPU",
+      "DailyPulse",
+      "Oct2026"
+    ],
+    "author": {
+      "id": "user_pulse_collective",
+      "name": "The Pulse Collective",
+      "handle": "@pulsecollective",
+      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80",
+      "bio": "Global Tech Collective & Open IT Engineering Community."
+    },
+    "publishedAt": "2026-10-25T13:06:03.451924+00:00",
+    "readTime": "3 min read",
+    "likes": 47,
+    "views": 444,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-10-25-1",
+        "author": {
+          "id": "user_alex",
+          "name": "Alex Rivera",
+          "handle": "@alexrivera",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Staff Systems Engineer & Linux Kernel Contributor."
+        },
+        "text": "Crucial insights on AI. High-signal perspective for IT and engineering teams.",
+        "createdAt": "2026-10-25T13:06:03.451941+00:00",
+        "likes": 8
+      }
+    ]
+  },
+  {
     "id": "daily-2026-10-24",
     "title": "Daily Pulse: The Death of SMS 2FA: Why Hardware Passkeys Are Now Non-Negotiable",
     "slug": "daily-pulse-2026-10-24-the-death-of-sms-2fa-why-hard",
@@ -27,7 +73,7 @@
     "readTime": "3 min read",
     "likes": 47,
     "views": 540,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {

@@ -1,23 +1,39 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-25T04:06:26.679090+00:00
+ * Last Updated: 2026-10-25T13:06:03.451394+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50227892",
-    "title": "Xbox Turns Down Netflix $500M Offer",
-    "url": "https://www.darkhorizons.com/xbox-turns-down-netflix-500-million-offer/",
-    "domain": "darkhorizons.com",
+    "id": "hn-50229587",
+    "title": "Meta Ignores Brazilian Court Order to End Bolsonaro Favoritism",
+    "url": "https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order",
+    "domain": "panamericandispatch.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "darkhorizons.com",
-    "score": 43,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-25T04:06:26.002026+00:00"
+    "source": "panamericandispatch.org",
+    "score": 334,
+    "commentsCount": 35,
+    "publishedAt": "2026-10-25T13:06:02.623834+00:00"
+  },
+  {
+    "id": "hn-50230384",
+    "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
+    "url": "https://github.com/ihhub/fheroes2",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 46,
+    "commentsCount": 7,
+    "publishedAt": "2026-10-25T13:06:02.746872+00:00"
   },
   {
     "id": "hn-50225695",
@@ -31,9 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "danluu.com",
-    "score": 260,
-    "commentsCount": 43,
-    "publishedAt": "2026-10-25T04:06:26.101402+00:00"
+    "score": 507,
+    "commentsCount": 91,
+    "publishedAt": "2026-10-25T13:06:02.860907+00:00"
   },
   {
     "id": "hn-50227356",
@@ -47,9 +63,41 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "cerebras.ai",
-    "score": 33,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-25T04:06:26.194306+00:00"
+    "score": 219,
+    "commentsCount": 22,
+    "publishedAt": "2026-10-25T13:06:02.984740+00:00"
+  },
+  {
+    "id": "hn-50230181",
+    "title": "Samsung running a TensorFlow lite model on 960x540 image to track you",
+    "url": "https://twitter.com/mike64_t/status/2114150399406202896",
+    "domain": "twitter.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "twitter.com",
+    "score": 99,
+    "commentsCount": 16,
+    "publishedAt": "2026-10-25T13:06:03.094135+00:00"
+  },
+  {
+    "id": "hn-50193936",
+    "title": "How Japanese Dried Bonito Is Made",
+    "url": "https://kottke.org/26/10/how-japanese-dried-bonito-is-made",
+    "domain": "kottke.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "kottke.org",
+    "score": 81,
+    "commentsCount": 10,
+    "publishedAt": "2026-10-25T13:06:03.206007+00:00"
   },
   {
     "id": "hn-50224100",
@@ -63,72 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "aardappel.github.io",
-    "score": 289,
-    "commentsCount": 46,
-    "publishedAt": "2026-10-25T04:06:26.286616+00:00"
+    "score": 453,
+    "commentsCount": 62,
+    "publishedAt": "2026-10-25T13:06:03.337473+00:00"
   },
   {
-    "id": "hn-50226419",
-    "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
-    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-    "domain": "apricitas.io",
-    "category": "OS",
+    "id": "hn-50194645",
+    "title": "Rewriting a Commercial Engine in Jai",
+    "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
+    "domain": "polygonjs.com",
+    "category": "AI & ML",
     "tags": [
-      "OS",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "apricitas.io",
-    "score": 233,
-    "commentsCount": 35,
-    "publishedAt": "2026-10-25T04:06:26.377452+00:00"
-  },
-  {
-    "id": "hn-50224422",
-    "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-    "url": "https://missileer.watch",
-    "domain": "missileer.watch",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "missileer.watch",
-    "score": 141,
-    "commentsCount": 18,
-    "publishedAt": "2026-10-25T04:06:26.462597+00:00"
-  },
-  {
-    "id": "hn-50225674",
-    "title": "Small Programs and Languages",
-    "url": "https://ratfactor.com/cards/pl-small",
-    "domain": "ratfactor.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ratfactor.com",
-    "score": 60,
-    "commentsCount": 4,
-    "publishedAt": "2026-10-25T04:06:26.555421+00:00"
-  },
-  {
-    "id": "hn-50224210",
-    "title": "SpeedCrunch 1.1",
-    "url": "https://www.speedcrunch.org/",
-    "domain": "speedcrunch.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "speedcrunch.org",
-    "score": 99,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-25T04:06:26.678700+00:00"
+    "source": "polygonjs.com",
+    "score": 45,
+    "commentsCount": 6,
+    "publishedAt": "2026-10-25T13:06:03.451047+00:00"
   }
 ];
