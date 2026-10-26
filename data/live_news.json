@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50229587",
-    "title": "Meta Ignores Brazilian Court Order to End Bolsonaro Favoritism",
-    "url": "https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order",
-    "domain": "panamericandispatch.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "panamericandispatch.org",
-    "score": 334,
-    "commentsCount": 35,
-    "publishedAt": "2026-10-25T13:06:02.623834+00:00"
-  },
-  {
-    "id": "hn-50230384",
-    "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
-    "url": "https://github.com/ihhub/fheroes2",
-    "domain": "github.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 46,
-    "commentsCount": 7,
-    "publishedAt": "2026-10-25T13:06:02.746872+00:00"
-  },
-  {
-    "id": "hn-50225695",
-    "title": "We should be more ambitious with the software we build",
-    "url": "https://danluu.com/ambitious/",
-    "domain": "danluu.com",
+    "id": "hn-50242870",
+    "title": "Fixing Tool-Call Accuracy in vLLM",
+    "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+    "domain": "ubicloud.com",
     "category": "APPs",
     "tags": [
       "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "danluu.com",
-    "score": 507,
-    "commentsCount": 91,
-    "publishedAt": "2026-10-25T13:06:02.860907+00:00"
+    "source": "ubicloud.com",
+    "score": 59,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-26T15:01:54.454071+00:00"
   },
   {
-    "id": "hn-50227356",
-    "title": "Cerebras Deploys Trillion-Parameter AI Models",
-    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-    "domain": "cerebras.ai",
+    "id": "hn-50215997",
+    "title": "Birdwatching rewires the brain and slows cognitive decline",
+    "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
+    "domain": "bbc.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "cerebras.ai",
-    "score": 219,
-    "commentsCount": 22,
-    "publishedAt": "2026-10-25T13:06:02.984740+00:00"
+    "source": "bbc.com",
+    "score": 267,
+    "commentsCount": 31,
+    "publishedAt": "2026-10-26T15:01:54.554731+00:00"
   },
   {
-    "id": "hn-50230181",
-    "title": "Samsung running a TensorFlow lite model on 960x540 image to track you",
-    "url": "https://twitter.com/mike64_t/status/2114150399406202896",
-    "domain": "twitter.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "twitter.com",
-    "score": 99,
-    "commentsCount": 16,
-    "publishedAt": "2026-10-25T13:06:03.094135+00:00"
-  },
-  {
-    "id": "hn-50193936",
-    "title": "How Japanese Dried Bonito Is Made",
-    "url": "https://kottke.org/26/10/how-japanese-dried-bonito-is-made",
-    "domain": "kottke.org",
+    "id": "hn-50240922",
+    "title": "Switzerland. Block by block. At 1:1 scale",
+    "url": "https://blocks.manifold3d.ch/",
+    "domain": "blocks.manifold3d.ch",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "kottke.org",
-    "score": 81,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-25T13:06:03.206007+00:00"
+    "source": "blocks.manifold3d.ch",
+    "score": 335,
+    "commentsCount": 33,
+    "publishedAt": "2026-10-26T15:01:54.656470+00:00"
   },
   {
-    "id": "hn-50224100",
-    "title": "The Goose Programming Language",
-    "url": "https://aardappel.github.io/goose/",
-    "domain": "aardappel.github.io",
-    "category": "OS",
+    "id": "hn-50200152",
+    "title": "One of the Greatest Inventions in the History of Human Transport",
+    "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
+    "domain": "humantransit.org",
+    "category": "Technology",
     "tags": [
-      "OS",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "aardappel.github.io",
-    "score": 453,
-    "commentsCount": 62,
-    "publishedAt": "2026-10-25T13:06:03.337473+00:00"
+    "source": "humantransit.org",
+    "score": 78,
+    "commentsCount": 8,
+    "publishedAt": "2026-10-26T15:01:54.752958+00:00"
   },
   {
-    "id": "hn-50194645",
-    "title": "Rewriting a Commercial Engine in Jai",
-    "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
-    "domain": "polygonjs.com",
+    "id": "hn-50241925",
+    "title": "Pharo 14",
+    "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
+    "domain": "pharo.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "pharo.org",
+    "score": 33,
+    "commentsCount": 1,
+    "publishedAt": "2026-10-26T15:01:54.855414+00:00"
+  },
+  {
+    "id": "hn-50209573",
+    "title": "Colorfigures",
+    "url": "https://april-zhu.com/colorfigures",
+    "domain": "april-zhu.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "april-zhu.com",
+    "score": 41,
+    "commentsCount": 3,
+    "publishedAt": "2026-10-26T15:01:54.953910+00:00"
+  },
+  {
+    "id": "hn-50243646",
+    "title": "OLED iPad Mini",
+    "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+    "domain": "apple.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "apple.com",
+    "score": 92,
+    "commentsCount": 24,
+    "publishedAt": "2026-10-26T15:01:55.061989+00:00"
+  },
+  {
+    "id": "hn-50242843",
+    "title": "Brown student maps the hidden global labor powering AI",
+    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
+    "domain": "brown.edu",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "polygonjs.com",
-    "score": 45,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-25T13:06:03.451047+00:00"
+    "source": "brown.edu",
+    "score": 38,
+    "commentsCount": 11,
+    "publishedAt": "2026-10-26T15:01:55.173021+00:00"
   }
 ]
