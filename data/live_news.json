@@ -1,104 +1,88 @@
 [
   {
-    "id": "hn-50242870",
-    "title": "Fixing Tool-Call Accuracy in vLLM",
-    "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
-    "domain": "ubicloud.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ubicloud.com",
-    "score": 59,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-26T15:01:54.454071+00:00"
-  },
-  {
-    "id": "hn-50215997",
-    "title": "Birdwatching rewires the brain and slows cognitive decline",
-    "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
-    "domain": "bbc.com",
+    "id": "hn-50256985",
+    "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+    "domain": "open3dlab.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "bbc.com",
-    "score": 267,
-    "commentsCount": 31,
-    "publishedAt": "2026-10-26T15:01:54.554731+00:00"
+    "source": "open3dlab.com",
+    "score": 331,
+    "commentsCount": 34,
+    "publishedAt": "2026-10-27T14:15:56.915138+00:00"
   },
   {
-    "id": "hn-50240922",
-    "title": "Switzerland. Block by block. At 1:1 scale",
-    "url": "https://blocks.manifold3d.ch/",
-    "domain": "blocks.manifold3d.ch",
-    "category": "Technology",
+    "id": "hn-50259343",
+    "title": "Wiz: No successful PHP2Shell exploits seen so far; exposure down 67%",
+    "url": "https://www.wiz.io/blog/php2shell-exploitation-so-far",
+    "domain": "wiz.io",
+    "category": "OS",
     "tags": [
-      "Technology",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "blocks.manifold3d.ch",
-    "score": 335,
-    "commentsCount": 33,
-    "publishedAt": "2026-10-26T15:01:54.656470+00:00"
-  },
-  {
-    "id": "hn-50200152",
-    "title": "One of the Greatest Inventions in the History of Human Transport",
-    "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
-    "domain": "humantransit.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "humantransit.org",
-    "score": 78,
-    "commentsCount": 8,
-    "publishedAt": "2026-10-26T15:01:54.752958+00:00"
-  },
-  {
-    "id": "hn-50241925",
-    "title": "Pharo 14",
-    "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
-    "domain": "pharo.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "pharo.org",
-    "score": 33,
+    "source": "wiz.io",
+    "score": 27,
     "commentsCount": 1,
-    "publishedAt": "2026-10-26T15:01:54.855414+00:00"
+    "publishedAt": "2026-10-27T14:15:57.007751+00:00"
   },
   {
-    "id": "hn-50209573",
-    "title": "Colorfigures",
-    "url": "https://april-zhu.com/colorfigures",
-    "domain": "april-zhu.com",
+    "id": "hn-50257419",
+    "title": "Python's experimental JIT to be removed",
+    "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+    "domain": "lwn.net",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "april-zhu.com",
-    "score": 41,
-    "commentsCount": 3,
-    "publishedAt": "2026-10-26T15:01:54.953910+00:00"
+    "source": "lwn.net",
+    "score": 144,
+    "commentsCount": 24,
+    "publishedAt": "2026-10-27T14:15:57.102358+00:00"
   },
   {
-    "id": "hn-50243646",
-    "title": "OLED iPad Mini",
-    "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+    "id": "hn-50257325",
+    "title": "AI promised less work. I've never worked more",
+    "url": "https://oioannou.com/blog/ai-promised-less-work/",
+    "domain": "oioannou.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "oioannou.com",
+    "score": 265,
+    "commentsCount": 52,
+    "publishedAt": "2026-10-27T14:15:57.214080+00:00"
+  },
+  {
+    "id": "hn-50257326",
+    "title": "Wikipedia's Cleanup of AI-Generated Content",
+    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+    "domain": "spectrum.ieee.org",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "spectrum.ieee.org",
+    "score": 135,
+    "commentsCount": 12,
+    "publishedAt": "2026-10-27T14:15:57.316825+00:00"
+  },
+  {
+    "id": "hn-50258538",
+    "title": "New iMac with M6",
+    "url": "https://www.apple.com/imac/",
     "domain": "apple.com",
     "category": "Technology",
     "tags": [
@@ -107,24 +91,40 @@
       "TechNews"
     ],
     "source": "apple.com",
-    "score": 92,
-    "commentsCount": 24,
-    "publishedAt": "2026-10-26T15:01:55.061989+00:00"
+    "score": 24,
+    "commentsCount": 8,
+    "publishedAt": "2026-10-27T14:15:57.410485+00:00"
   },
   {
-    "id": "hn-50242843",
-    "title": "Brown student maps the hidden global labor powering AI",
-    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
-    "domain": "brown.edu",
-    "category": "AI & ML",
+    "id": "hn-50258868",
+    "title": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
+    "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+    "domain": "blog.adrq.dev",
+    "category": "Technology",
     "tags": [
-      "AI & ML",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "brown.edu",
-    "score": 38,
-    "commentsCount": 11,
-    "publishedAt": "2026-10-26T15:01:55.173021+00:00"
+    "source": "blog.adrq.dev",
+    "score": 13,
+    "commentsCount": 2,
+    "publishedAt": "2026-10-27T14:15:57.514788+00:00"
+  },
+  {
+    "id": "hn-50251344",
+    "title": "Three new discoveries in mathematics, computer science, and physics",
+    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+    "domain": "openai.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "openai.com",
+    "score": 1020,
+    "commentsCount": 89,
+    "publishedAt": "2026-10-27T14:15:57.610603+00:00"
   }
 ]
