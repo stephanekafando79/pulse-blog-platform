@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-27T14:15:57.610957+00:00
+ * Last Updated: 2026-10-28T14:58:42.729276+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50256985",
-    "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
-    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
-    "domain": "open3dlab.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "open3dlab.com",
-    "score": 331,
-    "commentsCount": 34,
-    "publishedAt": "2026-10-27T14:15:56.915138+00:00"
-  },
-  {
-    "id": "hn-50259343",
-    "title": "Wiz: No successful PHP2Shell exploits seen so far; exposure down 67%",
-    "url": "https://www.wiz.io/blog/php2shell-exploitation-so-far",
-    "domain": "wiz.io",
+    "id": "hn-50271640",
+    "title": "Ten days later, Git on macOS still trusts the compromised eMudhra certificates",
+    "url": "https://emudhra.we-have-a-problem.com/apple.html",
+    "domain": "emudhra.we-have-a-problem.com",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "wiz.io",
+    "source": "emudhra.we-have-a-problem.com",
+    "score": 482,
+    "commentsCount": 36,
+    "publishedAt": "2026-10-28T14:58:41.937417+00:00"
+  },
+  {
+    "id": "hn-50273731",
+    "title": "The Agent SDK",
+    "url": "https://cursor.com/blog/agent-sdk",
+    "domain": "cursor.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "cursor.com",
     "score": 27,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-28T14:58:42.029384+00:00"
+  },
+  {
+    "id": "hn-50208960",
+    "title": "Start Doing Graph Theory",
+    "url": "https://vertex.degree/",
+    "domain": "vertex.degree",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "vertex.degree",
+    "score": 287,
+    "commentsCount": 23,
+    "publishedAt": "2026-10-28T14:58:42.121148+00:00"
+  },
+  {
+    "id": "hn-50272749",
+    "title": "ICE Is Running One of the Largest Anti-Left Surveillance Ops in US History",
+    "url": "https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/",
+    "domain": "wired.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "wired.com",
+    "score": 522,
+    "commentsCount": 36,
+    "publishedAt": "2026-10-28T14:58:42.240783+00:00"
+  },
+  {
+    "id": "hn-50274409",
+    "title": "CNC Stone Carving",
+    "url": "https://carmelitegothic.com/cnc-stone-carving/",
+    "domain": "carmelitegothic.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "carmelitegothic.com",
+    "score": 9,
+    "commentsCount": 0,
+    "publishedAt": "2026-10-28T14:58:42.326640+00:00"
+  },
+  {
+    "id": "hn-50243060",
+    "title": "Unveiling The Grid: PCBs made in America, twice as fast as Shenzhen",
+    "url": "https://www.circuithub.com/post/unveiling-the-grid",
+    "domain": "circuithub.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "circuithub.com",
+    "score": 132,
+    "commentsCount": 18,
+    "publishedAt": "2026-10-28T14:58:42.440592+00:00"
+  },
+  {
+    "id": "hn-50274139",
+    "title": "An architectural comparison of Obsidian Canvas and Heptabase",
+    "url": "https://www.fluxlinks.com/blog/obsidian-canvas-vs-heptabase",
+    "domain": "fluxlinks.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "fluxlinks.com",
+    "score": 9,
     "commentsCount": 1,
-    "publishedAt": "2026-10-27T14:15:57.007751+00:00"
+    "publishedAt": "2026-10-28T14:58:42.535176+00:00"
   },
   {
-    "id": "hn-50257419",
-    "title": "Python's experimental JIT to be removed",
-    "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
-    "domain": "lwn.net",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "lwn.net",
-    "score": 144,
-    "commentsCount": 24,
-    "publishedAt": "2026-10-27T14:15:57.102358+00:00"
-  },
-  {
-    "id": "hn-50257325",
-    "title": "AI promised less work. I've never worked more",
-    "url": "https://oioannou.com/blog/ai-promised-less-work/",
-    "domain": "oioannou.com",
+    "id": "hn-50273396",
+    "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+    "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+    "domain": "religionnews.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "oioannou.com",
-    "score": 265,
-    "commentsCount": 52,
-    "publishedAt": "2026-10-27T14:15:57.214080+00:00"
-  },
-  {
-    "id": "hn-50257326",
-    "title": "Wikipedia's Cleanup of AI-Generated Content",
-    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-    "domain": "spectrum.ieee.org",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "spectrum.ieee.org",
-    "score": 135,
-    "commentsCount": 12,
-    "publishedAt": "2026-10-27T14:15:57.316825+00:00"
-  },
-  {
-    "id": "hn-50258538",
-    "title": "New iMac with M6",
-    "url": "https://www.apple.com/imac/",
-    "domain": "apple.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "apple.com",
-    "score": 24,
-    "commentsCount": 8,
-    "publishedAt": "2026-10-27T14:15:57.410485+00:00"
-  },
-  {
-    "id": "hn-50258868",
-    "title": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
-    "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
-    "domain": "blog.adrq.dev",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.adrq.dev",
-    "score": 13,
-    "commentsCount": 2,
-    "publishedAt": "2026-10-27T14:15:57.514788+00:00"
-  },
-  {
-    "id": "hn-50251344",
-    "title": "Three new discoveries in mathematics, computer science, and physics",
-    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-    "domain": "openai.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "openai.com",
-    "score": 1020,
-    "commentsCount": 89,
-    "publishedAt": "2026-10-27T14:15:57.610603+00:00"
+    "source": "religionnews.com",
+    "score": 102,
+    "commentsCount": 17,
+    "publishedAt": "2026-10-28T14:58:42.649575+00:00"
   }
 ];
