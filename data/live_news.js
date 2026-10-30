@@ -1,11 +1,91 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-29T15:05:44.370787+00:00
+ * Last Updated: 2026-10-30T14:57:13.959514+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
+    "id": "hn-50301462",
+    "title": "elect.horse",
+    "url": "https://elect.horse/",
+    "domain": "elect.horse",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "elect.horse",
+    "score": 368,
+    "commentsCount": 20,
+    "publishedAt": "2026-10-30T14:57:12.831022+00:00"
+  },
+  {
+    "id": "hn-50300683",
+    "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "domain": "phorion.io",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "phorion.io",
+    "score": 102,
+    "commentsCount": 73,
+    "publishedAt": "2026-10-30T14:57:12.950634+00:00"
+  },
+  {
+    "id": "hn-50301854",
+    "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+    "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+    "domain": "binarysecurity.no",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "binarysecurity.no",
+    "score": 130,
+    "commentsCount": 6,
+    "publishedAt": "2026-10-30T14:57:13.152947+00:00"
+  },
+  {
+    "id": "hn-50302814",
+    "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+    "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+    "domain": "progressives.house.gov",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "progressives.house.gov",
+    "score": 274,
+    "commentsCount": 32,
+    "publishedAt": "2026-10-30T14:57:13.443716+00:00"
+  },
+  {
+    "id": "hn-50296470",
+    "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+    "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+    "domain": "arkm.com",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "arkm.com",
+    "score": 1606,
+    "commentsCount": 160,
+    "publishedAt": "2026-10-30T14:57:13.594096+00:00"
+  },
+  {
     "id": "hn-50289418",
-    "title": "Mistral Large 4 (Le Chonk) is now Open Weight",
+    "title": "We're releasing the weights of Mistral Large 4",
     "url": "https://mistral.ai/news/mistral-large-4-oss/",
     "domain": "mistral.ai",
     "category": "Technology",
@@ -15,120 +95,40 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "mistral.ai",
-    "score": 244,
+    "score": 1613,
+    "commentsCount": 56,
+    "publishedAt": "2026-10-30T14:57:13.738911+00:00"
+  },
+  {
+    "id": "hn-50303172",
+    "title": "The $6.3B Binance Hack Was Pulled Off in Just 20 Minutes",
+    "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+    "domain": "wired.com",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "wired.com",
+    "score": 94,
     "commentsCount": 15,
-    "publishedAt": "2026-10-29T15:05:43.692426+00:00"
+    "publishedAt": "2026-10-30T14:57:13.856446+00:00"
   },
   {
-    "id": "hn-50288019",
-    "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
-    "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
-    "domain": "artificialanalysis.ai",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "artificialanalysis.ai",
-    "score": 202,
-    "commentsCount": 45,
-    "publishedAt": "2026-10-29T15:05:43.793347+00:00"
-  },
-  {
-    "id": "hn-50288867",
-    "title": "Read the letter the FBI sent MLK to try to convince him to kill himself (2014)",
-    "url": "https://www.vox.com/xpress/2014/11/12/7204453/martin-luther-king-fbi-letter",
-    "domain": "vox.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "vox.com",
-    "score": 205,
-    "commentsCount": 15,
-    "publishedAt": "2026-10-29T15:05:43.880832+00:00"
-  },
-  {
-    "id": "hn-50289859",
-    "title": "DoorDash is acquiring Instacart for $17B",
-    "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
-    "domain": "about.doordash.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "about.doordash.com",
-    "score": 13,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-29T15:05:43.970162+00:00"
-  },
-  {
-    "id": "hn-50286987",
-    "title": "Chained PHP2Shell Exploit Roots 25 Servers, Including US Government Servers",
-    "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
-    "domain": "dreamgroup.com",
+    "id": "hn-50302925",
+    "title": "American views of higher ed decline, once again",
+    "url": "https://bryanalexander.org/horizon-scanning/american-views-of-higher-ed-decline-once-again/",
+    "domain": "bryanalexander.org",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "dreamgroup.com",
-    "score": 88,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-29T15:05:44.063505+00:00"
-  },
-  {
-    "id": "hn-50282838",
-    "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
-    "url": "https://divagr.com/blog/qwenputer",
-    "domain": "divagr.com",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "divagr.com",
-    "score": 617,
-    "commentsCount": 71,
-    "publishedAt": "2026-10-29T15:05:44.182134+00:00"
-  },
-  {
-    "id": "hn-50285452",
-    "title": "Zero click, silent, remote Android DoS",
-    "url": "https://smsofdeath.com/",
-    "domain": "smsofdeath.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "smsofdeath.com",
-    "score": 226,
-    "commentsCount": 28,
-    "publishedAt": "2026-10-29T15:05:44.278288+00:00"
-  },
-  {
-    "id": "hn-50287448",
-    "title": "Google determines the names for bodies of water in Google Earth (2008)",
-    "url": "https://publicpolicy.googleblog.com/2008/04/how-google-determines-names-for-bodies.html",
-    "domain": "publicpolicy.googleblog.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "publicpolicy.googleblog.com",
-    "score": 126,
-    "commentsCount": 19,
-    "publishedAt": "2026-10-29T15:05:44.370362+00:00"
+    "source": "bryanalexander.org",
+    "score": 31,
+    "commentsCount": 17,
+    "publishedAt": "2026-10-30T14:57:13.959048+00:00"
   }
 ];
