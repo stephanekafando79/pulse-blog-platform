@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-30T14:57:13.959514+00:00
+ * Last Updated: 2026-10-31T14:26:10.367124+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50301462",
-    "title": "elect.horse",
-    "url": "https://elect.horse/",
-    "domain": "elect.horse",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "elect.horse",
-    "score": 368,
-    "commentsCount": 20,
-    "publishedAt": "2026-10-30T14:57:12.831022+00:00"
-  },
-  {
-    "id": "hn-50300683",
-    "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-    "domain": "phorion.io",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "phorion.io",
-    "score": 102,
-    "commentsCount": 73,
-    "publishedAt": "2026-10-30T14:57:12.950634+00:00"
-  },
-  {
-    "id": "hn-50301854",
-    "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
-    "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
-    "domain": "binarysecurity.no",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "binarysecurity.no",
-    "score": 130,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-30T14:57:13.152947+00:00"
-  },
-  {
-    "id": "hn-50302814",
-    "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
-    "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
-    "domain": "progressives.house.gov",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "progressives.house.gov",
-    "score": 274,
-    "commentsCount": 32,
-    "publishedAt": "2026-10-30T14:57:13.443716+00:00"
-  },
-  {
-    "id": "hn-50296470",
-    "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
-    "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
-    "domain": "arkm.com",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "arkm.com",
-    "score": 1606,
-    "commentsCount": 160,
-    "publishedAt": "2026-10-30T14:57:13.594096+00:00"
-  },
-  {
-    "id": "hn-50289418",
-    "title": "We're releasing the weights of Mistral Large 4",
-    "url": "https://mistral.ai/news/mistral-large-4-oss/",
-    "domain": "mistral.ai",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "mistral.ai",
-    "score": 1613,
-    "commentsCount": 56,
-    "publishedAt": "2026-10-30T14:57:13.738911+00:00"
-  },
-  {
-    "id": "hn-50303172",
-    "title": "The $6.3B Binance Hack Was Pulled Off in Just 20 Minutes",
-    "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
-    "domain": "wired.com",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "wired.com",
-    "score": 94,
-    "commentsCount": 15,
-    "publishedAt": "2026-10-30T14:57:13.856446+00:00"
-  },
-  {
-    "id": "hn-50302925",
-    "title": "American views of higher ed decline, once again",
-    "url": "https://bryanalexander.org/horizon-scanning/american-views-of-higher-ed-decline-once-again/",
-    "domain": "bryanalexander.org",
+    "id": "hn-50314654",
+    "title": "Serbia just elected the world's brainiest parliament",
+    "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+    "domain": "science.org",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "bryanalexander.org",
-    "score": 31,
-    "commentsCount": 17,
-    "publishedAt": "2026-10-30T14:57:13.959048+00:00"
+    "source": "science.org",
+    "score": 474,
+    "commentsCount": 54,
+    "publishedAt": "2026-10-31T14:26:09.393459+00:00"
+  },
+  {
+    "id": "hn-50314666",
+    "title": "Molly(Signal fork) has not been updated since 3 months and is vulnerable",
+    "url": "https://piefed.world/post/1503394",
+    "domain": "piefed.world",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "piefed.world",
+    "score": 108,
+    "commentsCount": 6,
+    "publishedAt": "2026-10-31T14:26:09.527487+00:00"
+  },
+  {
+    "id": "hn-50315226",
+    "title": "Prospero: A new coding harness for a more civilized age",
+    "url": "https://nullprogram.com/blog/2026/10/31/",
+    "domain": "nullprogram.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "nullprogram.com",
+    "score": 49,
+    "commentsCount": 12,
+    "publishedAt": "2026-10-31T14:26:09.663318+00:00"
+  },
+  {
+    "id": "hn-50314699",
+    "title": "We Took over ChatGPT Accounts",
+    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+    "domain": "parameter.ai",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "parameter.ai",
+    "score": 107,
+    "commentsCount": 12,
+    "publishedAt": "2026-10-31T14:26:09.878960+00:00"
+  },
+  {
+    "id": "hn-50314085",
+    "title": "Switch Lowering in GCC",
+    "url": "https://xoranth.net/gcc-switch/",
+    "domain": "xoranth.net",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "xoranth.net",
+    "score": 112,
+    "commentsCount": 7,
+    "publishedAt": "2026-10-31T14:26:09.975107+00:00"
+  },
+  {
+    "id": "hn-50261253",
+    "title": "Simple circuits can create complex behaviors",
+    "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+    "domain": "aatishb.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "aatishb.com",
+    "score": 30,
+    "commentsCount": 3,
+    "publishedAt": "2026-10-31T14:26:10.142172+00:00"
+  },
+  {
+    "id": "hn-50260753",
+    "title": "Show HN: Marelleo, an open-source story box I built for my kids using ESP32",
+    "url": "https://zebra.rodeo/en/blog/marelleo/",
+    "domain": "zebra.rodeo",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "zebra.rodeo",
+    "score": 120,
+    "commentsCount": 22,
+    "publishedAt": "2026-10-31T14:26:10.274879+00:00"
+  },
+  {
+    "id": "hn-50290652",
+    "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
+    "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+    "domain": "thedataexchange.media",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "thedataexchange.media",
+    "score": 99,
+    "commentsCount": 9,
+    "publishedAt": "2026-10-31T14:26:10.366738+00:00"
   }
 ];
