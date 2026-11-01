@@ -1,5 +1,21 @@
 [
   {
+    "id": "hn-50324388",
+    "title": "Norway makes shithouses great again",
+    "url": "https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/",
+    "domain": "visitnorway.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "visitnorway.com",
+    "score": 530,
+    "commentsCount": 56,
+    "publishedAt": "2026-11-01T14:52:28.400158+00:00"
+  },
+  {
     "id": "hn-50319510",
     "title": "HackerTube: YouTube built from videos recommended by HN",
     "url": "https://karpathy.bearblog.dev/hacker-tube/",
@@ -11,9 +27,41 @@
       "TechNews"
     ],
     "source": "karpathy.bearblog.dev",
-    "score": 964,
-    "commentsCount": 139,
-    "publishedAt": "2026-11-01T05:27:02.324526+00:00"
+    "score": 1611,
+    "commentsCount": 193,
+    "publishedAt": "2026-11-01T14:52:28.483407+00:00"
+  },
+  {
+    "id": "hn-50325694",
+    "title": "Novellas with Groff",
+    "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
+    "domain": "movq.de",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "movq.de",
+    "score": 13,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-01T14:52:28.563333+00:00"
+  },
+  {
+    "id": "hn-50325454",
+    "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+    "url": "https://arxiv.org/abs/2610.39302",
+    "domain": "arxiv.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "arxiv.org",
+    "score": 25,
+    "commentsCount": 2,
+    "publishedAt": "2026-11-01T14:52:28.642450+00:00"
   },
   {
     "id": "hn-50320963",
@@ -27,9 +75,41 @@
       "TechNews"
     ],
     "source": "smithsonianmag.com",
-    "score": 265,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-01T05:27:02.441508+00:00"
+    "score": 578,
+    "commentsCount": 23,
+    "publishedAt": "2026-11-01T14:52:28.722877+00:00"
+  },
+  {
+    "id": "hn-50280131",
+    "title": "Radiation Map of the World",
+    "url": "https://radiaverse.com/",
+    "domain": "radiaverse.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "radiaverse.com",
+    "score": 33,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-01T14:52:28.819929+00:00"
+  },
+  {
+    "id": "hn-50314617",
+    "title": "One-minute frequency disturbances from synchronization in power systems",
+    "url": "https://www.nature.com/articles/s41560-026-02144-0",
+    "domain": "nature.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "nature.com",
+    "score": 21,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-01T14:52:28.900562+00:00"
   },
   {
     "id": "hn-50322173",
@@ -43,88 +123,8 @@
       "TechNews"
     ],
     "source": "jetstream.security",
-    "score": 47,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-01T05:27:02.555090+00:00"
-  },
-  {
-    "id": "hn-50319143",
-    "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
-    "domain": "atlasum.net",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "atlasum.net",
-    "score": 424,
-    "commentsCount": 38,
-    "publishedAt": "2026-11-01T05:27:02.669863+00:00"
-  },
-  {
-    "id": "hn-50320995",
-    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-    "domain": "github.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 149,
+    "score": 202,
     "commentsCount": 16,
-    "publishedAt": "2026-11-01T05:27:02.790965+00:00"
-  },
-  {
-    "id": "hn-50322022",
-    "title": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM",
-    "url": "https://arxiv.org/abs/2409.02292",
-    "domain": "arxiv.org",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "arxiv.org",
-    "score": 36,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-01T05:27:02.915037+00:00"
-  },
-  {
-    "id": "hn-50321048",
-    "title": "Altoids Project",
-    "url": "https://uvdn7.github.io/altoids-project/",
-    "domain": "uvdn7.github.io",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "uvdn7.github.io",
-    "score": 79,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-01T05:27:03.038844+00:00"
-  },
-  {
-    "id": "hn-50321130",
-    "title": "When electric cars were for women",
-    "url": "https://spectrum.ieee.org/early-electric-vehicles",
-    "domain": "spectrum.ieee.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "spectrum.ieee.org",
-    "score": 57,
-    "commentsCount": 15,
-    "publishedAt": "2026-11-01T05:27:03.159622+00:00"
+    "publishedAt": "2026-11-01T14:52:29.046614+00:00"
   }
 ]
