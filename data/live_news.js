@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-31T14:26:10.367124+00:00
+ * Last Updated: 2026-11-01T05:27:03.159948+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50314654",
-    "title": "Serbia just elected the world's brainiest parliament",
-    "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
-    "domain": "science.org",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "science.org",
-    "score": 474,
-    "commentsCount": 54,
-    "publishedAt": "2026-10-31T14:26:09.393459+00:00"
-  },
-  {
-    "id": "hn-50314666",
-    "title": "Molly(Signal fork) has not been updated since 3 months and is vulnerable",
-    "url": "https://piefed.world/post/1503394",
-    "domain": "piefed.world",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "piefed.world",
-    "score": 108,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-31T14:26:09.527487+00:00"
-  },
-  {
-    "id": "hn-50315226",
-    "title": "Prospero: A new coding harness for a more civilized age",
-    "url": "https://nullprogram.com/blog/2026/10/31/",
-    "domain": "nullprogram.com",
+    "id": "hn-50319510",
+    "title": "HackerTube: YouTube built from videos recommended by HN",
+    "url": "https://karpathy.bearblog.dev/hacker-tube/",
+    "domain": "karpathy.bearblog.dev",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "nullprogram.com",
-    "score": 49,
-    "commentsCount": 12,
-    "publishedAt": "2026-10-31T14:26:09.663318+00:00"
+    "source": "karpathy.bearblog.dev",
+    "score": 964,
+    "commentsCount": 139,
+    "publishedAt": "2026-11-01T05:27:02.324526+00:00"
   },
   {
-    "id": "hn-50314699",
-    "title": "We Took over ChatGPT Accounts",
-    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
-    "domain": "parameter.ai",
-    "category": "AI & ML",
+    "id": "hn-50320963",
+    "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+    "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+    "domain": "smithsonianmag.com",
+    "category": "Hardware",
     "tags": [
-      "AI & ML",
+      "Hardware",
       "Breaking",
       "TechNews"
     ],
-    "source": "parameter.ai",
-    "score": 107,
+    "source": "smithsonianmag.com",
+    "score": 265,
     "commentsCount": 12,
-    "publishedAt": "2026-10-31T14:26:09.878960+00:00"
+    "publishedAt": "2026-11-01T05:27:02.441508+00:00"
   },
   {
-    "id": "hn-50314085",
-    "title": "Switch Lowering in GCC",
-    "url": "https://xoranth.net/gcc-switch/",
-    "domain": "xoranth.net",
+    "id": "hn-50322173",
+    "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
+    "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+    "domain": "jetstream.security",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "xoranth.net",
-    "score": 112,
+    "source": "jetstream.security",
+    "score": 47,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-01T05:27:02.555090+00:00"
+  },
+  {
+    "id": "hn-50319143",
+    "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+    "domain": "atlasum.net",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "atlasum.net",
+    "score": 424,
+    "commentsCount": 38,
+    "publishedAt": "2026-11-01T05:27:02.669863+00:00"
+  },
+  {
+    "id": "hn-50320995",
+    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 149,
+    "commentsCount": 16,
+    "publishedAt": "2026-11-01T05:27:02.790965+00:00"
+  },
+  {
+    "id": "hn-50322022",
+    "title": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM",
+    "url": "https://arxiv.org/abs/2409.02292",
+    "domain": "arxiv.org",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "arxiv.org",
+    "score": 36,
     "commentsCount": 7,
-    "publishedAt": "2026-10-31T14:26:09.975107+00:00"
+    "publishedAt": "2026-11-01T05:27:02.915037+00:00"
   },
   {
-    "id": "hn-50261253",
-    "title": "Simple circuits can create complex behaviors",
-    "url": "https://aatishb.com/myriad/lets-build-a-brain/",
-    "domain": "aatishb.com",
+    "id": "hn-50321048",
+    "title": "Altoids Project",
+    "url": "https://uvdn7.github.io/altoids-project/",
+    "domain": "uvdn7.github.io",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "aatishb.com",
-    "score": 30,
-    "commentsCount": 3,
-    "publishedAt": "2026-10-31T14:26:10.142172+00:00"
+    "source": "uvdn7.github.io",
+    "score": 79,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-01T05:27:03.038844+00:00"
   },
   {
-    "id": "hn-50260753",
-    "title": "Show HN: Marelleo, an open-source story box I built for my kids using ESP32",
-    "url": "https://zebra.rodeo/en/blog/marelleo/",
-    "domain": "zebra.rodeo",
+    "id": "hn-50321130",
+    "title": "When electric cars were for women",
+    "url": "https://spectrum.ieee.org/early-electric-vehicles",
+    "domain": "spectrum.ieee.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "zebra.rodeo",
-    "score": 120,
-    "commentsCount": 22,
-    "publishedAt": "2026-10-31T14:26:10.274879+00:00"
-  },
-  {
-    "id": "hn-50290652",
-    "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
-    "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
-    "domain": "thedataexchange.media",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "thedataexchange.media",
-    "score": 99,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-31T14:26:10.366738+00:00"
+    "source": "spectrum.ieee.org",
+    "score": 57,
+    "commentsCount": 15,
+    "publishedAt": "2026-11-01T05:27:03.159622+00:00"
   }
 ];
