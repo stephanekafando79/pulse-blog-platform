@@ -1,130 +1,114 @@
 [
   {
-    "id": "hn-50324388",
-    "title": "Norway makes shithouses great again",
-    "url": "https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/",
-    "domain": "visitnorway.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "visitnorway.com",
-    "score": 530,
-    "commentsCount": 56,
-    "publishedAt": "2026-11-01T14:52:28.400158+00:00"
-  },
-  {
-    "id": "hn-50319510",
-    "title": "HackerTube: YouTube built from videos recommended by HN",
-    "url": "https://karpathy.bearblog.dev/hacker-tube/",
-    "domain": "karpathy.bearblog.dev",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "karpathy.bearblog.dev",
-    "score": 1611,
-    "commentsCount": 193,
-    "publishedAt": "2026-11-01T14:52:28.483407+00:00"
-  },
-  {
-    "id": "hn-50325694",
-    "title": "Novellas with Groff",
-    "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
-    "domain": "movq.de",
+    "id": "hn-50340088",
+    "title": "Show HN: Subvocal – Talk to your computer without making noise",
+    "url": "https://subvocal.company/",
+    "domain": "subvocal.company",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "movq.de",
-    "score": 13,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-01T14:52:28.563333+00:00"
+    "source": "subvocal.company",
+    "score": 85,
+    "commentsCount": 28,
+    "publishedAt": "2026-11-02T18:04:18.211374+00:00"
   },
   {
-    "id": "hn-50325454",
-    "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
-    "url": "https://arxiv.org/abs/2610.39302",
-    "domain": "arxiv.org",
+    "id": "hn-50339913",
+    "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+    "url": "https://momentic.ai/",
+    "domain": "momentic.ai",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "momentic.ai",
+    "score": 43,
+    "commentsCount": 10,
+    "publishedAt": "2026-11-02T18:04:18.379251+00:00"
+  },
+  {
+    "id": "hn-50339221",
+    "title": "Show HN: Warsaw in voxels – an interactive 3D map of the city centre",
+    "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
+    "domain": "p.migdal.pl",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "arxiv.org",
-    "score": 25,
-    "commentsCount": 2,
-    "publishedAt": "2026-11-01T14:52:28.642450+00:00"
+    "source": "p.migdal.pl",
+    "score": 72,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-02T18:04:18.517269+00:00"
   },
   {
-    "id": "hn-50320963",
-    "title": "An Italian farmer found some unknown seeds in his attic and planted them",
-    "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
-    "domain": "smithsonianmag.com",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "smithsonianmag.com",
-    "score": 578,
-    "commentsCount": 23,
-    "publishedAt": "2026-11-01T14:52:28.722877+00:00"
-  },
-  {
-    "id": "hn-50280131",
-    "title": "Radiation Map of the World",
-    "url": "https://radiaverse.com/",
-    "domain": "radiaverse.com",
+    "id": "hn-50339815",
+    "title": "My Favourite Laptop",
+    "url": "https://blog.jsbarretto.com/post/laptop",
+    "domain": "blog.jsbarretto.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "radiaverse.com",
-    "score": 33,
-    "commentsCount": 8,
-    "publishedAt": "2026-11-01T14:52:28.819929+00:00"
+    "source": "blog.jsbarretto.com",
+    "score": 45,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-02T18:04:18.801805+00:00"
   },
   {
-    "id": "hn-50314617",
-    "title": "One-minute frequency disturbances from synchronization in power systems",
-    "url": "https://www.nature.com/articles/s41560-026-02144-0",
-    "domain": "nature.com",
+    "id": "hn-50339397",
+    "title": "US boy names that became girl names and vice versa",
+    "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
+    "domain": "namedaisy.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "nature.com",
-    "score": 21,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-01T14:52:28.900562+00:00"
+    "source": "namedaisy.com",
+    "score": 37,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-02T18:04:18.937409+00:00"
   },
   {
-    "id": "hn-50322173",
-    "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
-    "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
-    "domain": "jetstream.security",
+    "id": "hn-50336518",
+    "title": "If you love a website, back it up",
+    "url": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
+    "domain": "blog.mistys-internet.website",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "jetstream.security",
-    "score": 202,
-    "commentsCount": 16,
-    "publishedAt": "2026-11-01T14:52:29.046614+00:00"
+    "source": "blog.mistys-internet.website",
+    "score": 162,
+    "commentsCount": 25,
+    "publishedAt": "2026-11-02T18:04:19.068318+00:00"
+  },
+  {
+    "id": "hn-50339827",
+    "title": "Bitmovin (YC S15) Is Hiring Technical Graduates in Denver (Engineering/CS Focus)",
+    "url": "https://bitmovin.com/careers/8660599002/",
+    "domain": "bitmovin.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "bitmovin.com",
+    "score": 1,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-02T18:04:19.200046+00:00"
   }
 ]
