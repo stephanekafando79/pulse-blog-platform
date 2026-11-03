@@ -1,114 +1,130 @@
 [
   {
-    "id": "hn-50340088",
-    "title": "Show HN: Subvocal – Talk to your computer without making noise",
-    "url": "https://subvocal.company/",
-    "domain": "subvocal.company",
-    "category": "Technology",
+    "id": "hn-50351111",
+    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+    "domain": "honnibal.dev",
+    "category": "OS",
     "tags": [
-      "Technology",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "subvocal.company",
-    "score": 85,
-    "commentsCount": 28,
-    "publishedAt": "2026-11-02T18:04:18.211374+00:00"
+    "source": "honnibal.dev",
+    "score": 540,
+    "commentsCount": 45,
+    "publishedAt": "2026-11-03T16:00:35.109159+00:00"
   },
   {
-    "id": "hn-50339913",
-    "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
-    "url": "https://momentic.ai/",
-    "domain": "momentic.ai",
-    "category": "APPs",
+    "id": "hn-50336918",
+    "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+    "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+    "domain": "arstechnica.com",
+    "category": "OS",
     "tags": [
-      "APPs",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "momentic.ai",
-    "score": 43,
+    "source": "arstechnica.com",
+    "score": 99,
     "commentsCount": 10,
-    "publishedAt": "2026-11-02T18:04:18.379251+00:00"
+    "publishedAt": "2026-11-03T16:00:35.263858+00:00"
   },
   {
-    "id": "hn-50339221",
-    "title": "Show HN: Warsaw in voxels – an interactive 3D map of the city centre",
-    "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
-    "domain": "p.migdal.pl",
+    "id": "hn-50352898",
+    "title": "Octomind – open-source AI harness that saves your tokens, static rust",
+    "url": "https://github.com/Muvon/octomind",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 23,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-03T16:00:35.400368+00:00"
+  },
+  {
+    "id": "hn-50353475",
+    "title": "Quili AI",
+    "url": "https://www.quili.ai/",
+    "domain": "quili.ai",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "quili.ai",
+    "score": 7,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-03T16:00:35.542130+00:00"
+  },
+  {
+    "id": "hn-50353360",
+    "title": "No Brother of Mine Will Play the Flute",
+    "url": "https://homosabiens.substack.com/p/no-brother-of-mine-will-play-the",
+    "domain": "homosabiens.substack.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "p.migdal.pl",
-    "score": 72,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-02T18:04:18.517269+00:00"
-  },
-  {
-    "id": "hn-50339815",
-    "title": "My Favourite Laptop",
-    "url": "https://blog.jsbarretto.com/post/laptop",
-    "domain": "blog.jsbarretto.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.jsbarretto.com",
-    "score": 45,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-02T18:04:18.801805+00:00"
-  },
-  {
-    "id": "hn-50339397",
-    "title": "US boy names that became girl names and vice versa",
-    "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
-    "domain": "namedaisy.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "namedaisy.com",
-    "score": 37,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-02T18:04:18.937409+00:00"
-  },
-  {
-    "id": "hn-50336518",
-    "title": "If you love a website, back it up",
-    "url": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
-    "domain": "blog.mistys-internet.website",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.mistys-internet.website",
-    "score": 162,
-    "commentsCount": 25,
-    "publishedAt": "2026-11-02T18:04:19.068318+00:00"
-  },
-  {
-    "id": "hn-50339827",
-    "title": "Bitmovin (YC S15) Is Hiring Technical Graduates in Denver (Engineering/CS Focus)",
-    "url": "https://bitmovin.com/careers/8660599002/",
-    "domain": "bitmovin.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "bitmovin.com",
-    "score": 1,
+    "source": "homosabiens.substack.com",
+    "score": 7,
     "commentsCount": 0,
-    "publishedAt": "2026-11-02T18:04:19.200046+00:00"
+    "publishedAt": "2026-11-03T16:00:35.670193+00:00"
+  },
+  {
+    "id": "hn-50353465",
+    "title": "The State of Longevity: The healthmaxxing economy is here",
+    "url": "https://www.a16z.news/p/the-state-of-longevity",
+    "domain": "a16z.news",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "a16z.news",
+    "score": 5,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-03T16:00:35.801426+00:00"
+  },
+  {
+    "id": "hn-50351319",
+    "title": "Charles Tandy, the mastermind behind Radio Shack",
+    "url": "https://dfarq.homeip.net/charles-tandy-the-mastermind-behind-radio-shack/",
+    "domain": "dfarq.homeip.net",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "dfarq.homeip.net",
+    "score": 61,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-03T16:00:35.914258+00:00"
+  },
+  {
+    "id": "hn-50342119",
+    "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
+    "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
+    "domain": "scrollprize.substack.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "scrollprize.substack.com",
+    "score": 31,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-03T16:00:36.003963+00:00"
   }
 ]
