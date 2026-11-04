@@ -1,134 +1,118 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-03T16:00:36.004379+00:00
+ * Last Updated: 2026-11-04T16:06:13.678702+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50351111",
-    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
-    "domain": "honnibal.dev",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "honnibal.dev",
-    "score": 540,
-    "commentsCount": 45,
-    "publishedAt": "2026-11-03T16:00:35.109159+00:00"
-  },
-  {
-    "id": "hn-50336918",
-    "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-    "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-    "domain": "arstechnica.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "arstechnica.com",
-    "score": 99,
-    "commentsCount": 10,
-    "publishedAt": "2026-11-03T16:00:35.263858+00:00"
-  },
-  {
-    "id": "hn-50352898",
-    "title": "Octomind – open-source AI harness that saves your tokens, static rust",
-    "url": "https://github.com/Muvon/octomind",
-    "domain": "github.com",
+    "id": "hn-50364336",
+    "title": "AI is forcing us to pay off 40 years of technical debt",
+    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+    "domain": "spectrum.ieee.org",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 23,
+    "source": "spectrum.ieee.org",
+    "score": 493,
+    "commentsCount": 60,
+    "publishedAt": "2026-11-04T16:06:12.968642+00:00"
+  },
+  {
+    "id": "hn-50366522",
+    "title": "Guerrilla Bike Lanes: San Francisco Makes Illicit Infrastructure Permanent",
+    "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+    "domain": "99percentinvisible.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "99percentinvisible.org",
+    "score": 59,
     "commentsCount": 6,
-    "publishedAt": "2026-11-03T16:00:35.400368+00:00"
+    "publishedAt": "2026-11-04T16:06:13.053517+00:00"
   },
   {
-    "id": "hn-50353475",
-    "title": "Quili AI",
-    "url": "https://www.quili.ai/",
-    "domain": "quili.ai",
-    "category": "AI & ML",
+    "id": "hn-50362905",
+    "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+    "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+    "domain": "mindstudio.ai",
+    "category": "OS",
     "tags": [
-      "AI & ML",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "quili.ai",
-    "score": 7,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-03T16:00:35.542130+00:00"
+    "source": "mindstudio.ai",
+    "score": 374,
+    "commentsCount": 47,
+    "publishedAt": "2026-11-04T16:06:13.246822+00:00"
   },
   {
-    "id": "hn-50353360",
-    "title": "No Brother of Mine Will Play the Flute",
-    "url": "https://homosabiens.substack.com/p/no-brother-of-mine-will-play-the",
-    "domain": "homosabiens.substack.com",
+    "id": "hn-50365755",
+    "title": "North Korean fake job interview led to $6.3B Binance heist",
+    "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+    "domain": "theregister.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "homosabiens.substack.com",
-    "score": 7,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-03T16:00:35.670193+00:00"
+    "source": "theregister.com",
+    "score": 191,
+    "commentsCount": 36,
+    "publishedAt": "2026-11-04T16:06:13.331271+00:00"
   },
   {
-    "id": "hn-50353465",
-    "title": "The State of Longevity: The healthmaxxing economy is here",
-    "url": "https://www.a16z.news/p/the-state-of-longevity",
-    "domain": "a16z.news",
+    "id": "hn-50363019",
+    "title": "Verification Is Not Knowledge: Science needs more than answers",
+    "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
+    "domain": "blog.cosmos-institute.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "a16z.news",
-    "score": 5,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-03T16:00:35.801426+00:00"
+    "source": "blog.cosmos-institute.org",
+    "score": 156,
+    "commentsCount": 18,
+    "publishedAt": "2026-11-04T16:06:13.420307+00:00"
   },
   {
-    "id": "hn-50351319",
-    "title": "Charles Tandy, the mastermind behind Radio Shack",
-    "url": "https://dfarq.homeip.net/charles-tandy-the-mastermind-behind-radio-shack/",
-    "domain": "dfarq.homeip.net",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "dfarq.homeip.net",
-    "score": 61,
-    "commentsCount": 14,
-    "publishedAt": "2026-11-03T16:00:35.914258+00:00"
-  },
-  {
-    "id": "hn-50342119",
-    "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
-    "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
-    "domain": "scrollprize.substack.com",
+    "id": "hn-50363378",
+    "title": "Incident with Pull Requests, Git Operations and Issues",
+    "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
+    "domain": "githubstatus.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "scrollprize.substack.com",
-    "score": 31,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-03T16:00:36.003963+00:00"
+    "source": "githubstatus.com",
+    "score": 188,
+    "commentsCount": 27,
+    "publishedAt": "2026-11-04T16:06:13.505358+00:00"
+  },
+  {
+    "id": "hn-50366860",
+    "title": "Adding Window Functions to a Spreadsheet",
+    "url": "https://www.getgrist.com/blog/running-totals-you-dont-have-to-chase/",
+    "domain": "getgrist.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "getgrist.com",
+    "score": 12,
+    "commentsCount": 2,
+    "publishedAt": "2026-11-04T16:06:13.678308+00:00"
   }
 ];
