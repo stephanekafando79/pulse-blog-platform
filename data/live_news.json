@@ -1,114 +1,130 @@
 [
   {
-    "id": "hn-50364336",
-    "title": "AI is forcing us to pay off 40 years of technical debt",
-    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-    "domain": "spectrum.ieee.org",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "spectrum.ieee.org",
-    "score": 493,
-    "commentsCount": 60,
-    "publishedAt": "2026-11-04T16:06:12.968642+00:00"
-  },
-  {
-    "id": "hn-50366522",
-    "title": "Guerrilla Bike Lanes: San Francisco Makes Illicit Infrastructure Permanent",
-    "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-    "domain": "99percentinvisible.org",
+    "id": "hn-50378228",
+    "title": "Sshole",
+    "url": "https://sshhole.com",
+    "domain": "sshhole.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "99percentinvisible.org",
-    "score": 59,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-04T16:06:13.053517+00:00"
+    "source": "sshhole.com",
+    "score": 1111,
+    "commentsCount": 76,
+    "publishedAt": "2026-11-05T16:20:22.439776+00:00"
   },
   {
-    "id": "hn-50362905",
-    "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-    "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-    "domain": "mindstudio.ai",
+    "id": "hn-50379704",
+    "title": "Alpine Linux Security advisory: OpenSSH-server password authentication bypass",
+    "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+    "domain": "alpinelinux.org",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "mindstudio.ai",
-    "score": 374,
-    "commentsCount": 47,
-    "publishedAt": "2026-11-04T16:06:13.246822+00:00"
+    "source": "alpinelinux.org",
+    "score": 125,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-05T16:20:22.582979+00:00"
   },
   {
-    "id": "hn-50365755",
-    "title": "North Korean fake job interview led to $6.3B Binance heist",
-    "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-    "domain": "theregister.com",
+    "id": "hn-50379576",
+    "title": "September in Servo: <progress>, rounded rectangles, and more",
+    "url": "https://servo.org/blog/2026/11/05/september-in-servo/",
+    "domain": "servo.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "theregister.com",
-    "score": 191,
-    "commentsCount": 36,
-    "publishedAt": "2026-11-04T16:06:13.331271+00:00"
+    "source": "servo.org",
+    "score": 54,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-05T16:20:22.706243+00:00"
   },
   {
-    "id": "hn-50363019",
-    "title": "Verification Is Not Knowledge: Science needs more than answers",
-    "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
-    "domain": "blog.cosmos-institute.org",
+    "id": "hn-50379249",
+    "title": "MCP Explained",
+    "url": "https://mcp-explained.com/",
+    "domain": "mcp-explained.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "mcp-explained.com",
+    "score": 108,
+    "commentsCount": 15,
+    "publishedAt": "2026-11-05T16:20:22.843846+00:00"
+  },
+  {
+    "id": "hn-50378571",
+    "title": "Download your favourite YouTube videos",
+    "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
+    "domain": "criminallyvulgar.dev",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "criminallyvulgar.dev",
+    "score": 77,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-05T16:20:23.011204+00:00"
+  },
+  {
+    "id": "hn-50377976",
+    "title": "OpenSSH 10.6p2 Critical workaround for alpine without PAM",
+    "url": "https://www.openssh.org/releasenotes.html#10.6p2",
+    "domain": "openssh.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "blog.cosmos-institute.org",
-    "score": 156,
-    "commentsCount": 18,
-    "publishedAt": "2026-11-04T16:06:13.420307+00:00"
+    "source": "openssh.org",
+    "score": 126,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-05T16:20:23.148442+00:00"
   },
   {
-    "id": "hn-50363378",
-    "title": "Incident with Pull Requests, Git Operations and Issues",
-    "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
-    "domain": "githubstatus.com",
+    "id": "hn-50378508",
+    "title": "Obscure audio codec is a perfect fit for the N64",
+    "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
+    "domain": "phoboslab.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "githubstatus.com",
-    "score": 188,
-    "commentsCount": 27,
-    "publishedAt": "2026-11-04T16:06:13.505358+00:00"
+    "source": "phoboslab.org",
+    "score": 70,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-05T16:20:23.264142+00:00"
   },
   {
-    "id": "hn-50366860",
-    "title": "Adding Window Functions to a Spreadsheet",
-    "url": "https://www.getgrist.com/blog/running-totals-you-dont-have-to-chase/",
-    "domain": "getgrist.com",
-    "category": "Technology",
+    "id": "hn-50377078",
+    "title": "Baidu released ERNIE 5.5 Flash Base",
+    "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+    "domain": "ernie.baidu.com",
+    "category": "AI & ML",
     "tags": [
-      "Technology",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "getgrist.com",
-    "score": 12,
-    "commentsCount": 2,
-    "publishedAt": "2026-11-04T16:06:13.678308+00:00"
+    "source": "ernie.baidu.com",
+    "score": 134,
+    "commentsCount": 13,
+    "publishedAt": "2026-11-05T16:20:23.401700+00:00"
   }
 ]
