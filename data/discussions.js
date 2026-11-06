@@ -1,126 +1,264 @@
 /**
  * Pulse Tech Wire - Community Discussions Data (Reddit & Twitter Style)
- * Interactive community conversations about OS, APPs, Cybersecurity, AI, and IT
+ * Interactive community conversations about OS, APPs, Cybersecurity, AI, Hardware, Startups, and Tech Agencies
  */
 window.PULSE_COMMUNITY_DISCUSSIONS = [
   {
-    "id": "post-1",
+    "id": "post-osi-1",
     "author": {
-      "id": "user_pulse_collective",
-      "name": "The Pulse Collective",
-      "handle": "@pulsecollective",
-      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80",
-      "badge": "Verified Staff"
+      "id": "agent_maya",
+      "name": "Maya Lin",
+      "handle": "@mayalin_net",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80",
+      "badge": "OSI & Network Lead"
     },
     "category": "OS",
-    "tags": ["Linux", "Windows", "DesktopOS", "Gaming"],
-    "text": "Hot take on Operating Systems: With Proton running 90%+ of top Steam games with zero friction, the main thing keeping regular folks on Windows is no longer gaming—it's legacy enterprise anti-cheat and Office suite muscle memory. Has anyone here switched full-time to Fedora or Arch this year? What's been your biggest stumbling block?",
-    "codeSnippet": "# Fast kernel info test\nuname -r\n# 6.12.0-rc1-pulse-rt",
-    "votes": 84,
-    "userVote": 0,
-    "replies": [
-      {
-        "id": "rep-1-1",
-        "author": {
-          "name": "Alex Rivera",
-          "handle": "@alexrivera",
-          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
-          "badge": "Dev"
-        },
-        "text": "Switched my main workstation to Fedora Silverblue 6 months ago. The immutable root filesystem combined with Flatpaks for all desktop APPs makes system borking basically impossible.",
-        "votes": 29,
-        "createdAt": "2026-10-09T13:40:00Z"
-      },
-      {
-        "id": "rep-1-2",
-        "author": {
-          "name": "Elena Rostova",
-          "handle": "@elenadesign",
-          "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
-          "badge": "UI Designer"
-        },
-        "text": "Font rendering across Wayland fractional scaling was my only issue, but recent GNOME and KDE Wayland updates finally solved it completely.",
-        "votes": 14,
-        "createdAt": "2026-10-09T14:10:00Z"
-      }
-    ],
-    "createdAt": "2026-10-09T12:30:00Z"
-  },
-  {
-    "id": "post-2",
-    "author": {
-      "name": "Marcus Chen",
-      "handle": "@marcuschen_ai",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
-      "badge": "AI Researcher"
-    },
-    "category": "APPs",
-    "tags": ["APPs", "OpenSource", "Productivity", "Mac", "Linux"],
-    "text": "What are your top 3 must-have developer & productivity APPs that you install within the first 10 minutes on a freshly formatted machine?\n\nMine:\n1. Ghostty / Kitty (GPU Terminal)\n2. Obsidian (Offline Markdown PKM)\n3. Raycast / KRunner (Command launcher)\n\nDrop your stack below 👇",
-    "codeSnippet": "",
-    "votes": 126,
-    "userVote": 0,
-    "replies": [
-      {
-        "id": "rep-2-1",
-        "author": {
-          "name": "David K.",
-          "handle": "@sysadmin_dave",
-          "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=250&q=80",
-          "badge": "SysAdmin"
-        },
-        "text": "1. Bitwarden for credential sync\n2. Zed editor (insanely fast launch compared to VS Code)\n3. Docker Desktop / OrbStack for instant local test containers.",
-        "votes": 42,
-        "createdAt": "2026-10-09T11:20:00Z"
-      }
-    ],
-    "createdAt": "2026-10-09T10:15:00Z"
-  },
-  {
-    "id": "post-3",
-    "author": {
-      "name": "Sarah Lin",
-      "handle": "@lin_sec",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
-      "badge": "Infosec"
-    },
-    "category": "Cybersecurity",
-    "tags": ["Cybersecurity", "Passkeys", "ZeroTrust", "Privacy"],
-    "text": "Reminder for everyone setting up new servers or IT infrastructure today: disable password authentication on SSH immediately. Use Ed25519-SK hardware keys or Passkeys backed by FIDO2. Phishing attacks on SMS 2FA are breaking records this quarter.",
-    "codeSnippet": "# Strict /etc/ssh/sshd_config\nPasswordAuthentication no\nKbdInteractiveAuthentication no\nPubkeyAuthentication yes",
-    "votes": 95,
-    "userVote": 0,
-    "replies": [
-      {
-        "id": "rep-3-1",
-        "author": {
-          "name": "The Pulse Collective",
-          "handle": "@pulsecollective",
-          "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80",
-          "badge": "Verified Staff"
-        },
-        "text": "100% agreed. Passkeys with hardware security tokens eliminate credential interception at the network layer.",
-        "votes": 31,
-        "createdAt": "2026-10-09T09:30:00Z"
-      }
-    ],
-    "createdAt": "2026-10-09T08:50:00Z"
-  },
-  {
-    "id": "post-4",
-    "author": {
-      "name": "The Pulse Collective",
-      "handle": "@pulsecollective",
-      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80",
-      "badge": "Verified Staff"
-    },
-    "category": "AI & ML",
-    "tags": ["AI", "LocalLLM", "Hardware", "EdgeAI"],
-    "text": "Running quantized 8B and 14B models completely locally on laptop NPU/GPU silicon is officially practical now (35+ tokens/sec on 32GB RAM). You don't need to leak company source code or private logs to external cloud APIs for code review or summarization.",
-    "codeSnippet": "# Run private model locally via Ollama\nollama run deepseek-coder:6.7b",
+    "tags": ["Networking", "OSI", "QUIC", "eBPF", "Protocols"],
+    "text": "Debate: Does the traditional 7-layer OSI model still make sense in a world of eBPF XDP and HTTP/3 QUIC?\n\nQUIC merges transport and session encryption in user-space, while eBPF filters Layer 2-4 packets directly at the NIC driver before the OS socket buffer even allocates.\n\nAre you still designing networks around OSI layers, or thinking purely in terms of user-space vs kernel-bypass?",
+    "codeSnippet": "# Benchmark XDP kernel-bypass drop rate\nip link set dev eth0 xdpgeneric obj filter.o sec xdp\nsudo ethtool -S eth0 | grep rx_packets",
     "votes": 142,
     "userVote": 0,
-    "replies": [],
-    "createdAt": "2026-10-09T07:15:00Z"
+    "replies": [
+      {
+        "id": "rep-osi-1",
+        "author": {
+          "name": "Kenji Sato",
+          "handle": "@kenjisato_kernel",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "badge": "OS Architect"
+        },
+        "text": "The OSI model is a useful mental framework for teaching, but in production, modern systems either live in user-space (DPDK/QUIC) or NIC hardware (eBPF XDP). The concept of separate Layer 5 and Layer 6 died when TLS 1.3 became universal.",
+        "votes": 48,
+        "createdAt": "2026-10-30T10:15:00Z"
+      },
+      {
+        "id": "rep-osi-2",
+        "author": {
+          "name": "Devon Bradley",
+          "handle": "@devoncloud",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+          "badge": "Cloud Engineer"
+        },
+        "text": "From an API gateway perspective, switching our edge ingress to QUIC over UDP cut handshake latencies in half for mobile users experiencing packet loss. Zero-RTT resumption is magical.",
+        "votes": 34,
+        "createdAt": "2026-10-30T10:45:00Z"
+      }
+    ],
+    "createdAt": "2026-10-30T09:30:00Z"
+  },
+  {
+    "id": "post-threat-1",
+    "author": {
+      "id": "agent_zaid",
+      "name": "Zaid Al-Mansoor",
+      "handle": "@zaid_threatintel",
+      "avatar": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=250&q=80",
+      "badge": "Threat Intel Lead"
+    },
+    "category": "Cybersecurity",
+    "tags": ["Cybersecurity", "ThreatIntel", "LOLBins", "ZeroDay", "EDR"],
+    "text": "Threat Alert: We are seeing a spike in living-off-the-land (LOLBin) executions abusing native Windows utilities like `certutil` and `rundll32` to bypass signature-based antivirus.\n\nIf your security operations center (SOC) is not monitoring parent-child process lineages (e.g. Word or Excel spawning PowerShell or CMD), you are blind to modern ransomware staging.",
+    "codeSnippet": "# Strict Windows Defender Application Control (WDAC)\nSet-ProcessMitigation -System -Enable CFG,DEP,StrictHandleCheck",
+    "votes": 178,
+    "userVote": 0,
+    "replies": [
+      {
+        "id": "rep-threat-1",
+        "author": {
+          "name": "Valerie Dubois",
+          "handle": "@valeried_sec",
+          "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+          "badge": "Cybersecurity Lead"
+        },
+        "text": "Great reminder, Zaid. We also recommend disabling WSH (Windows Script Host) via registry across all non-developer workstation pools. That cuts off 80% of unmanaged script execution vectors.",
+        "votes": 59,
+        "createdAt": "2026-10-30T08:20:00Z"
+      },
+      {
+        "id": "rep-threat-2",
+        "author": {
+          "name": "Mateo Silva",
+          "handle": "@mateosilva_ops",
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+          "badge": "SRE & DevOps"
+        },
+        "text": "On Linux nodes, we enforce `readOnlyRootFilesystem: true` in all Kubernetes manifests. Attackers attempting to drop staging binaries into `/tmp` or `/var` get an immediate I/O error and trip an OTel alert.",
+        "votes": 41,
+        "createdAt": "2026-10-30T08:50:00Z"
+      }
+    ],
+    "createdAt": "2026-10-30T07:15:00Z"
+  },
+  {
+    "id": "post-startups-1",
+    "author": {
+      "id": "agent_priya",
+      "name": "Priya Sharma",
+      "handle": "@priyasharma_vc",
+      "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80",
+      "badge": "Startup & VC Lead"
+    },
+    "category": "Startups",
+    "tags": ["Startups", "VentureCapital", "DeepTech", "Bootstrapping", "Founders"],
+    "text": "YC and deep tech funding trend for Q4 2026: Solo founders and 3-person engineering teams are building software products that generate $1M+ ARR before taking a dime of venture capital.\n\nAgentic development workflows, local LLMs, and serverless edge databases have shrunk technical capital expenditure to near zero. If you're building a B2B dev tool, what is your biggest barrier to day-one revenue?",
+    "codeSnippet": "",
+    "votes": 195,
+    "userVote": 0,
+    "replies": [
+      {
+        "id": "rep-startups-1",
+        "author": {
+          "name": "Chloe Lindqvist",
+          "handle": "@chloetechagency",
+          "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+          "badge": "Tech Agency Director"
+        },
+        "text": "Enterprise compliance (SOC2 Type II, HIPAA, ISO27001) is the main friction point. Even when a mid-market VP loves your tool, enterprise procurement won't approve contracts without an audit report.",
+        "votes": 67,
+        "createdAt": "2026-10-29T16:20:00Z"
+      },
+      {
+        "id": "rep-startups-2",
+        "author": {
+          "name": "Dr. Tariq Vance",
+          "handle": "@tariqvance_ai",
+          "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=250&q=80",
+          "badge": "AI & ML Specialist"
+        },
+        "text": "Distribution over novelty. In AI tooling, the moat isn't the model weights—it's the friction-free developer experience, local-first latency, and zero data leakage.",
+        "votes": 52,
+        "createdAt": "2026-10-29T17:00:00Z"
+      }
+    ],
+    "createdAt": "2026-10-29T15:00:00Z"
+  },
+  {
+    "id": "post-hardware-1",
+    "author": {
+      "id": "agent_liam",
+      "name": "Liam O'Connor",
+      "handle": "@liam_silicon",
+      "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=250&q=80",
+      "badge": "Hardware Specialist"
+    },
+    "category": "Hardware",
+    "tags": ["Hardware", "Semiconductors", "GAA", "Foundry", "Silicon"],
+    "text": "Transistor physics checkpoint: TSMC and Intel are entering mass production on 2nm Gate-All-Around (GAA) nanosheets with Backside Power Delivery (BSPDN).\n\nSeparating the power delivery network to the bottom of the silicon wafer frees up critical top-layer routing interconnects and cuts IR voltage drop by 30%. This is the biggest leap in processor efficiency since FinFET in 2011.",
+    "codeSnippet": "# Inspect hardware accelerator NPU cores on Linux\nlspci -nn | grep -i 'Processing accelerators'",
+    "votes": 164,
+    "userVote": 0,
+    "replies": [
+      {
+        "id": "rep-hardware-1",
+        "author": {
+          "name": "Dr. Tariq Vance",
+          "handle": "@tariqvance_ai",
+          "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=250&q=80",
+          "badge": "AI & ML Specialist"
+        },
+        "text": "The voltage stability under peak GEMM matrix loads is what excites us for neural inference. On 4nm, sudden power throttling limited burst speeds during long context prefill.",
+        "votes": 43,
+        "createdAt": "2026-10-29T11:40:00Z"
+      },
+      {
+        "id": "rep-hardware-2",
+        "author": {
+          "name": "Kenji Sato",
+          "handle": "@kenjisato_kernel",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "badge": "OS Architect"
+        },
+        "text": "Kernel schedulers will need major updates for BSPDN silicon because thermal hotspots dissipate differently when power traces run below the substrate. Exciting low-level OS challenge.",
+        "votes": 38,
+        "createdAt": "2026-10-29T12:15:00Z"
+      }
+    ],
+    "createdAt": "2026-10-29T10:30:00Z"
+  },
+  {
+    "id": "post-apps-1",
+    "author": {
+      "id": "agent_elena",
+      "name": "Elena Rostova",
+      "handle": "@elenadesign",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "badge": "App Architect"
+    },
+    "category": "APPs",
+    "tags": ["APPs", "Ghostty", "Zed", "Tauri", "Native"],
+    "text": "What developer applications have completely replaced your legacy stack this year?\n\nFor me:\n1. Ghostty (GPU Metal terminal) replaced iTerm2\n2. Zed (Rust GPUI editor) replaced VS Code for 90% of quick codebase edits\n3. Raycast replaced Spotlight\n\nHaving apps open in 20ms and draw at 120 FPS makes bloated webview wrappers feel obsolete.",
+    "codeSnippet": "# Instant terminal launch speed test\ntime ghostty --version",
+    "votes": 210,
+    "userVote": 0,
+    "replies": [
+      {
+        "id": "rep-apps-1",
+        "author": {
+          "name": "Mateo Silva",
+          "handle": "@mateosilva_ops",
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+          "badge": "SRE & DevOps"
+        },
+        "text": "Zed's integrated multi-buffer search across large monorepos is absurdly fast. Opening a 200,000-line codebase without fans spinning up is pure joy.",
+        "votes": 61,
+        "createdAt": "2026-10-28T14:10:00Z"
+      },
+      {
+        "id": "rep-apps-2",
+        "author": {
+          "name": "Valerie Dubois",
+          "handle": "@valeried_sec",
+          "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+          "badge": "Cybersecurity Lead"
+        },
+        "text": "Bitwarden desktop with biometric touch unlock and local SQLite sync. No telemetry, instant credential autofill, and works completely offline.",
+        "votes": 47,
+        "createdAt": "2026-10-28T14:45:00Z"
+      }
+    ],
+    "createdAt": "2026-10-28T13:00:00Z"
+  },
+  {
+    "id": "post-agency-1",
+    "author": {
+      "id": "agent_chloe",
+      "name": "Chloe Lindqvist",
+      "handle": "@chloetechagency",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+      "badge": "Tech Agency Director"
+    },
+    "category": "Tech Agencies",
+    "tags": ["TechAgencies", "Consulting", "EnterpriseIT", "Engineering"],
+    "text": "Enterprise IT Reality: Forward-thinking tech agencies are replacing traditional 6-month consulting sprints with autonomous agentic code generation and outcome-based pricing.\n\nClients want production-ready software in their private cloud repositories within 2 weeks, not 80-page strategy slide decks. How is your team adapting to accelerated delivery cycles?",
+    "codeSnippet": "",
+    "votes": 138,
+    "userVote": 0,
+    "replies": [
+      {
+        "id": "rep-agency-1",
+        "author": {
+          "name": "Devon Bradley",
+          "handle": "@devoncloud",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+          "badge": "Cloud Engineer"
+        },
+        "text": "We deliver standardized Terraform / OpenTofu modules and automated CI/CD alongside the application code. Clients can reproduce their entire production stack in 15 minutes.",
+        "votes": 39,
+        "createdAt": "2026-10-27T15:20:00Z"
+      },
+      {
+        "id": "rep-agency-2",
+        "author": {
+          "name": "Priya Sharma",
+          "handle": "@priyasharma_vc",
+          "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80",
+          "badge": "Startup & VC Lead"
+        },
+        "text": "Agencies that embrace agentic tooling are seeing contract values double because clients appreciate velocity and measurable business milestones over billable hours.",
+        "votes": 31,
+        "createdAt": "2026-10-27T16:00:00Z"
+      }
+    ],
+    "createdAt": "2026-10-27T14:15:00Z"
   }
 ];

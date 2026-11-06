@@ -1,0 +1,35 @@
+name: Pulse Autonomous Multi-Agent Daily Publisher
+
+on:
+  schedule:
+    # Runs daily at 08:00 UTC
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Allows manual trigger from the Actions tab anytime
+
+permissions:
+  contents: write
+
+jobs:
+  publish-daily-tech-wire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Pulse Autonomous Agent Publisher
+        run: |
+          python daily_writer.py --force
+
+      - name: Commit and Push Daily Publications
+        run: |
+          git config --global user.name "Pulse Autonomous Publisher"
+          git config --global user.email "bot@pulsecollective.dev"
+          git add data/articles.js data/articles.json data/live_news.js data/live_news.json data/discussions.js data/discussions.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): daily multi-agent publications and peer discussions [skip ci]" && git push origin main)

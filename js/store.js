@@ -13,7 +13,9 @@ const STORAGE_KEYS = {
   COLLECTIONS: 'pulse_collections_v1',
   SEARCH_HISTORY: 'pulse_search_history_v1',
   USER_PREFERENCES: 'pulse_user_preferences_v1',
-  DISCUSSIONS: 'pulse_discussions_v2'
+  DISCUSSIONS: 'pulse_discussions_v2',
+  ACCENT: 'pulse_accent_v1',
+  CUSTOM_ACCENT: 'pulse_custom_accent_v1'
 };
 
 // Verified Dual Super-Admins: Stephane Kafando & Antigravity AI
@@ -46,37 +48,234 @@ const ADMIN_ACCOUNTS = Object.freeze([
 
 const VERIFIED_PLATFORM_OWNER = ADMIN_ACCOUNTS[0];
 
+// Avatar Gallery Presets for Users to Pick as Profile Photos
+const AVATAR_PRESETS = {
+  female: [
+    { name: "Valerie Dubois", role: "Cybersecurity Lead", url: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80" },
+    { name: "Priya Sharma", role: "Startup & VC Lead", url: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80" },
+    { name: "Sophia Sterling", role: "FinTech Systems Lead", url: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80" },
+    { name: "Chloe Lindqvist", role: "Tech Agency Director", url: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80" },
+    { name: "Astrid Nygård", role: "Climate & CleanTech", url: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80" },
+    { name: "Elena Rostova", role: "Native App Architect", url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80" },
+    { name: "Maya Patel", role: "EdTech & Learning Lead", url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80" },
+    { name: "Maya Lin", role: "Network Protocols & OSI", url: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80" },
+    { name: "Sarah Lin", role: "Staff Software Engineer", url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80" },
+    { name: "Aisha Diallo", role: "AI Research Scientist", url: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=250&q=80" },
+    { name: "Camille Laurent", role: "Distributed Systems", url: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=250&q=80" }
+  ],
+  male: [
+    { name: "Dr. Tariq Vance", role: "AI & ML Specialist", url: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=250&q=80" },
+    { name: "Dr. Aris Thorne", role: "HealthTech & Bio", url: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=250&q=80" },
+    { name: "Kenji Sato", role: "OS Kernel Architect", url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80" },
+    { name: "Kaito Tanaka", role: "Robotics & Autonomous", url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80" },
+    { name: "Devon Bradley", role: "Cloud Infrastructure", url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80" },
+    { name: "Carlos Mendoza", role: "IoT & Embedded", url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80" },
+    { name: "Liam O'Connor", role: "Semiconductor Specialist", url: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=250&q=80" },
+    { name: "Cmdr. Lucas Vance", role: "Aerospace & SpaceTech", url: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=250&q=80" },
+    { name: "Mateo Silva", role: "SRE & DevOps Lead", url: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80" },
+    { name: "Dr. Oliver Schmidt", role: "AgTech Lead", url: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80" },
+    { name: "Zaid Al-Mansoor", role: "Threat Intel Lead", url: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=250&q=80" },
+    { name: "Marcus Chen", role: "Deep Learning Engineer", url: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=250&q=80" },
+    { name: "David Kim", role: "Unix Infrastructure", url: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=250&q=80" }
+  ],
+  stickers: [
+    { name: "Cyber Matrix", role: "Pulse Core Monogram", url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80" },
+    { name: "Orbital Satellite", role: "Aerospace Mesh Node", url: "https://images.unsplash.com/photo-1517976487502-86113b30d317?auto=format&fit=crop&w=250&q=80" },
+    { name: "Neon Quantum", role: "Photon Core Badge", url: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=250&q=80" },
+    { name: "CRISPR BioHelix", role: "HealthTech BioCore", url: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=250&q=80" },
+    { name: "Silicon Microchip", role: "2nm Transistor Wafer", url: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=250&q=80" },
+    { name: "Optics Laser", role: "High-NA EUV Optics", url: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=250&q=80" },
+    { name: "Clean Energy Grid", role: "CleanTech Turbine", url: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=250&q=80" },
+    { name: "Neural Glitch", role: "Cognitive Vector Mesh", url: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=250&q=80" },
+    { name: "Deep Space", role: "Global WASI Edge Node", url: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=250&q=80" },
+    { name: "Robotics Actuator", role: "Autonomous Hardware", url: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=250&q=80" },
+    { name: "Terminal Prompt", role: "Bare-Metal Linux Daemon", url: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=250&q=80" },
+    { name: "Cipher Shield", role: "Passkey Security Token", url: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=250&q=80" }
+  ]
+};
+
+// 12 Diverse Specialized Agents and Personas
 const DEFAULT_USERS = [
   ...ADMIN_ACCOUNTS,
   {
-    id: 'user_alex',
-    name: 'Alex Rivera',
-    handle: '@alexrivera',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
-    bio: 'Staff Frontend Engineer & Design Systems Architect.',
-    isAdmin: false,
-    badge: 'Dev Contributor',
-    followers: 1420
+    id: "agent_tariq",
+    name: "Dr. Tariq Vance",
+    handle: "@tariqvance_ai",
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=250&q=80",
+    bio: "Senior AI Research Scientist. LLM reasoning, neural inference & cognitive architectures.",
+    badge: "AI & ML Specialist",
+    followers: 8420
   },
   {
-    id: 'user_elena',
-    name: 'Elena Rostova',
-    handle: '@elenadesign',
-    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80',
-    bio: 'Product Designer & Creative Director. Writing on human-computer interaction.',
-    isAdmin: false,
-    badge: 'Design Lead',
-    followers: 2890
+    id: "agent_kenji",
+    name: "Kenji Sato",
+    handle: "@kenjisato_kernel",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+    bio: "Systems Engineer & Unix Kernel Contributor. Low-level OS, eBPF & deterministic runtimes.",
+    badge: "OS Architect",
+    followers: 6710
   },
   {
-    id: 'user_marcus',
-    name: 'Marcus Chen',
-    handle: '@marcuschen_ai',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
-    bio: 'AI Researcher & Open Source Contributor. Exploring LLMs and future tooling.',
-    isAdmin: false,
-    badge: 'Researcher',
-    followers: 3410
+    id: "agent_valerie",
+    name: "Valerie Dubois",
+    handle: "@valeried_sec",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+    bio: "Principal Security Researcher. Offensive zero-day discovery, cryptography & threat intel.",
+    badge: "Cybersecurity Lead",
+    followers: 9150
+  },
+  {
+    id: "agent_devon",
+    name: "Devon Bradley",
+    handle: "@devoncloud",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+    bio: "Cloud Infrastructure Architect. Kubernetes, distributed databases & edge computing.",
+    badge: "Cloud Engineer",
+    followers: 5230
+  },
+  {
+    id: "agent_priya",
+    name: "Priya Sharma",
+    handle: "@priyasharma_vc",
+    avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80",
+    bio: "Venture Partner & Startup Analyst. Tracking seed-stage deep tech, developer tools & YC cohorts.",
+    badge: "Startup & VC Lead",
+    followers: 11400
+  },
+  {
+    id: "agent_liam",
+    name: "Liam O'Connor",
+    handle: "@liam_silicon",
+    avatar: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=250&q=80",
+    bio: "Semiconductor & Hardware Analyst. 2nm fabrication, RISC-V, custom ASICs & GPU architectures.",
+    badge: "Hardware Specialist",
+    followers: 7890
+  },
+  {
+    id: "agent_chloe",
+    name: "Chloe Lindqvist",
+    handle: "@chloetechagency",
+    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+    bio: "Managing Director at Apex Digital. Tech agency modernization, enterprise AI delivery & UX.",
+    badge: "Tech Agency Director",
+    followers: 6320
+  },
+  {
+    id: "agent_elena",
+    name: "Elena Rostova",
+    handle: "@elenadesign",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+    bio: "Design Systems Lead & App Ergonomics Consultant. Human-computer interaction.",
+    badge: "App Architect",
+    followers: 5410
+  },
+  {
+    id: "agent_mateo",
+    name: "Mateo Silva",
+    handle: "@mateosilva_ops",
+    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+    bio: "DevOps & Site Reliability Engineer. Observability, automated CI/CD and self-healing systems.",
+    badge: "SRE & DevOps",
+    followers: 4950
+  },
+  {
+    id: "agent_maya",
+    name: "Maya Lin",
+    handle: "@mayalin_net",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80",
+    bio: "Network Protocols & OSI Architect. High-throughput packet engines, QUIC, and eBPF network meshes.",
+    badge: "OSI & Network Lead",
+    followers: 6180
+  },
+  {
+    id: "agent_zaid",
+    name: "Zaid Al-Mansoor",
+    handle: "@zaid_threatintel",
+    avatar: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=250&q=80",
+    bio: "Threat Intelligence Researcher. Nation-state adversary emulation, ransomware kill-chains & EDR evasion.",
+    badge: "Threat Intel Lead",
+    followers: 7300
+  },
+  {
+    id: "agent_sophia",
+    name: "Sophia Sterling",
+    handle: "@sophiasterling_fintech",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+    bio: "FinTech Architect & Quantitative Systems Lead. Zero-knowledge rollups, sub-millisecond matching & DeFi security.",
+    badge: "FinTech Lead",
+    followers: 8120
+  },
+  {
+    id: "agent_aris",
+    name: "Dr. Aris Thorne",
+    handle: "@aristhorne_biotech",
+    avatar: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=250&q=80",
+    bio: "Computational Biologist. Structural proteomics, AlphaFold co-folding pipelines & genomic informatics.",
+    badge: "HealthTech & Bio",
+    followers: 6890
+  },
+  {
+    id: "agent_kaito",
+    name: "Kaito Tanaka",
+    handle: "@kaitorobotics",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+    bio: "Robotics & Autonomous Vehicle Specialist. ROS2 real-time microkernels, kinematic control & sensor fusion.",
+    badge: "Robotics & Auto",
+    followers: 7450
+  },
+  {
+    id: "agent_lucas",
+    name: "Cmdr. Lucas Vance",
+    handle: "@lucasvance_space",
+    avatar: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=250&q=80",
+    bio: "Orbital Systems Engineer. CubeSat telemetry constellations, radiation-tolerant RTOS & deep space networks.",
+    badge: "Aerospace Lead",
+    followers: 9240
+  },
+  {
+    id: "agent_astrid",
+    name: "Astrid Nygård",
+    handle: "@astrid_cleantech",
+    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+    bio: "Climate Tech & Grid Engineer. Carbon-aware compute scheduling, renewable microgrids & smart battery telemetry.",
+    badge: "Climate & CleanTech",
+    followers: 5890
+  },
+  {
+    id: "agent_carlos",
+    name: "Carlos Mendoza",
+    handle: "@carlos_iot",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+    bio: "Embedded Systems & IoT Architect. Matter 1.3 protocol, RISC-V microcontrollers & LoRaWAN edge sensors.",
+    badge: "IoT & Embedded Lead",
+    followers: 6120
+  },
+  {
+    id: "agent_mayapatel",
+    name: "Maya Patel",
+    handle: "@mayapatel_edtech",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+    bio: "Cognitive Learning Scientist & EdTech Founder. Spaced-repetition engines, interactive pedagogy & neural tutors.",
+    badge: "EdTech Specialist",
+    followers: 4760
+  },
+  {
+    id: "agent_oliver",
+    name: "Dr. Oliver Schmidt",
+    handle: "@oliverschmidt_agtech",
+    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+    bio: "Agronomist & Biosystem Engineer. Multispectral satellite imagery, autonomous tractors & precision soil sensors.",
+    badge: "AgTech Lead",
+    followers: 5310
+  },
+  {
+    id: "agent_sarah",
+    name: "Sarah Lin",
+    handle: "@sarahlin_dev",
+    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+    bio: "Staff Software Engineer. High-concurrency Go/Rust services, distributed consensus & actor runtimes.",
+    badge: "Software Engineering",
+    followers: 8820
   }
 ];
 
@@ -362,19 +561,41 @@ class DataStore {
     if (!localStorage.getItem(STORAGE_KEYS.ARTICLES)) {
       localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(INITIAL_ARTICLES));
     }
-    if (!localStorage.getItem(STORAGE_KEYS.USERS)) {
-      localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(DEFAULT_USERS));
+    
+    // Synchronize users and merge in any new specialized agent personas
+    let existingUsers = [];
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.USERS);
+      existingUsers = raw ? JSON.parse(raw) : [];
+    } catch {
+      existingUsers = [];
     }
-    const curr = this.getCurrentUser();
-    if (!curr || curr.id === 'user_stephane' || curr.id === 'user_alex') {
-      localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(DEFAULT_USERS[0]));
+
+    if (existingUsers.length === 0) {
+      existingUsers = [...DEFAULT_USERS];
+    } else {
+      // Ensure each default persona exists and has up-to-date avatar & badges
+      DEFAULT_USERS.forEach(defUser => {
+        const idx = existingUsers.findIndex(u => u.id === defUser.id || u.handle === defUser.handle);
+        if (idx === -1) {
+          existingUsers.push(defUser);
+        } else {
+          existingUsers[idx] = { ...existingUsers[idx], ...defUser };
+        }
+      });
     }
-    // Update users array to include The Pulse Collective as primary verified owner
-    let existingUsers = this.getAllUsers().filter(u => u.id !== 'user_stephane');
+
+    // Always keep platform owner at the front
+    existingUsers = existingUsers.filter(u => u.id !== 'user_stephane');
     if (!existingUsers.find(u => u.id === VERIFIED_PLATFORM_OWNER.id)) {
       existingUsers.unshift(VERIFIED_PLATFORM_OWNER);
     }
     localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(existingUsers));
+
+    const curr = this.getCurrentUser();
+    if (!curr || curr.id === 'user_stephane' || curr.id === 'user_alex') {
+      localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(DEFAULT_USERS[0]));
+    }
 
     if (!localStorage.getItem(STORAGE_KEYS.BOOKMARKS)) {
       localStorage.setItem(STORAGE_KEYS.BOOKMARKS, JSON.stringify(['art-1']));
@@ -385,6 +606,11 @@ class DataStore {
     }
     this.syncDailyArticles();
     this.syncCommunityDiscussions();
+    this.applyThemeAndAccent();
+  }
+
+  getAvatarPresets() {
+    return AVATAR_PRESETS;
   }
 
   syncCommunityDiscussions() {
@@ -392,9 +618,15 @@ class DataStore {
       const current = this.getDiscussions();
       let updated = false;
       for (const disc of window.PULSE_COMMUNITY_DISCUSSIONS) {
-        if (!current.some(d => d.id === disc.id)) {
-          current.push(disc);
+        const idx = current.findIndex(d => d.id === disc.id);
+        if (idx === -1) {
+          current.unshift(disc);
           updated = true;
+        } else {
+          if ((disc.replies?.length || 0) > (current[idx].replies?.length || 0)) {
+            current[idx].replies = disc.replies;
+            updated = true;
+          }
         }
       }
       if (updated) {
@@ -408,12 +640,20 @@ class DataStore {
       const current = this.getArticles();
       let updated = false;
 
-      // Prepend any new daily stories not yet saved locally
+      // Prepend any new daily stories not yet saved locally, or upgrade existing ones
       for (const daily of window.PULSE_DAILY_ARTICLES) {
         const index = current.findIndex(a => a.id === daily.id);
         if (index === -1) {
           current.unshift(daily);
           updated = true;
+        } else {
+          // If the cached version has fewer comments or old author, upgrade to the fresh enriched version
+          const existingComments = current[index].comments || [];
+          const dailyComments = daily.comments || [];
+          if (dailyComments.length > existingComments.length || current[index].author?.id !== daily.author?.id) {
+            current[index] = { ...current[index], ...daily };
+            updated = true;
+          }
         }
       }
 
@@ -511,6 +751,40 @@ class DataStore {
     return localStorage.getItem(`liked_${articleId}`) === 'true';
   }
 
+  getArticleReactions(articleId) {
+    try {
+      const saved = localStorage.getItem(`reactions_${articleId}`);
+      if (saved) return JSON.parse(saved);
+    } catch (e) {}
+    const seed = (articleId || 'default').charCodeAt(articleId ? articleId.length - 1 : 0) || 5;
+    return {
+      claps: 142 + (seed % 50),
+      fires: 89 + (seed % 30),
+      insights: 64 + (seed % 25),
+      mindblown: 115 + (seed % 40),
+      userReaction: null
+    };
+  }
+
+  toggleArticleReaction(articleId, reactionKey) {
+    const data = this.getArticleReactions(articleId);
+    const keyMap = { clap: 'claps', fire: 'fires', insight: 'insights', mindblown: 'mindblown' };
+    const prop = keyMap[reactionKey] || 'claps';
+
+    if (data.userReaction === reactionKey) {
+      data[prop] = Math.max(0, data[prop] - 1);
+      data.userReaction = null;
+    } else {
+      if (data.userReaction && keyMap[data.userReaction]) {
+        data[keyMap[data.userReaction]] = Math.max(0, data[keyMap[data.userReaction]] - 1);
+      }
+      data[prop] = (data[prop] || 0) + 1;
+      data.userReaction = reactionKey;
+    }
+    localStorage.setItem(`reactions_${articleId}`, JSON.stringify(data));
+    return data;
+  }
+
   incrementViews(articleId) {
     const articles = this.getArticles();
     const article = articles.find(a => a.id === articleId);
@@ -529,7 +803,13 @@ class DataStore {
     const currentUser = this.getCurrentUser();
     const newComment = {
       id: 'c_' + Date.now(),
-      author: currentUser,
+      author: {
+        id: currentUser.id,
+        name: currentUser.name,
+        handle: currentUser.handle,
+        avatar: currentUser.avatar,
+        badge: currentUser.badge || (currentUser.isOwner ? 'Platform Founder & Admin' : 'Pulse Contributor')
+      },
       text: text.trim(),
       createdAt: new Date().toISOString(),
       likes: 0
@@ -655,7 +935,7 @@ class DataStore {
       handle: cleanHandle,
       password: password, // client-side credential store
       bio: bio || 'Pulse Community Member',
-      avatar: avatar || `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=250&q=80`,
+      avatar: avatar || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80`,
       isAdmin: false,
       badge: 'Community Member',
       followers: 1,
@@ -708,13 +988,18 @@ class DataStore {
     return null;
   }
 
+  updateCurrentUser(updates) {
+    const current = this.getCurrentUser();
+    return this.updateUserProfile(current.id, updates);
+  }
+
   // ==========================================
   // SEARCH HISTORY
   // ==========================================
   getSearchHistory() {
     try {
       const data = localStorage.getItem(STORAGE_KEYS.SEARCH_HISTORY);
-      return data ? JSON.parse(data) : ['Linux 6.12', 'Rust Architecture', 'Proton Gaming', 'Cybersecurity'];
+      return data ? JSON.parse(data) : ['Linux 6.12', 'Rust Architecture', 'Proton Gaming', 'Cybersecurity', '2nm GAA'];
     } catch {
       return [];
     }
@@ -739,13 +1024,13 @@ class DataStore {
     try {
       const data = localStorage.getItem(STORAGE_KEYS.USER_PREFERENCES);
       return data ? JSON.parse(data) : {
-        interests: ['OS', 'APPs', 'Cybersecurity', 'AI & ML', 'Dev & Cloud'],
+        interests: ['OS', 'APPs', 'Cybersecurity', 'AI & ML', 'Dev & Cloud', 'Hardware', 'Startups'],
         density: 'comfortable',
         autoPlayAudio: false,
         emailDigest: true
       };
     } catch {
-      return { interests: ['OS', 'APPs', 'Cybersecurity', 'AI & ML', 'Dev & Cloud'] };
+      return { interests: ['OS', 'APPs', 'Cybersecurity', 'AI & ML', 'Dev & Cloud', 'Hardware', 'Startups'] };
     }
   }
 
@@ -935,7 +1220,7 @@ class DataStore {
       id: 'user_' + Date.now(),
       name: userData.name || 'Anonymous Writer',
       handle: '@' + (userData.handle || userData.name.toLowerCase().replace(/\s+/g, '')),
-      avatar: userData.avatar || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=250&q=80',
+      avatar: userData.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80',
       bio: userData.bio || 'Pulse community writer.',
       followers: 1
     };
@@ -945,7 +1230,7 @@ class DataStore {
     return newUser;
   }
 
-  // Theme Management
+  // Theme & Appearance Management
   getTheme() {
     const saved = localStorage.getItem(STORAGE_KEYS.THEME);
     if (saved) return saved;
@@ -954,7 +1239,44 @@ class DataStore {
 
   setTheme(theme) {
     localStorage.setItem(STORAGE_KEYS.THEME, theme);
+    this.applyThemeAndAccent();
+  }
+
+  getAccent() {
+    return localStorage.getItem(STORAGE_KEYS.ACCENT) || 'indigo';
+  }
+
+  getCustomAccent() {
+    return localStorage.getItem(STORAGE_KEYS.CUSTOM_ACCENT) || '#6366f1';
+  }
+
+  setAccent(accent, customHex = null) {
+    localStorage.setItem(STORAGE_KEYS.ACCENT, accent);
+    if (customHex) {
+      localStorage.setItem(STORAGE_KEYS.CUSTOM_ACCENT, customHex);
+    }
+    this.applyThemeAndAccent();
+  }
+
+  applyThemeAndAccent() {
+    const theme = this.getTheme();
     document.documentElement.setAttribute('data-theme', theme);
+
+    const accent = this.getAccent();
+    if (accent === 'custom') {
+      const hex = this.getCustomAccent();
+      document.documentElement.removeAttribute('data-accent');
+      document.documentElement.style.setProperty('--accent', hex);
+      document.documentElement.style.setProperty('--accent-hover', hex);
+      document.documentElement.style.setProperty('--accent-light', hex + '26');
+      document.documentElement.style.setProperty('--accent-glow', hex + '4d');
+    } else {
+      document.documentElement.style.removeProperty('--accent');
+      document.documentElement.style.removeProperty('--accent-hover');
+      document.documentElement.style.removeProperty('--accent-light');
+      document.documentElement.style.removeProperty('--accent-glow');
+      document.documentElement.setAttribute('data-accent', accent);
+    }
   }
 
   // Draft Autosave

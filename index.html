@@ -10,7 +10,7 @@
   <meta name="copyright" content="© 2026 The Pulse Collective. All rights reserved.">
   <meta property="og:site_name" content="Pulse — Open IT & Tech Community">
   <meta property="og:title" content="Pulse — High-Signal Tech Publishing & Discussion Wire">
-  <meta property="og:description" content="A decentralized technology publication and discussion wire covering OS, APPs, Cybersecurity, AI, Cloud, and Systems Architecture.">
+  <meta property="og:description" content="A decentralized technology publication and discussion wire covering OS, APPs, Cybersecurity, AI, Cloud, Hardware, Startups, and Tech Agencies.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stephanekafando79.github.io/pulse-blog-platform/">
   <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80">
@@ -23,13 +23,15 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com https: data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="manifest" href="manifest.json">
   <link rel="alternate" type="application/rss+xml" title="Pulse Tech Feed" href="feed.xml">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
 <body>
+  <!-- Real-Time Reading Progress Bar (Pillar 2) -->
+  <div id="reading-progress-bar" class="reading-progress-bar"></div>
 
   <!-- Site Navigation Header -->
   <header class="site-header">
@@ -50,11 +52,25 @@
       <!-- Instant Search Bar -->
       <div class="header-search">
         <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        <input type="search" class="search-input-field" placeholder="Search stories, topics, tags..." aria-label="Search articles">
+        <input type="search" class="search-input-field" placeholder="Search stories, topics, tags..." data-i18n-placeholder="search_placeholder" aria-label="Search articles">
       </div>
 
-      <!-- Actions -->
+      <!-- Actions Toolbar -->
       <div class="header-actions">
+        <!-- Language Selector Button in Toolbar -->
+        <button class="header-lang-btn" id="lang-menu-btn" title="Change Language / Choisir la langue" aria-label="Language selector" onclick="PulseUI.openLanguageModal()">
+          <span id="current-lang-flag">🇺🇸</span>
+          <span id="current-lang-code" style="font-weight: 800;">EN</span>
+          <span style="font-size: 0.75rem; opacity: 0.7;">▾</span>
+        </button>
+
+        <!-- Theme & Accent Colors Palette -->
+        <button class="header-theme-btn" id="theme-palette-btn" title="Customize Themes & Colors" aria-label="Customize theme" onclick="PulseUI.openThemeModal()">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+          <span class="header-theme-label" style="font-size: 0.82rem; font-weight: 700;">Themes</span>
+        </button>
+
+        <!-- Quick Dark/Light Toggle -->
         <button class="btn-icon" id="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
         </button>
@@ -65,11 +81,11 @@
 
         <button class="btn btn-primary btn-write-article">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
-          <span>Write</span>
+          <span data-i18n="write">Write</span>
         </button>
 
         <!-- Current User Account Avatar -->
-        <button class="user-menu-btn" id="user-menu-trigger" title="Switch profile or sign in" aria-label="User profile">
+        <button class="user-menu-btn" id="user-menu-trigger" title="Switch profile or choose avatar" aria-label="User profile">
           <img id="header-user-avatar" class="avatar-sm" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=120&q=80" alt="Profile" />
           <span id="header-user-name" class="user-name-label">Pulse Collective</span>
         </button>
@@ -134,7 +150,7 @@
           <button class="mode-tab" id="tab-mode-discussions" onclick="PulseUI.switchHomeMode('discussions')">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             <span>Community Wire (Reddit / X)</span>
-            <span class="count-badge" id="wire-count-badge">4</span>
+            <span class="count-badge" id="wire-count-badge">6</span>
           </button>
           <button class="mode-tab" id="tab-mode-news" onclick="PulseUI.switchHomeMode('news')">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
@@ -147,21 +163,65 @@
       <!-- Category & Sort Controls Bar (Expanded IT & Tech Domains) -->
       <div class="controls-bar" id="controls-bar">
         <div class="category-tabs" role="tablist">
-          <button class="category-tab active" data-cat="all">All IT Topics</button>
-          <button class="category-tab" data-cat="OS">OS (Linux/Win/Mac)</button>
-          <button class="category-tab" data-cat="APPs">APPs & Tools</button>
-          <button class="category-tab" data-cat="Cybersecurity">Cybersecurity</button>
-          <button class="category-tab" data-cat="AI & ML">AI & ML</button>
-          <button class="category-tab" data-cat="Dev & Cloud">Dev & Cloud</button>
-          <button class="category-tab" data-cat="Hardware">Hardware</button>
+          <button class="category-tab active" data-cat="all" data-i18n="cat_all">All Tech Topics</button>
+          <button class="category-tab" data-cat="Software Engineering" data-i18n="cat_software_eng">Software Engineering</button>
+          <button class="category-tab" data-cat="AI & ML" data-i18n="cat_ai">AI & ML</button>
+          <button class="category-tab" data-cat="Cybersecurity" data-i18n="cat_cysa">CYSA & Cybersecurity</button>
+          <button class="category-tab" data-cat="Cloud Computing" data-i18n="cat_cloud">Cloud Computing</button>
+          <button class="category-tab" data-cat="Network & Infrastructure" data-i18n="cat_network_infra">Network & Infra</button>
+          <button class="category-tab" data-cat="Product & Design" data-i18n="cat_product_design">Product & Design</button>
+          <button class="category-tab" data-cat="FinTech" data-i18n="cat_fintech">FinTech</button>
+          <button class="category-tab" data-cat="HealthTech & BioTech" data-i18n="cat_health_bio">HealthTech & BioTech</button>
+          <button class="category-tab" data-cat="Education Tech" data-i18n="cat_edtech">Education Tech</button>
+          <button class="category-tab" data-cat="Climate & CleanTech" data-i18n="cat_climate">Climate & CleanTech</button>
+          <button class="category-tab" data-cat="AgTech" data-i18n="cat_agtech">AgTech</button>
+          <button class="category-tab" data-cat="Robotics & Automotive" data-i18n="cat_robotics_auto">Robotics & Automotive</button>
+          <button class="category-tab" data-cat="Aerospace & SpaceTech" data-i18n="cat_aerospace_space">Aerospace & SpaceTech</button>
+          <button class="category-tab" data-cat="Internet of Things" data-i18n="cat_iot">Internet of Things (IoT)</button>
+          <button class="category-tab" data-cat="Hardware" data-i18n="cat_hardware">Hardware & Silicon</button>
+          <button class="category-tab" data-cat="Startups" data-i18n="cat_startups">Startups & VC</button>
+          <button class="category-tab" data-cat="Tech Agencies" data-i18n="cat_agencies">Tech Agencies</button>
         </div>
 
         <div class="controls-right">
+          <!-- Toolbar Language Selector -->
+          <button class="toolbar-pill-btn" id="toolbar-lang-btn" onclick="PulseUI.openLanguageModal()" title="Change Language / Choisir la langue">
+            <span class="toolbar-pill-icon">🌐</span>
+            <span id="toolbar-lang-flag">🇺🇸</span>
+            <span id="toolbar-lang-code" style="font-weight: 700;">EN</span>
+            <span class="toolbar-pill-arrow">▾</span>
+          </button>
+
+          <!-- Toolbar Themes & Colors -->
+          <button class="toolbar-pill-btn" id="toolbar-theme-btn" onclick="PulseUI.openThemeModal()" title="Customize Themes & Colors">
+            <span class="toolbar-pill-icon">🎨</span>
+            <span data-i18n="toolbar_theme">Themes</span>
+          </button>
+
           <select class="sort-select" id="sort-feed-select" aria-label="Sort articles">
             <option value="latest">Latest Stories</option>
             <option value="popular">Most Popular</option>
             <option value="readTime">Quick Reads</option>
           </select>
+        </div>
+      </div>
+
+      <!-- Live 0-Day CVE Security & Threat Radar (Pillar 5) -->
+      <div class="cve-radar-strip" id="cve-radar-strip">
+        <div class="cve-radar-label">
+          <span class="cve-live-beacon"></span>
+          <span>0-Day Threat Radar</span>
+        </div>
+        <div class="cve-ticker-container">
+          <div class="cve-ticker-inner">
+            <span class="cve-item"><strong style="color: #ef4444;">CRITICAL CVSS 9.8:</strong> CVE-2026-4421 Linux Kernel eBPF verifier bounds flaw • <span class="cve-status-tag">Patch Ready</span></span>
+            <span class="cve-divider">•</span>
+            <span class="cve-item"><strong style="color: #f59e0b;">HIGH CVSS 8.4:</strong> OpenSSH RegreSSHion variant mitigated via zero-trust ingress</span>
+            <span class="cve-divider">•</span>
+            <span class="cve-item"><strong style="color: #ef4444;">CRITICAL CVSS 9.6:</strong> Chromium V8 engine JIT type confusion active in wild</span>
+            <span class="cve-divider">•</span>
+            <span class="cve-item"><strong style="color: #10b981;">NIST Standard:</strong> FIPS 203/204 Post-Quantum key exchange deployed</span>
+          </div>
         </div>
       </div>
 
@@ -182,7 +242,12 @@
         <div class="wire-composer-card">
           <div class="composer-header">
             <img id="composer-user-avatar" class="avatar-sm" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=120&q=80" alt="Avatar" />
-            <span class="composer-title">Start a Tech Discussion or Post a Take</span>
+            <div style="flex: 1;">
+              <span class="composer-title">Start a Tech Discussion or Post a Take</span>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">
+                Posting as <strong id="composer-user-name">The Pulse Collective</strong> • <a href="javascript:void(0)" onclick="PulseUI.openAvatarPicker()" style="color: var(--accent); font-weight: 600;">Choose Avatar</a>
+              </div>
+            </div>
           </div>
           <textarea id="wire-post-input" class="wire-textarea" placeholder="What's on your mind in tech? Ask an OS question, debate an app stack, or share a hot take..." maxlength="600"></textarea>
           
@@ -200,6 +265,8 @@
                 <option value="AI & ML">Domain: AI & ML</option>
                 <option value="Dev & Cloud">Domain: Dev & Cloud</option>
                 <option value="Hardware">Domain: Hardware</option>
+                <option value="Startups">Domain: Startups</option>
+                <option value="Tech Agencies">Domain: Tech Agencies</option>
               </select>
               <button type="button" class="btn btn-sm btn-ghost" id="wire-toggle-code-btn" onclick="PulseUI.toggleWireCodeBox()">
                 <code>&lt;/&gt; Code</code>
@@ -237,7 +304,7 @@
               Live IT & Technology News Feed
             </h2>
             <p style="font-size: 0.85rem; color: var(--text-secondary);">
-              Automated feed covering OS, APPs, Cybersecurity, AI, Cloud, and Hardware releases. Updated daily via GitHub Actions.
+              Automated feed covering OS, APPs, Cybersecurity, AI, Cloud, Hardware, Startups, and Tech Agencies. Updated daily.
             </p>
           </div>
           <button class="btn btn-secondary btn-sm" onclick="PulseUI.refreshLiveNews()">
@@ -294,6 +361,8 @@
                 <option value="AI & ML">AI & Machine Learning</option>
                 <option value="Dev & Cloud">Dev & Cloud Computing</option>
                 <option value="Hardware">Hardware & Chips</option>
+                <option value="Startups">Startups & Deep Tech</option>
+                <option value="Tech Agencies">Tech Agencies & IT Modernization</option>
                 <option value="Technology">Technology (General)</option>
                 <option value="Design">Design & UI/UX</option>
                 <option value="Productivity">Productivity</option>
@@ -446,6 +515,24 @@
       <div class="sidebar-section-title">ADMINISTRATION & TOOLS</div>
       <ul class="sidebar-menu-list">
         <li>
+          <a href="javascript:void(0)" class="sidebar-item" onclick="PulseUI.closeSidebar(); PulseUI.openLanguageModal();">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span data-i18n="menu_language">Language Settings (Langue)</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="sidebar-item" onclick="PulseUI.closeSidebar(); PulseUI.openThemeModal();">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            <span data-i18n="menu_appearance">Themes & Color Accents</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="sidebar-item" onclick="PulseUI.closeSidebar(); PulseUI.openAvatarPicker();">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+            <span>Avatar Gallery (Photos & Stickers)</span>
+          </a>
+        </li>
+        <li>
           <a href="javascript:void(0)" class="sidebar-item" onclick="PulseUI.closeSidebar(); PulseUI.openAuthModal();">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             <span id="sidebar-auth-action-label">Manage Profile / Log In</span>
@@ -514,18 +601,19 @@
     </div>
   </aside>
 
-  <!-- ================= AUTHENTICATION MODAL (LOGIN / SIGN UP / PASSWORD VERIFY) ================= -->
+  <!-- ================= AUTHENTICATION MODAL (LOGIN / SIGN UP / AVATAR GALLERY) ================= -->
   <dialog id="user-switch-modal" aria-labelledby="auth-modal-title">
     <div class="modal-header">
-      <h2 id="auth-modal-title" class="modal-title">Account & Security</h2>
+      <h2 id="auth-modal-title" class="modal-title">Account & Identity</h2>
       <button class="btn-icon" onclick="document.getElementById('user-switch-modal').close()" aria-label="Close dialog">✕</button>
     </div>
     <div class="modal-body">
-      <!-- Auth Tabs: Sign In / Create Account / Switch Profiles -->
+      <!-- Auth Tabs: Sign In / Create Account / Switch Profiles / Avatar Picker -->
       <div class="auth-tabs">
         <button type="button" class="auth-tab active" id="tab-login" onclick="PulseUI.switchAuthTab('login')">Log In</button>
         <button type="button" class="auth-tab" id="tab-register" onclick="PulseUI.switchAuthTab('register')">Create Profile</button>
         <button type="button" class="auth-tab" id="tab-switch" onclick="PulseUI.switchAuthTab('switch')">Quick Switch</button>
+        <button type="button" class="auth-tab" id="tab-avatars" onclick="PulseUI.switchAuthTab('avatars')">Avatars Gallery</button>
       </div>
 
       <!-- Tab 1: Log In -->
@@ -572,10 +660,61 @@
       <!-- Tab 3: Switch Existing Profile -->
       <div id="auth-switch-panel" class="auth-panel" style="display: none;">
         <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
-          Select any author or administrator profile:
+          Select any author, researcher, or administrator profile:
         </p>
         <div class="user-switch-list" id="user-switch-container">
           <!-- Rendered dynamically by ui.js -->
+        </div>
+      </div>
+
+      <!-- Tab 4: Avatar Presets Gallery inside Auth Modal -->
+      <div id="auth-avatars-panel" class="auth-panel" style="display: none;">
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+          Pick any profile avatar (realistic male/female photo or tech sticker) for your active account:
+        </p>
+        <div class="avatar-category-tabs">
+          <button type="button" class="avatar-cat-tab active" onclick="PulseUI.filterAvatarPresets('all', this)">All Avatars</button>
+          <button type="button" class="avatar-cat-tab" onclick="PulseUI.filterAvatarPresets('female', this)">Realistic Women</button>
+          <button type="button" class="avatar-cat-tab" onclick="PulseUI.filterAvatarPresets('male', this)">Realistic Men</button>
+          <button type="button" class="avatar-cat-tab" onclick="PulseUI.filterAvatarPresets('stickers', this)">Tech Stickers</button>
+        </div>
+        <div id="auth-avatars-grid" class="avatar-presets-grid" style="max-height: 280px; overflow-y: auto;">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ================= STANDALONE AVATAR PICKER MODAL ================= -->
+  <dialog id="avatar-picker-modal" aria-labelledby="avatar-modal-title">
+    <div class="modal-header">
+      <h2 id="avatar-modal-title" class="modal-title">Choose Your Profile Avatar</h2>
+      <button class="btn-icon" onclick="document.getElementById('avatar-picker-modal').close()" aria-label="Close dialog">✕</button>
+    </div>
+    <div class="modal-body">
+      <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+        Click any realistic portrait, gender style, or tech sticker to immediately set as your profile photo:
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div class="avatar-category-tabs">
+        <button type="button" class="avatar-cat-tab active" onclick="PulseUI.filterAvatarPresets('all', this)">All</button>
+        <button type="button" class="avatar-cat-tab" onclick="PulseUI.filterAvatarPresets('female', this)">Realistic Women</button>
+        <button type="button" class="avatar-cat-tab" onclick="PulseUI.filterAvatarPresets('male', this)">Realistic Men</button>
+        <button type="button" class="avatar-cat-tab" onclick="PulseUI.filterAvatarPresets('stickers', this)">Tech Stickers</button>
+      </div>
+
+      <!-- Presets Grid -->
+      <div id="avatar-presets-grid" class="avatar-presets-grid" style="max-height: 320px; overflow-y: auto;">
+        <!-- Rendered by ui.js -->
+      </div>
+
+      <!-- Custom Image URL Input -->
+      <div class="custom-avatar-section">
+        <label class="form-label" for="custom-avatar-url-input">Or Use Custom Image / Photo URL:</label>
+        <div style="display: flex; gap: 0.5rem;">
+          <input type="url" id="custom-avatar-url-input" class="form-input" placeholder="https://images.unsplash.com/... or your image link" />
+          <button type="button" class="btn btn-secondary btn-sm" onclick="PulseUI.applyCustomAvatarUrl()">Apply</button>
         </div>
       </div>
     </div>
@@ -600,8 +739,8 @@
         <label class="topic-check-pill"><input type="checkbox" value="AI & ML" checked /> AI & Machine Learning</label>
         <label class="topic-check-pill"><input type="checkbox" value="Dev & Cloud" checked /> Dev & Cloud Computing</label>
         <label class="topic-check-pill"><input type="checkbox" value="Hardware" checked /> Hardware & Silicon</label>
-        <label class="topic-check-pill"><input type="checkbox" value="Design" checked /> UI/UX Design</label>
-        <label class="topic-check-pill"><input type="checkbox" value="Productivity" checked /> Deep Work & Tools</label>
+        <label class="topic-check-pill"><input type="checkbox" value="Startups" checked /> Startups & VC</label>
+        <label class="topic-check-pill"><input type="checkbox" value="Tech Agencies" checked /> Tech Agencies & IT</label>
       </div>
 
       <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.75rem;">
@@ -673,8 +812,8 @@
         <textarea id="edit-post-code" class="wire-code-textarea" rows="3"></textarea>
       </div>
       <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1rem;">
-        <button class="btn-secondary" onclick="document.getElementById('edit-post-modal').close()">Cancel</button>
-        <button class="btn-primary" onclick="PulseUI.saveEditedPost()">Save Changes</button>
+        <button class="btn btn-secondary" onclick="document.getElementById('edit-post-modal').close()">Cancel</button>
+        <button class="btn btn-primary" onclick="PulseUI.saveEditedPost()">Save Changes</button>
       </div>
     </div>
   </dialog>
@@ -722,6 +861,71 @@
     </div>
   </dialog>
 
+  <!-- ================= LANGUAGE SELECTION MODAL ================= -->
+  <dialog id="language-modal" aria-labelledby="language-modal-title">
+    <div class="modal-header">
+      <h2 id="language-modal-title" class="modal-title">🌐 <span data-i18n="select_language">Select Language</span></h2>
+      <button class="btn-icon" onclick="document.getElementById('language-modal').close()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.5rem;" data-i18n="language_sub">
+        Choose your preferred language for the Pulse interface.
+      </p>
+      <div id="language-options-grid" class="lang-grid">
+        <!-- Rendered dynamically by PulseUI.renderLanguageModal() -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ================= THEME & APPEARANCE CUSTOMIZER MODAL ================= -->
+  <dialog id="theme-customizer-modal" aria-labelledby="theme-modal-title">
+    <div class="modal-header">
+      <h2 id="theme-modal-title" class="modal-title">🎨 <span data-i18n="theme_modal_title">Customize Theme & Appearance</span></h2>
+      <button class="btn-icon" onclick="document.getElementById('theme-customizer-modal').close()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;" data-i18n="theme_modal_sub">
+        Personalize your reading interface with custom themes and vibrant color accents.
+      </p>
+
+      <!-- Theme Base Mode Section -->
+      <div class="theme-modal-section">
+        <div class="theme-section-title">
+          <span>☀️ / 🌙</span>
+          <span data-i18n="theme_mode_heading">Theme Base Mode</span>
+        </div>
+        <div class="theme-modes-grid" id="theme-modes-grid">
+          <!-- Rendered dynamically by PulseUI.renderThemeModal() -->
+        </div>
+      </div>
+
+      <!-- Accent Color Selection Section -->
+      <div class="theme-modal-section">
+        <div class="theme-section-title">
+          <span>✨</span>
+          <span data-i18n="theme_accent_heading">Accent Color of Choice</span>
+        </div>
+        <div class="accents-palette-grid" id="accent-swatches-grid">
+          <!-- Rendered dynamically by PulseUI.renderThemeModal() -->
+        </div>
+
+        <!-- Custom Color Picker Input -->
+        <div class="custom-accent-row">
+          <input type="color" id="custom-accent-color-input" class="custom-color-input" value="#6366f1" onchange="PulseUI.setCustomAccentColor(this.value)" />
+          <div>
+            <div style="font-weight: 700; font-size: 0.88rem;" data-i18n="accent_custom">Custom Hex Color</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Pick any color on the spectrum</div>
+          </div>
+          <span id="custom-color-hex-label" style="margin-left: auto; font-family: var(--font-mono); font-weight: 700; font-size: 0.82rem; color: var(--accent);">#6366F1</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+        <button class="btn btn-primary" onclick="document.getElementById('theme-customizer-modal').close()" data-i18n="save_theme_btn">Apply & Close</button>
+      </div>
+    </div>
+  </dialog>
+
   <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
@@ -748,10 +952,26 @@
     </div>
   </footer>
 
+  <!-- Floating Bottom-Right Quick Tools Bar (Always accessible on Mobile & Desktop) -->
+  <div class="floating-quick-bar" id="floating-quick-bar" aria-label="Quick tools">
+    <button class="quick-pill-btn" onclick="PulseUI.openLanguageModal()" title="Change Language / Choisir la langue">
+      <span id="quick-lang-flag">🇺🇸</span>
+      <span id="quick-lang-code" style="font-size: 0.75rem; font-weight: 700;">EN</span>
+    </button>
+    <button class="quick-pill-btn" onclick="PulseUI.openThemeModal()" title="Themes & Colors Customizer">
+      <span>🎨</span>
+      <span style="font-size: 0.75rem; font-weight: 700;">Themes</span>
+    </button>
+    <button class="quick-pill-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Scroll to top">
+      <span>↑</span>
+    </button>
+  </div>
+
   <!-- Scripts -->
   <script src="data/live_news.js"></script>
   <script src="data/discussions.js"></script>
   <script src="data/articles.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/store.js"></script>
   <script src="js/editor.js"></script>
   <script src="js/ui.js"></script>

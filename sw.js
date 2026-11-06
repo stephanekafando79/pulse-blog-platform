@@ -3,7 +3,7 @@
  * Caches core shell and runtime data for offline reading
  */
 
-const CACHE_NAME = 'pulse-offline-v2';
+const CACHE_NAME = 'pulse-offline-v3';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -11,6 +11,7 @@ const STATIC_ASSETS = [
   './data/articles.js',
   './data/live_news.js',
   './data/discussions.js',
+  './js/i18n.js',
   './js/store.js',
   './js/editor.js',
   './js/ui.js',
@@ -54,7 +55,15 @@ self.addEventListener('fetch', (event) => {
         }).catch(() => {});
         return cachedResponse;
       }
-      return fetch(event.request);
+      return fetch(event.request).then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+          const responseToCache = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
+        }
+        return networkResponse;
+      });
     })
   );
 });
