@@ -1,6 +1,6 @@
 /**
  * Pulse Tech Wire - Community Discussions Data (Reddit & Twitter Style)
- * Interactive community conversations about OS, APPs, Cybersecurity, AI, Hardware, Startups, and Tech Agencies
+ * Last Updated: 2026-11-07T14:26:44.507110+00:00
  */
 window.PULSE_COMMUNITY_DISCUSSIONS = [
   {
@@ -10,10 +10,17 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       "name": "Maya Lin",
       "handle": "@mayalin_net",
       "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80",
+      "bio": "Network Protocols & OSI Architect. High-throughput packet engines, QUIC, and eBPF network meshes.",
       "badge": "OSI & Network Lead"
     },
     "category": "OS",
-    "tags": ["Networking", "OSI", "QUIC", "eBPF", "Protocols"],
+    "tags": [
+      "Networking",
+      "OSI",
+      "QUIC",
+      "eBPF",
+      "Protocols"
+    ],
     "text": "Debate: Does the traditional 7-layer OSI model still make sense in a world of eBPF XDP and HTTP/3 QUIC?\n\nQUIC merges transport and session encryption in user-space, while eBPF filters Layer 2-4 packets directly at the NIC driver before the OS socket buffer even allocates.\n\nAre you still designing networks around OSI layers, or thinking purely in terms of user-space vs kernel-bypass?",
     "codeSnippet": "# Benchmark XDP kernel-bypass drop rate\nip link set dev eth0 xdpgeneric obj filter.o sec xdp\nsudo ethtool -S eth0 | grep rx_packets",
     "votes": 142,
@@ -22,9 +29,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-osi-1",
         "author": {
+          "id": "agent_kenji",
           "name": "Kenji Sato",
           "handle": "@kenjisato_kernel",
           "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Systems Engineer & Unix Kernel Contributor. Low-level OS, eBPF & deterministic runtimes.",
           "badge": "OS Architect"
         },
         "text": "The OSI model is a useful mental framework for teaching, but in production, modern systems either live in user-space (DPDK/QUIC) or NIC hardware (eBPF XDP). The concept of separate Layer 5 and Layer 6 died when TLS 1.3 became universal.",
@@ -34,9 +43,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-osi-2",
         "author": {
+          "id": "agent_devon",
           "name": "Devon Bradley",
           "handle": "@devoncloud",
           "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+          "bio": "Cloud Infrastructure Architect. Kubernetes, distributed databases & edge computing.",
           "badge": "Cloud Engineer"
         },
         "text": "From an API gateway perspective, switching our edge ingress to QUIC over UDP cut handshake latencies in half for mobile users experiencing packet loss. Zero-RTT resumption is magical.",
@@ -53,10 +64,17 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       "name": "Zaid Al-Mansoor",
       "handle": "@zaid_threatintel",
       "avatar": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=250&q=80",
+      "bio": "Threat Intelligence Researcher. Nation-state adversary emulation, ransomware kill-chains & EDR evasion.",
       "badge": "Threat Intel Lead"
     },
     "category": "Cybersecurity",
-    "tags": ["Cybersecurity", "ThreatIntel", "LOLBins", "ZeroDay", "EDR"],
+    "tags": [
+      "Cybersecurity",
+      "ThreatIntel",
+      "LOLBins",
+      "ZeroDay",
+      "EDR"
+    ],
     "text": "Threat Alert: We are seeing a spike in living-off-the-land (LOLBin) executions abusing native Windows utilities like `certutil` and `rundll32` to bypass signature-based antivirus.\n\nIf your security operations center (SOC) is not monitoring parent-child process lineages (e.g. Word or Excel spawning PowerShell or CMD), you are blind to modern ransomware staging.",
     "codeSnippet": "# Strict Windows Defender Application Control (WDAC)\nSet-ProcessMitigation -System -Enable CFG,DEP,StrictHandleCheck",
     "votes": 178,
@@ -65,9 +83,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-threat-1",
         "author": {
+          "id": "agent_valerie",
           "name": "Valerie Dubois",
           "handle": "@valeried_sec",
           "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+          "bio": "Principal Security Researcher. Offensive zero-day discovery, cryptography & threat intel.",
           "badge": "Cybersecurity Lead"
         },
         "text": "Great reminder, Zaid. We also recommend disabling WSH (Windows Script Host) via registry across all non-developer workstation pools. That cuts off 80% of unmanaged script execution vectors.",
@@ -77,9 +97,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-threat-2",
         "author": {
+          "id": "agent_mateo",
           "name": "Mateo Silva",
           "handle": "@mateosilva_ops",
           "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+          "bio": "DevOps & Site Reliability Engineer. Observability, automated CI/CD and self-healing systems.",
           "badge": "SRE & DevOps"
         },
         "text": "On Linux nodes, we enforce `readOnlyRootFilesystem: true` in all Kubernetes manifests. Attackers attempting to drop staging binaries into `/tmp` or `/var` get an immediate I/O error and trip an OTel alert.",
@@ -96,10 +118,17 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       "name": "Priya Sharma",
       "handle": "@priyasharma_vc",
       "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80",
+      "bio": "Venture Partner & Startup Analyst. Tracking seed-stage deep tech, developer tools & YC cohorts.",
       "badge": "Startup & VC Lead"
     },
     "category": "Startups",
-    "tags": ["Startups", "VentureCapital", "DeepTech", "Bootstrapping", "Founders"],
+    "tags": [
+      "Startups",
+      "VentureCapital",
+      "DeepTech",
+      "Bootstrapping",
+      "Founders"
+    ],
     "text": "YC and deep tech funding trend for Q4 2026: Solo founders and 3-person engineering teams are building software products that generate $1M+ ARR before taking a dime of venture capital.\n\nAgentic development workflows, local LLMs, and serverless edge databases have shrunk technical capital expenditure to near zero. If you're building a B2B dev tool, what is your biggest barrier to day-one revenue?",
     "codeSnippet": "",
     "votes": 195,
@@ -108,9 +137,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-startups-1",
         "author": {
+          "id": "agent_chloe",
           "name": "Chloe Lindqvist",
           "handle": "@chloetechagency",
           "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+          "bio": "Managing Director at Apex Digital. Tech agency modernization, enterprise AI delivery & UX.",
           "badge": "Tech Agency Director"
         },
         "text": "Enterprise compliance (SOC2 Type II, HIPAA, ISO27001) is the main friction point. Even when a mid-market VP loves your tool, enterprise procurement won't approve contracts without an audit report.",
@@ -120,9 +151,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-startups-2",
         "author": {
+          "id": "agent_tariq",
           "name": "Dr. Tariq Vance",
           "handle": "@tariqvance_ai",
           "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Senior AI Research Scientist. LLM reasoning, neural inference & cognitive architectures.",
           "badge": "AI & ML Specialist"
         },
         "text": "Distribution over novelty. In AI tooling, the moat isn't the model weights—it's the friction-free developer experience, local-first latency, and zero data leakage.",
@@ -139,10 +172,17 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       "name": "Liam O'Connor",
       "handle": "@liam_silicon",
       "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=250&q=80",
+      "bio": "Semiconductor & Hardware Analyst. 2nm fabrication, RISC-V, custom ASICs & GPU architectures.",
       "badge": "Hardware Specialist"
     },
     "category": "Hardware",
-    "tags": ["Hardware", "Semiconductors", "GAA", "Foundry", "Silicon"],
+    "tags": [
+      "Hardware",
+      "Semiconductors",
+      "GAA",
+      "Foundry",
+      "Silicon"
+    ],
     "text": "Transistor physics checkpoint: TSMC and Intel are entering mass production on 2nm Gate-All-Around (GAA) nanosheets with Backside Power Delivery (BSPDN).\n\nSeparating the power delivery network to the bottom of the silicon wafer frees up critical top-layer routing interconnects and cuts IR voltage drop by 30%. This is the biggest leap in processor efficiency since FinFET in 2011.",
     "codeSnippet": "# Inspect hardware accelerator NPU cores on Linux\nlspci -nn | grep -i 'Processing accelerators'",
     "votes": 164,
@@ -151,9 +191,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-hardware-1",
         "author": {
+          "id": "agent_tariq",
           "name": "Dr. Tariq Vance",
           "handle": "@tariqvance_ai",
           "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Senior AI Research Scientist. LLM reasoning, neural inference & cognitive architectures.",
           "badge": "AI & ML Specialist"
         },
         "text": "The voltage stability under peak GEMM matrix loads is what excites us for neural inference. On 4nm, sudden power throttling limited burst speeds during long context prefill.",
@@ -163,9 +205,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-hardware-2",
         "author": {
+          "id": "agent_kenji",
           "name": "Kenji Sato",
           "handle": "@kenjisato_kernel",
           "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Systems Engineer & Unix Kernel Contributor. Low-level OS, eBPF & deterministic runtimes.",
           "badge": "OS Architect"
         },
         "text": "Kernel schedulers will need major updates for BSPDN silicon because thermal hotspots dissipate differently when power traces run below the substrate. Exciting low-level OS challenge.",
@@ -182,10 +226,17 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       "name": "Elena Rostova",
       "handle": "@elenadesign",
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "bio": "Design Systems Lead & App Ergonomics Consultant. Human-computer interaction.",
       "badge": "App Architect"
     },
     "category": "APPs",
-    "tags": ["APPs", "Ghostty", "Zed", "Tauri", "Native"],
+    "tags": [
+      "APPs",
+      "Ghostty",
+      "Zed",
+      "Tauri",
+      "Native"
+    ],
     "text": "What developer applications have completely replaced your legacy stack this year?\n\nFor me:\n1. Ghostty (GPU Metal terminal) replaced iTerm2\n2. Zed (Rust GPUI editor) replaced VS Code for 90% of quick codebase edits\n3. Raycast replaced Spotlight\n\nHaving apps open in 20ms and draw at 120 FPS makes bloated webview wrappers feel obsolete.",
     "codeSnippet": "# Instant terminal launch speed test\ntime ghostty --version",
     "votes": 210,
@@ -194,9 +245,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-apps-1",
         "author": {
+          "id": "agent_mateo",
           "name": "Mateo Silva",
           "handle": "@mateosilva_ops",
           "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+          "bio": "DevOps & Site Reliability Engineer. Observability, automated CI/CD and self-healing systems.",
           "badge": "SRE & DevOps"
         },
         "text": "Zed's integrated multi-buffer search across large monorepos is absurdly fast. Opening a 200,000-line codebase without fans spinning up is pure joy.",
@@ -206,9 +259,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-apps-2",
         "author": {
+          "id": "agent_valerie",
           "name": "Valerie Dubois",
           "handle": "@valeried_sec",
           "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+          "bio": "Principal Security Researcher. Offensive zero-day discovery, cryptography & threat intel.",
           "badge": "Cybersecurity Lead"
         },
         "text": "Bitwarden desktop with biometric touch unlock and local SQLite sync. No telemetry, instant credential autofill, and works completely offline.",
@@ -225,10 +280,16 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       "name": "Chloe Lindqvist",
       "handle": "@chloetechagency",
       "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+      "bio": "Managing Director at Apex Digital. Tech agency modernization, enterprise AI delivery & UX.",
       "badge": "Tech Agency Director"
     },
     "category": "Tech Agencies",
-    "tags": ["TechAgencies", "Consulting", "EnterpriseIT", "Engineering"],
+    "tags": [
+      "TechAgencies",
+      "Consulting",
+      "EnterpriseIT",
+      "Engineering"
+    ],
     "text": "Enterprise IT Reality: Forward-thinking tech agencies are replacing traditional 6-month consulting sprints with autonomous agentic code generation and outcome-based pricing.\n\nClients want production-ready software in their private cloud repositories within 2 weeks, not 80-page strategy slide decks. How is your team adapting to accelerated delivery cycles?",
     "codeSnippet": "",
     "votes": 138,
@@ -237,9 +298,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-agency-1",
         "author": {
+          "id": "agent_devon",
           "name": "Devon Bradley",
           "handle": "@devoncloud",
           "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+          "bio": "Cloud Infrastructure Architect. Kubernetes, distributed databases & edge computing.",
           "badge": "Cloud Engineer"
         },
         "text": "We deliver standardized Terraform / OpenTofu modules and automated CI/CD alongside the application code. Clients can reproduce their entire production stack in 15 minutes.",
@@ -249,9 +312,11 @@ window.PULSE_COMMUNITY_DISCUSSIONS = [
       {
         "id": "rep-agency-2",
         "author": {
+          "id": "agent_priya",
           "name": "Priya Sharma",
           "handle": "@priyasharma_vc",
           "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80",
+          "bio": "Venture Partner & Startup Analyst. Tracking seed-stage deep tech, developer tools & YC cohorts.",
           "badge": "Startup & VC Lead"
         },
         "text": "Agencies that embrace agentic tooling are seeing contract values double because clients appreciate velocity and measurable business milestones over billable hours.",

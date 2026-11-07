@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-10-30T12:00:03.840465+00:00
+ * Last Updated: 2026-11-07T14:26:44.506365+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50301462",
-    "title": "elect.horse",
-    "url": "https://elect.horse/",
-    "domain": "elect.horse",
+    "id": "hn-50403052",
+    "title": "Need for Speed Underground 2 online in the browser",
+    "url": "https://nfsu2.xyz/",
+    "domain": "nfsu2.xyz",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "nfsu2.xyz",
+    "score": 249,
+    "commentsCount": 26,
+    "publishedAt": "2026-11-07T14:26:43.764322+00:00"
+  },
+  {
+    "id": "hn-50399933",
+    "title": "Libghostty 1.0",
+    "url": "https://mitchellh.com/writing/libghostty-1-0",
+    "domain": "mitchellh.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "mitchellh.com",
+    "score": 805,
+    "commentsCount": 41,
+    "publishedAt": "2026-11-07T14:26:43.861666+00:00"
+  },
+  {
+    "id": "hn-50403097",
+    "title": "Every Mac comes with an (undocumented) family member classifier",
+    "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+    "domain": "8rank.ai",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "elect.horse",
-    "score": 85,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-30T12:00:02.412162+00:00"
+    "source": "8rank.ai",
+    "score": 257,
+    "commentsCount": 25,
+    "publishedAt": "2026-11-07T14:26:43.963874+00:00"
   },
   {
-    "id": "hn-50296470",
-    "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
-    "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
-    "domain": "arkm.com",
-    "category": "Cybersecurity",
+    "id": "hn-50403066",
+    "title": "Running a law firm on Free software",
+    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+    "domain": "decoded.legal",
+    "category": "APPs",
     "tags": [
-      "Cybersecurity",
+      "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "arkm.com",
-    "score": 1477,
-    "commentsCount": 151,
-    "publishedAt": "2026-10-30T12:00:02.619348+00:00"
+    "source": "decoded.legal",
+    "score": 50,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-07T14:26:44.072548+00:00"
   },
   {
-    "id": "hn-50302334",
-    "title": "Backdoors in official Claude Code extensions",
-    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
-    "domain": "cyberplace.social",
+    "id": "hn-50391456",
+    "title": "Tesla to wind down Cybertruck production",
+    "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
+    "domain": "nbcnews.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "cyberplace.social",
-    "score": 119,
-    "commentsCount": 10,
-    "publishedAt": "2026-10-30T12:00:02.845125+00:00"
+    "source": "nbcnews.com",
+    "score": 1067,
+    "commentsCount": 174,
+    "publishedAt": "2026-11-07T14:26:44.174488+00:00"
   },
   {
-    "id": "hn-50289418",
-    "title": "We're releasing the weights of Mistral Large 4",
-    "url": "https://mistral.ai/news/mistral-large-4-oss/",
-    "domain": "mistral.ai",
+    "id": "hn-50397429",
+    "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+    "domain": "hightouch.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "hightouch.com",
+    "score": 524,
+    "commentsCount": 49,
+    "publishedAt": "2026-11-07T14:26:44.281645+00:00"
+  },
+  {
+    "id": "hn-50361417",
+    "title": "Building the NBC News Big Board",
+    "url": "https://ejfox.com/projects/nbc-big-board",
+    "domain": "ejfox.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "mistral.ai",
-    "score": 1538,
-    "commentsCount": 53,
-    "publishedAt": "2026-10-30T12:00:03.046862+00:00"
+    "source": "ejfox.com",
+    "score": 15,
+    "commentsCount": 2,
+    "publishedAt": "2026-11-07T14:26:44.383411+00:00"
   },
   {
-    "id": "hn-50301717",
-    "title": "How Do You Take a Picture of a Black Hole?",
-    "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
-    "domain": "quantamagazine.org",
+    "id": "hn-50377613",
+    "title": "Show HN: Spindle – a full-featured, type-safe web framework for OCaml 5",
+    "url": "https://github.com/hyphatech/spindle",
+    "domain": "github.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "quantamagazine.org",
-    "score": 23,
-    "commentsCount": 5,
-    "publishedAt": "2026-10-30T12:00:03.246846+00:00"
-  },
-  {
-    "id": "hn-50301983",
-    "title": "Anthropic hacked to deliver remote access trojan",
-    "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
-    "domain": "doublepulsar.com",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "doublepulsar.com",
-    "score": 101,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-30T12:00:03.431711+00:00"
-  },
-  {
-    "id": "hn-50263127",
-    "title": "Gilgamesh by Simon Armitage review – an ancient epic is brilliantly translated",
-    "url": "https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-review-an-ancient-epic-is-brilliantly-translated-for-our-times",
-    "domain": "theguardian.com",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "theguardian.com",
-    "score": 55,
-    "commentsCount": 6,
-    "publishedAt": "2026-10-30T12:00:03.628228+00:00"
-  },
-  {
-    "id": "hn-50255343",
-    "title": "Cuis: The Modern Smalltalk-80",
-    "url": "https://cuis.st/",
-    "domain": "cuis.st",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "cuis.st",
-    "score": 134,
-    "commentsCount": 9,
-    "publishedAt": "2026-10-30T12:00:03.838502+00:00"
+    "source": "github.com",
+    "score": 17,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-07T14:26:44.505965+00:00"
   }
 ];
