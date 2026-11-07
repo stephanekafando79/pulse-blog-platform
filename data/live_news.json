@@ -11,9 +11,25 @@
       "TechNews"
     ],
     "source": "nfsu2.xyz",
-    "score": 249,
-    "commentsCount": 26,
-    "publishedAt": "2026-11-07T14:26:43.764322+00:00"
+    "score": 291,
+    "commentsCount": 29,
+    "publishedAt": "2026-11-07T14:49:03.813838+00:00"
+  },
+  {
+    "id": "hn-50404599",
+    "title": "The $8 Linux Computer (2022)",
+    "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+    "domain": "thelittleengineerthatcould.blogspot.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "thelittleengineerthatcould.blogspot.com",
+    "score": 13,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-07T14:49:03.945929+00:00"
   },
   {
     "id": "hn-50399933",
@@ -27,9 +43,9 @@
       "TechNews"
     ],
     "source": "mitchellh.com",
-    "score": 805,
+    "score": 816,
     "commentsCount": 41,
-    "publishedAt": "2026-11-07T14:26:43.861666+00:00"
+    "publishedAt": "2026-11-07T14:49:04.049022+00:00"
   },
   {
     "id": "hn-50403097",
@@ -43,9 +59,9 @@
       "TechNews"
     ],
     "source": "8rank.ai",
-    "score": 257,
-    "commentsCount": 25,
-    "publishedAt": "2026-11-07T14:26:43.963874+00:00"
+    "score": 290,
+    "commentsCount": 27,
+    "publishedAt": "2026-11-07T14:49:04.168078+00:00"
   },
   {
     "id": "hn-50403066",
@@ -59,9 +75,9 @@
       "TechNews"
     ],
     "source": "decoded.legal",
-    "score": 50,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-07T14:26:44.072548+00:00"
+    "score": 58,
+    "commentsCount": 10,
+    "publishedAt": "2026-11-07T14:49:04.270181+00:00"
   },
   {
     "id": "hn-50391456",
@@ -75,9 +91,9 @@
       "TechNews"
     ],
     "source": "nbcnews.com",
-    "score": 1067,
+    "score": 1074,
     "commentsCount": 174,
-    "publishedAt": "2026-11-07T14:26:44.174488+00:00"
+    "publishedAt": "2026-11-07T14:49:04.373170+00:00"
   },
   {
     "id": "hn-50397429",
@@ -91,9 +107,9 @@
       "TechNews"
     ],
     "source": "hightouch.com",
-    "score": 524,
-    "commentsCount": 49,
-    "publishedAt": "2026-11-07T14:26:44.281645+00:00"
+    "score": 527,
+    "commentsCount": 50,
+    "publishedAt": "2026-11-07T14:49:04.474364+00:00"
   },
   {
     "id": "hn-50361417",
@@ -107,24 +123,8 @@
       "TechNews"
     ],
     "source": "ejfox.com",
-    "score": 15,
+    "score": 18,
     "commentsCount": 2,
-    "publishedAt": "2026-11-07T14:26:44.383411+00:00"
-  },
-  {
-    "id": "hn-50377613",
-    "title": "Show HN: Spindle – a full-featured, type-safe web framework for OCaml 5",
-    "url": "https://github.com/hyphatech/spindle",
-    "domain": "github.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 17,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-07T14:26:44.505965+00:00"
+    "publishedAt": "2026-11-07T14:49:04.593988+00:00"
   }
 ]
