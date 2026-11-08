@@ -1,5 +1,85 @@
 [
   {
+    "id": "hn-50412318",
+    "title": "Person of Interest",
+    "url": "https://krthr.co/person-of-interest/",
+    "domain": "krthr.co",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "krthr.co",
+    "score": 166,
+    "commentsCount": 37,
+    "publishedAt": "2026-11-08T14:36:21.780908+00:00"
+  },
+  {
+    "id": "hn-50411961",
+    "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+    "url": "https://github.com/synchopate/llama-modchip",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 74,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-08T14:36:21.860821+00:00"
+  },
+  {
+    "id": "hn-50352518",
+    "title": "Quadrillion-parameter transformers and how to train them",
+    "url": "https://qlabs.sh/research/parameters",
+    "domain": "qlabs.sh",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "qlabs.sh",
+    "score": 18,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-08T14:36:21.971372+00:00"
+  },
+  {
+    "id": "hn-50412072",
+    "title": "JIT bitmap text rendering for microcontrollers",
+    "url": "https://linebender.org/blog/jit-bitmap-text/",
+    "domain": "linebender.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "linebender.org",
+    "score": 43,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-08T14:36:22.068625+00:00"
+  },
+  {
+    "id": "hn-50366821",
+    "title": "Porting Android 16 to my blind mother's keypad phone",
+    "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+    "domain": "z1x.us",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "z1x.us",
+    "score": 28,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-08T14:36:22.150574+00:00"
+  },
+  {
     "id": "hn-50410107",
     "title": "Goodbye Claude, Hello Pi",
     "url": "https://caleb.software/posts/claude-to-pi.html",
@@ -11,9 +91,25 @@
       "TechNews"
     ],
     "source": "caleb.software",
-    "score": 41,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-08T05:28:52.874506+00:00"
+    "score": 454,
+    "commentsCount": 73,
+    "publishedAt": "2026-11-08T14:36:22.231866+00:00"
+  },
+  {
+    "id": "hn-50412152",
+    "title": "Petered (what happens after the Peter Principle)",
+    "url": "https://aworkinglibrary.com/writing/petered",
+    "domain": "aworkinglibrary.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "aworkinglibrary.com",
+    "score": 87,
+    "commentsCount": 22,
+    "publishedAt": "2026-11-08T14:36:22.321260+00:00"
   },
   {
     "id": "hn-50406670",
@@ -27,104 +123,8 @@
       "TechNews"
     ],
     "source": "blog.bosscher.ch",
-    "score": 462,
-    "commentsCount": 29,
-    "publishedAt": "2026-11-08T05:28:52.958616+00:00"
-  },
-  {
-    "id": "hn-50407882",
-    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-    "domain": "apiiro.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "apiiro.com",
-    "score": 279,
-    "commentsCount": 27,
-    "publishedAt": "2026-11-08T05:28:53.041188+00:00"
-  },
-  {
-    "id": "hn-50409855",
-    "title": "ZapFast: A fast, native WhatsApp client in Rust and egui",
-    "url": "https://github.com/crmne/zapfast",
-    "domain": "github.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 27,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-08T05:28:53.130974+00:00"
-  },
-  {
-    "id": "hn-50408713",
-    "title": "Making any integer with four 2s (2025)",
-    "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
-    "domain": "eli.thegreenplace.net",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "eli.thegreenplace.net",
-    "score": 90,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-08T05:28:53.219299+00:00"
-  },
-  {
-    "id": "hn-50410359",
-    "title": "Kirlian Photography: Building Your Own Equipment",
-    "url": "https://imagesco.com/articles/kirlian/kirlian-photography.html",
-    "domain": "imagesco.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "imagesco.com",
-    "score": 6,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-08T05:28:53.306404+00:00"
-  },
-  {
-    "id": "hn-50403052",
-    "title": "Need for Speed Underground 2 online in the browser",
-    "url": "https://nfsu2.xyz/",
-    "domain": "nfsu2.xyz",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "nfsu2.xyz",
-    "score": 877,
-    "commentsCount": 83,
-    "publishedAt": "2026-11-08T05:28:53.393771+00:00"
-  },
-  {
-    "id": "hn-50377661",
-    "title": "Uranium cubes reveal why the German nuclear project failed",
-    "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
-    "domain": "arstechnica.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "arstechnica.com",
-    "score": 98,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-08T05:28:53.477432+00:00"
+    "score": 656,
+    "commentsCount": 40,
+    "publishedAt": "2026-11-08T14:36:22.402410+00:00"
   }
 ]
