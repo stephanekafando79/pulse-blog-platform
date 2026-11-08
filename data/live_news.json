@@ -1,5 +1,101 @@
 [
   {
+    "id": "hn-50410107",
+    "title": "Goodbye Claude, Hello Pi",
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "domain": "caleb.software",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "caleb.software",
+    "score": 41,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-08T05:28:52.874506+00:00"
+  },
+  {
+    "id": "hn-50406670",
+    "title": "What I run on my $10 USD OpenStick homelab",
+    "url": "https://blog.bosscher.ch/posts/openstick/",
+    "domain": "blog.bosscher.ch",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "blog.bosscher.ch",
+    "score": 462,
+    "commentsCount": 29,
+    "publishedAt": "2026-11-08T05:28:52.958616+00:00"
+  },
+  {
+    "id": "hn-50407882",
+    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "domain": "apiiro.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "apiiro.com",
+    "score": 279,
+    "commentsCount": 27,
+    "publishedAt": "2026-11-08T05:28:53.041188+00:00"
+  },
+  {
+    "id": "hn-50409855",
+    "title": "ZapFast: A fast, native WhatsApp client in Rust and egui",
+    "url": "https://github.com/crmne/zapfast",
+    "domain": "github.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 27,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-08T05:28:53.130974+00:00"
+  },
+  {
+    "id": "hn-50408713",
+    "title": "Making any integer with four 2s (2025)",
+    "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+    "domain": "eli.thegreenplace.net",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "eli.thegreenplace.net",
+    "score": 90,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-08T05:28:53.219299+00:00"
+  },
+  {
+    "id": "hn-50410359",
+    "title": "Kirlian Photography: Building Your Own Equipment",
+    "url": "https://imagesco.com/articles/kirlian/kirlian-photography.html",
+    "domain": "imagesco.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "imagesco.com",
+    "score": 6,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-08T05:28:53.306404+00:00"
+  },
+  {
     "id": "hn-50403052",
     "title": "Need for Speed Underground 2 online in the browser",
     "url": "https://nfsu2.xyz/",
@@ -11,120 +107,24 @@
       "TechNews"
     ],
     "source": "nfsu2.xyz",
-    "score": 291,
-    "commentsCount": 29,
-    "publishedAt": "2026-11-07T14:49:03.813838+00:00"
+    "score": 877,
+    "commentsCount": 83,
+    "publishedAt": "2026-11-08T05:28:53.393771+00:00"
   },
   {
-    "id": "hn-50404599",
-    "title": "The $8 Linux Computer (2022)",
-    "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
-    "domain": "thelittleengineerthatcould.blogspot.com",
-    "category": "OS",
+    "id": "hn-50377661",
+    "title": "Uranium cubes reveal why the German nuclear project failed",
+    "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+    "domain": "arstechnica.com",
+    "category": "AI & ML",
     "tags": [
-      "OS",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "thelittleengineerthatcould.blogspot.com",
-    "score": 13,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-07T14:49:03.945929+00:00"
-  },
-  {
-    "id": "hn-50399933",
-    "title": "Libghostty 1.0",
-    "url": "https://mitchellh.com/writing/libghostty-1-0",
-    "domain": "mitchellh.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "mitchellh.com",
-    "score": 816,
-    "commentsCount": 41,
-    "publishedAt": "2026-11-07T14:49:04.049022+00:00"
-  },
-  {
-    "id": "hn-50403097",
-    "title": "Every Mac comes with an (undocumented) family member classifier",
-    "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-    "domain": "8rank.ai",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "8rank.ai",
-    "score": 290,
-    "commentsCount": 27,
-    "publishedAt": "2026-11-07T14:49:04.168078+00:00"
-  },
-  {
-    "id": "hn-50403066",
-    "title": "Running a law firm on Free software",
-    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
-    "domain": "decoded.legal",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "decoded.legal",
-    "score": 58,
-    "commentsCount": 10,
-    "publishedAt": "2026-11-07T14:49:04.270181+00:00"
-  },
-  {
-    "id": "hn-50391456",
-    "title": "Tesla to wind down Cybertruck production",
-    "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
-    "domain": "nbcnews.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "nbcnews.com",
-    "score": 1074,
-    "commentsCount": 174,
-    "publishedAt": "2026-11-07T14:49:04.373170+00:00"
-  },
-  {
-    "id": "hn-50397429",
-    "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
-    "domain": "hightouch.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "hightouch.com",
-    "score": 527,
-    "commentsCount": 50,
-    "publishedAt": "2026-11-07T14:49:04.474364+00:00"
-  },
-  {
-    "id": "hn-50361417",
-    "title": "Building the NBC News Big Board",
-    "url": "https://ejfox.com/projects/nbc-big-board",
-    "domain": "ejfox.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ejfox.com",
-    "score": 18,
-    "commentsCount": 2,
-    "publishedAt": "2026-11-07T14:49:04.593988+00:00"
+    "source": "arstechnica.com",
+    "score": 98,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-08T05:28:53.477432+00:00"
   }
 ]
