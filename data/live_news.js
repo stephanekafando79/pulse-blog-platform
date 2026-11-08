@@ -1,24 +1,8 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-08T14:36:22.402755+00:00
+ * Last Updated: 2026-11-08T14:54:47.276518+00:00
  */
 window.PULSE_LIVE_NEWS = [
-  {
-    "id": "hn-50412318",
-    "title": "Person of Interest",
-    "url": "https://krthr.co/person-of-interest/",
-    "domain": "krthr.co",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "krthr.co",
-    "score": 166,
-    "commentsCount": 37,
-    "publishedAt": "2026-11-08T14:36:21.780908+00:00"
-  },
   {
     "id": "hn-50411961",
     "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
@@ -31,41 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "github.com",
-    "score": 74,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-08T14:36:21.860821+00:00"
-  },
-  {
-    "id": "hn-50352518",
-    "title": "Quadrillion-parameter transformers and how to train them",
-    "url": "https://qlabs.sh/research/parameters",
-    "domain": "qlabs.sh",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "qlabs.sh",
-    "score": 18,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-08T14:36:21.971372+00:00"
-  },
-  {
-    "id": "hn-50412072",
-    "title": "JIT bitmap text rendering for microcontrollers",
-    "url": "https://linebender.org/blog/jit-bitmap-text/",
-    "domain": "linebender.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "linebender.org",
-    "score": 43,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-08T14:36:22.068625+00:00"
+    "score": 83,
+    "commentsCount": 10,
+    "publishedAt": "2026-11-08T14:54:46.428778+00:00"
   },
   {
     "id": "hn-50366821",
@@ -79,9 +31,57 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "z1x.us",
-    "score": 28,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-08T14:36:22.150574+00:00"
+    "score": 42,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-08T14:54:46.526701+00:00"
+  },
+  {
+    "id": "hn-50352518",
+    "title": "Quadrillion-parameter transformers and how to train them",
+    "url": "https://qlabs.sh/research/parameters",
+    "domain": "qlabs.sh",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "qlabs.sh",
+    "score": 23,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-08T14:54:46.649267+00:00"
+  },
+  {
+    "id": "hn-50412318",
+    "title": "Person of Interest",
+    "url": "https://krthr.co/person-of-interest/",
+    "domain": "krthr.co",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "krthr.co",
+    "score": 181,
+    "commentsCount": 39,
+    "publishedAt": "2026-11-08T14:54:46.785356+00:00"
+  },
+  {
+    "id": "hn-50412072",
+    "title": "JIT bitmap text rendering for microcontrollers",
+    "url": "https://linebender.org/blog/jit-bitmap-text/",
+    "domain": "linebender.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "linebender.org",
+    "score": 47,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-08T14:54:46.927101+00:00"
   },
   {
     "id": "hn-50410107",
@@ -95,25 +95,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "caleb.software",
-    "score": 454,
-    "commentsCount": 73,
-    "publishedAt": "2026-11-08T14:36:22.231866+00:00"
-  },
-  {
-    "id": "hn-50412152",
-    "title": "Petered (what happens after the Peter Principle)",
-    "url": "https://aworkinglibrary.com/writing/petered",
-    "domain": "aworkinglibrary.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "aworkinglibrary.com",
-    "score": 87,
-    "commentsCount": 22,
-    "publishedAt": "2026-11-08T14:36:22.321260+00:00"
+    "score": 468,
+    "commentsCount": 74,
+    "publishedAt": "2026-11-08T14:54:47.051779+00:00"
   },
   {
     "id": "hn-50406670",
@@ -127,8 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "blog.bosscher.ch",
-    "score": 656,
+    "score": 664,
     "commentsCount": 40,
-    "publishedAt": "2026-11-08T14:36:22.402410+00:00"
+    "publishedAt": "2026-11-08T14:54:47.187235+00:00"
+  },
+  {
+    "id": "hn-50412067",
+    "title": "Writing as a Thinking Tool",
+    "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+    "domain": "muratbuffalo.blogspot.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "muratbuffalo.blogspot.com",
+    "score": 20,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-08T14:54:47.276189+00:00"
   }
 ];
