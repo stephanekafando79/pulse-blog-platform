@@ -11,9 +11,9 @@
       "TechNews"
     ],
     "source": "payments.ca",
-    "score": 154,
-    "commentsCount": 17,
-    "publishedAt": "2026-11-09T17:52:40.048239+00:00"
+    "score": 231,
+    "commentsCount": 24,
+    "publishedAt": "2026-11-09T18:35:46.913391+00:00"
   },
   {
     "id": "hn-50424581",
@@ -27,9 +27,9 @@
       "TechNews"
     ],
     "source": "foldableflight.com",
-    "score": 530,
-    "commentsCount": 38,
-    "publishedAt": "2026-11-09T17:52:40.384884+00:00"
+    "score": 583,
+    "commentsCount": 40,
+    "publishedAt": "2026-11-09T18:35:47.028271+00:00"
   },
   {
     "id": "hn-50426175",
@@ -43,25 +43,41 @@
       "TechNews"
     ],
     "source": "anthropocenemagazine.org",
-    "score": 93,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-09T17:52:40.550341+00:00"
+    "score": 129,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-09T18:35:47.144677+00:00"
   },
   {
-    "id": "hn-50426582",
-    "title": "I saw your HN comment",
-    "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
-    "domain": "joshstrange.com",
+    "id": "hn-50428801",
+    "title": "When will this stop? The Raspberry Pi 5 16GB SBC now sells for $385",
+    "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+    "domain": "cnx-software.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "joshstrange.com",
-    "score": 301,
-    "commentsCount": 72,
-    "publishedAt": "2026-11-09T17:52:40.678970+00:00"
+    "source": "cnx-software.com",
+    "score": 94,
+    "commentsCount": 24,
+    "publishedAt": "2026-11-09T18:35:47.259565+00:00"
+  },
+  {
+    "id": "hn-50429024",
+    "title": "Our Smallest, Most Efficient Model: Muse Ember",
+    "url": "https://research.meta.ai/blog/muse-ember",
+    "domain": "research.meta.ai",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "research.meta.ai",
+    "score": 11,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-09T18:35:47.367783+00:00"
   },
   {
     "id": "hn-50426207",
@@ -75,40 +91,24 @@
       "TechNews"
     ],
     "source": "github.com",
-    "score": 72,
+    "score": 83,
     "commentsCount": 13,
-    "publishedAt": "2026-11-09T17:52:40.833922+00:00"
+    "publishedAt": "2026-11-09T18:35:47.586885+00:00"
   },
   {
-    "id": "hn-50424157",
-    "title": "What is malloc doing, anyway?",
-    "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
-    "domain": "benmandrew.com",
+    "id": "hn-50422069",
+    "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+    "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+    "domain": "twitter.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "benmandrew.com",
-    "score": 142,
-    "commentsCount": 10,
-    "publishedAt": "2026-11-09T17:52:41.214291+00:00"
-  },
-  {
-    "id": "hn-50428266",
-    "title": "Y/N (YC S23) Is Hiring a Growth Lead to Distribute Superhuman A.I. Storytelling",
-    "url": "https://www.ycombinator.com/companies/yn/jobs/TjDn3YZ-founding-growth-marketer",
-    "domain": "ycombinator.com",
-    "category": "Startups",
-    "tags": [
-      "Startups",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ycombinator.com",
-    "score": 1,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-09T17:52:41.383743+00:00"
+    "source": "twitter.com",
+    "score": 435,
+    "commentsCount": 98,
+    "publishedAt": "2026-11-09T18:35:47.694203+00:00"
   }
 ]
