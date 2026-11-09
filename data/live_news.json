@@ -1,130 +1,114 @@
 [
   {
-    "id": "hn-50411961",
-    "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
-    "url": "https://github.com/synchopate/llama-modchip",
-    "domain": "github.com",
+    "id": "hn-50427362",
+    "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+    "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+    "domain": "payments.ca",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "payments.ca",
+    "score": 154,
+    "commentsCount": 17,
+    "publishedAt": "2026-11-09T17:52:40.048239+00:00"
+  },
+  {
+    "id": "hn-50424581",
+    "title": "Fold Epic Paper Airplanes",
+    "url": "https://www.foldableflight.com",
+    "domain": "foldableflight.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "foldableflight.com",
+    "score": 530,
+    "commentsCount": 38,
+    "publishedAt": "2026-11-09T17:52:40.384884+00:00"
+  },
+  {
+    "id": "hn-50426175",
+    "title": "Magenta solar panels may be agrivoltaics' cleverest trick yet",
+    "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+    "domain": "anthropocenemagazine.org",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "anthropocenemagazine.org",
+    "score": 93,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-09T17:52:40.550341+00:00"
+  },
+  {
+    "id": "hn-50426582",
+    "title": "I saw your HN comment",
+    "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+    "domain": "joshstrange.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "joshstrange.com",
+    "score": 301,
+    "commentsCount": 72,
+    "publishedAt": "2026-11-09T17:52:40.678970+00:00"
+  },
+  {
+    "id": "hn-50426207",
+    "title": "Zebkit – Chromium as an embeddable library",
+    "url": "https://github.com/ikey4u/zebkit",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
       "Breaking",
       "TechNews"
     ],
     "source": "github.com",
-    "score": 83,
+    "score": 72,
+    "commentsCount": 13,
+    "publishedAt": "2026-11-09T17:52:40.833922+00:00"
+  },
+  {
+    "id": "hn-50424157",
+    "title": "What is malloc doing, anyway?",
+    "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+    "domain": "benmandrew.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "benmandrew.com",
+    "score": 142,
     "commentsCount": 10,
-    "publishedAt": "2026-11-08T14:54:46.428778+00:00"
+    "publishedAt": "2026-11-09T17:52:41.214291+00:00"
   },
   {
-    "id": "hn-50366821",
-    "title": "Porting Android 16 to my blind mother's keypad phone",
-    "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
-    "domain": "z1x.us",
-    "category": "OS",
+    "id": "hn-50428266",
+    "title": "Y/N (YC S23) Is Hiring a Growth Lead to Distribute Superhuman A.I. Storytelling",
+    "url": "https://www.ycombinator.com/companies/yn/jobs/TjDn3YZ-founding-growth-marketer",
+    "domain": "ycombinator.com",
+    "category": "Startups",
     "tags": [
-      "OS",
+      "Startups",
       "Breaking",
       "TechNews"
     ],
-    "source": "z1x.us",
-    "score": 42,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-08T14:54:46.526701+00:00"
-  },
-  {
-    "id": "hn-50352518",
-    "title": "Quadrillion-parameter transformers and how to train them",
-    "url": "https://qlabs.sh/research/parameters",
-    "domain": "qlabs.sh",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "qlabs.sh",
-    "score": 23,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-08T14:54:46.649267+00:00"
-  },
-  {
-    "id": "hn-50412318",
-    "title": "Person of Interest",
-    "url": "https://krthr.co/person-of-interest/",
-    "domain": "krthr.co",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "krthr.co",
-    "score": 181,
-    "commentsCount": 39,
-    "publishedAt": "2026-11-08T14:54:46.785356+00:00"
-  },
-  {
-    "id": "hn-50412072",
-    "title": "JIT bitmap text rendering for microcontrollers",
-    "url": "https://linebender.org/blog/jit-bitmap-text/",
-    "domain": "linebender.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "linebender.org",
-    "score": 47,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-08T14:54:46.927101+00:00"
-  },
-  {
-    "id": "hn-50410107",
-    "title": "Goodbye Claude, Hello Pi",
-    "url": "https://caleb.software/posts/claude-to-pi.html",
-    "domain": "caleb.software",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "caleb.software",
-    "score": 468,
-    "commentsCount": 74,
-    "publishedAt": "2026-11-08T14:54:47.051779+00:00"
-  },
-  {
-    "id": "hn-50406670",
-    "title": "What I run on my $10 USD OpenStick homelab",
-    "url": "https://blog.bosscher.ch/posts/openstick/",
-    "domain": "blog.bosscher.ch",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.bosscher.ch",
-    "score": 664,
-    "commentsCount": 40,
-    "publishedAt": "2026-11-08T14:54:47.187235+00:00"
-  },
-  {
-    "id": "hn-50412067",
-    "title": "Writing as a Thinking Tool",
-    "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
-    "domain": "muratbuffalo.blogspot.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "muratbuffalo.blogspot.com",
-    "score": 20,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-08T14:54:47.276189+00:00"
+    "source": "ycombinator.com",
+    "score": 1,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-09T17:52:41.383743+00:00"
   }
 ]
