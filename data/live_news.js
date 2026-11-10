@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-10T15:51:57.726932+00:00
+ * Last Updated: 2026-11-10T16:18:58.203483+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,41 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "deepmind.google",
-    "score": 335,
-    "commentsCount": 37,
-    "publishedAt": "2026-11-10T15:51:56.773511+00:00"
-  },
-  {
-    "id": "hn-50436640",
-    "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-    "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-    "domain": "strandsagents.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "strandsagents.com",
-    "score": 531,
-    "commentsCount": 47,
-    "publishedAt": "2026-11-10T15:51:56.892540+00:00"
-  },
-  {
-    "id": "hn-50412554",
-    "title": "NetBSD 11 desktop on a Raspberry Pi 4",
-    "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
-    "domain": "neongd.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "neongd.com",
-    "score": 60,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-10T15:51:57.016687+00:00"
+    "score": 371,
+    "commentsCount": 38,
+    "publishedAt": "2026-11-10T16:18:57.248576+00:00"
   },
   {
     "id": "hn-50441338",
@@ -63,9 +31,57 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "stoppels.ch",
-    "score": 31,
+    "score": 71,
     "commentsCount": 1,
-    "publishedAt": "2026-11-10T15:51:57.132482+00:00"
+    "publishedAt": "2026-11-10T16:18:57.353550+00:00"
+  },
+  {
+    "id": "hn-50436640",
+    "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+    "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+    "domain": "strandsagents.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "strandsagents.com",
+    "score": 552,
+    "commentsCount": 48,
+    "publishedAt": "2026-11-10T16:18:57.520522+00:00"
+  },
+  {
+    "id": "hn-50412554",
+    "title": "NetBSD 11 desktop on a Raspberry Pi 4",
+    "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
+    "domain": "neongd.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "neongd.com",
+    "score": 71,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-10T16:18:57.714712+00:00"
+  },
+  {
+    "id": "hn-50442303",
+    "title": "Gemini 4 Carbon is now available",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "domain": "blog.google",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "blog.google",
+    "score": 35,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-10T16:18:57.875704+00:00"
   },
   {
     "id": "hn-50426294",
@@ -79,25 +95,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "ericswpark.com",
-    "score": 31,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-10T15:51:57.311223+00:00"
+    "score": 46,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-10T16:18:58.015247+00:00"
   },
   {
-    "id": "hn-50429068",
-    "title": "Claude Fable 5.2 and Mythos 5.2",
-    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-    "domain": "anthropic.com",
-    "category": "OS",
+    "id": "hn-50441074",
+    "title": "The Death Knell of Digital Search",
+    "url": "https://www.newyorker.com/culture/infinite-scroll/the-death-knell-of-digital-search",
+    "domain": "newyorker.com",
+    "category": "Technology",
     "tags": [
-      "OS",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "anthropic.com",
-    "score": 777,
-    "commentsCount": 158,
-    "publishedAt": "2026-11-10T15:51:57.427011+00:00"
+    "source": "newyorker.com",
+    "score": 20,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-10T16:18:58.130864+00:00"
   },
   {
     "id": "hn-50437790",
@@ -111,24 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "connect.queenslibrary.org",
-    "score": 120,
+    "score": 137,
     "commentsCount": 11,
-    "publishedAt": "2026-11-10T15:51:57.546507+00:00"
-  },
-  {
-    "id": "hn-50431075",
-    "title": "Here comes the sun[light]:An ambient Daylight Clock with time and space controls",
-    "url": "https://hannahilea.com/blog/daylight-clock/",
-    "domain": "hannahilea.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "hannahilea.com",
-    "score": 25,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-10T15:51:57.726558+00:00"
+    "publishedAt": "2026-11-10T16:18:58.203122+00:00"
   }
 ];
