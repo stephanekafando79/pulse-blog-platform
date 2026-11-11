@@ -128,6 +128,44 @@ class UIController {
     if (composerName) composerName.textContent = user.name;
   }
 
+  // Select Tech Topic / Category filter
+  selectCategory(cat) {
+    this.selectedCategory = cat || 'all';
+
+    // Update active class on all category buttons across the UI
+    document.querySelectorAll('.category-tab').forEach(tab => {
+      const tabCat = tab.dataset.cat || 'all';
+      const isMatch = (tabCat.toLowerCase() === this.selectedCategory.toLowerCase());
+      tab.classList.toggle('active', isMatch);
+      tab.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+    });
+
+    // Update active category label badge if present
+    const activeLabel = document.getElementById('active-tech-topic-label');
+    if (activeLabel) {
+      if (this.selectedCategory === 'all') {
+        const i18nAll = (window.PulseI18n && window.PulseI18n.t) ? window.PulseI18n.t('cat_all') : 'All Tech Topics';
+        activeLabel.textContent = i18nAll || 'All Tech Topics';
+      } else {
+        activeLabel.textContent = this.selectedCategory;
+      }
+    }
+
+    // Refresh whichever home mode is currently active
+    if (this.homeMode === 'stories') {
+      this.renderFeed();
+    } else if (this.homeMode === 'discussions') {
+      this.renderDiscussions();
+    } else if (this.homeMode === 'news') {
+      this.renderLiveNews();
+    }
+
+    // If currently inside reader or editor, switch back to home view
+    if (this.currentView !== 'home') {
+      this.navigateTo('home');
+    }
+  }
+
   // Render Article Feed
   renderFeed() {
     const feedContainer = document.getElementById('articles-feed');
@@ -135,9 +173,17 @@ class UIController {
 
     let articles = window.Store.getArticles();
 
-    // Filter by Category
+    // Filter by Category (Resilient multi-domain matching)
     if (this.selectedCategory !== 'all') {
-      articles = articles.filter(a => a.category.toLowerCase() === this.selectedCategory.toLowerCase());
+      const targetCat = this.selectedCategory.toLowerCase();
+      articles = articles.filter(a => {
+        const aCat = (a.category || '').toLowerCase();
+        const aTags = (a.tags || []).map(t => (t || '').toLowerCase());
+        return aCat === targetCat ||
+               aCat.includes(targetCat) ||
+               targetCat.includes(aCat) ||
+               aTags.some(t => t === targetCat || t.includes(targetCat) || targetCat.includes(t));
+      });
     }
 
     // Filter by Search Query
@@ -1619,21 +1665,21 @@ class UIController {
     const activeTab = document.getElementById(`tab-mode-${mode}`);
     if (activeTab) activeTab.classList.add('active');
 
+    // Keep Tech Topics and controls bar visible across all modes so topics are NEVER hidden
+    if (controlsBar) controlsBar.style.display = 'block';
+
     if (mode === 'stories') {
       if (storiesFeed) storiesFeed.style.display = 'grid';
-      if (controlsBar) controlsBar.style.display = 'flex';
       if (discussionsContainer) discussionsContainer.style.display = 'none';
       if (liveNewsContainer) liveNewsContainer.style.display = 'none';
       this.renderFeed();
     } else if (mode === 'discussions') {
       if (storiesFeed) storiesFeed.style.display = 'none';
-      if (controlsBar) controlsBar.style.display = 'none';
       if (discussionsContainer) discussionsContainer.style.display = 'flex';
       if (liveNewsContainer) liveNewsContainer.style.display = 'none';
       this.renderDiscussions();
     } else if (mode === 'news') {
       if (storiesFeed) storiesFeed.style.display = 'none';
-      if (controlsBar) controlsBar.style.display = 'none';
       if (discussionsContainer) discussionsContainer.style.display = 'none';
       if (liveNewsContainer) liveNewsContainer.style.display = 'flex';
       this.renderLiveNews();
@@ -1761,6 +1807,18 @@ class UIController {
     if (!container) return;
 
     let discussions = window.Store.getDiscussions();
+
+    // Filter by selected Tech Topic if not 'all'
+    if (this.selectedCategory && this.selectedCategory !== 'all') {
+      const cat = this.selectedCategory.toLowerCase();
+      discussions = discussions.filter(d => {
+        const dCat = (d.category || '').toLowerCase();
+        const dTags = (d.tags || []).map(t => (t || '').toLowerCase());
+        const dText = (d.text || '').toLowerCase();
+        return dCat.includes(cat) || cat.includes(dCat) || dTags.some(t => t.includes(cat) || cat.includes(t)) || dText.includes(cat);
+      });
+    }
+
     if (badge) badge.textContent = discussions.length;
 
     // Sort discussions
@@ -1880,7 +1938,18 @@ class UIController {
     const container = document.getElementById('live-news-grid');
     if (!container) return;
 
-    const newsItems = window.Store.getLiveNews();
+    let newsItems = window.Store.getLiveNews();
+
+    // Filter by selected Tech Topic if not 'all'
+    if (this.selectedCategory && this.selectedCategory !== 'all') {
+      const cat = this.selectedCategory.toLowerCase();
+      newsItems = newsItems.filter(item => {
+        const iCat = (item.category || '').toLowerCase();
+        const iTitle = (item.title || '').toLowerCase();
+        return iCat.includes(cat) || cat.includes(iCat) || iTitle.includes(cat);
+      });
+    }
+
     if (!newsItems || newsItems.length === 0) {
       container.innerHTML = `<div class="empty-state" style="grid-column: 1 / -1;">No live news items found.</div>`;
       return;

@@ -162,47 +162,58 @@
 
       <!-- Category & Sort Controls Bar (Expanded IT & Tech Domains) -->
       <div class="controls-bar" id="controls-bar">
-        <div class="category-tabs" role="tablist">
-          <button class="category-tab active" data-cat="all" data-i18n="cat_all">All Tech Topics</button>
-          <button class="category-tab" data-cat="Software Engineering" data-i18n="cat_software_eng">Software Engineering</button>
-          <button class="category-tab" data-cat="AI & ML" data-i18n="cat_ai">AI & ML</button>
-          <button class="category-tab" data-cat="Cybersecurity" data-i18n="cat_cysa">CYSA & Cybersecurity</button>
-          <button class="category-tab" data-cat="Cloud Computing" data-i18n="cat_cloud">Cloud Computing</button>
-          <button class="category-tab" data-cat="Network & Infrastructure" data-i18n="cat_network_infra">Network & Infra</button>
-          <button class="category-tab" data-cat="Product & Design" data-i18n="cat_product_design">Product & Design</button>
-          <button class="category-tab" data-cat="FinTech" data-i18n="cat_fintech">FinTech</button>
-          <button class="category-tab" data-cat="HealthTech & BioTech" data-i18n="cat_health_bio">HealthTech & BioTech</button>
-          <button class="category-tab" data-cat="Education Tech" data-i18n="cat_edtech">Education Tech</button>
-          <button class="category-tab" data-cat="Climate & CleanTech" data-i18n="cat_climate">Climate & CleanTech</button>
-          <button class="category-tab" data-cat="AgTech" data-i18n="cat_agtech">AgTech</button>
-          <button class="category-tab" data-cat="Robotics & Automotive" data-i18n="cat_robotics_auto">Robotics & Automotive</button>
-          <button class="category-tab" data-cat="Aerospace & SpaceTech" data-i18n="cat_aerospace_space">Aerospace & SpaceTech</button>
-          <button class="category-tab" data-cat="Internet of Things" data-i18n="cat_iot">Internet of Things (IoT)</button>
-          <button class="category-tab" data-cat="Hardware" data-i18n="cat_hardware">Hardware & Silicon</button>
-          <button class="category-tab" data-cat="Startups" data-i18n="cat_startups">Startups & VC</button>
-          <button class="category-tab" data-cat="Tech Agencies" data-i18n="cat_agencies">Tech Agencies</button>
+        <!-- Controls Top Header Row -->
+        <div class="controls-top-row">
+          <div class="controls-header-badge">
+            <span class="controls-header-title">⚡ Tech Domains & Topics</span>
+            <span class="current-topic-badge" id="active-tech-topic-label">All Tech Topics</span>
+          </div>
+
+          <div class="controls-right">
+            <!-- Toolbar Language Selector -->
+            <button class="toolbar-pill-btn" id="toolbar-lang-btn" onclick="PulseUI.openLanguageModal()" title="Change Language / Choisir la langue">
+              <span class="toolbar-pill-icon">🌐</span>
+              <span id="toolbar-lang-flag">🇺🇸</span>
+              <span id="toolbar-lang-code" style="font-weight: 700;">EN</span>
+              <span class="toolbar-pill-arrow">▾</span>
+            </button>
+
+            <!-- Toolbar Themes & Colors -->
+            <button class="toolbar-pill-btn" id="toolbar-theme-btn" onclick="PulseUI.openThemeModal()" title="Customize Themes & Colors">
+              <span class="toolbar-pill-icon">🎨</span>
+              <span data-i18n="toolbar_theme">Themes</span>
+            </button>
+
+            <select class="sort-select" id="sort-feed-select" aria-label="Sort articles">
+              <option value="latest">Latest Stories</option>
+              <option value="popular">Most Popular</option>
+              <option value="readTime">Quick Reads</option>
+            </select>
+          </div>
         </div>
 
-        <div class="controls-right">
-          <!-- Toolbar Language Selector -->
-          <button class="toolbar-pill-btn" id="toolbar-lang-btn" onclick="PulseUI.openLanguageModal()" title="Change Language / Choisir la langue">
-            <span class="toolbar-pill-icon">🌐</span>
-            <span id="toolbar-lang-flag">🇺🇸</span>
-            <span id="toolbar-lang-code" style="font-weight: 700;">EN</span>
-            <span class="toolbar-pill-arrow">▾</span>
-          </button>
-
-          <!-- Toolbar Themes & Colors -->
-          <button class="toolbar-pill-btn" id="toolbar-theme-btn" onclick="PulseUI.openThemeModal()" title="Customize Themes & Colors">
-            <span class="toolbar-pill-icon">🎨</span>
-            <span data-i18n="toolbar_theme">Themes</span>
-          </button>
-
-          <select class="sort-select" id="sort-feed-select" aria-label="Sort articles">
-            <option value="latest">Latest Stories</option>
-            <option value="popular">Most Popular</option>
-            <option value="readTime">Quick Reads</option>
-          </select>
+        <!-- All Tech Topics & Category Tabs (Fully Displayed, Wrapped, Never Hidden) -->
+        <div class="category-tabs" role="tablist" id="category-tabs-container">
+          <button class="category-tab active" data-cat="all" onclick="PulseUI.selectCategory('all')" data-i18n="cat_all">🌐 All Tech Topics</button>
+          <button class="category-tab" data-cat="Software Engineering" onclick="PulseUI.selectCategory('Software Engineering')" data-i18n="cat_software_eng">Software Engineering</button>
+          <button class="category-tab" data-cat="AI & ML" onclick="PulseUI.selectCategory('AI & ML')" data-i18n="cat_ai">AI & ML</button>
+          <button class="category-tab" data-cat="Cybersecurity" onclick="PulseUI.selectCategory('Cybersecurity')" data-i18n="cat_cysa">CYSA & Cybersecurity</button>
+          <button class="category-tab" data-cat="Cloud Computing" onclick="PulseUI.selectCategory('Cloud Computing')" data-i18n="cat_cloud">Cloud Computing</button>
+          <button class="category-tab" data-cat="Network & Infrastructure" onclick="PulseUI.selectCategory('Network & Infrastructure')" data-i18n="cat_network_infra">Network & Infra</button>
+          <button class="category-tab" data-cat="OS" onclick="PulseUI.selectCategory('OS')" data-i18n="cat_os">OS & Systems</button>
+          <button class="category-tab" data-cat="APPs" onclick="PulseUI.selectCategory('APPs')" data-i18n="cat_apps">APPs & Native Tools</button>
+          <button class="category-tab" data-cat="Product & Design" onclick="PulseUI.selectCategory('Product & Design')" data-i18n="cat_product_design">Product & Design</button>
+          <button class="category-tab" data-cat="FinTech" onclick="PulseUI.selectCategory('FinTech')" data-i18n="cat_fintech">FinTech</button>
+          <button class="category-tab" data-cat="HealthTech & BioTech" onclick="PulseUI.selectCategory('HealthTech & BioTech')" data-i18n="cat_health_bio">HealthTech & BioTech</button>
+          <button class="category-tab" data-cat="Education Tech" onclick="PulseUI.selectCategory('Education Tech')" data-i18n="cat_edtech">Education Tech</button>
+          <button class="category-tab" data-cat="Climate & CleanTech" onclick="PulseUI.selectCategory('Climate & CleanTech')" data-i18n="cat_climate">Climate & CleanTech</button>
+          <button class="category-tab" data-cat="AgTech" onclick="PulseUI.selectCategory('AgTech')" data-i18n="cat_agtech">AgTech</button>
+          <button class="category-tab" data-cat="Robotics & Automotive" onclick="PulseUI.selectCategory('Robotics & Automotive')" data-i18n="cat_robotics_auto">Robotics & Automotive</button>
+          <button class="category-tab" data-cat="Aerospace & SpaceTech" onclick="PulseUI.selectCategory('Aerospace & SpaceTech')" data-i18n="cat_aerospace_space">Aerospace & SpaceTech</button>
+          <button class="category-tab" data-cat="Internet of Things" onclick="PulseUI.selectCategory('Internet of Things')" data-i18n="cat_iot">Internet of Things (IoT)</button>
+          <button class="category-tab" data-cat="Hardware" onclick="PulseUI.selectCategory('Hardware')" data-i18n="cat_hardware">Hardware & Silicon</button>
+          <button class="category-tab" data-cat="Startups" onclick="PulseUI.selectCategory('Startups')" data-i18n="cat_startups">Startups & VC</button>
+          <button class="category-tab" data-cat="Tech Agencies" onclick="PulseUI.selectCategory('Tech Agencies')" data-i18n="cat_agencies">Tech Agencies</button>
         </div>
       </div>
 
