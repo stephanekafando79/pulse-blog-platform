@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-11T15:39:57.650673+00:00
+ * Last Updated: 2026-11-11T15:58:51.733343+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "pietromiotti.com",
-    "score": 505,
-    "commentsCount": 59,
-    "publishedAt": "2026-11-11T15:39:56.677613+00:00"
+    "score": 555,
+    "commentsCount": 60,
+    "publishedAt": "2026-11-11T15:58:50.891903+00:00"
   },
   {
     "id": "hn-50453763",
@@ -31,25 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "massimo-nocentini.github.io",
-    "score": 41,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-11T15:39:56.765214+00:00"
-  },
-  {
-    "id": "hn-50452655",
-    "title": "Can a Linear Program Do Weight-Space Programming?",
-    "url": "https://nathan.rs/posts/weight-space-lp/",
-    "domain": "nathan.rs",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "nathan.rs",
-    "score": 116,
+    "score": 52,
     "commentsCount": 7,
-    "publishedAt": "2026-11-11T15:39:56.896058+00:00"
+    "publishedAt": "2026-11-11T15:58:51.116160+00:00"
   },
   {
     "id": "hn-50453637",
@@ -63,9 +47,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "blog.atuin.sh",
-    "score": 28,
+    "score": 43,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-11T15:58:51.217622+00:00"
+  },
+  {
+    "id": "hn-50452655",
+    "title": "Can a Linear Program Do Weight-Space Programming?",
+    "url": "https://nathan.rs/posts/weight-space-lp/",
+    "domain": "nathan.rs",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "nathan.rs",
+    "score": 124,
     "commentsCount": 8,
-    "publishedAt": "2026-11-11T15:39:57.031862+00:00"
+    "publishedAt": "2026-11-11T15:58:51.331466+00:00"
   },
   {
     "id": "hn-50451903",
@@ -79,25 +79,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "blog.kate.land",
-    "score": 124,
+    "score": 133,
     "commentsCount": 14,
-    "publishedAt": "2026-11-11T15:39:57.168823+00:00"
+    "publishedAt": "2026-11-11T15:58:51.432647+00:00"
   },
   {
-    "id": "hn-50453229",
-    "title": "Show HN: Godbolt-in-a-floating-window for Neovim (C, C++, Rust)",
-    "url": "https://github.com/0xdeadf1sh/AssemblyForNeovim",
-    "domain": "github.com",
+    "id": "hn-50453288",
+    "title": "Hyper-Realistic Sand with WebGL2",
+    "url": "https://av.github.io/safe-sand/",
+    "domain": "av.github.io",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 24,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-11T15:39:57.334560+00:00"
+    "source": "av.github.io",
+    "score": 38,
+    "commentsCount": 2,
+    "publishedAt": "2026-11-11T15:58:51.535108+00:00"
   },
   {
     "id": "hn-50453474",
@@ -111,24 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "theverge.com",
-    "score": 106,
-    "commentsCount": 14,
-    "publishedAt": "2026-11-11T15:39:57.471316+00:00"
+    "score": 128,
+    "commentsCount": 18,
+    "publishedAt": "2026-11-11T15:58:51.653643+00:00"
   },
   {
-    "id": "hn-50449748",
-    "title": "Protecting SSH Keys with macOS Secure Enclave",
-    "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/",
-    "domain": "gatezh.com",
-    "category": "OS",
+    "id": "hn-50452652",
+    "title": "We need more goat sacrifices",
+    "url": "https://www.experimental-history.com/p/we-need-more-goat-sacrifices",
+    "domain": "experimental-history.com",
+    "category": "Technology",
     "tags": [
-      "OS",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "gatezh.com",
-    "score": 322,
-    "commentsCount": 42,
-    "publishedAt": "2026-11-11T15:39:57.650339+00:00"
+    "source": "experimental-history.com",
+    "score": 60,
+    "commentsCount": 16,
+    "publishedAt": "2026-11-11T15:58:51.732987+00:00"
   }
 ];
