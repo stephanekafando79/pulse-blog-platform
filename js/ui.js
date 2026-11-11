@@ -270,6 +270,67 @@ class UIController {
     }).join('');
   }
 
+  // Primary Publishing Action (Executed by #btn-publish-article & Studio Editor)
+  publishStory() {
+    const titleInput = document.getElementById('editor-title');
+    const contentInput = document.getElementById('editor-textarea');
+    const categorySelect = document.getElementById('editor-category');
+    const tagsInput = document.getElementById('editor-tags');
+    const coverInput = document.getElementById('editor-cover');
+
+    const title = titleInput ? titleInput.value.trim() : '';
+    const content = contentInput ? contentInput.value.trim() : '';
+    const category = categorySelect ? categorySelect.value : 'Technology';
+    const tagsString = tagsInput ? tagsInput.value : '';
+    const cover = coverInput ? coverInput.value.trim() : '';
+
+    if (!title) {
+      this.showToast('Please enter an article title before publishing', 'warning');
+      if (titleInput) titleInput.focus();
+      return;
+    }
+
+    if (!content) {
+      this.showToast('Please write some content before publishing', 'warning');
+      if (contentInput) contentInput.focus();
+      return;
+    }
+
+    const tags = tagsString
+      ? tagsString.split(',').map(t => t.trim().replace(/^#/, '')).filter(Boolean)
+      : [category, 'Article'];
+
+    try {
+      const newArticle = window.Store.saveArticle({
+        title,
+        content,
+        category,
+        tags,
+        cover
+      });
+
+      if (window.StudioEditor) {
+        window.StudioEditor.resetEditor();
+      }
+
+      this.showToast('🎉 Story published successfully!', 'success');
+
+      // Reset category filter and search so the new story is visible immediately
+      this.selectedCategory = 'all';
+      this.searchQuery = '';
+      document.querySelectorAll('.category-tab').forEach(t => {
+        t.classList.toggle('active', (t.dataset.cat || 'all') === 'all');
+      });
+
+      // Update hash and navigate cleanly to newly published story
+      window.location.hash = `#/article/${newArticle.id}`;
+      this.navigateTo('reader', newArticle.id);
+    } catch (err) {
+      console.error('Publish error:', err);
+      this.showToast(`Failed to publish: ${err.message}`, 'danger');
+    }
+  }
+
   // Render Full Article Detail View
   renderArticleReader(articleId) {
     const article = window.Store.getArticleById(articleId);
@@ -391,7 +452,6 @@ class UIController {
 
       <!-- Rich Reactions Cluster (Pillar 3) -->
       ${this.renderRichReactions(article.id)}
-      </article>
 
       <!-- Interactive Comments & Multi-Agent Discussion Section -->
       <section class="comments-section" id="comments-section">

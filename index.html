@@ -336,7 +336,7 @@
         </div>
         <div style="display: flex; gap: 0.75rem;">
           <button class="btn btn-secondary" id="btn-cancel-editor">Discard</button>
-          <button class="btn btn-primary" id="btn-publish-article">
+          <button class="btn btn-primary" id="btn-publish-article" onclick="PulseUI.publishStory()">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
             Publish Story
           </button>
@@ -355,17 +355,25 @@
             <div class="form-group">
               <label class="form-label" for="editor-category">Category</label>
               <select id="editor-category" class="form-input">
-                <option value="OS">OS (Linux, Windows, macOS)</option>
-                <option value="APPs">APPs & Software</option>
-                <option value="Cybersecurity">Cybersecurity & Privacy</option>
+                <option value="Software Engineering">Software Engineering</option>
                 <option value="AI & ML">AI & Machine Learning</option>
-                <option value="Dev & Cloud">Dev & Cloud Computing</option>
-                <option value="Hardware">Hardware & Chips</option>
-                <option value="Startups">Startups & Deep Tech</option>
+                <option value="Cybersecurity">Cybersecurity & CYSA</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="Network & Infrastructure">Network & Infrastructure</option>
+                <option value="Product & Design">Product & Design</option>
+                <option value="FinTech">FinTech & Markets</option>
+                <option value="HealthTech & BioTech">HealthTech & BioTech</option>
+                <option value="Education Tech">Education Tech</option>
+                <option value="Climate & CleanTech">Climate & CleanTech</option>
+                <option value="AgTech">AgTech</option>
+                <option value="Robotics & Automotive">Robotics & Automotive</option>
+                <option value="Aerospace & SpaceTech">Aerospace & SpaceTech</option>
+                <option value="Internet of Things">Internet of Things (IoT)</option>
+                <option value="Hardware">Hardware & Silicon</option>
+                <option value="Startups">Startups & VC</option>
                 <option value="Tech Agencies">Tech Agencies & IT Modernization</option>
-                <option value="Technology">Technology (General)</option>
-                <option value="Design">Design & UI/UX</option>
-                <option value="Productivity">Productivity</option>
+                <option value="OS">Operating Systems (OS)</option>
+                <option value="APPs">APPs & Native Tools</option>
               </select>
             </div>
             <div class="form-group">

@@ -71,7 +71,7 @@ class MarkdownEngine {
 
     // Unordered lists
     html = html.replace(/^\s*[-*]\s+(.*)$/gim, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+    html = html.replace(/((?:<li>.*?<\/li>\s*)+)/g, '<ul>$1</ul>');
 
     // Line breaks & Paragraphs
     const paragraphs = html.split(/\n{2,}/);

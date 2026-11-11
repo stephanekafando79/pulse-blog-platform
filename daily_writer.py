@@ -1526,20 +1526,25 @@ def auto_git_sync(article_title):
         if not os.path.exists(git_dir):
             return
 
-        subprocess.run(["git", "add", "data/articles.js", "data/articles.json", "data/live_news.js", "data/live_news.json", "data/discussions.js", "data/discussions.json"], cwd=BASE_DIR, capture_output=True)
+        remotes = subprocess.run(["git", "remote"], cwd=BASE_DIR, capture_output=True, text=True)
+        if "origin" in remotes.stdout:
+            # Pull latest commits from GitHub Actions before committing/pushing
+            print("[*] Syncing latest remote changes before publishing...")
+            subprocess.run(["git", "pull", "--rebase", "-X", "ours", "origin", "main"], cwd=BASE_DIR, capture_output=True)
+
+        subprocess.run(["git", "add", "data/articles.js", "data/articles.json", "data/live_news.js", "data/live_news.json", "data/discussions.js", "data/discussions.json", "feed.xml"], cwd=BASE_DIR, capture_output=True)
         commit_msg = f"Auto-publish: {article_title}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=BASE_DIR, capture_output=True)
 
-        remotes = subprocess.run(["git", "remote"], cwd=BASE_DIR, capture_output=True, text=True)
         if "origin" in remotes.stdout:
             print("[*] Automatically pushing update to GitHub...")
             push_res = subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR, capture_output=True, text=True)
             if push_res.returncode == 0:
                 print("  [OK] Successfully pushed daily update to GitHub!")
             else:
-                print("  [Notice] Push deferred (will auto-sync on next deploy).")
-    except Exception:
-        pass
+                print(f"  [Notice] Push deferred ({push_res.stderr.strip() if push_res.stderr else 'will auto-sync on next deploy'}).")
+    except Exception as e:
+        print(f"  [Notice] Git sync notice: {e}")
 
 if __name__ == "__main__":
     force_run = "--force" in sys.argv

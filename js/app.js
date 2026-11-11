@@ -3,7 +3,10 @@
  * Pulse Modern Publishing Platform
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function bootPulseApp() {
+  if (window._pulseAppBooted) return;
+  window._pulseAppBooted = true;
+
   // Initialize UI & Editor components
   window.PulseUI.init();
   window.StudioEditor.init();
@@ -14,7 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
   setupAuthDialogEvents();
   setupHashRouting();
   registerServiceWorker();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bootPulseApp);
+} else {
+  // DOM is already ready (e.g. scripts loaded at bottom of body or via PWA service worker)
+  bootPulseApp();
+}
 
 // Register Progressive Web App Service Worker
 function registerServiceWorker() {
@@ -166,43 +176,10 @@ function setupEditorActions() {
   // Publish Article
   const publishBtn = document.getElementById('btn-publish-article');
   if (publishBtn) {
-    publishBtn.addEventListener('click', () => {
-      const title = document.getElementById('editor-title')?.value.trim();
-      const content = document.getElementById('editor-textarea')?.value.trim();
-      const category = document.getElementById('editor-category')?.value;
-      const tagsString = document.getElementById('editor-tags')?.value;
-      const cover = document.getElementById('editor-cover')?.value.trim();
-
-      if (!title) {
-        window.PulseUI.showToast('Please enter an article title', 'warning');
-        document.getElementById('editor-title')?.focus();
-        return;
-      }
-
-      if (!content) {
-        window.PulseUI.showToast('Please write some content before publishing', 'warning');
-        document.getElementById('editor-textarea')?.focus();
-        return;
-      }
-
-      const tags = tagsString
-        ? tagsString.split(',').map(t => t.trim().replace(/^#/, '')).filter(Boolean)
-        : ['General'];
-
-      const newArticle = window.Store.saveArticle({
-        title,
-        content,
-        category,
-        tags,
-        cover
-      });
-
-      window.StudioEditor.resetEditor();
-      window.PulseUI.showToast('Article published successfully!', 'success');
-
-      // Navigate to newly published article
-      window.location.hash = `#/article/${newArticle.id}`;
-      window.PulseUI.navigateTo('reader', newArticle.id);
+    // Ensure both event listener and onclick delegate to PulseUI.publishStory()
+    publishBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.PulseUI.publishStory();
     });
   }
 

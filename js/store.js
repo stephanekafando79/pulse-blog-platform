@@ -667,7 +667,18 @@ class DataStore {
   getArticles() {
     try {
       const data = localStorage.getItem(STORAGE_KEYS.ARTICLES);
-      return data ? JSON.parse(data) : INITIAL_ARTICLES;
+      let list = data ? JSON.parse(data) : INITIAL_ARTICLES;
+
+      // Always guarantee user-authored publications remain at the top
+      const userSaved = JSON.parse(localStorage.getItem('pulse_user_articles_v1') || '[]');
+      if (Array.isArray(userSaved) && userSaved.length > 0) {
+        for (const ua of userSaved) {
+          if (!list.some(a => a.id === ua.id)) {
+            list.unshift(ua);
+          }
+        }
+      }
+      return list;
     } catch (e) {
       console.error('Failed to parse articles:', e);
       return INITIAL_ARTICLES;
@@ -688,7 +699,11 @@ class DataStore {
       const index = articles.findIndex(a => a.id === articleData.id);
       if (index !== -1) {
         articles[index] = { ...articles[index], ...articleData, updatedAt: new Date().toISOString() };
-        localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(articles));
+        try {
+          localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(articles));
+        } catch (e) {
+          console.warn('Storage quota warning on update:', e);
+        }
         return articles[index];
       }
     }
@@ -706,7 +721,7 @@ class DataStore {
       content: articleData.content,
       cover: articleData.cover || 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80',
       category: articleData.category || 'Technology',
-      tags: articleData.tags || ['General'],
+      tags: articleData.tags && articleData.tags.length ? articleData.tags : [articleData.category || 'General'],
       author: currentUser,
       publishedAt: new Date().toISOString(),
       readTime: `${readMinutes} min read`,
@@ -717,7 +732,20 @@ class DataStore {
     };
 
     articles.unshift(newArticle);
-    localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(articles));
+
+    // Save into main articles store and persistent user creations backup
+    try {
+      localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(articles));
+      const userSaved = JSON.parse(localStorage.getItem('pulse_user_articles_v1') || '[]');
+      userSaved.unshift(newArticle);
+      localStorage.setItem('pulse_user_articles_v1', JSON.stringify(userSaved));
+    } catch (e) {
+      console.warn('Local storage write warning, attempting prune:', e);
+      try {
+        localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(articles.slice(0, 30)));
+      } catch (e2) {}
+    }
+
     return newArticle;
   }
 
