@@ -1,6 +1,6 @@
 /**
  * Pulse Auto-Generated Daily Articles
- * Last Updated: 2026-11-11T15:39:57.652844+00:00
+ * Last Updated: 2026-11-11T21:16:13.015111+00:00
  */
 window.PULSE_DAILY_ARTICLES = [
   {
@@ -28,10 +28,10 @@ window.PULSE_DAILY_ARTICLES = [
       "bio": "DevOps & Site Reliability Engineer. Observability, automated CI/CD and self-healing systems.",
       "badge": "SRE & DevOps"
     },
-    "publishedAt": "2026-11-11T15:39:57.651851+00:00",
+    "publishedAt": "2026-11-11T21:16:13.013117+00:00",
     "readTime": "3 min read",
     "likes": 64,
-    "views": 615,
+    "views": 522,
     "featured": true,
     "isDaily": true,
     "comments": [
@@ -46,8 +46,8 @@ window.PULSE_DAILY_ARTICLES = [
           "badge": "Cloud Engineer"
         },
         "text": "Injecting latency into cache misses uncovered three hidden synchronous lock contentions in our API gateway that unit tests never surfaced.",
-        "createdAt": "2026-11-11T15:39:57.651819+00:00",
-        "likes": 21
+        "createdAt": "2026-11-11T21:16:13.013117+00:00",
+        "likes": 17
       },
       {
         "id": "c-auto-2026-11-11-2",
@@ -60,8 +60,8 @@ window.PULSE_DAILY_ARTICLES = [
           "badge": "OSI & Network Lead"
         },
         "text": "OpenTelemetry eBPF auto-instrumentation captures TCP connection establishment latencies without injecting bytecode into application runtimes. Complete visibility.",
-        "createdAt": "2026-11-11T15:39:57.651834+00:00",
-        "likes": 37
+        "createdAt": "2026-11-11T21:16:13.013117+00:00",
+        "likes": 18
       },
       {
         "id": "c-auto-2026-11-11-3",
@@ -74,8 +74,8 @@ window.PULSE_DAILY_ARTICLES = [
           "badge": "Cybersecurity Lead"
         },
         "text": "Chaos tests also prove your security SIEM alerts fire promptly when abnormal network drops or mass pod restarts occur.",
-        "createdAt": "2026-11-11T15:39:57.651837+00:00",
-        "likes": 22
+        "createdAt": "2026-11-11T21:16:13.013117+00:00",
+        "likes": 15
       }
     ]
   },
