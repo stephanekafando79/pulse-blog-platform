@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-10T16:18:58.203483+00:00
+ * Last Updated: 2026-11-11T15:39:57.650673+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50439193",
-    "title": "AlphaProof Code",
-    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-    "domain": "deepmind.google",
+    "id": "hn-50452455",
+    "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
+    "url": "https://pietromiotti.com/latest/maya-site/?maya",
+    "domain": "pietromiotti.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "pietromiotti.com",
+    "score": 505,
+    "commentsCount": 59,
+    "publishedAt": "2026-11-11T15:39:56.677613+00:00"
+  },
+  {
+    "id": "hn-50453763",
+    "title": "Pharo in the Browser with WebAssembly",
+    "url": "https://massimo-nocentini.github.io/pharo-vm/world.html",
+    "domain": "massimo-nocentini.github.io",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "massimo-nocentini.github.io",
+    "score": 41,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-11T15:39:56.765214+00:00"
+  },
+  {
+    "id": "hn-50452655",
+    "title": "Can a Linear Program Do Weight-Space Programming?",
+    "url": "https://nathan.rs/posts/weight-space-lp/",
+    "domain": "nathan.rs",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "deepmind.google",
-    "score": 371,
-    "commentsCount": 38,
-    "publishedAt": "2026-11-10T16:18:57.248576+00:00"
+    "source": "nathan.rs",
+    "score": 116,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-11T15:39:56.896058+00:00"
   },
   {
-    "id": "hn-50441338",
-    "title": "The Hardest Tarball?",
-    "url": "https://stoppels.ch/2026/11/07/the-hardest-tarball.html",
-    "domain": "stoppels.ch",
+    "id": "hn-50453637",
+    "title": "Atuin Threads: All your agent sessions on every machine",
+    "url": "https://blog.atuin.sh/threads-agent-sessions/",
+    "domain": "blog.atuin.sh",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "stoppels.ch",
-    "score": 71,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-10T16:18:57.353550+00:00"
-  },
-  {
-    "id": "hn-50436640",
-    "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-    "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-    "domain": "strandsagents.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "strandsagents.com",
-    "score": 552,
-    "commentsCount": 48,
-    "publishedAt": "2026-11-10T16:18:57.520522+00:00"
-  },
-  {
-    "id": "hn-50412554",
-    "title": "NetBSD 11 desktop on a Raspberry Pi 4",
-    "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
-    "domain": "neongd.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "neongd.com",
-    "score": 71,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-10T16:18:57.714712+00:00"
-  },
-  {
-    "id": "hn-50442303",
-    "title": "Gemini 4 Carbon is now available",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-    "domain": "blog.google",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.google",
-    "score": 35,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-10T16:18:57.875704+00:00"
-  },
-  {
-    "id": "hn-50426294",
-    "title": "Taking another shot at the cheap IP camera, part 2",
-    "url": "https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/",
-    "domain": "ericswpark.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ericswpark.com",
-    "score": 46,
+    "source": "blog.atuin.sh",
+    "score": 28,
     "commentsCount": 8,
-    "publishedAt": "2026-11-10T16:18:58.015247+00:00"
+    "publishedAt": "2026-11-11T15:39:57.031862+00:00"
   },
   {
-    "id": "hn-50441074",
-    "title": "The Death Knell of Digital Search",
-    "url": "https://www.newyorker.com/culture/infinite-scroll/the-death-knell-of-digital-search",
-    "domain": "newyorker.com",
+    "id": "hn-50451903",
+    "title": "Using voltage glitching to unleash the A100 in my mining card",
+    "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+    "domain": "blog.kate.land",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "newyorker.com",
-    "score": 20,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-10T16:18:58.130864+00:00"
+    "source": "blog.kate.land",
+    "score": 124,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-11T15:39:57.168823+00:00"
   },
   {
-    "id": "hn-50437790",
-    "title": "Queens Public library under ransomware attack e-borrowing suspended",
-    "url": "https://connect.queenslibrary.org/",
-    "domain": "connect.queenslibrary.org",
-    "category": "Cybersecurity",
+    "id": "hn-50453229",
+    "title": "Show HN: Godbolt-in-a-floating-window for Neovim (C, C++, Rust)",
+    "url": "https://github.com/0xdeadf1sh/AssemblyForNeovim",
+    "domain": "github.com",
+    "category": "Technology",
     "tags": [
-      "Cybersecurity",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "connect.queenslibrary.org",
-    "score": 137,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-10T16:18:58.203122+00:00"
+    "source": "github.com",
+    "score": 24,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-11T15:39:57.334560+00:00"
+  },
+  {
+    "id": "hn-50453474",
+    "title": "I asked every TV manufacturer 17 questions about how they spy on you",
+    "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
+    "domain": "theverge.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "theverge.com",
+    "score": 106,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-11T15:39:57.471316+00:00"
+  },
+  {
+    "id": "hn-50449748",
+    "title": "Protecting SSH Keys with macOS Secure Enclave",
+    "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/",
+    "domain": "gatezh.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "gatezh.com",
+    "score": 322,
+    "commentsCount": 42,
+    "publishedAt": "2026-11-11T15:39:57.650339+00:00"
   }
 ];
