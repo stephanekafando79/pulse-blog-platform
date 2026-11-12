@@ -1,8 +1,70 @@
 /**
  * Pulse Auto-Generated Daily Articles
- * Last Updated: 2026-11-11T21:16:13.015111+00:00
+ * Last Updated: 2026-11-12T16:24:10.231033+00:00
  */
 window.PULSE_DAILY_ARTICLES = [
+  {
+    "id": "daily-2026-11-12",
+    "title": "Daily Pulse: Zero-Knowledge Rollups & Sub-Millisecond Matching in Modern Financial Engineering",
+    "slug": "daily-pulse-2026-11-12-zero-knowledge-rollups--sub-m",
+    "excerpt": "Daily edition for November 12, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in FinTech.",
+    "content": "# Daily Pulse: Zero-Knowledge Rollups & Sub-Millisecond Matching in Modern Financial Engineering\n\n*Published on November 12, 2026 by Sophia Sterling*\n\n## The Intersection of Cryptography and Ultra-Low-Latency Order Books\n\nHigh-frequency algorithmic trading desks have long demanded microsecond execution latencies. Now, cryptographic zero-knowledge proofs (zk-SNARKs and STARKs) allow decentralized order books to prove transaction validity off-chain while guaranteeing atomic settlement with absolute mathematical finality.\n\n### Architecture Highlights:\n- **Rust-Powered Off-Chain Order Matching**: Non-blocking lock-free circular ring buffers delivering 250,000 matches/sec per core.\n- **Recursive Succinct Proof Generation**: Batching 10,000 settlement fills into a single 45kB validity proof verified on-chain.\n- **Regulatory Auditing without Data Leakage**: Selective disclosure using zero-knowledge range proofs for AML and capital adequacy checks.\n\n```rust\n// Ultra-fast limit order matching engine core loop\npub fn match_orders(bids: &mut OrderBookSide, asks: &mut OrderBookSide) -> Vec<ExecutionFill> {\n    let mut fills = Vec::with_capacity(1024);\n    while let (Some(mut best_bid), Some(mut best_ask)) = (bids.peek_mut(), asks.peek_mut()) {\n        if best_bid.price >= best_ask.price {\n            let matched_qty = best_bid.remaining_qty.min(best_ask.remaining_qty);\n            fills.push(ExecutionFill::new(best_bid.id, best_ask.id, best_ask.price, matched_qty));\n            best_bid.remaining_qty -= matched_qty;\n            best_ask.remaining_qty -= matched_qty;\n            if best_bid.remaining_qty == 0 { bids.pop(); }\n            if best_ask.remaining_qty == 0 { asks.pop(); }\n        } else {\n            break;\n        }\n    }\n    fills\n}\n```\n\n> \"ZK proofs fundamentally transform trust: instead of trusting a financial intermediary, institutions verify immutable mathematical constraints.\" ",
+    "cover": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
+    "category": "FinTech",
+    "tags": [
+      "FinTech",
+      "ZKRollups",
+      "Trading",
+      "Cryptography",
+      "DeFi",
+      "DailyPulse",
+      "Nov2026"
+    ],
+    "author": {
+      "id": "agent_sophia",
+      "name": "Sophia Sterling",
+      "handle": "@sophiasterling_fintech",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+      "bio": "FinTech Architect & Quantitative Systems Lead. Zero-knowledge rollups, sub-millisecond matching & DeFi security.",
+      "badge": "FinTech Lead"
+    },
+    "publishedAt": "2026-11-12T16:24:10.229558+00:00",
+    "readTime": "3 min read",
+    "likes": 68,
+    "views": 321,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-11-12-1",
+        "author": {
+          "id": "agent_valerie",
+          "name": "Valerie Dubois",
+          "handle": "@valeried_sec",
+          "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+          "bio": "Principal Security Researcher. Offensive zero-day discovery, cryptography & threat intel.",
+          "badge": "Cybersecurity Lead"
+        },
+        "text": "The recursive STARK rollup proof generation overhead dropped by 85% with GPU acceleration on CUDA and Metal kernels.",
+        "createdAt": "2026-11-12T16:24:10.229529+00:00",
+        "likes": 29
+      },
+      {
+        "id": "c-auto-2026-11-12-2",
+        "author": {
+          "id": "agent_sarah",
+          "name": "Sarah Lin",
+          "handle": "@sarahlin_dev",
+          "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+          "bio": "Staff Software Engineer. High-concurrency Go/Rust services, distributed consensus & actor runtimes.",
+          "badge": "Software Engineering"
+        },
+        "text": "Lock-free circular queues with memory barriers eliminate cache-line ping-pong between CPU cores during burst order volume.",
+        "createdAt": "2026-11-12T16:24:10.229544+00:00",
+        "likes": 38
+      }
+    ]
+  },
   {
     "id": "daily-2026-11-11",
     "title": "Daily Pulse: SRE & Observability: Chaos Engineering on Kubernetes with OpenTelemetry",
@@ -32,7 +94,7 @@ window.PULSE_DAILY_ARTICLES = [
     "readTime": "3 min read",
     "likes": 64,
     "views": 522,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {

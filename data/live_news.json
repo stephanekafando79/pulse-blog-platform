@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50456631",
-    "title": "AWS Finally Built Its Own AWS Emulator",
-    "url": "https://github.com/aws/aws-emulator",
-    "domain": "github.com",
+    "id": "hn-50467087",
+    "title": "NVIDIA Announces CEO Transition",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "domain": "nvidianews.nvidia.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 427,
-    "commentsCount": 43,
-    "publishedAt": "2026-11-11T21:16:11.610541+00:00"
+    "source": "nvidianews.nvidia.com",
+    "score": 1182,
+    "commentsCount": 155,
+    "publishedAt": "2026-11-12T16:24:09.660883+00:00"
   },
   {
-    "id": "hn-50450488",
-    "title": "Tim Peters has died",
-    "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
-    "domain": "discuss.python.org",
+    "id": "hn-50465829",
+    "title": "Anthropic IPO",
+    "url": "https://ipo.anthropic.com/us/",
+    "domain": "ipo.anthropic.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "discuss.python.org",
-    "score": 593,
-    "commentsCount": 36,
-    "publishedAt": "2026-11-11T21:16:11.928567+00:00"
+    "source": "ipo.anthropic.com",
+    "score": 410,
+    "commentsCount": 66,
+    "publishedAt": "2026-11-12T16:24:09.738496+00:00"
   },
   {
-    "id": "hn-50455394",
-    "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
-    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
-    "domain": "michael.bacarella.com",
+    "id": "hn-50467618",
+    "title": "Abandoned Quake 4 expansion finished by modders and now playable",
+    "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64",
+    "domain": "moddb.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "moddb.com",
+    "score": 81,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-12T16:24:09.819360+00:00"
+  },
+  {
+    "id": "hn-50467460",
+    "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
+    "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
+    "domain": "chipsandcheese.com",
+    "category": "Hardware",
+    "tags": [
+      "Hardware",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "chipsandcheese.com",
+    "score": 73,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-12T16:24:09.902990+00:00"
+  },
+  {
+    "id": "hn-50465352",
+    "title": "Why Writing Correct Software Is Hard",
+    "url": "https://pron.github.io/posts/correctness-and-complexity",
+    "domain": "pron.github.io",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "pron.github.io",
+    "score": 247,
+    "commentsCount": 22,
+    "publishedAt": "2026-11-12T16:24:09.982607+00:00"
+  },
+  {
+    "id": "hn-50467439",
+    "title": "Libreagi – Save OSS Models",
+    "url": "https://libreagi.com/",
+    "domain": "libreagi.com",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "michael.bacarella.com",
-    "score": 305,
-    "commentsCount": 34,
-    "publishedAt": "2026-11-11T21:16:12.113275+00:00"
+    "source": "libreagi.com",
+    "score": 44,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-12T16:24:10.059499+00:00"
   },
   {
-    "id": "hn-50456740",
-    "title": "AWS Emulator and the engineer's job when agents write the code",
-    "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
-    "domain": "allthingsdistributed.com",
-    "category": "Technology",
+    "id": "hn-50468944",
+    "title": "ExcalidrawZ: Local Native Excalidraw on macOS/iOS",
+    "url": "https://github.com/chocoford/ExcalidrawZ",
+    "domain": "github.com",
+    "category": "OS",
     "tags": [
-      "Technology",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "allthingsdistributed.com",
-    "score": 93,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-11T21:16:12.325599+00:00"
-  },
-  {
-    "id": "hn-50457230",
-    "title": "Show HN: I recreated Papers Please but you're deciding which YC startups to fund",
-    "url": "https://termsheetplease.com/",
-    "domain": "termsheetplease.com",
-    "category": "Startups",
-    "tags": [
-      "Startups",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "termsheetplease.com",
-    "score": 95,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-11T21:16:12.482509+00:00"
-  },
-  {
-    "id": "hn-50456791",
-    "title": "Gemini Decisions API",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-    "domain": "blog.google",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.google",
-    "score": 94,
-    "commentsCount": 10,
-    "publishedAt": "2026-11-11T21:16:12.652186+00:00"
-  },
-  {
-    "id": "hn-50458208",
-    "title": "Emacs in the Age of Magic",
-    "url": "https://commandlinesystems.com/magic.txt",
-    "domain": "commandlinesystems.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "commandlinesystems.com",
-    "score": 26,
+    "source": "github.com",
+    "score": 17,
     "commentsCount": 1,
-    "publishedAt": "2026-11-11T21:16:12.823729+00:00"
+    "publishedAt": "2026-11-12T16:24:10.141591+00:00"
   },
   {
-    "id": "hn-50457939",
-    "title": "Why are we still working this hard?",
-    "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/",
-    "domain": "wilsoniumite.com",
+    "id": "hn-50469007",
+    "title": "Show HN: Fable52.games – Play and inspect Fable 5.2 single-file HTML games",
+    "url": "https://fable52.games",
+    "domain": "fable52.games",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "wilsoniumite.com",
-    "score": 142,
-    "commentsCount": 39,
-    "publishedAt": "2026-11-11T21:16:13.006791+00:00"
+    "source": "fable52.games",
+    "score": 15,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-12T16:24:10.227639+00:00"
   }
 ]
