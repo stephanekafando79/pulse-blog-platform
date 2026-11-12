@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-12T16:24:10.228003+00:00
+ * Last Updated: 2026-11-12T16:42:55.391178+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "nvidianews.nvidia.com",
-    "score": 1182,
-    "commentsCount": 155,
-    "publishedAt": "2026-11-12T16:24:09.660883+00:00"
+    "score": 1269,
+    "commentsCount": 162,
+    "publishedAt": "2026-11-12T16:42:54.424536+00:00"
   },
   {
     "id": "hn-50465829",
@@ -31,9 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "ipo.anthropic.com",
-    "score": 410,
-    "commentsCount": 66,
-    "publishedAt": "2026-11-12T16:24:09.738496+00:00"
+    "score": 450,
+    "commentsCount": 71,
+    "publishedAt": "2026-11-12T16:42:54.554113+00:00"
   },
   {
     "id": "hn-50467618",
@@ -47,9 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "moddb.com",
-    "score": 81,
+    "score": 95,
     "commentsCount": 7,
-    "publishedAt": "2026-11-12T16:24:09.819360+00:00"
+    "publishedAt": "2026-11-12T16:42:54.688769+00:00"
   },
   {
     "id": "hn-50467460",
@@ -63,9 +63,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "chipsandcheese.com",
-    "score": 73,
+    "score": 81,
     "commentsCount": 0,
-    "publishedAt": "2026-11-12T16:24:09.902990+00:00"
+    "publishedAt": "2026-11-12T16:42:54.842305+00:00"
+  },
+  {
+    "id": "hn-50468888",
+    "title": "I'm making LLMs work on small and old devices",
+    "url": "https://github.com/hyperionaidev/smolmaxxing/",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 25,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-12T16:42:54.977143+00:00"
   },
   {
     "id": "hn-50465352",
@@ -79,41 +95,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "pron.github.io",
-    "score": 247,
+    "score": 253,
     "commentsCount": 22,
-    "publishedAt": "2026-11-12T16:24:09.982607+00:00"
-  },
-  {
-    "id": "hn-50467439",
-    "title": "Libreagi – Save OSS Models",
-    "url": "https://libreagi.com/",
-    "domain": "libreagi.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "libreagi.com",
-    "score": 44,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-12T16:24:10.059499+00:00"
-  },
-  {
-    "id": "hn-50468944",
-    "title": "ExcalidrawZ: Local Native Excalidraw on macOS/iOS",
-    "url": "https://github.com/chocoford/ExcalidrawZ",
-    "domain": "github.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 17,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-12T16:24:10.141591+00:00"
+    "publishedAt": "2026-11-12T16:42:55.108378+00:00"
   },
   {
     "id": "hn-50469007",
@@ -127,8 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "fable52.games",
-    "score": 15,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-12T16:24:10.227639+00:00"
+    "score": 24,
+    "commentsCount": 13,
+    "publishedAt": "2026-11-12T16:42:55.256002+00:00"
+  },
+  {
+    "id": "hn-50467439",
+    "title": "Libreagi – Save OSS Models",
+    "url": "https://libreagi.com/",
+    "domain": "libreagi.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "libreagi.com",
+    "score": 50,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-12T16:42:55.390715+00:00"
   }
 ];
