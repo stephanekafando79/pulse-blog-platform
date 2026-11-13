@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-13T15:44:20.726934+00:00
+ * Last Updated: 2026-11-13T16:00:26.609975+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "scottjg.com",
-    "score": 158,
+    "score": 201,
     "commentsCount": 12,
-    "publishedAt": "2026-11-13T15:44:20.122453+00:00"
+    "publishedAt": "2026-11-13T16:00:25.625391+00:00"
   },
   {
     "id": "hn-50482379",
@@ -31,9 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "science.org",
-    "score": 288,
-    "commentsCount": 42,
-    "publishedAt": "2026-11-13T15:44:20.199143+00:00"
+    "score": 304,
+    "commentsCount": 43,
+    "publishedAt": "2026-11-13T16:00:25.761430+00:00"
   },
   {
     "id": "hn-50483611",
@@ -47,41 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "mtsoukalos.eu",
-    "score": 72,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-13T15:44:20.318109+00:00"
-  },
-  {
-    "id": "hn-50467087",
-    "title": "Jensen Huang resigns",
-    "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
-    "domain": "apnews.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "apnews.com",
-    "score": 3816,
-    "commentsCount": 400,
-    "publishedAt": "2026-11-13T15:44:20.421944+00:00"
-  },
-  {
-    "id": "hn-50481187",
-    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-    "url": "https://status.claude.com/incidents/nn11wk485zfn",
-    "domain": "status.claude.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "status.claude.com",
-    "score": 389,
-    "commentsCount": 86,
-    "publishedAt": "2026-11-13T15:44:20.503901+00:00"
+    "score": 86,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-13T16:00:25.893723+00:00"
   },
   {
     "id": "hn-50484235",
@@ -95,40 +63,56 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "discourse.haskell.org",
-    "score": 21,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-13T15:44:20.573442+00:00"
-  },
-  {
-    "id": "hn-50484007",
-    "title": "Lonewolf 0.3 – A standalone XMPP server written in Rust",
-    "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0",
-    "domain": "github.com",
-    "category": "Dev & Cloud",
-    "tags": [
-      "Dev & Cloud",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 10,
+    "score": 30,
     "commentsCount": 3,
-    "publishedAt": "2026-11-13T15:44:20.646737+00:00"
+    "publishedAt": "2026-11-13T16:00:26.027601+00:00"
   },
   {
-    "id": "hn-50478515",
-    "title": "IceWM",
-    "url": "https://ice-wm.org/",
-    "domain": "ice-wm.org",
+    "id": "hn-50467087",
+    "title": "Jensen Huang resigns",
+    "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+    "domain": "apnews.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "ice-wm.org",
-    "score": 298,
-    "commentsCount": 29,
-    "publishedAt": "2026-11-13T15:44:20.726382+00:00"
+    "source": "apnews.com",
+    "score": 3834,
+    "commentsCount": 401,
+    "publishedAt": "2026-11-13T16:00:26.168296+00:00"
+  },
+  {
+    "id": "hn-50481187",
+    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+    "url": "https://status.claude.com/incidents/nn11wk485zfn",
+    "domain": "status.claude.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "status.claude.com",
+    "score": 401,
+    "commentsCount": 86,
+    "publishedAt": "2026-11-13T16:00:26.326729+00:00"
+  },
+  {
+    "id": "hn-50484650",
+    "title": "Palmfrets, Minnesota guitarist's invention, strikes a new chord",
+    "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
+    "domain": "echopress.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "echopress.com",
+    "score": 12,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-13T16:00:26.609481+00:00"
   }
 ];
