@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-12T16:42:55.391178+00:00
+ * Last Updated: 2026-11-13T15:44:20.726934+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50467087",
-    "title": "NVIDIA Announces CEO Transition",
-    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
-    "domain": "nvidianews.nvidia.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "nvidianews.nvidia.com",
-    "score": 1269,
-    "commentsCount": 162,
-    "publishedAt": "2026-11-12T16:42:54.424536+00:00"
-  },
-  {
-    "id": "hn-50465829",
-    "title": "Anthropic IPO",
-    "url": "https://ipo.anthropic.com/us/",
-    "domain": "ipo.anthropic.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ipo.anthropic.com",
-    "score": 450,
-    "commentsCount": 71,
-    "publishedAt": "2026-11-12T16:42:54.554113+00:00"
-  },
-  {
-    "id": "hn-50467618",
-    "title": "Abandoned Quake 4 expansion finished by modders and now playable",
-    "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64",
-    "domain": "moddb.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "moddb.com",
-    "score": 95,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-12T16:42:54.688769+00:00"
-  },
-  {
-    "id": "hn-50467460",
-    "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
-    "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
-    "domain": "chipsandcheese.com",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "chipsandcheese.com",
-    "score": 81,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-12T16:42:54.842305+00:00"
-  },
-  {
-    "id": "hn-50468888",
-    "title": "I'm making LLMs work on small and old devices",
-    "url": "https://github.com/hyperionaidev/smolmaxxing/",
-    "domain": "github.com",
+    "id": "hn-50474959",
+    "title": "Reverse Engineering My Coway Air Purifier to Ditch the Cloud",
+    "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+    "domain": "scottjg.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 25,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-12T16:42:54.977143+00:00"
+    "source": "scottjg.com",
+    "score": 158,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-13T15:44:20.122453+00:00"
   },
   {
-    "id": "hn-50465352",
-    "title": "Why Writing Correct Software Is Hard",
-    "url": "https://pron.github.io/posts/correctness-and-complexity",
-    "domain": "pron.github.io",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "pron.github.io",
-    "score": 253,
-    "commentsCount": 22,
-    "publishedAt": "2026-11-12T16:42:55.108378+00:00"
-  },
-  {
-    "id": "hn-50469007",
-    "title": "Show HN: Fable52.games – Play and inspect Fable 5.2 single-file HTML games",
-    "url": "https://fable52.games",
-    "domain": "fable52.games",
+    "id": "hn-50482379",
+    "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
+    "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
+    "domain": "science.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "fable52.games",
-    "score": 24,
-    "commentsCount": 13,
-    "publishedAt": "2026-11-12T16:42:55.256002+00:00"
+    "source": "science.org",
+    "score": 288,
+    "commentsCount": 42,
+    "publishedAt": "2026-11-13T15:44:20.199143+00:00"
   },
   {
-    "id": "hn-50467439",
-    "title": "Libreagi – Save OSS Models",
-    "url": "https://libreagi.com/",
-    "domain": "libreagi.com",
+    "id": "hn-50483611",
+    "title": "Why Zig over C for Systems Programming",
+    "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/",
+    "domain": "mtsoukalos.eu",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "mtsoukalos.eu",
+    "score": 72,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-13T15:44:20.318109+00:00"
+  },
+  {
+    "id": "hn-50467087",
+    "title": "Jensen Huang resigns",
+    "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+    "domain": "apnews.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "apnews.com",
+    "score": 3816,
+    "commentsCount": 400,
+    "publishedAt": "2026-11-13T15:44:20.421944+00:00"
+  },
+  {
+    "id": "hn-50481187",
+    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+    "url": "https://status.claude.com/incidents/nn11wk485zfn",
+    "domain": "status.claude.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "status.claude.com",
+    "score": 389,
+    "commentsCount": 86,
+    "publishedAt": "2026-11-13T15:44:20.503901+00:00"
+  },
+  {
+    "id": "hn-50484235",
+    "title": "A technical vision for the Haskell ecosystem",
+    "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+    "domain": "discourse.haskell.org",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "libreagi.com",
-    "score": 50,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-12T16:42:55.390715+00:00"
+    "source": "discourse.haskell.org",
+    "score": 21,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-13T15:44:20.573442+00:00"
+  },
+  {
+    "id": "hn-50484007",
+    "title": "Lonewolf 0.3 – A standalone XMPP server written in Rust",
+    "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0",
+    "domain": "github.com",
+    "category": "Dev & Cloud",
+    "tags": [
+      "Dev & Cloud",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 10,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-13T15:44:20.646737+00:00"
+  },
+  {
+    "id": "hn-50478515",
+    "title": "IceWM",
+    "url": "https://ice-wm.org/",
+    "domain": "ice-wm.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "ice-wm.org",
+    "score": 298,
+    "commentsCount": 29,
+    "publishedAt": "2026-11-13T15:44:20.726382+00:00"
   }
 ];
