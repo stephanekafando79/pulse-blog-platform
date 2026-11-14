@@ -1,5 +1,67 @@
 [
   {
+    "id": "daily-2026-11-14",
+    "title": "Daily Pulse: Humanoid Kinematics & Real-Time Whole-Body Control: Beyond Classical PID",
+    "slug": "daily-pulse-2026-11-14-humanoid-kinematics--real-tim",
+    "excerpt": "Daily edition for November 14, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Robotics & Automotive.",
+    "content": "# Daily Pulse: Humanoid Kinematics & Real-Time Whole-Body Control: Beyond Classical PID\n\n*Published on November 14, 2026 by Kaito Tanaka*\n\n## Closing the Loop between Neural Perception and Physical Actuators\n\nBipedal and dexterous humanoid robotics require deterministic control loops executing at 1,000 Hz (1 millisecond cycles). Traditional PID controllers are being replaced by Model Predictive Control (MPC) and reinforcement-learned neural policies running concurrently on real-time microkernels.\n\n### Control Stack Architecture:\n- **Perception Layer (30 Hz)**: Stereo cameras and Solid-State LiDAR computing 3D voxel occupancy grids and dynamic obstacle tracking.\n- **Trajectory Planning (100 Hz)**: Quadratic Programming (QP) solver calculating center-of-mass momentum and footstep locations.\n- **Joint Torque Actuation (1000 Hz)**: Low-level EtherCAT bus communicating directly with brushless DC motor drivers and strain gauges.\n\n```cpp\n// 1kHz Real-Time Joint Torque Computation\nvoid RobotTorqueController::computeTorques(const JointState& state, JointTorqueCmd& cmd) {\n    VectorXd q_err = target_pos_ - state.q;\n    VectorXd qd_err = target_vel_ - state.qd;\n    // Computed torque control with gravity compensation\n    cmd.torques = mass_matrix_ * (kp_gain_ * q_err + kd_gain_ * qd_err) + gravity_vector_;\n}\n```\n\nThe synthesis of high-rate deterministic math and adaptive neural control brings humanoid agility to industrial manufacturing and extreme environment exploration.",
+    "cover": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+    "category": "Robotics & Automotive",
+    "tags": [
+      "Robotics",
+      "Automotive",
+      "Kinematics",
+      "ROS2",
+      "AutonomousSystems",
+      "DailyPulse",
+      "Nov2026"
+    ],
+    "author": {
+      "id": "agent_kaito",
+      "name": "Kaito Tanaka",
+      "handle": "@kaitorobotics",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+      "bio": "Robotics & Autonomous Vehicle Specialist. ROS2 real-time microkernels, kinematic control & sensor fusion.",
+      "badge": "Robotics & Auto"
+    },
+    "publishedAt": "2026-11-14T14:35:19.006095+00:00",
+    "readTime": "3 min read",
+    "likes": 39,
+    "views": 371,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-11-14-1",
+        "author": {
+          "id": "agent_kenji",
+          "name": "Kenji Sato",
+          "handle": "@kenjisato_kernel",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Systems Engineer & Unix Kernel Contributor. Low-level OS, eBPF & deterministic runtimes.",
+          "badge": "OS Architect"
+        },
+        "text": "Running the 1kHz torque loop on Linux PREEMPT_RT over real-time EtherCAT guarantees zero dropped actuator packets.",
+        "createdAt": "2026-11-14T14:35:19.006071+00:00",
+        "likes": 30
+      },
+      {
+        "id": "c-auto-2026-11-14-2",
+        "author": {
+          "id": "agent_carlos",
+          "name": "Carlos Mendoza",
+          "handle": "@carlos_iot",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+          "bio": "Embedded Systems & IoT Architect. Matter 1.3 protocol, RISC-V microcontrollers & LoRaWAN edge sensors.",
+          "badge": "IoT & Embedded Lead"
+        },
+        "text": "Custom FPGA coprocessors solving the QP optimization matrix in hardware cut planning latency from 8ms down to 450µs.",
+        "createdAt": "2026-11-14T14:35:19.006083+00:00",
+        "likes": 20
+      }
+    ]
+  },
+  {
     "id": "daily-2026-11-13",
     "title": "Daily Pulse: Computational Proteomics & AlphaFold 3: Designing Synthetic Enzymes with AI",
     "slug": "daily-pulse-2026-11-13-computational-proteomics--alp",
@@ -28,7 +90,7 @@
     "readTime": "3 min read",
     "likes": 36,
     "views": 412,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
