@@ -1,8 +1,24 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-15T05:48:34.638121+00:00
+ * Last Updated: 2026-11-15T15:02:38.798442+00:00
  */
 window.PULSE_LIVE_NEWS = [
+  {
+    "id": "hn-50506719",
+    "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
+    "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+    "domain": "macanorak.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "macanorak.com",
+    "score": 93,
+    "commentsCount": 19,
+    "publishedAt": "2026-11-15T15:02:38.203793+00:00"
+  },
   {
     "id": "hn-50500963",
     "title": "SpaceX catches the Starship to end Flight 15",
@@ -15,9 +31,89 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "spacex.com",
-    "score": 975,
-    "commentsCount": 75,
-    "publishedAt": "2026-11-15T05:48:34.072321+00:00"
+    "score": 1421,
+    "commentsCount": 110,
+    "publishedAt": "2026-11-15T15:02:38.289021+00:00"
+  },
+  {
+    "id": "hn-50506894",
+    "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+    "url": "https://prog21.dadgum.com/116.html",
+    "domain": "prog21.dadgum.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "prog21.dadgum.com",
+    "score": 35,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-15T15:02:38.376114+00:00"
+  },
+  {
+    "id": "hn-50506376",
+    "title": "Understanding Positional Embeddings in Modern LLMs",
+    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+    "domain": "magazine.sebastianraschka.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "magazine.sebastianraschka.com",
+    "score": 55,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-15T15:02:38.456996+00:00"
+  },
+  {
+    "id": "hn-50505271",
+    "title": "Why did some Apollo missions carry a grenade launcher?",
+    "url": "https://space.stackexchange.com/questions/37775",
+    "domain": "space.stackexchange.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "space.stackexchange.com",
+    "score": 118,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-15T15:02:38.541007+00:00"
+  },
+  {
+    "id": "hn-50506588",
+    "title": "A NES emulator written in Odin",
+    "url": "https://lucypero.com/lucynes.html",
+    "domain": "lucypero.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "lucypero.com",
+    "score": 25,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-15T15:02:38.624566+00:00"
+  },
+  {
+    "id": "hn-50507206",
+    "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
+    "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
+    "domain": "datatracker.ietf.org",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "datatracker.ietf.org",
+    "score": 9,
+    "commentsCount": 2,
+    "publishedAt": "2026-11-15T15:02:38.712713+00:00"
   },
   {
     "id": "hn-50499017",
@@ -31,104 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "crissyfield.de",
-    "score": 737,
-    "commentsCount": 39,
-    "publishedAt": "2026-11-15T05:48:34.148900+00:00"
-  },
-  {
-    "id": "hn-50504072",
-    "title": "Show HN: Gawain – Require type hints on all Python variables",
-    "url": "https://github.com/matheuzgomes/gawain",
-    "domain": "github.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 17,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-15T05:48:34.254914+00:00"
-  },
-  {
-    "id": "hn-50501594",
-    "title": "How did Woz write the Apple 1 BASIC before building the computer?",
-    "url": "https://retrocomputing.stackexchange.com/questions/17957",
-    "domain": "retrocomputing.stackexchange.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "retrocomputing.stackexchange.com",
-    "score": 161,
-    "commentsCount": 15,
-    "publishedAt": "2026-11-15T05:48:34.327959+00:00"
-  },
-  {
-    "id": "hn-50503930",
-    "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
-    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
-    "domain": "github.com",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 11,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-15T05:48:34.407640+00:00"
-  },
-  {
-    "id": "hn-50503731",
-    "title": "Osint Case Studies",
-    "url": "https://osintsearch.org/blog/osint-case-studies",
-    "domain": "osintsearch.org",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "osintsearch.org",
-    "score": 13,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-15T05:48:34.487360+00:00"
-  },
-  {
-    "id": "hn-50482222",
-    "title": "The Evolving Story of How Chemistry Became Biology",
-    "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
-    "domain": "quantamagazine.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "quantamagazine.org",
-    "score": 19,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-15T05:48:34.562276+00:00"
-  },
-  {
-    "id": "hn-50503255",
-    "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
-    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-    "domain": "eff.org",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "eff.org",
-    "score": 154,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-15T05:48:34.637708+00:00"
+    "score": 914,
+    "commentsCount": 53,
+    "publishedAt": "2026-11-15T15:02:38.798083+00:00"
   }
 ];
