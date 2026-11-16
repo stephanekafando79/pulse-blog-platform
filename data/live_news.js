@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-15T15:31:35.214796+00:00
+ * Last Updated: 2026-11-16T17:33:43.377949+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50507303",
-    "title": "All AI-generated code should be Open Source",
-    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-    "domain": "jakub.jankiewicz.org",
+    "id": "hn-50516473",
+    "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+    "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+    "domain": "masnick.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "masnick.com",
+    "score": 217,
+    "commentsCount": 34,
+    "publishedAt": "2026-11-16T17:33:42.579788+00:00"
+  },
+  {
+    "id": "hn-50517488",
+    "title": "Many of Amazon’s Black Friday and Cyber Monday “Deals” Offered No Savings",
+    "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
+    "domain": "groundworkcollaborative.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "groundworkcollaborative.org",
+    "score": 459,
+    "commentsCount": 68,
+    "publishedAt": "2026-11-16T17:33:42.694235+00:00"
+  },
+  {
+    "id": "hn-50514470",
+    "title": "How to make almost anything",
+    "url": "https://pub.cba.mit.edu/863.26/site/",
+    "domain": "pub.cba.mit.edu",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "pub.cba.mit.edu",
+    "score": 679,
+    "commentsCount": 33,
+    "publishedAt": "2026-11-16T17:33:42.762573+00:00"
+  },
+  {
+    "id": "hn-50518567",
+    "title": "Nvidia Was in Trouble Before the Jensen Huang Mess",
+    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+    "domain": "wired.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "wired.com",
+    "score": 104,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-16T17:33:42.837539+00:00"
+  },
+  {
+    "id": "hn-50513160",
+    "title": "Universal XSS in uBlock Origin from website-driven element picker",
+    "url": "https://iter.ca/post/ubo-uxss/",
+    "domain": "iter.ca",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "iter.ca",
+    "score": 553,
+    "commentsCount": 36,
+    "publishedAt": "2026-11-16T17:33:42.960127+00:00"
+  },
+  {
+    "id": "hn-50517815",
+    "title": "The Active Directory Era Is Finally Over",
+    "url": "https://infisical.com/blog/active-directory-machine-identity",
+    "domain": "infisical.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "infisical.com",
+    "score": 44,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-16T17:33:43.103268+00:00"
+  },
+  {
+    "id": "hn-50515058",
+    "title": "Interpreting claims that a theorem is correct because it was checked in Lean",
+    "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+    "domain": "xenaproject.wordpress.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "jakub.jankiewicz.org",
-    "score": 54,
-    "commentsCount": 17,
-    "publishedAt": "2026-11-15T15:31:34.204572+00:00"
+    "source": "xenaproject.wordpress.com",
+    "score": 208,
+    "commentsCount": 21,
+    "publishedAt": "2026-11-16T17:33:43.207008+00:00"
   },
   {
-    "id": "hn-50506719",
-    "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
-    "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
-    "domain": "macanorak.com",
-    "category": "Technology",
+    "id": "hn-50519043",
+    "title": "Generative AI Usage in the Games Industry",
+    "url": "https://www.gameworkers.co.uk/ai-manifesto/",
+    "domain": "gameworkers.co.uk",
+    "category": "AI & ML",
     "tags": [
-      "Technology",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "macanorak.com",
-    "score": 123,
-    "commentsCount": 22,
-    "publishedAt": "2026-11-15T15:31:34.297525+00:00"
-  },
-  {
-    "id": "hn-50506894",
-    "title": "Things That Turbo Pascal Is Smaller Than (2011)",
-    "url": "https://prog21.dadgum.com/116.html",
-    "domain": "prog21.dadgum.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "prog21.dadgum.com",
-    "score": 46,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-15T15:31:34.388433+00:00"
-  },
-  {
-    "id": "hn-50507206",
-    "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
-    "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
-    "domain": "datatracker.ietf.org",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "datatracker.ietf.org",
-    "score": 22,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-15T15:31:34.597186+00:00"
-  },
-  {
-    "id": "hn-50500963",
-    "title": "SpaceX catches the Starship to end Flight 15",
-    "url": "https://www.spacex.com/launches/starship-flight-15",
-    "domain": "spacex.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "spacex.com",
-    "score": 1432,
-    "commentsCount": 111,
-    "publishedAt": "2026-11-15T15:31:34.776347+00:00"
-  },
-  {
-    "id": "hn-50506376",
-    "title": "Understanding Positional Embeddings in Modern LLMs",
-    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-    "domain": "magazine.sebastianraschka.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "magazine.sebastianraschka.com",
-    "score": 71,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-15T15:31:34.874609+00:00"
-  },
-  {
-    "id": "hn-50506588",
-    "title": "A NES emulator written in Odin",
-    "url": "https://lucypero.com/lucynes.html",
-    "domain": "lucypero.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "lucypero.com",
-    "score": 38,
-    "commentsCount": 2,
-    "publishedAt": "2026-11-15T15:31:35.099787+00:00"
-  },
-  {
-    "id": "hn-50505271",
-    "title": "Why did some Apollo missions carry a grenade launcher?",
-    "url": "https://space.stackexchange.com/questions/37775",
-    "domain": "space.stackexchange.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "space.stackexchange.com",
-    "score": 126,
-    "commentsCount": 16,
-    "publishedAt": "2026-11-15T15:31:35.214459+00:00"
+    "source": "gameworkers.co.uk",
+    "score": 23,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-16T17:33:43.377557+00:00"
   }
 ];
