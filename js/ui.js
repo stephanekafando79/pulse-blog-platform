@@ -6,7 +6,8 @@
 class UIController {
   constructor() {
     this.currentView = 'home';
-    this.homeMode = 'stories'; // 'stories' | 'discussions' | 'news'
+    this.homeMode = 'stories';
+    this.feedLayout = localStorage.getItem('pulse_feed_layout') || 'stream'; // 'stories' | 'discussions' | 'news'
     this.wireSort = 'hot'; // 'hot' | 'top' | 'new'
     this.activeArticleId = null;
     this.selectedCategory = 'all';
@@ -21,6 +22,7 @@ class UIController {
   init() {
     if (window.PulseI18n) window.PulseI18n.init();
     this.renderHeaderUser();
+    this.setFeedLayout(this.feedLayout || 'stream');
     this.renderFeed();
     this.renderDiscussions();
     this.renderLiveNews();
@@ -166,6 +168,154 @@ class UIController {
     }
   }
 
+
+  // Feed layout switcher (Social Stream vs Compact Grid)
+  setFeedLayout(layout) {
+    this.feedLayout = layout || 'stream';
+    try { localStorage.setItem('pulse_feed_layout', this.feedLayout); } catch (e) {}
+
+    const streamBtn = document.getElementById('btn-layout-stream');
+    const gridBtn = document.getElementById('btn-layout-grid');
+    if (streamBtn) streamBtn.classList.toggle('active', this.feedLayout === 'stream');
+    if (gridBtn) gridBtn.classList.toggle('active', this.feedLayout === 'grid');
+
+    const feed = document.getElementById('articles-feed');
+    if (feed) {
+      if (this.feedLayout === 'stream') {
+        feed.classList.add('feed-stream-mode');
+        feed.classList.remove('feed-grid-mode');
+      } else {
+        feed.classList.remove('feed-stream-mode');
+        feed.classList.add('feed-grid-mode');
+      }
+    }
+  }
+
+  // Interactive Social Feed Like (Facebook / Instagram style)
+  handleFeedLike(articleId) {
+    const res = window.Store.toggleLike(articleId);
+    const likeBtn = document.getElementById(`card-like-${articleId}`);
+    const likeCount = document.getElementById(`card-like-count-${articleId}`);
+    if (likeCount) likeCount.textContent = res.likes;
+    if (likeBtn) {
+      if (res.isLiked) {
+        likeBtn.classList.add('liked');
+        const svg = likeBtn.querySelector('svg');
+        if (svg) {
+          svg.setAttribute('fill', '#ef4444');
+          svg.setAttribute('stroke', '#ef4444');
+        }
+        this.showToast('Liked story! ❤️', 'success');
+      } else {
+        likeBtn.classList.remove('liked');
+        const svg = likeBtn.querySelector('svg');
+        if (svg) {
+          svg.setAttribute('fill', 'none');
+          svg.setAttribute('stroke', 'currentColor');
+        }
+        this.showToast('Unliked story', 'info');
+      }
+    }
+
+    // Also sync reader view if active
+    const readerLikeBtn = document.getElementById('article-like-btn');
+    const readerLikeCount = document.getElementById('article-like-count');
+    if (readerLikeCount) readerLikeCount.textContent = res.likes;
+    if (readerLikeBtn) {
+      readerLikeBtn.classList.toggle('liked', res.isLiked);
+      const rSvg = readerLikeBtn.querySelector('svg');
+      if (rSvg) rSvg.setAttribute('fill', res.isLiked ? 'currentColor' : 'none');
+    }
+  }
+
+  // Toggle inline comment section on social feed card
+  toggleFeedComments(articleId) {
+    const sec = document.getElementById(`feed-comments-${articleId}`);
+    if (!sec) return;
+    const isHidden = sec.style.display === 'none' || getComputedStyle(sec).display === 'none';
+    sec.style.display = isHidden ? 'block' : 'none';
+    if (isHidden) {
+      const input = document.getElementById(`feed-input-${articleId}`);
+      if (input) input.focus();
+    }
+  }
+
+  // Submit comment from social feed card directly
+  submitFeedComment(articleId) {
+    const input = document.getElementById(`feed-input-${articleId}`);
+    if (!input || !input.value.trim()) {
+      this.showToast('Please type a comment first', 'info');
+      return;
+    }
+    const text = input.value.trim();
+    const comment = window.Store.addComment(articleId, text);
+    if (comment) {
+      input.value = '';
+      this.showToast('Comment posted! 💬', 'success');
+      const article = window.Store.getArticleById(articleId);
+      const listContainer = document.getElementById(`feed-comments-list-${articleId}`);
+      if (listContainer && article) {
+        listContainer.innerHTML = this.renderFeedCommentsPreview(article.comments || [], articleId);
+      }
+      const commentCountSpan = document.getElementById(`card-comment-count-${articleId}`);
+      if (commentCountSpan && article) {
+        commentCountSpan.textContent = `${(article.comments || []).length} Comments`;
+      }
+    }
+  }
+
+  // Share story
+  shareStory(articleId, title) {
+    const url = `${window.location.origin}${window.location.pathname}#/article/${articleId}`;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(() => {
+        this.showToast('Story link copied to clipboard! 📋', 'success');
+      }).catch(() => {
+        this.showToast(`Story link: ${url}`, 'info');
+      });
+    } else {
+      this.showToast(`Story link: ${url}`, 'info');
+    }
+  }
+
+  // Render recent comments preview on social feed post
+  renderFeedCommentsPreview(comments, articleId) {
+    if (!comments || comments.length === 0) {
+      return `<div style="font-size: 0.8rem; color: var(--text-muted); padding: 0.35rem 0;">No comments yet. Be the first to share your take!</div>`;
+    }
+
+    const recent = comments.slice(-3);
+    const hasMore = comments.length > 3;
+
+    let html = '';
+    if (hasMore) {
+      html += `
+        <button type="button" class="feed-view-all-comments-btn" onclick="PulseUI.navigateTo('reader', '${articleId}')" style="background: none; border: none; font-size: 0.78rem; font-weight: 600; color: var(--accent); cursor: pointer; padding: 0 0 0.4rem 0; text-align: left;">
+          View all ${comments.length} comments →
+        </button>
+      `;
+    }
+
+    html += recent.map(c => {
+      const timeAgo = this.formatRelativeTime(c.createdAt);
+      const isOwner = c.author && (c.author.id === window.Store.OWNER?.id || c.author.isOwner);
+      return `
+        <div class="feed-comment-bubble">
+          <img src="${c.author.avatar}" class="feed-comment-avatar" alt="${this.escapeHtml(c.author.name)}" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80'" />
+          <div class="feed-comment-body">
+            <div class="feed-comment-header">
+              <span class="feed-comment-author-name">${this.escapeHtml(c.author.name)} ${isOwner ? '<span class="feed-author-badge" style="font-size: 0.62rem; padding: 0.05rem 0.35rem;">Staff</span>' : ''}</span>
+              <span class="feed-comment-time">${timeAgo}</span>
+            </div>
+            <div class="feed-comment-text">${this.escapeHtml(c.text)}</div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    return html;
+  }
+
   // Render Article Feed
   renderFeed() {
     const feedContainer = document.getElementById('articles-feed');
@@ -219,32 +369,120 @@ class UIController {
       return;
     }
 
+    const currentUser = window.Store.getCurrentUser();
+    const isStream = this.feedLayout !== 'grid';
+
     feedContainer.innerHTML = articles.map((article, index) => {
-      const isFeatured = index === 0 && this.selectedCategory === 'all' && !this.searchQuery;
+      const isFeatured = index === 0 && this.selectedCategory === 'all' && !this.searchQuery && !isStream;
       const formattedDate = new Date(article.publishedAt).toLocaleDateString('en-US', {
         month: 'short',
         day: 'numeric',
         year: 'numeric'
       });
+      const timeAgo = this.formatRelativeTime(article.publishedAt);
       const isBookmarked = window.Store.isBookmarked(article.id);
+      const isLiked = window.Store.isArticleLiked(article.id);
+      const commentCount = (article.comments || []).length;
 
-      return `
+      if (isStream) {
+        // Facebook / Instagram Social Feed Post Style
+        return `
+        <article class="article-card feed-post-card" data-id="${article.id}">
+          <!-- Post Top Bar (Author & Meta like Facebook / Instagram) -->
+          <div class="feed-post-header">
+            <div class="feed-author-block" onclick="PulseUI.navigateTo('reader', '${article.id}')">
+              <div class="feed-author-avatar-wrap">
+                <img src="${article.author.avatar}" class="feed-author-avatar" alt="${this.escapeHtml(article.author.name)}" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80'" />
+                <span class="feed-verified-dot" title="Verified Author">✓</span>
+              </div>
+              <div class="feed-author-meta">
+                <div class="feed-author-row">
+                  <span class="feed-author-name">${this.escapeHtml(article.author.name)}</span>
+                  ${article.author.badge ? `<span class="feed-author-badge">${this.escapeHtml(article.author.badge)}</span>` : ''}
+                </div>
+                <div class="feed-post-subtext">
+                  <span>${timeAgo}</span>
+                  <span>•</span>
+                  <span>${article.readTime}</span>
+                  <span>•</span>
+                  <span class="feed-cat-pill">${this.escapeHtml(article.category)}</span>
+                </div>
+              </div>
+            </div>
+            <button class="feed-bookmark-btn ${isBookmarked ? 'active' : ''}" title="Save Bookmark" onclick="PulseUI.handleBookmarkClick('${article.id}', this)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+            </button>
+          </div>
+
+          <!-- Post Media / Large Cover Photo -->
+          <div class="feed-post-media" onclick="PulseUI.navigateTo('reader', '${article.id}')">
+            <img src="${article.cover}" alt="${this.escapeHtml(article.title)}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80'" />
+            ${article.isDaily ? `<span class="feed-daily-badge">⚡ Today's Drop</span>` : ''}
+            <span class="feed-media-category-tag">${this.escapeHtml(article.category)}</span>
+          </div>
+
+          <!-- Post Body (Title, Excerpt & Tags) -->
+          <div class="feed-post-body">
+            <h2 class="feed-post-title" onclick="PulseUI.navigateTo('reader', '${article.id}')">${this.escapeHtml(article.title)}</h2>
+            <p class="feed-post-excerpt">${this.escapeHtml(article.excerpt)}</p>
+            <div class="feed-post-tags">
+              ${(article.tags || []).map(t => `<span class="tag-pill" onclick="event.stopPropagation(); PulseUI.selectCategory('${t}')">#${this.escapeHtml(t)}</span>`).join('')}
+            </div>
+          </div>
+
+          <!-- Social Action Bar (Facebook / Instagram Style) -->
+          <div class="feed-social-bar">
+            <div class="feed-social-actions-left">
+              <button class="feed-action-btn btn-like ${isLiked ? 'liked' : ''}" id="card-like-${article.id}" onclick="PulseUI.handleFeedLike('${article.id}')" title="Like Story">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="${isLiked ? '#ef4444' : 'none'}" stroke="${isLiked ? '#ef4444' : 'currentColor'}" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                <span class="like-count" id="card-like-count-${article.id}">${article.likes || 0}</span>
+              </button>
+              <button class="feed-action-btn btn-comment" onclick="PulseUI.toggleFeedComments('${article.id}')" title="View & Add Comments">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span id="card-comment-count-${article.id}">${commentCount} Comments</span>
+              </button>
+              <button class="feed-action-btn btn-share" onclick="PulseUI.shareStory('${article.id}', '${this.escapeHtml(article.title).replace(/'/g, "\\'")}')" title="Share Story">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+            </div>
+            <button class="feed-read-more-btn" onclick="PulseUI.navigateTo('reader', '${article.id}')">
+              Read Story →
+            </button>
+          </div>
+
+          <!-- Attached Comments Section (Directly on the card!) -->
+          <div class="feed-comments-section" id="feed-comments-${article.id}">
+            <div class="feed-comments-list" id="feed-comments-list-${article.id}">
+              ${this.renderFeedCommentsPreview(article.comments || [], article.id)}
+            </div>
+            <div class="feed-comment-input-row">
+              <img src="${currentUser.avatar}" class="feed-comment-avatar" alt="${this.escapeHtml(currentUser.name)}" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80'" />
+              <input type="text" class="feed-comment-input" id="feed-input-${article.id}" placeholder="Write a comment as ${this.escapeHtml(currentUser.name)}..." onkeydown="if(event.key==='Enter') PulseUI.submitFeedComment('${article.id}')" />
+              <button class="btn btn-primary btn-sm feed-comment-send-btn" onclick="PulseUI.submitFeedComment('${article.id}')">Post</button>
+            </div>
+          </div>
+        </article>
+        `;
+      } else {
+        // Grid View
+        return `
         <article class="article-card ${isFeatured ? 'featured-card' : ''}" data-id="${article.id}">
           <div class="card-cover" onclick="PulseUI.navigateTo('reader', '${article.id}')" style="cursor: pointer;">
-            <img src="${article.cover}" alt="${article.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80'" />
-            <span class="card-category-badge" style="${article.isDaily ? 'background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%); font-weight: 800;' : ''}">${article.isDaily ? '⚡ Today\'s Drop • ' : ''}${article.category}</span>
+            <img src="${article.cover}" alt="${this.escapeHtml(article.title)}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80'" />
+            <span class="card-category-badge" style="${article.isDaily ? 'background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%); font-weight: 800;' : ''}">${article.isDaily ? '⚡ Today's Drop • ' : ''}${article.category}</span>
           </div>
           <div class="card-content">
             <div class="card-tags">
-              ${(article.tags || []).map(t => `<span class="tag-pill" onclick="event.stopPropagation(); PulseUI.filterByTag('${t}')">#${t}</span>`).join('')}
+              ${(article.tags || []).map(t => `<span class="tag-pill" onclick="event.stopPropagation(); PulseUI.selectCategory('${t}')">#${this.escapeHtml(t)}</span>`).join('')}
             </div>
-            <h3 class="card-title" onclick="PulseUI.navigateTo('reader', '${article.id}')">${article.title}</h3>
-            <p class="card-excerpt">${article.excerpt}</p>
+            <h3 class="card-title" onclick="PulseUI.navigateTo('reader', '${article.id}')">${this.escapeHtml(article.title)}</h3>
+            <p class="card-excerpt">${this.escapeHtml(article.excerpt)}</p>
             <div class="card-footer">
               <div class="author-chip">
-                <img src="${article.author.avatar}" class="author-avatar" alt="${article.author.name}" />
+                <img src="${article.author.avatar}" class="author-avatar" alt="${this.escapeHtml(article.author.name)}" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80'" />
                 <div class="author-info">
-                  <span class="author-name">${article.author.name}</span>
+                  <span class="author-name">${this.escapeHtml(article.author.name)}</span>
                   <span class="post-meta-text">${formattedDate} • ${article.readTime}</span>
                 </div>
               </div>
@@ -252,17 +490,17 @@ class UIController {
                 <button class="btn-icon" style="width: 2rem; height: 2rem;" title="Save Bookmark" onclick="PulseUI.handleBookmarkClick('${article.id}', this)">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
                 </button>
-                <div class="metric-item">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                  <span>${article.likes || 0}</span>
-                </div>
+                <button class="btn-icon ${isLiked ? 'liked' : ''}" style="width: 2rem; height: 2rem;" title="Like Story" onclick="PulseUI.handleFeedLike('${article.id}')">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="${isLiked ? '#ef4444' : 'none'}" stroke="${isLiked ? '#ef4444' : 'currentColor'}" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  <span style="font-size: 0.75rem; margin-left: 0.25rem;">${article.likes || 0}</span>
+                </button>
               </div>
             </div>
           </div>
         </article>
-      `;
-    }).join('');
-  }
+        `;
+      }
+    }).join(''); }
 
   // Render Bookmarks
   renderBookmarksFeed() {
@@ -968,6 +1206,7 @@ class UIController {
     try {
       const user = window.Store.loginUser(usernameInput.value, passwordInput.value);
       this.renderHeaderUser();
+    this.setFeedLayout(this.feedLayout || 'stream');
       this.renderSidebarUserCard();
       const dialog = document.getElementById('user-switch-modal');
       if (dialog) dialog.close();
@@ -1013,6 +1252,7 @@ class UIController {
       });
 
       this.renderHeaderUser();
+    this.setFeedLayout(this.feedLayout || 'stream');
       this.renderSidebarUserCard();
       const dialog = document.getElementById('user-switch-modal');
       if (dialog) dialog.close();
@@ -1062,6 +1302,7 @@ class UIController {
     if (selected) {
       window.Store.setCurrentUser(selected);
       this.renderHeaderUser();
+    this.setFeedLayout(this.feedLayout || 'stream');
       this.renderSidebarUserCard();
       const dialog = document.getElementById('user-switch-modal');
       if (dialog && dialog.open) dialog.close();
@@ -1126,6 +1367,7 @@ class UIController {
   selectAvatarPreset(url, name) {
     window.Store.updateCurrentUser({ avatar: url });
     this.renderHeaderUser();
+    this.setFeedLayout(this.feedLayout || 'stream');
     this.renderSidebarUserCard();
     
     // Refresh avatar lists
@@ -1197,6 +1439,7 @@ class UIController {
 
   onLanguageChanged(code) {
     this.renderHeaderUser();
+    this.setFeedLayout(this.feedLayout || 'stream');
     this.renderCategoryPills();
     if (this.currentView === 'home') {
       this.renderFeed();
@@ -1667,9 +1910,11 @@ class UIController {
 
     // Keep Tech Topics and controls bar visible across all modes so topics are NEVER hidden
     if (controlsBar) controlsBar.style.display = 'block';
+    const storiesHeader = document.getElementById('stories-section-header');
+    if (storiesHeader) storiesHeader.style.display = (mode === 'stories') ? 'flex' : 'none';
 
     if (mode === 'stories') {
-      if (storiesFeed) storiesFeed.style.display = 'grid';
+      if (storiesFeed) storiesFeed.style.display = (this.feedLayout === 'grid') ? 'grid' : 'flex';
       if (discussionsContainer) discussionsContainer.style.display = 'none';
       if (liveNewsContainer) liveNewsContainer.style.display = 'none';
       this.renderFeed();

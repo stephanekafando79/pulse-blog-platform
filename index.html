@@ -242,8 +242,29 @@
         <button id="clear-filter-notice-btn" class="filter-badge-clear">✕ Return to all articles</button>
       </div>
 
-      <!-- 1. Stories Grid View -->
-      <div class="articles-grid" id="articles-feed">
+      <!-- Feed Section Header: In-Depth Stories (Social Stream / Grid Toggle) -->
+      <div class="feed-section-header" id="stories-section-header">
+        <div class="feed-section-title-wrap">
+          <h2 class="feed-section-title">
+            <span class="feed-section-icon">📖</span>
+            <span data-i18n="feed_in_depth_title">In-Depth Stories</span>
+          </h2>
+          <span class="feed-section-subtitle">Real-time publications & field notes • Scroll, like & comment directly</span>
+        </div>
+        <div class="feed-layout-switch" title="Switch View Mode">
+          <button class="layout-toggle-btn active" id="btn-layout-stream" onclick="PulseUI.setFeedLayout('stream')" title="Social Feed Stream (Facebook / Instagram style)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <span>Feed Stream</span>
+          </button>
+          <button class="layout-toggle-btn" id="btn-layout-grid" onclick="PulseUI.setFeedLayout('grid')" title="Multi-column Grid View">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>Grid</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 1. Stories Feed View (Social Stream / Grid) -->
+      <div class="articles-grid feed-stream-mode" id="articles-feed">
         <!-- Rendered dynamically by js/ui.js -->
       </div>
 
