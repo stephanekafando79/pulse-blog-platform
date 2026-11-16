@@ -1,8 +1,40 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-16T17:33:43.377949+00:00
+ * Last Updated: 2026-11-16T18:12:54.717815+00:00
  */
 window.PULSE_LIVE_NEWS = [
+  {
+    "id": "hn-50520182",
+    "title": "Grazing sheep in fields with solar arrays",
+    "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+    "domain": "news.cornell.edu",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "news.cornell.edu",
+    "score": 50,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-16T18:12:53.871887+00:00"
+  },
+  {
+    "id": "hn-50519744",
+    "title": "Jiff 1.0: A datetime library for Rust",
+    "url": "https://burntsushi.net/jiff/",
+    "domain": "burntsushi.net",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "burntsushi.net",
+    "score": 65,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-16T18:12:53.989621+00:00"
+  },
   {
     "id": "hn-50516473",
     "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
@@ -15,13 +47,13 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "masnick.com",
-    "score": 217,
-    "commentsCount": 34,
-    "publishedAt": "2026-11-16T17:33:42.579788+00:00"
+    "score": 232,
+    "commentsCount": 35,
+    "publishedAt": "2026-11-16T18:12:54.109291+00:00"
   },
   {
     "id": "hn-50517488",
-    "title": "Many of Amazon’s Black Friday and Cyber Monday “Deals” Offered No Savings",
+    "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
     "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
     "domain": "groundworkcollaborative.org",
     "category": "Technology",
@@ -31,9 +63,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "groundworkcollaborative.org",
-    "score": 459,
-    "commentsCount": 68,
-    "publishedAt": "2026-11-16T17:33:42.694235+00:00"
+    "score": 527,
+    "commentsCount": 78,
+    "publishedAt": "2026-11-16T18:12:54.236400+00:00"
   },
   {
     "id": "hn-50514470",
@@ -47,25 +79,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "pub.cba.mit.edu",
-    "score": 679,
+    "score": 714,
     "commentsCount": 33,
-    "publishedAt": "2026-11-16T17:33:42.762573+00:00"
+    "publishedAt": "2026-11-16T18:12:54.355051+00:00"
   },
   {
-    "id": "hn-50518567",
-    "title": "Nvidia Was in Trouble Before the Jensen Huang Mess",
-    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-    "domain": "wired.com",
+    "id": "hn-50520518",
+    "title": "Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself",
+    "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
+    "domain": "copyrightlately.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "wired.com",
-    "score": 104,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-16T17:33:42.837539+00:00"
+    "source": "copyrightlately.com",
+    "score": 3,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-16T18:12:54.478553+00:00"
   },
   {
     "id": "hn-50513160",
@@ -79,56 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "iter.ca",
-    "score": 553,
+    "score": 564,
     "commentsCount": 36,
-    "publishedAt": "2026-11-16T17:33:42.960127+00:00"
+    "publishedAt": "2026-11-16T18:12:54.589367+00:00"
   },
   {
-    "id": "hn-50517815",
-    "title": "The Active Directory Era Is Finally Over",
-    "url": "https://infisical.com/blog/active-directory-machine-identity",
-    "domain": "infisical.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "infisical.com",
-    "score": 44,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-16T17:33:43.103268+00:00"
-  },
-  {
-    "id": "hn-50515058",
-    "title": "Interpreting claims that a theorem is correct because it was checked in Lean",
-    "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
-    "domain": "xenaproject.wordpress.com",
+    "id": "hn-50520506",
+    "title": "Show HN: Claimseed, synthetic Medicare docs with planted errors and answer keys",
+    "url": "https://github.com/claimseed/claimseed",
+    "domain": "github.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "xenaproject.wordpress.com",
-    "score": 208,
-    "commentsCount": 21,
-    "publishedAt": "2026-11-16T17:33:43.207008+00:00"
-  },
-  {
-    "id": "hn-50519043",
-    "title": "Generative AI Usage in the Games Industry",
-    "url": "https://www.gameworkers.co.uk/ai-manifesto/",
-    "domain": "gameworkers.co.uk",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "gameworkers.co.uk",
-    "score": 23,
-    "commentsCount": 8,
-    "publishedAt": "2026-11-16T17:33:43.377557+00:00"
+    "source": "github.com",
+    "score": 3,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-16T18:12:54.717333+00:00"
   }
 ];
