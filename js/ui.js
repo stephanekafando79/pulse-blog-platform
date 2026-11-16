@@ -470,7 +470,7 @@ class UIController {
         <article class="article-card ${isFeatured ? 'featured-card' : ''}" data-id="${article.id}">
           <div class="card-cover" onclick="PulseUI.navigateTo('reader', '${article.id}')" style="cursor: pointer;">
             <img src="${article.cover}" alt="${this.escapeHtml(article.title)}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80'" />
-            <span class="card-category-badge" style="${article.isDaily ? 'background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%); font-weight: 800;' : ''}">${article.isDaily ? '⚡ Today's Drop • ' : ''}${article.category}</span>
+            <span class="card-category-badge" style="${article.isDaily ? 'background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%); font-weight: 800;' : ''}">${article.isDaily ? "⚡ Today's Drop • " : ''}${article.category}</span>
           </div>
           <div class="card-content">
             <div class="card-tags">
@@ -500,7 +500,8 @@ class UIController {
         </article>
         `;
       }
-    }).join(''); }
+    }).join('');
+  }
 
   // Render Bookmarks
   renderBookmarksFeed() {
@@ -1206,7 +1207,6 @@ class UIController {
     try {
       const user = window.Store.loginUser(usernameInput.value, passwordInput.value);
       this.renderHeaderUser();
-    this.setFeedLayout(this.feedLayout || 'stream');
       this.renderSidebarUserCard();
       const dialog = document.getElementById('user-switch-modal');
       if (dialog) dialog.close();
@@ -1252,7 +1252,6 @@ class UIController {
       });
 
       this.renderHeaderUser();
-    this.setFeedLayout(this.feedLayout || 'stream');
       this.renderSidebarUserCard();
       const dialog = document.getElementById('user-switch-modal');
       if (dialog) dialog.close();
@@ -1302,7 +1301,6 @@ class UIController {
     if (selected) {
       window.Store.setCurrentUser(selected);
       this.renderHeaderUser();
-    this.setFeedLayout(this.feedLayout || 'stream');
       this.renderSidebarUserCard();
       const dialog = document.getElementById('user-switch-modal');
       if (dialog && dialog.open) dialog.close();
@@ -1437,9 +1435,14 @@ class UIController {
     if (dialog && dialog.open) dialog.close();
   }
 
+  renderCategoryPills() {
+    if (window.PulseI18n && window.PulseI18n.applyTranslations) {
+      window.PulseI18n.applyTranslations();
+    }
+  }
+
   onLanguageChanged(code) {
     this.renderHeaderUser();
-    this.setFeedLayout(this.feedLayout || 'stream');
     this.renderCategoryPills();
     if (this.currentView === 'home') {
       this.renderFeed();
