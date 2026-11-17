@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-17T17:08:39.000491+00:00
+ * Last Updated: 2026-11-17T17:30:09.602941+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "runta.com",
-    "score": 116,
-    "commentsCount": 18,
-    "publishedAt": "2026-11-17T17:08:38.341865+00:00"
+    "score": 143,
+    "commentsCount": 22,
+    "publishedAt": "2026-11-17T17:30:09.030376+00:00"
   },
   {
     "id": "hn-50532385",
@@ -31,9 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "alloyhtml.com",
-    "score": 67,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-17T17:08:38.447816+00:00"
+    "score": 80,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-17T17:30:09.118220+00:00"
   },
   {
     "id": "hn-50530163",
@@ -47,25 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "nytimes.com",
-    "score": 755,
+    "score": 790,
     "commentsCount": 51,
-    "publishedAt": "2026-11-17T17:08:38.535193+00:00"
-  },
-  {
-    "id": "hn-50518328",
-    "title": "First Photos of the Poles of a Rod-Shaped Bacterium",
-    "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
-    "domain": "nautil.us",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "nautil.us",
-    "score": 68,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-17T17:08:38.625810+00:00"
+    "publishedAt": "2026-11-17T17:30:09.199481+00:00"
   },
   {
     "id": "hn-50522980",
@@ -79,25 +63,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "cs.cmu.edu",
-    "score": 2079,
+    "score": 2097,
     "commentsCount": 57,
-    "publishedAt": "2026-11-17T17:08:38.724008+00:00"
+    "publishedAt": "2026-11-17T17:30:09.278851+00:00"
   },
   {
-    "id": "hn-50534044",
-    "title": "Jensen Huang says he’s open to returning in first statement since resignation",
-    "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
-    "domain": "cnbc.com",
-    "category": "Technology",
+    "id": "hn-50518328",
+    "title": "First Photos of the Poles of a Rod-Shaped Bacterium",
+    "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
+    "domain": "nautil.us",
+    "category": "OS",
     "tags": [
-      "Technology",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "cnbc.com",
-    "score": 53,
-    "commentsCount": 19,
-    "publishedAt": "2026-11-17T17:08:38.902032+00:00"
+    "source": "nautil.us",
+    "score": 71,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-17T17:30:09.357088+00:00"
   },
   {
     "id": "hn-50533089",
@@ -111,8 +95,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "reuters.com",
-    "score": 63,
-    "commentsCount": 13,
-    "publishedAt": "2026-11-17T17:08:39.000031+00:00"
+    "score": 104,
+    "commentsCount": 18,
+    "publishedAt": "2026-11-17T17:30:09.441140+00:00"
+  },
+  {
+    "id": "hn-50533270",
+    "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+    "url": "https://github.com/RunanywhereAI/trnrt",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 6,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-17T17:30:09.602547+00:00"
   }
 ];
