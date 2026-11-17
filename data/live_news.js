@@ -1,134 +1,118 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-16T18:12:54.717815+00:00
+ * Last Updated: 2026-11-17T17:08:39.000491+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50520182",
-    "title": "Grazing sheep in fields with solar arrays",
-    "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
-    "domain": "news.cornell.edu",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "news.cornell.edu",
-    "score": 50,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-16T18:12:53.871887+00:00"
-  },
-  {
-    "id": "hn-50519744",
-    "title": "Jiff 1.0: A datetime library for Rust",
-    "url": "https://burntsushi.net/jiff/",
-    "domain": "burntsushi.net",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "burntsushi.net",
-    "score": 65,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-16T18:12:53.989621+00:00"
-  },
-  {
-    "id": "hn-50516473",
-    "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
-    "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
-    "domain": "masnick.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "masnick.com",
-    "score": 232,
-    "commentsCount": 35,
-    "publishedAt": "2026-11-16T18:12:54.109291+00:00"
-  },
-  {
-    "id": "hn-50517488",
-    "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
-    "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
-    "domain": "groundworkcollaborative.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "groundworkcollaborative.org",
-    "score": 527,
-    "commentsCount": 78,
-    "publishedAt": "2026-11-16T18:12:54.236400+00:00"
-  },
-  {
-    "id": "hn-50514470",
-    "title": "How to make almost anything",
-    "url": "https://pub.cba.mit.edu/863.26/site/",
-    "domain": "pub.cba.mit.edu",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "pub.cba.mit.edu",
-    "score": 714,
-    "commentsCount": 33,
-    "publishedAt": "2026-11-16T18:12:54.355051+00:00"
-  },
-  {
-    "id": "hn-50520518",
-    "title": "Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself",
-    "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
-    "domain": "copyrightlately.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "copyrightlately.com",
-    "score": 3,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-16T18:12:54.478553+00:00"
-  },
-  {
-    "id": "hn-50513160",
-    "title": "Universal XSS in uBlock Origin from website-driven element picker",
-    "url": "https://iter.ca/post/ubo-uxss/",
-    "domain": "iter.ca",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "iter.ca",
-    "score": 564,
-    "commentsCount": 36,
-    "publishedAt": "2026-11-16T18:12:54.589367+00:00"
-  },
-  {
-    "id": "hn-50520506",
-    "title": "Show HN: Claimseed, synthetic Medicare docs with planted errors and answer keys",
-    "url": "https://github.com/claimseed/claimseed",
-    "domain": "github.com",
+    "id": "hn-50532191",
+    "title": "What is the best harness for each model?",
+    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+    "domain": "runta.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 3,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-16T18:12:54.717333+00:00"
+    "source": "runta.com",
+    "score": 116,
+    "commentsCount": 18,
+    "publishedAt": "2026-11-17T17:08:38.341865+00:00"
+  },
+  {
+    "id": "hn-50532385",
+    "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
+    "url": "https://alloyhtml.com/example.html",
+    "domain": "alloyhtml.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "alloyhtml.com",
+    "score": 67,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-17T17:08:38.447816+00:00"
+  },
+  {
+    "id": "hn-50530163",
+    "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+    "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+    "domain": "nytimes.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "nytimes.com",
+    "score": 755,
+    "commentsCount": 51,
+    "publishedAt": "2026-11-17T17:08:38.535193+00:00"
+  },
+  {
+    "id": "hn-50518328",
+    "title": "First Photos of the Poles of a Rod-Shaped Bacterium",
+    "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
+    "domain": "nautil.us",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "nautil.us",
+    "score": 68,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-17T17:08:38.625810+00:00"
+  },
+  {
+    "id": "hn-50522980",
+    "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+    "url": "https://www.cs.cmu.edu/learn/",
+    "domain": "cs.cmu.edu",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "cs.cmu.edu",
+    "score": 2079,
+    "commentsCount": 57,
+    "publishedAt": "2026-11-17T17:08:38.724008+00:00"
+  },
+  {
+    "id": "hn-50534044",
+    "title": "Jensen Huang says he’s open to returning in first statement since resignation",
+    "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
+    "domain": "cnbc.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "cnbc.com",
+    "score": 53,
+    "commentsCount": 19,
+    "publishedAt": "2026-11-17T17:08:38.902032+00:00"
+  },
+  {
+    "id": "hn-50533089",
+    "title": "NSA Internal Network Down",
+    "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
+    "domain": "reuters.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "reuters.com",
+    "score": 63,
+    "commentsCount": 13,
+    "publishedAt": "2026-11-17T17:08:39.000031+00:00"
   }
 ];

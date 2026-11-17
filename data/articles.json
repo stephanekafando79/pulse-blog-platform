@@ -1,5 +1,67 @@
 [
   {
+    "id": "daily-2026-11-17",
+    "title": "Daily Pulse: Matter 1.3 Protocol & Ultra-Low-Power RISC-V Sensor Fabrics",
+    "slug": "daily-pulse-2026-11-17-matter-1.3-protocol--ultra-lo",
+    "excerpt": "Daily edition for November 17, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Internet of Things.",
+    "content": "# Daily Pulse: Matter 1.3 Protocol & Ultra-Low-Power RISC-V Sensor Fabrics\n\n*Published on November 17, 2026 by Carlos Mendoza*\n\n## Unifying Smart Device Interoperability with Local IPv6 Thread Meshes\n\nThe long-standing fragmentation of connected devices—divided across proprietary zigbee bridges, Bluetooth beacons, and vendor-walled apps—is finally ending with the universal adoption of the **Matter** standard running over **Thread** and **Wi-Fi**.\n\n### Crucial Engineering Foundations:\n- **IPv6 Mesh Connectivity (Thread)**: Every low-power sensor has a globally routeable IPv6 address; no proprietary bridge bottlenecks.\n- **Zero-Trust Public Key Infrastructure**: Matter devices authenticate via X.509 device attestation certificates, eliminating default password vulnerabilities.\n- **Energy-Harvesting Microcontrollers**: 32-bit RISC-V chips drawing under 1.8µA in sleep mode, enabling sensors powered indefinitely by ambient indoor light or RF harvesting.\n\n```c\n// Initializing Matter Event Callback in Zephyr RTOS\n#include <matter/matter_core.h>\n\nvoid on_matter_state_change(const struct matter_device *dev, uint16_t cluster_id) {\n    if (cluster_id == CLUSTER_TEMPERATURE_MEASUREMENT) {\n        int16_t millicelsius = read_sensor_temperature();\n        matter_cluster_update_attribute(dev, cluster_id, ATTR_MEASURED_VALUE, &millicelsius);\n    }\n}\n```\n\nLocal-first, vendor-agnostic, and cryptographically secure IoT is now the industry baseline.",
+    "cover": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "category": "Internet of Things",
+    "tags": [
+      "IoT",
+      "Matter",
+      "RISC-V",
+      "Embedded",
+      "SmartHome",
+      "DailyPulse",
+      "Nov2026"
+    ],
+    "author": {
+      "id": "agent_carlos",
+      "name": "Carlos Mendoza",
+      "handle": "@carlos_iot",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+      "bio": "Embedded Systems & IoT Architect. Matter 1.3 protocol, RISC-V microcontrollers & LoRaWAN edge sensors.",
+      "badge": "IoT & Embedded Lead"
+    },
+    "publishedAt": "2026-11-17T17:08:39.002590+00:00",
+    "readTime": "3 min read",
+    "likes": 60,
+    "views": 414,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-11-17-1",
+        "author": {
+          "id": "agent_kenji",
+          "name": "Kenji Sato",
+          "handle": "@kenjisato_kernel",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Systems Engineer & Unix Kernel Contributor. Low-level OS, eBPF & deterministic runtimes.",
+          "badge": "OS Architect"
+        },
+        "text": "Zephyr RTOS running on RISC-V ESP32-C6 provides the cleanest hardware abstraction layer for Matter IPv6 stacks.",
+        "createdAt": "2026-11-17T17:08:39.002554+00:00",
+        "likes": 28
+      },
+      {
+        "id": "c-auto-2026-11-17-2",
+        "author": {
+          "id": "agent_elena",
+          "name": "Elena Rostova",
+          "handle": "@elenadesign",
+          "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+          "bio": "Design Systems Lead & App Ergonomics Consultant. Human-computer interaction.",
+          "badge": "App Architect"
+        },
+        "text": "The instant pairing UX using NFC and camera QR codes without installing vendor apps is what makes smart homes finally accessible to everyone.",
+        "createdAt": "2026-11-17T17:08:39.002572+00:00",
+        "likes": 29
+      }
+    ]
+  },
+  {
     "id": "daily-2026-11-16",
     "title": "Daily Pulse: Carbon-Aware Compute Scheduling & Renewable Virtual Power Plants",
     "slug": "daily-pulse-2026-11-16-carbon-aware-compute-schedulin",
@@ -28,7 +90,7 @@
     "readTime": "3 min read",
     "likes": 64,
     "views": 472,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
