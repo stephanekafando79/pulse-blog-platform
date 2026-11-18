@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-18T16:45:24.145494+00:00
+ * Last Updated: 2026-11-18T17:05:37.574018+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "wiz.io",
-    "score": 189,
-    "commentsCount": 19,
-    "publishedAt": "2026-11-18T16:45:23.352297+00:00"
+    "score": 246,
+    "commentsCount": 26,
+    "publishedAt": "2026-11-18T17:05:36.553227+00:00"
   },
   {
     "id": "hn-50547620",
@@ -31,41 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "inside-db.com",
-    "score": 121,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-18T16:45:23.499085+00:00"
-  },
-  {
-    "id": "hn-50545958",
-    "title": "Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy",
-    "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
-    "domain": "techstackups.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "techstackups.com",
-    "score": 310,
-    "commentsCount": 23,
-    "publishedAt": "2026-11-18T16:45:23.596186+00:00"
-  },
-  {
-    "id": "hn-50546914",
-    "title": "'Human' Is Cambridge Dictionary's Word of the Year 2026",
-    "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
-    "domain": "cam.ac.uk",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "cam.ac.uk",
-    "score": 99,
-    "commentsCount": 18,
-    "publishedAt": "2026-11-18T16:45:23.745826+00:00"
+    "score": 171,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-18T17:05:36.701592+00:00"
   },
   {
     "id": "hn-50548021",
@@ -79,9 +47,57 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "microsoft.ai",
-    "score": 25,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-18T16:45:23.836311+00:00"
+    "score": 55,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-18T17:05:36.842391+00:00"
+  },
+  {
+    "id": "hn-50545958",
+    "title": "Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy",
+    "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+    "domain": "techstackups.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "techstackups.com",
+    "score": 325,
+    "commentsCount": 24,
+    "publishedAt": "2026-11-18T17:05:36.977050+00:00"
+  },
+  {
+    "id": "hn-50548004",
+    "title": "CVE-2026-99312: KVM Guest-to-Host Escape",
+    "url": "https://www.terra.security/blog/kvm-guest-to-host-escape",
+    "domain": "terra.security",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "terra.security",
+    "score": 31,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-18T17:05:37.119467+00:00"
+  },
+  {
+    "id": "hn-50546914",
+    "title": "'Human' Is Cambridge Dictionary's Word of the Year 2026",
+    "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+    "domain": "cam.ac.uk",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "cam.ac.uk",
+    "score": 107,
+    "commentsCount": 19,
+    "publishedAt": "2026-11-18T17:05:37.286754+00:00"
   },
   {
     "id": "hn-50547583",
@@ -95,40 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "sam.gov",
-    "score": 43,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-18T16:45:23.957632+00:00"
+    "score": 52,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-18T17:05:37.436385+00:00"
   },
   {
-    "id": "hn-50546967",
-    "title": "The x86 CPU: From 4004 to 486",
-    "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
-    "domain": "pikuma.com",
+    "id": "hn-50548161",
+    "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+    "url": "https://rshekhar.com/voyager/",
+    "domain": "rshekhar.com",
     "category": "Hardware",
     "tags": [
       "Hardware",
       "Breaking",
       "TechNews"
     ],
-    "source": "pikuma.com",
-    "score": 32,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-18T16:45:24.047400+00:00"
-  },
-  {
-    "id": "hn-50543989",
-    "title": "Energy-Based Reasoners: 385x more efficient inference",
-    "url": "https://energy-based-reasoners.github.io/",
-    "domain": "energy-based-reasoners.github.io",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "energy-based-reasoners.github.io",
-    "score": 239,
-    "commentsCount": 17,
-    "publishedAt": "2026-11-18T16:45:24.145092+00:00"
+    "source": "rshekhar.com",
+    "score": 15,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-18T17:05:37.573497+00:00"
   }
 ];
