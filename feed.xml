@@ -5,15 +5,23 @@
     <link>https://stephanekafando79.github.io/pulse-blog-platform/</link>
     <description>Curated high-signal engineering, OS, applications, and cybersecurity publication.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 17:08:39 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 16:45:24 GMT</lastBuildDate>
     <atom:link href="https://stephanekafando79.github.io/pulse-blog-platform/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Pulse: Deterministic Distributed Consensus &amp; The Raft Protocol in Modern Rust Engines</title>
+      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-18</link>
+      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-18</guid>
+      <category>Software Engineering</category>
+      <description>Daily edition for November 18, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Software Engineering.</description>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
+    </item>
     <item>
       <title>Daily Pulse: Matter 1.3 Protocol &amp; Ultra-Low-Power RISC-V Sensor Fabrics</title>
       <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-17</link>
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-17</guid>
       <category>Internet of Things</category>
       <description>Daily edition for November 17, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Internet of Things.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Carbon-Aware Compute Scheduling &amp; Renewable Virtual Power Plants</title>
@@ -21,7 +29,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-16</guid>
       <category>Climate & CleanTech</category>
       <description>Daily edition for November 16, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Climate &amp; CleanTech.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Optical Inter-Satellite Links &amp; Radiation-Tolerant Edge Computing in Low Earth Orbit</title>
@@ -29,7 +37,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-15</guid>
       <category>Aerospace & SpaceTech</category>
       <description>Daily edition for November 15, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Aerospace &amp; SpaceTech.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Humanoid Kinematics &amp; Real-Time Whole-Body Control: Beyond Classical PID</title>
@@ -37,7 +45,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-14</guid>
       <category>Robotics & Automotive</category>
       <description>Daily edition for November 14, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Robotics &amp; Automotive.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Computational Proteomics &amp; AlphaFold 3: Designing Synthetic Enzymes with AI</title>
@@ -45,7 +53,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-13</guid>
       <category>HealthTech & BioTech</category>
       <description>Daily edition for November 13, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in HealthTech &amp; BioTech.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Zero-Knowledge Rollups &amp; Sub-Millisecond Matching in Modern Financial Engineering</title>
@@ -53,7 +61,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-12</guid>
       <category>FinTech</category>
       <description>Daily edition for November 12, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in FinTech.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: SRE &amp; Observability: Chaos Engineering on Kubernetes with OpenTelemetry</title>
@@ -61,7 +69,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-11</guid>
       <category>DevOps</category>
       <description>Daily edition for November 11, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in DevOps.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: How Modern Tech Agencies Are Replacing Legacy Consulting with Autonomous Engineering</title>
@@ -69,7 +77,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-10</guid>
       <category>Tech Agencies</category>
       <description>Daily edition for November 10, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Tech Agencies.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: 2nm Gate-All-Around (GAA) &amp; High-NA EUV: Inside the Silicon Battleground</title>
@@ -77,7 +85,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-09</guid>
       <category>Hardware</category>
       <description>Daily edition for November 09, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Hardware.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: The 2026 Deep Tech &amp; AI Startup Playbook: Capital Efficiency Over Hype</title>
@@ -85,7 +93,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-08</guid>
       <category>Startups</category>
       <description>Daily edition for November 08, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Startups.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: WebAssembly System Interface (WASI 0.2): The Universal Micro-Runtime</title>
@@ -93,7 +101,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-07</guid>
       <category>Dev & Cloud</category>
       <description>Daily edition for November 07, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Dev &amp; Cloud.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Zero-Knowledge Rollups &amp; Sub-Millisecond High-Frequency Order Matching</title>
@@ -101,7 +109,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-06-fintech</guid>
       <category>FinTech</category>
       <description>Exploring non-custodial financial infrastructure, sub-50 microsecond execution engines, and cryptographic settlement in FinTech.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Generative Bio-Informatics: From AlphaFold 3 Multimers to De Novo Antibody Synthesis</title>
@@ -109,7 +117,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-05-biotech</guid>
       <category>HealthTech & BioTech</category>
       <description>How diffusion models, molecular dynamics, and AlphaFold 3 co-folding pipelines are collapsing drug discovery timelines from years to hours.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Real-Time Microkernels &amp; Kinematic Perception in Humanoid Robotics and Level-4 AVs</title>
@@ -117,15 +125,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-04-robotics</guid>
       <category>Robotics & Automotive</category>
       <description>Exploring ROS2 microkernels, sub-millisecond sensor fusion, and neural trajectory planning in autonomous systems.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
-    </item>
-    <item>
-      <title>Daily Pulse: Radiation-Hardened CubeSat Constellations: Edge Telemetry in Low Earth Orbit</title>
-      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-03-aerospace</link>
-      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-03-aerospace</guid>
-      <category>Aerospace & SpaceTech</category>
-      <description>Architecting resilient orbital software, fault-tolerant consensus, and optical inter-satellite downlinks in Aerospace &amp; SpaceTech.</description>
-      <pubDate>Tue, 17 Nov 2026 17:08:39 GMT</pubDate>
+      <pubDate>Wed, 18 Nov 2026 16:45:24 GMT</pubDate>
     </item>
   </channel>
 </rss>

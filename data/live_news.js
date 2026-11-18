@@ -1,118 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-17T17:30:09.602941+00:00
+ * Last Updated: 2026-11-18T16:45:24.145494+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50532191",
-    "title": "What is the best harness for each model?",
-    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-    "domain": "runta.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "runta.com",
-    "score": 143,
-    "commentsCount": 22,
-    "publishedAt": "2026-11-17T17:30:09.030376+00:00"
-  },
-  {
-    "id": "hn-50532385",
-    "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
-    "url": "https://alloyhtml.com/example.html",
-    "domain": "alloyhtml.com",
+    "id": "hn-50547374",
+    "title": "Pre-auth RCE in Nginx HTTP/2 handling",
+    "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+    "domain": "wiz.io",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "alloyhtml.com",
-    "score": 80,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-17T17:30:09.118220+00:00"
+    "source": "wiz.io",
+    "score": 189,
+    "commentsCount": 19,
+    "publishedAt": "2026-11-18T16:45:23.352297+00:00"
   },
   {
-    "id": "hn-50530163",
-    "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
-    "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
-    "domain": "nytimes.com",
+    "id": "hn-50547620",
+    "title": "Deutsche Bank",
+    "url": "https://www.inside-db.com/",
+    "domain": "inside-db.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "nytimes.com",
-    "score": 790,
-    "commentsCount": 51,
-    "publishedAt": "2026-11-17T17:30:09.199481+00:00"
+    "source": "inside-db.com",
+    "score": 121,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-18T16:45:23.499085+00:00"
   },
   {
-    "id": "hn-50522980",
-    "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-    "url": "https://www.cs.cmu.edu/learn/",
-    "domain": "cs.cmu.edu",
+    "id": "hn-50545958",
+    "title": "Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy",
+    "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+    "domain": "techstackups.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "cs.cmu.edu",
-    "score": 2097,
-    "commentsCount": 57,
-    "publishedAt": "2026-11-17T17:30:09.278851+00:00"
+    "source": "techstackups.com",
+    "score": 310,
+    "commentsCount": 23,
+    "publishedAt": "2026-11-18T16:45:23.596186+00:00"
   },
   {
-    "id": "hn-50518328",
-    "title": "First Photos of the Poles of a Rod-Shaped Bacterium",
-    "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
-    "domain": "nautil.us",
-    "category": "OS",
+    "id": "hn-50546914",
+    "title": "'Human' Is Cambridge Dictionary's Word of the Year 2026",
+    "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+    "domain": "cam.ac.uk",
+    "category": "Technology",
     "tags": [
-      "OS",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "nautil.us",
-    "score": 71,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-17T17:30:09.357088+00:00"
-  },
-  {
-    "id": "hn-50533089",
-    "title": "NSA Internal Network Down",
-    "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
-    "domain": "reuters.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "reuters.com",
-    "score": 104,
+    "source": "cam.ac.uk",
+    "score": 99,
     "commentsCount": 18,
-    "publishedAt": "2026-11-17T17:30:09.441140+00:00"
+    "publishedAt": "2026-11-18T16:45:23.745826+00:00"
   },
   {
-    "id": "hn-50533270",
-    "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
-    "url": "https://github.com/RunanywhereAI/trnrt",
-    "domain": "github.com",
+    "id": "hn-50548021",
+    "title": "Microsoft AI: Seven new world-class models at scalable price-performance",
+    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+    "domain": "microsoft.ai",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "microsoft.ai",
+    "score": 25,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-18T16:45:23.836311+00:00"
+  },
+  {
+    "id": "hn-50547583",
+    "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
+    "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
+    "domain": "sam.gov",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 6,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-17T17:30:09.602547+00:00"
+    "source": "sam.gov",
+    "score": 43,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-18T16:45:23.957632+00:00"
+  },
+  {
+    "id": "hn-50546967",
+    "title": "The x86 CPU: From 4004 to 486",
+    "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+    "domain": "pikuma.com",
+    "category": "Hardware",
+    "tags": [
+      "Hardware",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "pikuma.com",
+    "score": 32,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-18T16:45:24.047400+00:00"
+  },
+  {
+    "id": "hn-50543989",
+    "title": "Energy-Based Reasoners: 385x more efficient inference",
+    "url": "https://energy-based-reasoners.github.io/",
+    "domain": "energy-based-reasoners.github.io",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "energy-based-reasoners.github.io",
+    "score": 239,
+    "commentsCount": 17,
+    "publishedAt": "2026-11-18T16:45:24.145092+00:00"
   }
 ];
