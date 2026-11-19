@@ -11,9 +11,9 @@
       "TechNews"
     ],
     "source": "thedataexchange.media",
-    "score": 56,
-    "commentsCount": 8,
-    "publishedAt": "2026-11-19T16:53:03.639173+00:00"
+    "score": 85,
+    "commentsCount": 13,
+    "publishedAt": "2026-11-19T17:13:38.104996+00:00"
   },
   {
     "id": "hn-50558533",
@@ -27,9 +27,9 @@
       "TechNews"
     ],
     "source": "element.io",
-    "score": 492,
-    "commentsCount": 41,
-    "publishedAt": "2026-11-19T16:53:03.712550+00:00"
+    "score": 510,
+    "commentsCount": 42,
+    "publishedAt": "2026-11-19T17:13:38.238613+00:00"
   },
   {
     "id": "hn-50560822",
@@ -43,41 +43,9 @@
       "TechNews"
     ],
     "source": "lastbook.org",
-    "score": 126,
-    "commentsCount": 36,
-    "publishedAt": "2026-11-19T16:53:03.783470+00:00"
-  },
-  {
-    "id": "hn-50562160",
-    "title": "ICE Is Paying AT&T to Dig Through a Mountain of Call Records",
-    "url": "https://www.404media.co/ice-is-paying-at-t-to-dig-through-a-mountain-of-call-records-hemisphere-data-analytical-services/",
-    "domain": "404media.co",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "404media.co",
-    "score": 33,
-    "commentsCount": 3,
-    "publishedAt": "2026-11-19T16:53:03.860027+00:00"
-  },
-  {
-    "id": "hn-50519231",
-    "title": "Garage Door Spam",
-    "url": "https://blog.harrison.page/garage-door-spam/",
-    "domain": "blog.harrison.page",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.harrison.page",
-    "score": 423,
-    "commentsCount": 64,
-    "publishedAt": "2026-11-19T16:53:03.934754+00:00"
+    "score": 153,
+    "commentsCount": 39,
+    "publishedAt": "2026-11-19T17:13:38.374357+00:00"
   },
   {
     "id": "hn-50560955",
@@ -91,25 +59,25 @@
       "TechNews"
     ],
     "source": "maccus.fr",
-    "score": 51,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-19T16:53:04.005707+00:00"
+    "score": 66,
+    "commentsCount": 13,
+    "publishedAt": "2026-11-19T17:13:38.567833+00:00"
   },
   {
-    "id": "hn-50559719",
-    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
-    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
-    "domain": "krthr.co",
-    "category": "APPs",
+    "id": "hn-50519231",
+    "title": "Garage Door Spam",
+    "url": "https://blog.harrison.page/garage-door-spam/",
+    "domain": "blog.harrison.page",
+    "category": "Technology",
     "tags": [
-      "APPs",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "krthr.co",
-    "score": 108,
-    "commentsCount": 14,
-    "publishedAt": "2026-11-19T16:53:04.078706+00:00"
+    "source": "blog.harrison.page",
+    "score": 444,
+    "commentsCount": 67,
+    "publishedAt": "2026-11-19T17:13:38.706492+00:00"
   },
   {
     "id": "hn-50562320",
@@ -123,8 +91,40 @@
       "TechNews"
     ],
     "source": "github.com",
-    "score": 6,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-19T16:53:04.176694+00:00"
+    "score": 13,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-19T17:13:38.851806+00:00"
+  },
+  {
+    "id": "hn-50559719",
+    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
+    "domain": "krthr.co",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "krthr.co",
+    "score": 113,
+    "commentsCount": 16,
+    "publishedAt": "2026-11-19T17:13:39.033331+00:00"
+  },
+  {
+    "id": "hn-50547048",
+    "title": "Nintendo takes Picofly firmware down from GitHub [video]",
+    "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
+    "domain": "youtube.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "youtube.com",
+    "score": 163,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-19T17:13:39.186353+00:00"
   }
 ]
