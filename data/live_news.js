@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-18T17:05:37.574018+00:00
+ * Last Updated: 2026-11-19T16:53:04.177047+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50547374",
-    "title": "Pre-auth RCE in Nginx HTTP/2 handling",
-    "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-    "domain": "wiz.io",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "wiz.io",
-    "score": 246,
-    "commentsCount": 26,
-    "publishedAt": "2026-11-18T17:05:36.553227+00:00"
-  },
-  {
-    "id": "hn-50547620",
-    "title": "Deutsche Bank",
-    "url": "https://www.inside-db.com/",
-    "domain": "inside-db.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "inside-db.com",
-    "score": 171,
-    "commentsCount": 14,
-    "publishedAt": "2026-11-18T17:05:36.701592+00:00"
-  },
-  {
-    "id": "hn-50548021",
-    "title": "Microsoft AI: Seven new world-class models at scalable price-performance",
-    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-    "domain": "microsoft.ai",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "microsoft.ai",
-    "score": 55,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-18T17:05:36.842391+00:00"
-  },
-  {
-    "id": "hn-50545958",
-    "title": "Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy",
-    "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
-    "domain": "techstackups.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "techstackups.com",
-    "score": 325,
-    "commentsCount": 24,
-    "publishedAt": "2026-11-18T17:05:36.977050+00:00"
-  },
-  {
-    "id": "hn-50548004",
-    "title": "CVE-2026-99312: KVM Guest-to-Host Escape",
-    "url": "https://www.terra.security/blog/kvm-guest-to-host-escape",
-    "domain": "terra.security",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "terra.security",
-    "score": 31,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-18T17:05:37.119467+00:00"
-  },
-  {
-    "id": "hn-50546914",
-    "title": "'Human' Is Cambridge Dictionary's Word of the Year 2026",
-    "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
-    "domain": "cam.ac.uk",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "cam.ac.uk",
-    "score": 107,
-    "commentsCount": 19,
-    "publishedAt": "2026-11-18T17:05:37.286754+00:00"
-  },
-  {
-    "id": "hn-50547583",
-    "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
-    "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
-    "domain": "sam.gov",
+    "id": "hn-50561508",
+    "title": "Why AI Wants to Be Local – With Pete Warden (Creator of Moonshine Voice)",
+    "url": "https://thedataexchange.media/pete-warden-moonshine/",
+    "domain": "thedataexchange.media",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "sam.gov",
-    "score": 52,
+    "source": "thedataexchange.media",
+    "score": 56,
     "commentsCount": 8,
-    "publishedAt": "2026-11-18T17:05:37.436385+00:00"
+    "publishedAt": "2026-11-19T16:53:03.639173+00:00"
   },
   {
-    "id": "hn-50548161",
-    "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
-    "url": "https://rshekhar.com/voyager/",
-    "domain": "rshekhar.com",
-    "category": "Hardware",
+    "id": "hn-50558533",
+    "title": "How the European Commission rolled out Matrix to more than 40k staff",
+    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+    "domain": "element.io",
+    "category": "Technology",
     "tags": [
-      "Hardware",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "rshekhar.com",
-    "score": 15,
+    "source": "element.io",
+    "score": 492,
+    "commentsCount": 41,
+    "publishedAt": "2026-11-19T16:53:03.712550+00:00"
+  },
+  {
+    "id": "hn-50560822",
+    "title": "Everything you need to survive and rebuild society",
+    "url": "https://lastbook.org/",
+    "domain": "lastbook.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "lastbook.org",
+    "score": 126,
+    "commentsCount": 36,
+    "publishedAt": "2026-11-19T16:53:03.783470+00:00"
+  },
+  {
+    "id": "hn-50562160",
+    "title": "ICE Is Paying AT&T to Dig Through a Mountain of Call Records",
+    "url": "https://www.404media.co/ice-is-paying-at-t-to-dig-through-a-mountain-of-call-records-hemisphere-data-analytical-services/",
+    "domain": "404media.co",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "404media.co",
+    "score": 33,
+    "commentsCount": 3,
+    "publishedAt": "2026-11-19T16:53:03.860027+00:00"
+  },
+  {
+    "id": "hn-50519231",
+    "title": "Garage Door Spam",
+    "url": "https://blog.harrison.page/garage-door-spam/",
+    "domain": "blog.harrison.page",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "blog.harrison.page",
+    "score": 423,
+    "commentsCount": 64,
+    "publishedAt": "2026-11-19T16:53:03.934754+00:00"
+  },
+  {
+    "id": "hn-50560955",
+    "title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
+    "url": "https://maccus.fr/en/cooling-overtaking-heating/",
+    "domain": "maccus.fr",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "maccus.fr",
+    "score": 51,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-19T16:53:04.005707+00:00"
+  },
+  {
+    "id": "hn-50559719",
+    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
+    "domain": "krthr.co",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "krthr.co",
+    "score": 108,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-19T16:53:04.078706+00:00"
+  },
+  {
+    "id": "hn-50562320",
+    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "url": "https://github.com/onlook-dev/onlook/",
+    "domain": "github.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 6,
     "commentsCount": 1,
-    "publishedAt": "2026-11-18T17:05:37.573497+00:00"
+    "publishedAt": "2026-11-19T16:53:04.176694+00:00"
   }
 ];
