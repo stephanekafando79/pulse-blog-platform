@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50561508",
-    "title": "Why AI Wants to Be Local – With Pete Warden (Creator of Moonshine Voice)",
-    "url": "https://thedataexchange.media/pete-warden-moonshine/",
-    "domain": "thedataexchange.media",
+    "id": "hn-50574968",
+    "title": "Anthropic employee claims general proof of the Riemann Hypothesis [pdf]",
+    "url": "https://alpo.ge/remark.pdf",
+    "domain": "alpo.ge",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "thedataexchange.media",
-    "score": 85,
-    "commentsCount": 13,
-    "publishedAt": "2026-11-19T17:13:38.104996+00:00"
+    "source": "alpo.ge",
+    "score": 979,
+    "commentsCount": 116,
+    "publishedAt": "2026-11-20T16:27:26.850671+00:00"
   },
   {
-    "id": "hn-50558533",
-    "title": "How the European Commission rolled out Matrix to more than 40k staff",
-    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
-    "domain": "element.io",
+    "id": "hn-50572355",
+    "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+    "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
+    "domain": "kottke.org",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "kottke.org",
+    "score": 371,
+    "commentsCount": 65,
+    "publishedAt": "2026-11-20T16:27:26.973503+00:00"
+  },
+  {
+    "id": "hn-50572503",
+    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+    "url": "https://architectlabs.com/blog/frostbite",
+    "domain": "architectlabs.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "architectlabs.com",
+    "score": 424,
+    "commentsCount": 71,
+    "publishedAt": "2026-11-20T16:27:27.109701+00:00"
+  },
+  {
+    "id": "hn-50576855",
+    "title": "I'll never buy Framework hardware again",
+    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+    "domain": "poolp.org",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "poolp.org",
+    "score": 16,
+    "commentsCount": 0,
+    "publishedAt": "2026-11-20T16:27:27.300958+00:00"
+  },
+  {
+    "id": "hn-50526023",
+    "title": "Show HN: I made an audio-to-MIDI model 60x more efficient",
+    "url": "https://kobi.music/research/dettato",
+    "domain": "kobi.music",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "kobi.music",
+    "score": 110,
+    "commentsCount": 18,
+    "publishedAt": "2026-11-20T16:27:27.457728+00:00"
+  },
+  {
+    "id": "hn-50572348",
+    "title": "Signal Is Serious About Protecting Your Privacy",
+    "url": "https://signal.org/blog/protecting-your-privacy/",
+    "domain": "signal.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "element.io",
-    "score": 510,
-    "commentsCount": 42,
-    "publishedAt": "2026-11-19T17:13:38.238613+00:00"
+    "source": "signal.org",
+    "score": 192,
+    "commentsCount": 18,
+    "publishedAt": "2026-11-20T16:27:27.557200+00:00"
   },
   {
-    "id": "hn-50560822",
-    "title": "Everything you need to survive and rebuild society",
-    "url": "https://lastbook.org/",
-    "domain": "lastbook.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "lastbook.org",
-    "score": 153,
-    "commentsCount": 39,
-    "publishedAt": "2026-11-19T17:13:38.374357+00:00"
-  },
-  {
-    "id": "hn-50560955",
-    "title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
-    "url": "https://maccus.fr/en/cooling-overtaking-heating/",
-    "domain": "maccus.fr",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "maccus.fr",
-    "score": 66,
-    "commentsCount": 13,
-    "publishedAt": "2026-11-19T17:13:38.567833+00:00"
-  },
-  {
-    "id": "hn-50519231",
-    "title": "Garage Door Spam",
-    "url": "https://blog.harrison.page/garage-door-spam/",
-    "domain": "blog.harrison.page",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.harrison.page",
-    "score": 444,
-    "commentsCount": 67,
-    "publishedAt": "2026-11-19T17:13:38.706492+00:00"
-  },
-  {
-    "id": "hn-50562320",
-    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-    "url": "https://github.com/onlook-dev/onlook/",
+    "id": "hn-50560595",
+    "title": "Floppy3.5: A portable 3.5-inch floppy WiFi NAS",
+    "url": "https://github.com/bigcrimping/floppy3.5",
     "domain": "github.com",
-    "category": "APPs",
+    "category": "Technology",
     "tags": [
-      "APPs",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
     "source": "github.com",
-    "score": 13,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-19T17:13:38.851806+00:00"
+    "score": 78,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-20T16:27:27.698802+00:00"
   },
   {
-    "id": "hn-50559719",
-    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
-    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
-    "domain": "krthr.co",
-    "category": "APPs",
+    "id": "hn-50575644",
+    "title": "Why there are still no non-WebKit browsers on iOS",
+    "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+    "domain": "blog.mozilla.org",
+    "category": "OS",
     "tags": [
-      "APPs",
+      "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "krthr.co",
-    "score": 113,
-    "commentsCount": 16,
-    "publishedAt": "2026-11-19T17:13:39.033331+00:00"
-  },
-  {
-    "id": "hn-50547048",
-    "title": "Nintendo takes Picofly firmware down from GitHub [video]",
-    "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
-    "domain": "youtube.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "youtube.com",
-    "score": 163,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-19T17:13:39.186353+00:00"
+    "source": "blog.mozilla.org",
+    "score": 91,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-20T16:27:27.794889+00:00"
   }
 ]
