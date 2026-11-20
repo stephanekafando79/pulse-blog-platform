@@ -1,8 +1,24 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-20T16:27:27.795255+00:00
+ * Last Updated: 2026-11-20T16:51:27.369489+00:00
  */
 window.PULSE_LIVE_NEWS = [
+  {
+    "id": "hn-50576855",
+    "title": "I'll never buy Framework hardware again",
+    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+    "domain": "poolp.org",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "poolp.org",
+    "score": 180,
+    "commentsCount": 29,
+    "publishedAt": "2026-11-20T16:51:26.517751+00:00"
+  },
   {
     "id": "hn-50574968",
     "title": "Anthropic employee claims general proof of the Riemann Hypothesis [pdf]",
@@ -15,9 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "alpo.ge",
-    "score": 979,
-    "commentsCount": 116,
-    "publishedAt": "2026-11-20T16:27:26.850671+00:00"
+    "score": 1143,
+    "commentsCount": 128,
+    "publishedAt": "2026-11-20T16:51:26.632656+00:00"
   },
   {
     "id": "hn-50572355",
@@ -31,9 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "kottke.org",
-    "score": 371,
-    "commentsCount": 65,
-    "publishedAt": "2026-11-20T16:27:26.973503+00:00"
+    "score": 395,
+    "commentsCount": 66,
+    "publishedAt": "2026-11-20T16:51:26.750461+00:00"
   },
   {
     "id": "hn-50572503",
@@ -47,25 +63,41 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "architectlabs.com",
-    "score": 424,
+    "score": 448,
     "commentsCount": 71,
-    "publishedAt": "2026-11-20T16:27:27.109701+00:00"
+    "publishedAt": "2026-11-20T16:51:26.869964+00:00"
   },
   {
-    "id": "hn-50576855",
-    "title": "I'll never buy Framework hardware again",
-    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
-    "domain": "poolp.org",
+    "id": "hn-50577265",
+    "title": "Language Models Can Rewrite Their Own Weights",
+    "url": "https://arxiv.org/abs/2611.21885",
+    "domain": "arxiv.org",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "poolp.org",
-    "score": 16,
-    "commentsCount": 0,
-    "publishedAt": "2026-11-20T16:27:27.300958+00:00"
+    "source": "arxiv.org",
+    "score": 14,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-20T16:51:26.997904+00:00"
+  },
+  {
+    "id": "hn-50576232",
+    "title": "Finite-time blow-up for the Navier–Stokes equations",
+    "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 19,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-20T16:51:27.130298+00:00"
   },
   {
     "id": "hn-50526023",
@@ -79,9 +111,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "kobi.music",
-    "score": 110,
-    "commentsCount": 18,
-    "publishedAt": "2026-11-20T16:27:27.457728+00:00"
+    "score": 124,
+    "commentsCount": 21,
+    "publishedAt": "2026-11-20T16:51:27.245475+00:00"
   },
   {
     "id": "hn-50572348",
@@ -95,40 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "signal.org",
-    "score": 192,
-    "commentsCount": 18,
-    "publishedAt": "2026-11-20T16:27:27.557200+00:00"
-  },
-  {
-    "id": "hn-50560595",
-    "title": "Floppy3.5: A portable 3.5-inch floppy WiFi NAS",
-    "url": "https://github.com/bigcrimping/floppy3.5",
-    "domain": "github.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 78,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-20T16:27:27.698802+00:00"
-  },
-  {
-    "id": "hn-50575644",
-    "title": "Why there are still no non-WebKit browsers on iOS",
-    "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
-    "domain": "blog.mozilla.org",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.mozilla.org",
-    "score": 91,
-    "commentsCount": 8,
-    "publishedAt": "2026-11-20T16:27:27.794889+00:00"
+    "score": 224,
+    "commentsCount": 22,
+    "publishedAt": "2026-11-20T16:51:27.369107+00:00"
   }
 ];
