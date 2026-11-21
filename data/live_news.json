@@ -1,21 +1,5 @@
 [
   {
-    "id": "hn-50588982",
-    "title": "Derek Lowe: Detonating a Pile of Lead Azide",
-    "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
-    "domain": "science.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "science.org",
-    "score": 159,
-    "commentsCount": 26,
-    "publishedAt": "2026-11-21T15:41:57.090120+00:00"
-  },
-  {
     "id": "hn-50589618",
     "title": "Lean Verification of the Riemann Hypothesis - Joint statement by...",
     "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
@@ -27,9 +11,25 @@
       "TechNews"
     ],
     "source": "leanprover-community.github.io",
-    "score": 67,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-21T15:41:57.229678+00:00"
+    "score": 127,
+    "commentsCount": 15,
+    "publishedAt": "2026-11-21T16:00:11.045206+00:00"
+  },
+  {
+    "id": "hn-50588982",
+    "title": "Derek Lowe: Detonating a Pile of Lead Azide",
+    "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+    "domain": "science.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "science.org",
+    "score": 175,
+    "commentsCount": 31,
+    "publishedAt": "2026-11-21T16:00:11.193986+00:00"
   },
   {
     "id": "hn-50532613",
@@ -43,9 +43,9 @@
       "TechNews"
     ],
     "source": "gov.br",
-    "score": 334,
+    "score": 352,
     "commentsCount": 23,
-    "publishedAt": "2026-11-21T15:41:57.404409+00:00"
+    "publishedAt": "2026-11-21T16:00:11.329145+00:00"
   },
   {
     "id": "hn-50587875",
@@ -59,9 +59,9 @@
       "TechNews"
     ],
     "source": "blog.tymscar.com",
-    "score": 177,
+    "score": 189,
     "commentsCount": 25,
-    "publishedAt": "2026-11-21T15:41:57.550556+00:00"
+    "publishedAt": "2026-11-21T16:00:11.437662+00:00"
   },
   {
     "id": "hn-50579568",
@@ -75,9 +75,9 @@
       "TechNews"
     ],
     "source": "math216.wordpress.com",
-    "score": 2269,
+    "score": 2274,
     "commentsCount": 132,
-    "publishedAt": "2026-11-21T15:41:57.679460+00:00"
+    "publishedAt": "2026-11-21T16:00:11.559588+00:00"
   },
   {
     "id": "hn-50574968",
@@ -91,9 +91,9 @@
       "TechNews"
     ],
     "source": "alpo.ge",
-    "score": 2772,
+    "score": 2779,
     "commentsCount": 263,
-    "publishedAt": "2026-11-21T15:41:57.817865+00:00"
+    "publishedAt": "2026-11-21T16:00:11.732046+00:00"
   },
   {
     "id": "hn-50587208",
@@ -107,9 +107,9 @@
       "TechNews"
     ],
     "source": "lists.gnupg.org",
-    "score": 132,
+    "score": 137,
     "commentsCount": 10,
-    "publishedAt": "2026-11-21T15:41:57.956832+00:00"
+    "publishedAt": "2026-11-21T16:00:11.887335+00:00"
   },
   {
     "id": "hn-50581260",
@@ -123,8 +123,8 @@
       "TechNews"
     ],
     "source": "thinkingmachines.ai",
-    "score": 1167,
+    "score": 1174,
     "commentsCount": 68,
-    "publishedAt": "2026-11-21T15:41:58.088648+00:00"
+    "publishedAt": "2026-11-21T16:00:12.096206+00:00"
   }
 ]
