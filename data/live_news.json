@@ -1,23 +1,87 @@
 [
   {
-    "id": "hn-50576855",
-    "title": "I'll never buy Framework hardware again",
-    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
-    "domain": "poolp.org",
-    "category": "AI & ML",
+    "id": "hn-50588982",
+    "title": "Derek Lowe: Detonating a Pile of Lead Azide",
+    "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+    "domain": "science.org",
+    "category": "Technology",
     "tags": [
-      "AI & ML",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "poolp.org",
-    "score": 180,
-    "commentsCount": 29,
-    "publishedAt": "2026-11-20T16:51:26.517751+00:00"
+    "source": "science.org",
+    "score": 159,
+    "commentsCount": 26,
+    "publishedAt": "2026-11-21T15:41:57.090120+00:00"
+  },
+  {
+    "id": "hn-50589618",
+    "title": "Lean Verification of the Riemann Hypothesis - Joint statement by...",
+    "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "domain": "leanprover-community.github.io",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "leanprover-community.github.io",
+    "score": 67,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-21T15:41:57.229678+00:00"
+  },
+  {
+    "id": "hn-50532613",
+    "title": "Brazil's tax authority open-sources its tax calculator on GitHub under MIT",
+    "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria",
+    "domain": "gov.br",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "gov.br",
+    "score": 334,
+    "commentsCount": 23,
+    "publishedAt": "2026-11-21T15:41:57.404409+00:00"
+  },
+  {
+    "id": "hn-50587875",
+    "title": "My Monitor Was Cutting My Download Speed by 75%",
+    "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+    "domain": "blog.tymscar.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "blog.tymscar.com",
+    "score": 177,
+    "commentsCount": 25,
+    "publishedAt": "2026-11-21T15:41:57.550556+00:00"
+  },
+  {
+    "id": "hn-50579568",
+    "title": "Hurried Announcement: Alessandro Masullo GRH",
+    "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+    "domain": "math216.wordpress.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "math216.wordpress.com",
+    "score": 2269,
+    "commentsCount": 132,
+    "publishedAt": "2026-11-21T15:41:57.679460+00:00"
   },
   {
     "id": "hn-50574968",
-    "title": "Anthropic employee claims general proof of the Riemann Hypothesis [pdf]",
+    "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
     "url": "https://alpo.ge/remark.pdf",
     "domain": "alpo.ge",
     "category": "AI & ML",
@@ -27,104 +91,40 @@
       "TechNews"
     ],
     "source": "alpo.ge",
-    "score": 1143,
-    "commentsCount": 128,
-    "publishedAt": "2026-11-20T16:51:26.632656+00:00"
+    "score": 2772,
+    "commentsCount": 263,
+    "publishedAt": "2026-11-21T15:41:57.817865+00:00"
   },
   {
-    "id": "hn-50572355",
-    "title": "If you can't explain something in simple terms, you don't understand it (2017)",
-    "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
-    "domain": "kottke.org",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "kottke.org",
-    "score": 395,
-    "commentsCount": 66,
-    "publishedAt": "2026-11-20T16:51:26.750461+00:00"
-  },
-  {
-    "id": "hn-50572503",
-    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-    "url": "https://architectlabs.com/blog/frostbite",
-    "domain": "architectlabs.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "architectlabs.com",
-    "score": 448,
-    "commentsCount": 71,
-    "publishedAt": "2026-11-20T16:51:26.869964+00:00"
-  },
-  {
-    "id": "hn-50577265",
-    "title": "Language Models Can Rewrite Their Own Weights",
-    "url": "https://arxiv.org/abs/2611.21885",
-    "domain": "arxiv.org",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "arxiv.org",
-    "score": 14,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-20T16:51:26.997904+00:00"
-  },
-  {
-    "id": "hn-50576232",
-    "title": "Finite-time blow-up for the Navier–Stokes equations",
-    "url": "https://github.com/tristanbuckmaster/navier-stokes/",
-    "domain": "github.com",
+    "id": "hn-50587208",
+    "title": "RCE in Gnupg",
+    "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+    "domain": "lists.gnupg.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 19,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-20T16:51:27.130298+00:00"
+    "source": "lists.gnupg.org",
+    "score": 132,
+    "commentsCount": 10,
+    "publishedAt": "2026-11-21T15:41:57.956832+00:00"
   },
   {
-    "id": "hn-50526023",
-    "title": "Show HN: I made an audio-to-MIDI model 60x more efficient",
-    "url": "https://kobi.music/research/dettato",
-    "domain": "kobi.music",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "kobi.music",
-    "score": 124,
-    "commentsCount": 21,
-    "publishedAt": "2026-11-20T16:51:27.245475+00:00"
-  },
-  {
-    "id": "hn-50572348",
-    "title": "Signal Is Serious About Protecting Your Privacy",
-    "url": "https://signal.org/blog/protecting-your-privacy/",
-    "domain": "signal.org",
+    "id": "hn-50581260",
+    "title": "Inkling 2 Mini",
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "domain": "thinkingmachines.ai",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "signal.org",
-    "score": 224,
-    "commentsCount": 22,
-    "publishedAt": "2026-11-20T16:51:27.369107+00:00"
+    "source": "thinkingmachines.ai",
+    "score": 1167,
+    "commentsCount": 68,
+    "publishedAt": "2026-11-21T15:41:58.088648+00:00"
   }
 ]

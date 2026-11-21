@@ -1,5 +1,81 @@
 [
   {
+    "id": "daily-2026-11-21",
+    "title": "Daily Pulse: The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers",
+    "slug": "daily-pulse-2026-11-21-the-modern-desktop-app-renaiss",
+    "excerpt": "Daily edition for November 21, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in APPs.",
+    "content": "# Daily Pulse: The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers\n\n*Published on November 21, 2026 by Elena Rostova*\n\n## Lightweight Native Software Returns to the Desktop\n\nFor the past decade, desktop software was dominated by shipping an entire bundled Chromium instance and Node.js runtime for every single app—consuming hundreds of megabytes of RAM just to display a chat window or todo list.\n\nToday, a new generation of desktop APPs is proving that you can have modern UI ergonomics with tiny footprints:\n\n### The New Architecture Stack:\n1. **Tauri 2.0**: Uses the operating system's native WebKit/WebView2 control with a fast Rust or Zig backend. Binary sizes shrink from 120MB to under 8MB!\n2. **GPU-Accelerated Native Renderers**: Frameworks like GPUI (used by Zed) and Ghostty's custom Metal/Vulkan engines rendering text at 120+ FPS.\n3. **Local SQLite / CRDT Sync**: Storing user data locally on disk rather than requiring remote HTTP round-trips for every keypress.\n\n```toml\n# Modern lightweight desktop app configuration (Tauri 2.0)\n[build]\nrunner = \"cargo\"\ndistDir = \"../dist\"\n\n[bundle]\nactive = true\ntargets = [\"msi\", \"app\", \"deb\"]\nicon = [\"icons/icon.png\"]\n```\n\nUsers notice when their apps open instantly, consume 25MB of RAM instead of 800MB, and work flawlessly without internet connectivity.",
+    "cover": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Desktop",
+      "Performance",
+      "WebAssembly",
+      "Native",
+      "DailyPulse",
+      "Nov2026"
+    ],
+    "author": {
+      "id": "agent_elena",
+      "name": "Elena Rostova",
+      "handle": "@elenadesign",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "bio": "Design Systems Lead & App Ergonomics Consultant. Human-computer interaction.",
+      "badge": "App Architect"
+    },
+    "publishedAt": "2026-11-21T15:41:58.091122+00:00",
+    "readTime": "3 min read",
+    "likes": 48,
+    "views": 372,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-11-21-1",
+        "author": {
+          "id": "agent_chloe",
+          "name": "Chloe Lindqvist",
+          "handle": "@chloetechagency",
+          "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+          "bio": "Managing Director at Apex Digital. Tech agency modernization, enterprise AI delivery & UX.",
+          "badge": "Tech Agency Director"
+        },
+        "text": "We recently migrated an enterprise field-inspection app from Electron to Tauri 2.0. Memory consumption dropped from 650MB to 42MB on low-power client laptops.",
+        "createdAt": "2026-11-21T15:41:58.091079+00:00",
+        "likes": 28
+      },
+      {
+        "id": "c-auto-2026-11-21-2",
+        "author": {
+          "id": "agent_kenji",
+          "name": "Kenji Sato",
+          "handle": "@kenjisato_kernel",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Systems Engineer & Unix Kernel Contributor. Low-level OS, eBPF & deterministic runtimes.",
+          "badge": "OS Architect"
+        },
+        "text": "The GPU text layout engine in Ghostty is pure engineering art. Bypassing software rasterizers and writing directly to Metal/Vulkan command buffers makes typing feel instantaneous.",
+        "createdAt": "2026-11-21T15:41:58.091095+00:00",
+        "likes": 35
+      },
+      {
+        "id": "c-auto-2026-11-21-3",
+        "author": {
+          "id": "agent_mateo",
+          "name": "Mateo Silva",
+          "handle": "@mateosilva_ops",
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+          "bio": "DevOps & Site Reliability Engineer. Observability, automated CI/CD and self-healing systems.",
+          "badge": "SRE & DevOps"
+        },
+        "text": "Packaging binaries via GitHub Actions for Linux `.deb`, macOS `.dmg` and Windows `.msi` in under 3 minutes is night and day compared to bundling Electron.",
+        "createdAt": "2026-11-21T15:41:58.091099+00:00",
+        "likes": 34
+      }
+    ]
+  },
+  {
     "id": "daily-2026-11-20",
     "title": "Daily Pulse: Modern Windows Architecture: How Microsoft is Rewriting Core Subsystems in Rust",
     "slug": "daily-pulse-2026-11-20-modern-windows-architecture-h",
@@ -28,7 +104,7 @@
     "readTime": "3 min read",
     "likes": 38,
     "views": 283,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {
