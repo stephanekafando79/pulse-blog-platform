@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-22T15:44:14.809310+00:00
+ * Last Updated: 2026-11-22T16:06:24.667815+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "caranddriver.com",
-    "score": 845,
-    "commentsCount": 52,
-    "publishedAt": "2026-11-22T15:44:13.795891+00:00"
+    "score": 873,
+    "commentsCount": 53,
+    "publishedAt": "2026-11-22T16:06:23.740293+00:00"
   },
   {
     "id": "hn-50599762",
@@ -31,9 +31,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "github.com",
-    "score": 52,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-22T15:44:13.877368+00:00"
+    "score": 69,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-22T16:06:23.889773+00:00"
+  },
+  {
+    "id": "hn-50600511",
+    "title": "A better internet for everyone is possible. Today",
+    "url": "https://osw-alliance.net/en/",
+    "domain": "osw-alliance.net",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "osw-alliance.net",
+    "score": 9,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-22T16:06:24.038706+00:00"
   },
   {
     "id": "hn-50533945",
@@ -47,9 +63,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "github.com",
-    "score": 190,
+    "score": 198,
     "commentsCount": 29,
-    "publishedAt": "2026-11-22T15:44:13.989447+00:00"
+    "publishedAt": "2026-11-22T16:06:24.169778+00:00"
   },
   {
     "id": "hn-50582069",
@@ -63,9 +79,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "theguardian.com",
-    "score": 1196,
+    "score": 1207,
     "commentsCount": 27,
-    "publishedAt": "2026-11-22T15:44:14.123296+00:00"
+    "publishedAt": "2026-11-22T16:06:24.305554+00:00"
   },
   {
     "id": "hn-50589618",
@@ -79,9 +95,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "leanprover-community.github.io",
-    "score": 1140,
-    "commentsCount": 71,
-    "publishedAt": "2026-11-22T15:44:14.470329+00:00"
+    "score": 1147,
+    "commentsCount": 72,
+    "publishedAt": "2026-11-22T16:06:24.426399+00:00"
+  },
+  {
+    "id": "hn-50594182",
+    "title": "A Better Vocabulary for Testing",
+    "url": "https://alperenkeles.com/posts/vocab-for-testing/",
+    "domain": "alperenkeles.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "alperenkeles.com",
+    "score": 13,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-22T16:06:24.551889+00:00"
   },
   {
     "id": "hn-50566495",
@@ -95,40 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "joinmayberry.com",
-    "score": 63,
+    "score": 68,
     "commentsCount": 8,
-    "publishedAt": "2026-11-22T15:44:14.605935+00:00"
-  },
-  {
-    "id": "hn-50594911",
-    "title": "Sandwich Simulator",
-    "url": "https://stulle.app/",
-    "domain": "stulle.app",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "stulle.app",
-    "score": 410,
-    "commentsCount": 69,
-    "publishedAt": "2026-11-22T15:44:14.691809+00:00"
-  },
-  {
-    "id": "hn-50597959",
-    "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
-    "url": "https://simonwillison.net/2026/Nov/21/muru/",
-    "domain": "simonwillison.net",
-    "category": "APPs",
-    "tags": [
-      "APPs",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "simonwillison.net",
-    "score": 35,
-    "commentsCount": 4,
-    "publishedAt": "2026-11-22T15:44:14.808892+00:00"
+    "publishedAt": "2026-11-22T16:06:24.667423+00:00"
   }
 ];
