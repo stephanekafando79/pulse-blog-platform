@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-22T06:01:21.343308+00:00
+ * Last Updated: 2026-11-22T15:44:14.809310+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,41 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "caranddriver.com",
-    "score": 175,
-    "commentsCount": 20,
-    "publishedAt": "2026-11-22T06:01:17.522149+00:00"
+    "score": 845,
+    "commentsCount": 52,
+    "publishedAt": "2026-11-22T15:44:13.795891+00:00"
+  },
+  {
+    "id": "hn-50599762",
+    "title": "Show HN: I built a game where you are an LLM's subagent",
+    "url": "https://github.com/gulivan/worker755",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 52,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-22T15:44:13.877368+00:00"
+  },
+  {
+    "id": "hn-50533945",
+    "title": "A real Linux kernel, compiled to WebAssembly",
+    "url": "https://github.com/pithings/unkernel",
+    "domain": "github.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 190,
+    "commentsCount": 29,
+    "publishedAt": "2026-11-22T15:44:13.989447+00:00"
   },
   {
     "id": "hn-50582069",
@@ -31,9 +63,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "theguardian.com",
-    "score": 839,
-    "commentsCount": 20,
-    "publishedAt": "2026-11-22T06:01:18.129974+00:00"
+    "score": 1196,
+    "commentsCount": 27,
+    "publishedAt": "2026-11-22T15:44:14.123296+00:00"
   },
   {
     "id": "hn-50589618",
@@ -47,9 +79,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "leanprover-community.github.io",
-    "score": 931,
-    "commentsCount": 63,
-    "publishedAt": "2026-11-22T06:01:18.595968+00:00"
+    "score": 1140,
+    "commentsCount": 71,
+    "publishedAt": "2026-11-22T15:44:14.470329+00:00"
+  },
+  {
+    "id": "hn-50566495",
+    "title": "Self-hosted library branch over public web OPDS",
+    "url": "https://joinmayberry.com/",
+    "domain": "joinmayberry.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "joinmayberry.com",
+    "score": 63,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-22T15:44:14.605935+00:00"
   },
   {
     "id": "hn-50594911",
@@ -63,72 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "stulle.app",
-    "score": 124,
-    "commentsCount": 26,
-    "publishedAt": "2026-11-22T06:01:19.168596+00:00"
+    "score": 410,
+    "commentsCount": 69,
+    "publishedAt": "2026-11-22T15:44:14.691809+00:00"
   },
   {
-    "id": "hn-50591853",
-    "title": "Inkling-2-Mini in 5.4 GB Memory",
-    "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
-    "domain": "github.com",
-    "category": "Technology",
+    "id": "hn-50597959",
+    "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
+    "url": "https://simonwillison.net/2026/Nov/21/muru/",
+    "domain": "simonwillison.net",
+    "category": "APPs",
     "tags": [
-      "Technology",
+      "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 415,
-    "commentsCount": 14,
-    "publishedAt": "2026-11-22T06:01:19.633481+00:00"
-  },
-  {
-    "id": "hn-50588982",
-    "title": "Detonating a pile of lead azide",
-    "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
-    "domain": "science.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "science.org",
-    "score": 578,
-    "commentsCount": 53,
-    "publishedAt": "2026-11-22T06:01:19.953051+00:00"
-  },
-  {
-    "id": "hn-50595554",
-    "title": "Data Processing Incidents on Inference Providers",
-    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-    "domain": "openrouter.ai",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "openrouter.ai",
-    "score": 76,
-    "commentsCount": 15,
-    "publishedAt": "2026-11-22T06:01:20.423136+00:00"
-  },
-  {
-    "id": "hn-50583028",
-    "title": "Getting the mind to steer the body to steer you",
-    "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
-    "domain": "notnottalmud.substack.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "notnottalmud.substack.com",
-    "score": 220,
-    "commentsCount": 24,
-    "publishedAt": "2026-11-22T06:01:21.334148+00:00"
+    "source": "simonwillison.net",
+    "score": 35,
+    "commentsCount": 4,
+    "publishedAt": "2026-11-22T15:44:14.808892+00:00"
   }
 ];
