@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-23T19:34:08.053256+00:00
+ * Last Updated: 2026-11-23T19:59:48.737269+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,25 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "cnbc.com",
-    "score": 1279,
-    "commentsCount": 480,
-    "publishedAt": "2026-11-23T19:34:07.319625+00:00"
-  },
-  {
-    "id": "hn-50614249",
-    "title": "Ladybird is now in alpha",
-    "url": "https://ladybird.org/posts/alpha/",
-    "domain": "ladybird.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ladybird.org",
-    "score": 795,
-    "commentsCount": 68,
-    "publishedAt": "2026-11-23T19:34:07.401091+00:00"
+    "score": 1366,
+    "commentsCount": 483,
+    "publishedAt": "2026-11-23T19:59:48.126940+00:00"
   },
   {
     "id": "hn-50617499",
@@ -47,9 +31,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "arm.jonpalmisc.com",
-    "score": 89,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-23T19:34:07.485108+00:00"
+    "score": 203,
+    "commentsCount": 21,
+    "publishedAt": "2026-11-23T19:59:48.213661+00:00"
+  },
+  {
+    "id": "hn-50614249",
+    "title": "Ladybird is now in alpha",
+    "url": "https://ladybird.org/posts/alpha/",
+    "domain": "ladybird.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "ladybird.org",
+    "score": 848,
+    "commentsCount": 71,
+    "publishedAt": "2026-11-23T19:59:48.302209+00:00"
   },
   {
     "id": "hn-50609685",
@@ -63,9 +63,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "z.ai",
-    "score": 888,
+    "score": 905,
     "commentsCount": 53,
-    "publishedAt": "2026-11-23T19:34:07.572203+00:00"
+    "publishedAt": "2026-11-23T19:59:48.388339+00:00"
   },
   {
     "id": "hn-50611402",
@@ -79,9 +79,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "huggingface.co",
-    "score": 35,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-23T19:34:07.659135+00:00"
+    "score": 49,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-23T19:59:48.475184+00:00"
   },
   {
     "id": "hn-50615481",
@@ -95,9 +95,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "blog.kagi.com",
-    "score": 163,
-    "commentsCount": 34,
-    "publishedAt": "2026-11-23T19:34:07.854641+00:00"
+    "score": 184,
+    "commentsCount": 38,
+    "publishedAt": "2026-11-23T19:59:48.563861+00:00"
+  },
+  {
+    "id": "hn-50615308",
+    "title": "Dario is hyping the dangers so OSS models are illegal and *he* stays in control",
+    "url": "https://twitter.com/ylecun/status/2124550037912920090",
+    "domain": "twitter.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "twitter.com",
+    "score": 247,
+    "commentsCount": 27,
+    "publishedAt": "2026-11-23T19:59:48.647189+00:00"
   },
   {
     "id": "hn-50587439",
@@ -111,24 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "theguardian.com",
-    "score": 192,
+    "score": 205,
     "commentsCount": 6,
-    "publishedAt": "2026-11-23T19:34:07.948563+00:00"
-  },
-  {
-    "id": "hn-50610318",
-    "title": "Nospeaker ─ Make your MacBook's trackpad talk using its haptic motor",
-    "url": "https://github.com/os6/nospeaker",
-    "domain": "github.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 208,
-    "commentsCount": 40,
-    "publishedAt": "2026-11-23T19:34:08.052819+00:00"
+    "publishedAt": "2026-11-23T19:59:48.736835+00:00"
   }
 ];
