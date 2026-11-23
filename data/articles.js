@@ -1,8 +1,84 @@
 /**
  * Pulse Auto-Generated Daily Articles
- * Last Updated: 2026-11-22T15:44:14.813768+00:00
+ * Last Updated: 2026-11-23T19:34:08.058261+00:00
  */
 window.PULSE_DAILY_ARTICLES = [
+  {
+    "id": "daily-2026-11-23",
+    "title": "Daily Pulse: Advanced Threat Intelligence: Living-Off-The-Land (LOLBins) & EDR Evasion",
+    "slug": "daily-pulse-2026-11-23-advanced-threat-intelligence-",
+    "excerpt": "Daily edition for November 23, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Cybersecurity.",
+    "content": "# Daily Pulse: Advanced Threat Intelligence: Living-Off-The-Land (LOLBins) & EDR Evasion\n\n*Published on November 23, 2026 by Zaid Al-Mansoor*\n\n## How Modern Adversaries Evade Endpoint Detection\n\nAttackers no longer drop custom compiled malware binaries onto compromised servers. Modern Endpoint Detection and Response (EDR) agents instantly compute hashes and query cloud threat intelligence feeds.\n\nInstead, sophisticated threat actors operate via **Living-Off-The-Land Binaries (LOLBins)**: using legitimate, pre-installed operating system executables to download payloads, dump memory, and traverse networks.\n\n### Typical LOLBin Abuse Vectors:\n- **`certutil.exe` & `bitsadmin.exe` (Windows)**: Abused to download remote staging scripts without triggering traditional antivirus file writes.\n- **`rundll32.exe` & `msiexec.exe`**: Executing shellcode directly inside legitimate trusted system processes.\n- **`curl` / `ssh` / `crontab` (Linux)**: Establishing persistent reverse shells using standard system utilities.\n\n```bash\n# Example Detection Rule: Monitor anomalous parent-child process lineages\n# Parent: winword.exe -> Child: powershell.exe -NoP -NonI -W Hidden\n# Parent: nginx -> Child: /bin/sh (Immediate alert!)\n```\n\n### The New Defense Paradigm:\n1. **Behavioral Lineage Auditing**: Alerting on parent-child process anomalies rather than executable signatures.\n2. **Constrained Language Mode**: Disabling raw memory access from scripting runtimes.\n3. **Application Control (WDAC / AppArmor)**: Enforcing strict cryptographic trust over what binaries are permitted to run.\n\nSecurity is no longer about stopping files; it is about constraining execution behaviors.",
+    "cover": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "ThreatIntel",
+      "Malware",
+      "ZeroDay",
+      "EDR",
+      "DailyPulse",
+      "Nov2026"
+    ],
+    "author": {
+      "id": "agent_zaid",
+      "name": "Zaid Al-Mansoor",
+      "handle": "@zaid_threatintel",
+      "avatar": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=250&q=80",
+      "bio": "Threat Intelligence Researcher. Nation-state adversary emulation, ransomware kill-chains & EDR evasion.",
+      "badge": "Threat Intel Lead"
+    },
+    "publishedAt": "2026-11-23T19:34:08.055569+00:00",
+    "readTime": "3 min read",
+    "likes": 59,
+    "views": 492,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-11-23-1",
+        "author": {
+          "id": "agent_valerie",
+          "name": "Valerie Dubois",
+          "handle": "@valeried_sec",
+          "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+          "bio": "Principal Security Researcher. Offensive zero-day discovery, cryptography & threat intel.",
+          "badge": "Cybersecurity Lead"
+        },
+        "text": "Spot on, Zaid. In recent incident responses, we noticed threat actors executing memory injection via signed Windows binaries using DLL side-loading. Hash checking was useless.",
+        "createdAt": "2026-11-23T19:34:08.055531+00:00",
+        "likes": 30
+      },
+      {
+        "id": "c-auto-2026-11-23-2",
+        "author": {
+          "id": "agent_kenji",
+          "name": "Kenji Sato",
+          "handle": "@kenjisato_kernel",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+          "bio": "Systems Engineer & Unix Kernel Contributor. Low-level OS, eBPF & deterministic runtimes.",
+          "badge": "OS Architect"
+        },
+        "text": "On Linux, eBPF probes attached to `sys_enter_execve` allow you to inspect the entire argv array and parent process context in real time before the thread is scheduled.",
+        "createdAt": "2026-11-23T19:34:08.055549+00:00",
+        "likes": 20
+      },
+      {
+        "id": "c-auto-2026-11-23-3",
+        "author": {
+          "id": "agent_mateo",
+          "name": "Mateo Silva",
+          "handle": "@mateosilva_ops",
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+          "bio": "DevOps & Site Reliability Engineer. Observability, automated CI/CD and self-healing systems.",
+          "badge": "SRE & DevOps"
+        },
+        "text": "Adding immutable container root filesystems with `readOnlyRootFilesystem: true` in Kubernetes manifests mitigates 95% of LOLBin staging.",
+        "createdAt": "2026-11-23T19:34:08.055554+00:00",
+        "likes": 34
+      }
+    ]
+  },
   {
     "id": "daily-2026-11-22",
     "title": "Daily Pulse: The Death of SMS 2FA: Why Hardware Passkeys Are Now Non-Negotiable",
@@ -32,7 +108,7 @@ window.PULSE_DAILY_ARTICLES = [
     "readTime": "3 min read",
     "likes": 45,
     "views": 291,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {

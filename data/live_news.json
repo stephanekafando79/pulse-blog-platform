@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50596133",
-    "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
-    "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
-    "domain": "caranddriver.com",
-    "category": "OS",
+    "id": "hn-50611576",
+    "title": "Nvidia Reinstates Jensen Huang as CEO",
+    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+    "domain": "cnbc.com",
+    "category": "Technology",
     "tags": [
-      "OS",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "caranddriver.com",
-    "score": 873,
+    "source": "cnbc.com",
+    "score": 1279,
+    "commentsCount": 480,
+    "publishedAt": "2026-11-23T19:34:07.319625+00:00"
+  },
+  {
+    "id": "hn-50614249",
+    "title": "Ladybird is now in alpha",
+    "url": "https://ladybird.org/posts/alpha/",
+    "domain": "ladybird.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "ladybird.org",
+    "score": 795,
+    "commentsCount": 68,
+    "publishedAt": "2026-11-23T19:34:07.401091+00:00"
+  },
+  {
+    "id": "hn-50617499",
+    "title": "\"Per ARM's Request, This Site Will Be Discontinued on 4 December 2026\"",
+    "url": "https://arm.jonpalmisc.com/",
+    "domain": "arm.jonpalmisc.com",
+    "category": "Hardware",
+    "tags": [
+      "Hardware",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "arm.jonpalmisc.com",
+    "score": 89,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-23T19:34:07.485108+00:00"
+  },
+  {
+    "id": "hn-50609685",
+    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+    "url": "https://z.ai/blog/glm-5.4",
+    "domain": "z.ai",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "z.ai",
+    "score": 888,
     "commentsCount": 53,
-    "publishedAt": "2026-11-22T16:06:23.740293+00:00"
+    "publishedAt": "2026-11-23T19:34:07.572203+00:00"
   },
   {
-    "id": "hn-50599762",
-    "title": "Show HN: I built a game where you are an LLM's subagent",
-    "url": "https://github.com/gulivan/worker755",
-    "domain": "github.com",
-    "category": "AI & ML",
+    "id": "hn-50611402",
+    "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+    "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+    "domain": "huggingface.co",
+    "category": "Technology",
     "tags": [
-      "AI & ML",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 69,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-22T16:06:23.889773+00:00"
-  },
-  {
-    "id": "hn-50600511",
-    "title": "A better internet for everyone is possible. Today",
-    "url": "https://osw-alliance.net/en/",
-    "domain": "osw-alliance.net",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "osw-alliance.net",
-    "score": 9,
+    "source": "huggingface.co",
+    "score": 35,
     "commentsCount": 5,
-    "publishedAt": "2026-11-22T16:06:24.038706+00:00"
+    "publishedAt": "2026-11-23T19:34:07.659135+00:00"
   },
   {
-    "id": "hn-50533945",
-    "title": "A real Linux kernel, compiled to WebAssembly",
-    "url": "https://github.com/pithings/unkernel",
-    "domain": "github.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 198,
-    "commentsCount": 29,
-    "publishedAt": "2026-11-22T16:06:24.169778+00:00"
-  },
-  {
-    "id": "hn-50582069",
-    "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
-    "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
-    "domain": "theguardian.com",
+    "id": "hn-50615481",
+    "title": "Kagi Mail (public beta)",
+    "url": "https://blog.kagi.com/kagi-mail-public-beta",
+    "domain": "blog.kagi.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "blog.kagi.com",
+    "score": 163,
+    "commentsCount": 34,
+    "publishedAt": "2026-11-23T19:34:07.854641+00:00"
+  },
+  {
+    "id": "hn-50587439",
+    "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
+    "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
+    "domain": "theguardian.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
       "Breaking",
       "TechNews"
     ],
     "source": "theguardian.com",
-    "score": 1207,
-    "commentsCount": 27,
-    "publishedAt": "2026-11-22T16:06:24.305554+00:00"
+    "score": 192,
+    "commentsCount": 6,
+    "publishedAt": "2026-11-23T19:34:07.948563+00:00"
   },
   {
-    "id": "hn-50589618",
-    "title": "Lean verification of the Riemann Hypothesis",
-    "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-    "domain": "leanprover-community.github.io",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "leanprover-community.github.io",
-    "score": 1147,
-    "commentsCount": 72,
-    "publishedAt": "2026-11-22T16:06:24.426399+00:00"
-  },
-  {
-    "id": "hn-50594182",
-    "title": "A Better Vocabulary for Testing",
-    "url": "https://alperenkeles.com/posts/vocab-for-testing/",
-    "domain": "alperenkeles.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "alperenkeles.com",
-    "score": 13,
-    "commentsCount": 1,
-    "publishedAt": "2026-11-22T16:06:24.551889+00:00"
-  },
-  {
-    "id": "hn-50566495",
-    "title": "Self-hosted library branch over public web OPDS",
-    "url": "https://joinmayberry.com/",
-    "domain": "joinmayberry.com",
+    "id": "hn-50610318",
+    "title": "Nospeaker ─ Make your MacBook's trackpad talk using its haptic motor",
+    "url": "https://github.com/os6/nospeaker",
+    "domain": "github.com",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "joinmayberry.com",
-    "score": 68,
-    "commentsCount": 8,
-    "publishedAt": "2026-11-22T16:06:24.667423+00:00"
+    "source": "github.com",
+    "score": 208,
+    "commentsCount": 40,
+    "publishedAt": "2026-11-23T19:34:08.052819+00:00"
   }
 ]
