@@ -1,134 +1,134 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-23T19:59:48.737269+00:00
+ * Last Updated: 2026-11-24T19:08:49.361323+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
-    "id": "hn-50611576",
-    "title": "Nvidia Reinstates Jensen Huang as CEO",
-    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-    "domain": "cnbc.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "cnbc.com",
-    "score": 1366,
-    "commentsCount": 483,
-    "publishedAt": "2026-11-23T19:59:48.126940+00:00"
-  },
-  {
-    "id": "hn-50617499",
-    "title": "\"Per ARM's Request, This Site Will Be Discontinued on 4 December 2026\"",
-    "url": "https://arm.jonpalmisc.com/",
-    "domain": "arm.jonpalmisc.com",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "arm.jonpalmisc.com",
-    "score": 203,
-    "commentsCount": 21,
-    "publishedAt": "2026-11-23T19:59:48.213661+00:00"
-  },
-  {
-    "id": "hn-50614249",
-    "title": "Ladybird is now in alpha",
-    "url": "https://ladybird.org/posts/alpha/",
-    "domain": "ladybird.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "ladybird.org",
-    "score": 848,
-    "commentsCount": 71,
-    "publishedAt": "2026-11-23T19:59:48.302209+00:00"
-  },
-  {
-    "id": "hn-50609685",
-    "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
-    "url": "https://z.ai/blog/glm-5.4",
-    "domain": "z.ai",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "z.ai",
-    "score": 905,
-    "commentsCount": 53,
-    "publishedAt": "2026-11-23T19:59:48.388339+00:00"
-  },
-  {
-    "id": "hn-50611402",
-    "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
-    "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-    "domain": "huggingface.co",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "huggingface.co",
-    "score": 49,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-23T19:59:48.475184+00:00"
-  },
-  {
-    "id": "hn-50615481",
-    "title": "Kagi Mail (public beta)",
-    "url": "https://blog.kagi.com/kagi-mail-public-beta",
-    "domain": "blog.kagi.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "blog.kagi.com",
-    "score": 184,
-    "commentsCount": 38,
-    "publishedAt": "2026-11-23T19:59:48.563861+00:00"
-  },
-  {
-    "id": "hn-50615308",
-    "title": "Dario is hyping the dangers so OSS models are illegal and *he* stays in control",
-    "url": "https://twitter.com/ylecun/status/2124550037912920090",
-    "domain": "twitter.com",
+    "id": "hn-50630594",
+    "title": "Cyberattack campaign compromising Check Point servers across 22 organizations",
+    "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+    "domain": "greynoise.io",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "twitter.com",
-    "score": 247,
-    "commentsCount": 27,
-    "publishedAt": "2026-11-23T19:59:48.647189+00:00"
+    "source": "greynoise.io",
+    "score": 176,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-24T19:08:48.478493+00:00"
   },
   {
-    "id": "hn-50587439",
-    "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
-    "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
-    "domain": "theguardian.com",
+    "id": "hn-50630462",
+    "title": "Jetty Pro",
+    "url": "http://hypercritical.co/2026/11/23/jetty-pro",
+    "domain": "hypercritical.co",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "theguardian.com",
-    "score": 205,
+    "source": "hypercritical.co",
+    "score": 152,
+    "commentsCount": 19,
+    "publishedAt": "2026-11-24T19:08:48.597674+00:00"
+  },
+  {
+    "id": "hn-50598555",
+    "title": "Mechanical Pencil: Spray Bottle",
+    "url": "https://mechanical-pencil.com/products/spray-bottle",
+    "domain": "mechanical-pencil.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "mechanical-pencil.com",
+    "score": 157,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-24T19:08:48.734888+00:00"
+  },
+  {
+    "id": "hn-50632756",
+    "title": "OpenAI Reveals they solved VP ≠ VNP before Anthropic",
+    "url": "https://github.com/openai/math/tree/main/preprints/VP-and-VNP-are-different-November-23-2026",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 11,
+    "commentsCount": 1,
+    "publishedAt": "2026-11-24T19:08:48.864427+00:00"
+  },
+  {
+    "id": "hn-50629231",
+    "title": "A training engine for your local model, using your idle compute",
+    "url": "https://github.com/sous-labs/songe",
+    "domain": "github.com",
+    "category": "AI & ML",
+    "tags": [
+      "AI & ML",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 96,
+    "commentsCount": 10,
+    "publishedAt": "2026-11-24T19:08:48.988298+00:00"
+  },
+  {
+    "id": "hn-50624497",
+    "title": "2035 came early",
+    "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+    "domain": "fzakaria.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "fzakaria.com",
+    "score": 841,
+    "commentsCount": 57,
+    "publishedAt": "2026-11-24T19:08:49.112058+00:00"
+  },
+  {
+    "id": "hn-50629106",
+    "title": "Splitting USB-C: USB 3 and USB 2 on one port",
+    "url": "https://www.frankchiarulli.com/blog/splitting-usb-c/",
+    "domain": "frankchiarulli.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "frankchiarulli.com",
+    "score": 67,
     "commentsCount": 6,
-    "publishedAt": "2026-11-23T19:59:48.736835+00:00"
+    "publishedAt": "2026-11-24T19:08:49.243393+00:00"
+  },
+  {
+    "id": "hn-50629962",
+    "title": "The KL Divergence Is Never Negative, Except in PyTorch",
+    "url": "https://arxiv.org/abs/2611.30835",
+    "domain": "arxiv.org",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "arxiv.org",
+    "score": 52,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-24T19:08:49.360786+00:00"
   }
 ];
