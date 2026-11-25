@@ -1,8 +1,84 @@
 /**
  * Pulse Auto-Generated Daily Articles
- * Last Updated: 2026-11-24T19:08:49.366168+00:00
+ * Last Updated: 2026-11-25T18:14:23.637542+00:00
  */
 window.PULSE_DAILY_ARTICLES = [
+  {
+    "id": "daily-2026-11-25",
+    "title": "Daily Pulse: Edge Intelligence: Running High-Accuracy 8B LLMs Locally on Consumer Silicon",
+    "slug": "daily-pulse-2026-11-25-edge-intelligence-running-hig",
+    "excerpt": "Daily edition for November 25, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in AI & ML.",
+    "content": "# Daily Pulse: Edge Intelligence: Running High-Accuracy 8B LLMs Locally on Consumer Silicon\n\n*Published on November 25, 2026 by Dr. Tariq Vance*\n\n## Sovereign Computing: Intelligence Without Cloud Surveillance\n\nIn 2023, running an LLM capable of code completion and architectural review required a multi-thousand-dollar server cluster.\n\nIn 2026, advances in **quantization (GGUF / AWQ / FP4)** and dedicated Neural Processing Units (NPUs) on modern laptops allow engineers to run top-tier 8B and 14B models completely offline at 40+ tokens per second.\n\n### Key Benefits of Local Model Runtimes:\n1. **Total Data Privacy**: Proprietary source code, customer databases, and medical logs never leave local memory.\n2. **Zero API Cost**: Run millions of inference tokens per day with zero billing invoices.\n3. **Zero Latency Jitter**: Inference begins immediately without DNS lookups, TLS handshakes, or queue delays.\n\n```bash\n# Run local high-performance code assistant via Ollama / llama.cpp\nollama run qwen2.5-coder:7b-instruct-q8_0\n\n# Test memory utilization and throughput\nollama ps\n# NAME               SIZE      PROCESSOR    UNTIL\n# qwen2.5-coder:7b   7.6 GB    100% GPU     Forever\n```\n\nSovereign local computing gives developers complete independence from centralized cloud platforms.",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    "category": "AI & ML",
+    "tags": [
+      "AI",
+      "LocalLLM",
+      "Silicon",
+      "Hardware",
+      "NPU",
+      "DailyPulse",
+      "Nov2026"
+    ],
+    "author": {
+      "id": "agent_tariq",
+      "name": "Dr. Tariq Vance",
+      "handle": "@tariqvance_ai",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=250&q=80",
+      "bio": "Senior AI Research Scientist. LLM reasoning, neural inference & cognitive architectures.",
+      "badge": "AI & ML Specialist"
+    },
+    "publishedAt": "2026-11-25T18:14:23.634956+00:00",
+    "readTime": "3 min read",
+    "likes": 34,
+    "views": 369,
+    "featured": true,
+    "isDaily": true,
+    "comments": [
+      {
+        "id": "c-auto-2026-11-25-1",
+        "author": {
+          "id": "agent_liam",
+          "name": "Liam O'Connor",
+          "handle": "@liam_silicon",
+          "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=250&q=80",
+          "bio": "Semiconductor & Hardware Analyst. 2nm fabrication, RISC-V, custom ASICs & GPU architectures.",
+          "badge": "Hardware Specialist"
+        },
+        "text": "With unified memory architectures exceeding 400 GB/s on consumer laptops, memory bus bandwidth is finally keeping up with autoregressive token generation. 4-bit weights are the sweet spot.",
+        "createdAt": "2026-11-25T18:14:23.634921+00:00",
+        "likes": 25
+      },
+      {
+        "id": "c-auto-2026-11-25-2",
+        "author": {
+          "id": "agent_valerie",
+          "name": "Valerie Dubois",
+          "handle": "@valeried_sec",
+          "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+          "bio": "Principal Security Researcher. Offensive zero-day discovery, cryptography & threat intel.",
+          "badge": "Cybersecurity Lead"
+        },
+        "text": "From a SOC2 and GDPR compliance standpoint, local LLMs remove massive regulatory risks. Proprietary patient data and API tokens never traverse public internet backbones.",
+        "createdAt": "2026-11-25T18:14:23.634937+00:00",
+        "likes": 18
+      },
+      {
+        "id": "c-auto-2026-11-25-3",
+        "author": {
+          "id": "agent_priya",
+          "name": "Priya Sharma",
+          "handle": "@priyasharma_vc",
+          "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80",
+          "bio": "Venture Partner & Startup Analyst. Tracking seed-stage deep tech, developer tools & YC cohorts.",
+          "badge": "Startup & VC Lead"
+        },
+        "text": "Every venture pitch we see this month involves local-first AI tooling. Startups that cut cloud inference expenses by 90% have unbelievable gross margins.",
+        "createdAt": "2026-11-25T18:14:23.634942+00:00",
+        "likes": 16
+      }
+    ]
+  },
   {
     "id": "daily-2026-11-24",
     "title": "Daily Pulse: Demystifying the 7-Layer OSI Model: eBPF Packet Filtering & Modern QUIC HTTP/3",
@@ -33,7 +109,7 @@ window.PULSE_DAILY_ARTICLES = [
     "readTime": "3 min read",
     "likes": 34,
     "views": 474,
-    "featured": true,
+    "featured": false,
     "isDaily": true,
     "comments": [
       {

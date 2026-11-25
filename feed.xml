@@ -5,15 +5,23 @@
     <link>https://stephanekafando79.github.io/pulse-blog-platform/</link>
     <description>Curated high-signal engineering, OS, applications, and cybersecurity publication.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 19:08:49 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 18:14:23 GMT</lastBuildDate>
     <atom:link href="https://stephanekafando79.github.io/pulse-blog-platform/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Pulse: Edge Intelligence: Running High-Accuracy 8B LLMs Locally on Consumer Silicon</title>
+      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-25</link>
+      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-25</guid>
+      <category>AI & ML</category>
+      <description>Daily edition for November 25, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in AI &amp; ML.</description>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
+    </item>
     <item>
       <title>Daily Pulse: Demystifying the 7-Layer OSI Model: eBPF Packet Filtering &amp; Modern QUIC HTTP/3</title>
       <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-24</link>
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-24</guid>
       <category>OS</category>
       <description>Daily edition for November 24, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in OS.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Advanced Threat Intelligence: Living-Off-The-Land (LOLBins) &amp; EDR Evasion</title>
@@ -21,7 +29,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-23</guid>
       <category>Cybersecurity</category>
       <description>Daily edition for November 23, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Cybersecurity.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: The Death of SMS 2FA: Why Hardware Passkeys Are Now Non-Negotiable</title>
@@ -29,7 +37,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-22</guid>
       <category>Cybersecurity</category>
       <description>Daily edition for November 22, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Cybersecurity.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: The Modern Desktop App Renaissance: Moving Past Bloated Electron Containers</title>
@@ -37,7 +45,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-21</guid>
       <category>APPs</category>
       <description>Daily edition for November 21, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in APPs.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Modern Windows Architecture: How Microsoft is Rewriting Core Subsystems in Rust</title>
@@ -45,7 +53,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-20</guid>
       <category>OS</category>
       <description>Daily edition for November 20, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in OS.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Linux 6.12 Kernel &amp; PREEMPT_RT: The Evolution of Real-Time Unix Systems</title>
@@ -53,7 +61,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-19</guid>
       <category>OS</category>
       <description>Daily edition for November 19, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in OS.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Deterministic Distributed Consensus &amp; The Raft Protocol in Modern Rust Engines</title>
@@ -61,7 +69,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-18</guid>
       <category>Software Engineering</category>
       <description>Daily edition for November 18, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Software Engineering.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Matter 1.3 Protocol &amp; Ultra-Low-Power RISC-V Sensor Fabrics</title>
@@ -69,7 +77,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-17</guid>
       <category>Internet of Things</category>
       <description>Daily edition for November 17, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Internet of Things.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Carbon-Aware Compute Scheduling &amp; Renewable Virtual Power Plants</title>
@@ -77,7 +85,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-16</guid>
       <category>Climate & CleanTech</category>
       <description>Daily edition for November 16, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Climate &amp; CleanTech.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Optical Inter-Satellite Links &amp; Radiation-Tolerant Edge Computing in Low Earth Orbit</title>
@@ -85,7 +93,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-15</guid>
       <category>Aerospace & SpaceTech</category>
       <description>Daily edition for November 15, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Aerospace &amp; SpaceTech.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Humanoid Kinematics &amp; Real-Time Whole-Body Control: Beyond Classical PID</title>
@@ -93,7 +101,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-14</guid>
       <category>Robotics & Automotive</category>
       <description>Daily edition for November 14, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Robotics &amp; Automotive.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Computational Proteomics &amp; AlphaFold 3: Designing Synthetic Enzymes with AI</title>
@@ -101,7 +109,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-13</guid>
       <category>HealthTech & BioTech</category>
       <description>Daily edition for November 13, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in HealthTech &amp; BioTech.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: Zero-Knowledge Rollups &amp; Sub-Millisecond Matching in Modern Financial Engineering</title>
@@ -109,7 +117,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-12</guid>
       <category>FinTech</category>
       <description>Daily edition for November 12, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in FinTech.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
     <item>
       <title>Daily Pulse: SRE &amp; Observability: Chaos Engineering on Kubernetes with OpenTelemetry</title>
@@ -117,15 +125,7 @@
       <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-11</guid>
       <category>DevOps</category>
       <description>Daily edition for November 11, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in DevOps.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
-    </item>
-    <item>
-      <title>Daily Pulse: How Modern Tech Agencies Are Replacing Legacy Consulting with Autonomous Engineering</title>
-      <link>https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-10</link>
-      <guid isPermaLink="true">https://stephanekafando79.github.io/pulse-blog-platform/#/article/daily-2026-11-10</guid>
-      <category>Tech Agencies</category>
-      <description>Daily edition for November 10, 2026: Exploring deep insights, modern IT standards, and architectural takeaways in Tech Agencies.</description>
-      <pubDate>Tue, 24 Nov 2026 19:08:49 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 18:14:23 GMT</pubDate>
     </item>
   </channel>
 </rss>
