@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-25T18:14:23.632698+00:00
+ * Last Updated: 2026-11-25T18:33:34.670260+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "vox.com",
-    "score": 283,
+    "score": 302,
     "commentsCount": 24,
-    "publishedAt": "2026-11-25T18:14:22.763892+00:00"
+    "publishedAt": "2026-11-25T18:33:32.040183+00:00"
   },
   {
     "id": "hn-50643720",
@@ -31,41 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "githubstatus.com",
-    "score": 140,
-    "commentsCount": 33,
-    "publishedAt": "2026-11-25T18:14:22.929806+00:00"
-  },
-  {
-    "id": "hn-50642086",
-    "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-    "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
-    "domain": "github.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 305,
-    "commentsCount": 31,
-    "publishedAt": "2026-11-25T18:14:23.019649+00:00"
-  },
-  {
-    "id": "hn-50641171",
-    "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
-    "url": "https://github.com/xoxorwr/pw-loudness-eq",
-    "domain": "github.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 247,
-    "commentsCount": 29,
-    "publishedAt": "2026-11-25T18:14:23.162059+00:00"
+    "score": 150,
+    "commentsCount": 36,
+    "publishedAt": "2026-11-25T18:33:32.370296+00:00"
   },
   {
     "id": "hn-50644817",
@@ -79,9 +47,41 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "1password.com",
-    "score": 156,
-    "commentsCount": 23,
-    "publishedAt": "2026-11-25T18:14:23.285373+00:00"
+    "score": 205,
+    "commentsCount": 27,
+    "publishedAt": "2026-11-25T18:33:32.733744+00:00"
+  },
+  {
+    "id": "hn-50642086",
+    "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+    "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 317,
+    "commentsCount": 31,
+    "publishedAt": "2026-11-25T18:33:33.109877+00:00"
+  },
+  {
+    "id": "hn-50641171",
+    "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
+    "url": "https://github.com/xoxorwr/pw-loudness-eq",
+    "domain": "github.com",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 249,
+    "commentsCount": 30,
+    "publishedAt": "2026-11-25T18:33:33.571600+00:00"
   },
   {
     "id": "hn-50635783",
@@ -95,9 +95,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "engram.com",
-    "score": 48,
+    "score": 53,
     "commentsCount": 6,
-    "publishedAt": "2026-11-25T18:14:23.421576+00:00"
+    "publishedAt": "2026-11-25T18:33:33.944247+00:00"
   },
   {
     "id": "hn-50642939",
@@ -111,9 +111,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "s.conao3.com",
-    "score": 61,
+    "score": 68,
     "commentsCount": 5,
-    "publishedAt": "2026-11-25T18:14:23.543362+00:00"
+    "publishedAt": "2026-11-25T18:33:34.309814+00:00"
   },
   {
     "id": "hn-50624446",
@@ -127,8 +127,8 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "jayd.ml",
-    "score": 88,
-    "commentsCount": 21,
-    "publishedAt": "2026-11-25T18:14:23.632283+00:00"
+    "score": 99,
+    "commentsCount": 22,
+    "publishedAt": "2026-11-25T18:33:34.669830+00:00"
   }
 ];
