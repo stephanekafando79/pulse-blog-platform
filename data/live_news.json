@@ -1,19 +1,19 @@
 [
   {
-    "id": "hn-50657059",
-    "title": "NP_R ≠ PAR_R",
-    "url": "https://github.com/samueleverett01/bss-permanent-separations",
-    "domain": "github.com",
-    "category": "Technology",
+    "id": "hn-50657307",
+    "title": "Tracking Diseases Cured by AI",
+    "url": "https://diseasescuredbyai.com/",
+    "domain": "diseasescuredbyai.com",
+    "category": "AI & ML",
     "tags": [
-      "Technology",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 72,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-26T17:55:47.721484+00:00"
+    "source": "diseasescuredbyai.com",
+    "score": 96,
+    "commentsCount": 16,
+    "publishedAt": "2026-11-26T18:17:29.345249+00:00"
   },
   {
     "id": "hn-50657265",
@@ -27,25 +27,9 @@
       "TechNews"
     ],
     "source": "devnull.land",
-    "score": 50,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-26T17:55:47.811348+00:00"
-  },
-  {
-    "id": "hn-50657307",
-    "title": "Tracking Diseases Cured by AI",
-    "url": "https://diseasescuredbyai.com/",
-    "domain": "diseasescuredbyai.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "diseasescuredbyai.com",
-    "score": 19,
-    "commentsCount": 2,
-    "publishedAt": "2026-11-26T17:55:47.899228+00:00"
+    "score": 65,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-26T18:17:29.436255+00:00"
   },
   {
     "id": "hn-50657530",
@@ -59,9 +43,41 @@
       "TechNews"
     ],
     "source": "github.com",
+    "score": 27,
+    "commentsCount": 15,
+    "publishedAt": "2026-11-26T18:17:29.525486+00:00"
+  },
+  {
+    "id": "hn-50657059",
+    "title": "NP_R ≠ PAR_R",
+    "url": "https://github.com/samueleverett01/bss-permanent-separations",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 77,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-26T18:17:29.616910+00:00"
+  },
+  {
+    "id": "hn-50657645",
+    "title": "CTO of 'RansomwareHelp' Indicted for Wire Fraud",
+    "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+    "domain": "krebsonsecurity.com",
+    "category": "Cybersecurity",
+    "tags": [
+      "Cybersecurity",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "krebsonsecurity.com",
     "score": 13,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-26T17:55:47.986714+00:00"
+    "commentsCount": 2,
+    "publishedAt": "2026-11-26T18:17:29.702931+00:00"
   },
   {
     "id": "hn-50653667",
@@ -75,9 +91,9 @@
       "TechNews"
     ],
     "source": "github.com",
-    "score": 354,
-    "commentsCount": 59,
-    "publishedAt": "2026-11-26T17:55:48.070594+00:00"
+    "score": 363,
+    "commentsCount": 61,
+    "publishedAt": "2026-11-26T18:17:29.790474+00:00"
   },
   {
     "id": "hn-50656036",
@@ -91,24 +107,8 @@
       "TechNews"
     ],
     "source": "michidk.github.io",
-    "score": 44,
+    "score": 49,
     "commentsCount": 9,
-    "publishedAt": "2026-11-26T17:55:48.156646+00:00"
-  },
-  {
-    "id": "hn-50636931",
-    "title": "Curiosity Is No Solo Act",
-    "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
-    "domain": "thereader.mitpress.mit.edu",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "thereader.mitpress.mit.edu",
-    "score": 70,
-    "commentsCount": 5,
-    "publishedAt": "2026-11-26T17:55:48.244527+00:00"
+    "publishedAt": "2026-11-26T18:17:29.889124+00:00"
   }
 ]
