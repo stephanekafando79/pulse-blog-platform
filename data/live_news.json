@@ -1,56 +1,8 @@
 [
   {
-    "id": "hn-50643129",
-    "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-    "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
-    "domain": "vox.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "vox.com",
-    "score": 302,
-    "commentsCount": 24,
-    "publishedAt": "2026-11-25T18:33:32.040183+00:00"
-  },
-  {
-    "id": "hn-50643720",
-    "title": "Investigating degraded experiences across GitHub products",
-    "url": "https://www.githubstatus.com/incidents/qn8mfv6q5hlx",
-    "domain": "githubstatus.com",
-    "category": "OS",
-    "tags": [
-      "OS",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "githubstatus.com",
-    "score": 150,
-    "commentsCount": 36,
-    "publishedAt": "2026-11-25T18:33:32.370296+00:00"
-  },
-  {
-    "id": "hn-50644817",
-    "title": "1Password Security Incident",
-    "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-    "domain": "1password.com",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "1password.com",
-    "score": 205,
-    "commentsCount": 27,
-    "publishedAt": "2026-11-25T18:33:32.733744+00:00"
-  },
-  {
-    "id": "hn-50642086",
-    "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-    "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+    "id": "hn-50657059",
+    "title": "NP_R ≠ PAR_R",
+    "url": "https://github.com/samueleverett01/bss-permanent-separations",
     "domain": "github.com",
     "category": "Technology",
     "tags": [
@@ -59,72 +11,104 @@
       "TechNews"
     ],
     "source": "github.com",
-    "score": 317,
-    "commentsCount": 31,
-    "publishedAt": "2026-11-25T18:33:33.109877+00:00"
+    "score": 72,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-26T17:55:47.721484+00:00"
   },
   {
-    "id": "hn-50641171",
-    "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
-    "url": "https://github.com/xoxorwr/pw-loudness-eq",
-    "domain": "github.com",
-    "category": "OS",
+    "id": "hn-50657265",
+    "title": "AMD Specific Patches for Llama.cpp",
+    "url": "https://devnull.land/amd-specific-llama-cpp",
+    "domain": "devnull.land",
+    "category": "Hardware",
     "tags": [
-      "OS",
+      "Hardware",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 249,
-    "commentsCount": 30,
-    "publishedAt": "2026-11-25T18:33:33.571600+00:00"
-  },
-  {
-    "id": "hn-50635783",
-    "title": "Predicting LoRA size for any dataset",
-    "url": "https://engram.com/blog/lora-size",
-    "domain": "engram.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "engram.com",
-    "score": 53,
-    "commentsCount": 6,
-    "publishedAt": "2026-11-25T18:33:33.944247+00:00"
-  },
-  {
-    "id": "hn-50642939",
-    "title": "I checked Clojure's core with Lean and found unreported bugs",
-    "url": "https://s.conao3.com/blog/2026/e4f733",
-    "domain": "s.conao3.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "s.conao3.com",
-    "score": 68,
+    "source": "devnull.land",
+    "score": 50,
     "commentsCount": 5,
-    "publishedAt": "2026-11-25T18:33:34.309814+00:00"
+    "publishedAt": "2026-11-26T17:55:47.811348+00:00"
   },
   {
-    "id": "hn-50624446",
-    "title": "Porting Rockbox to an Undocumented $9 Aliexpress 'YP3' MP3 Player with LLMs",
-    "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
-    "domain": "jayd.ml",
+    "id": "hn-50657307",
+    "title": "Tracking Diseases Cured by AI",
+    "url": "https://diseasescuredbyai.com/",
+    "domain": "diseasescuredbyai.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "jayd.ml",
-    "score": 99,
-    "commentsCount": 22,
-    "publishedAt": "2026-11-25T18:33:34.669830+00:00"
+    "source": "diseasescuredbyai.com",
+    "score": 19,
+    "commentsCount": 2,
+    "publishedAt": "2026-11-26T17:55:47.899228+00:00"
+  },
+  {
+    "id": "hn-50657530",
+    "title": "YouTube Ad Punisher – Bypass anti-adblock",
+    "url": "https://github.com/antonpictures/youtube-punisher",
+    "domain": "github.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 13,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-26T17:55:47.986714+00:00"
+  },
+  {
+    "id": "hn-50653667",
+    "title": "Intel One Mono font",
+    "url": "https://github.com/intel/intel-one-mono",
+    "domain": "github.com",
+    "category": "Hardware",
+    "tags": [
+      "Hardware",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 354,
+    "commentsCount": 59,
+    "publishedAt": "2026-11-26T17:55:48.070594+00:00"
+  },
+  {
+    "id": "hn-50656036",
+    "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
+    "url": "https://michidk.github.io/sidebyside/",
+    "domain": "michidk.github.io",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "michidk.github.io",
+    "score": 44,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-26T17:55:48.156646+00:00"
+  },
+  {
+    "id": "hn-50636931",
+    "title": "Curiosity Is No Solo Act",
+    "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
+    "domain": "thereader.mitpress.mit.edu",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "thereader.mitpress.mit.edu",
+    "score": 70,
+    "commentsCount": 5,
+    "publishedAt": "2026-11-26T17:55:48.244527+00:00"
   }
 ]
