@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-27T17:41:20.703188+00:00
+ * Last Updated: 2026-11-27T17:59:12.498399+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "bouncemarket.minhanhday.com",
-    "score": 206,
-    "commentsCount": 35,
-    "publishedAt": "2026-11-27T17:41:19.969032+00:00"
+    "score": 221,
+    "commentsCount": 36,
+    "publishedAt": "2026-11-27T17:59:11.782413+00:00"
   },
   {
     "id": "hn-50668145",
@@ -31,25 +31,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "infohawk.com",
-    "score": 99,
+    "score": 111,
     "commentsCount": 16,
-    "publishedAt": "2026-11-27T17:41:20.067472+00:00"
+    "publishedAt": "2026-11-27T17:59:11.878623+00:00"
   },
   {
-    "id": "hn-50657392",
-    "title": "First images of the impact of DART asteroid deflection experiment",
-    "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
-    "domain": "arstechnica.com",
-    "category": "Technology",
+    "id": "hn-50669561",
+    "title": "I'm Scared of AI",
+    "url": "https://thesoapbox.email/archive/3",
+    "domain": "thesoapbox.email",
+    "category": "AI & ML",
     "tags": [
-      "Technology",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "arstechnica.com",
-    "score": 110,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-27T17:41:20.161875+00:00"
+    "source": "thesoapbox.email",
+    "score": 23,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-27T17:59:11.983232+00:00"
   },
   {
     "id": "hn-50667989",
@@ -63,9 +63,25 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "cr.yp.to",
-    "score": 62,
+    "score": 75,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-27T17:59:12.082313+00:00"
+  },
+  {
+    "id": "hn-50657392",
+    "title": "First images of the impact of DART asteroid deflection experiment",
+    "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+    "domain": "arstechnica.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "arstechnica.com",
+    "score": 115,
     "commentsCount": 7,
-    "publishedAt": "2026-11-27T17:41:20.283226+00:00"
+    "publishedAt": "2026-11-27T17:59:12.183750+00:00"
   },
   {
     "id": "hn-50663595",
@@ -79,25 +95,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "construct22.com",
-    "score": 567,
+    "score": 583,
     "commentsCount": 233,
-    "publishedAt": "2026-11-27T17:41:20.379064+00:00"
-  },
-  {
-    "id": "hn-50665968",
-    "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
-    "url": "https://eprint.iacr.org/2026/3020.pdf",
-    "domain": "eprint.iacr.org",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "eprint.iacr.org",
-    "score": 178,
-    "commentsCount": 19,
-    "publishedAt": "2026-11-27T17:41:20.476814+00:00"
+    "publishedAt": "2026-11-27T17:59:12.286040+00:00"
   },
   {
     "id": "hn-50660180",
@@ -111,24 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "janlukas.blog",
-    "score": 978,
+    "score": 988,
     "commentsCount": 151,
-    "publishedAt": "2026-11-27T17:41:20.574118+00:00"
+    "publishedAt": "2026-11-27T17:59:12.384181+00:00"
   },
   {
-    "id": "hn-50665920",
-    "title": "Kimi for Science: More scientific ideas, made possible",
-    "url": "https://www.kimi.ai/news/kimi-for-science-program",
-    "domain": "kimi.ai",
-    "category": "OS",
+    "id": "hn-50665968",
+    "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
+    "url": "https://eprint.iacr.org/2026/3020.pdf",
+    "domain": "eprint.iacr.org",
+    "category": "Technology",
     "tags": [
-      "OS",
+      "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "kimi.ai",
-    "score": 144,
-    "commentsCount": 14,
-    "publishedAt": "2026-11-27T17:41:20.702834+00:00"
+    "source": "eprint.iacr.org",
+    "score": 181,
+    "commentsCount": 19,
+    "publishedAt": "2026-11-27T17:59:12.497944+00:00"
   }
 ];
