@@ -1,114 +1,130 @@
 [
   {
-    "id": "hn-50657307",
-    "title": "Tracking Diseases Cured by AI",
-    "url": "https://diseasescuredbyai.com/",
-    "domain": "diseasescuredbyai.com",
+    "id": "hn-50667726",
+    "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+    "url": "https://bouncemarket.minhanhday.com/",
+    "domain": "bouncemarket.minhanhday.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "bouncemarket.minhanhday.com",
+    "score": 206,
+    "commentsCount": 35,
+    "publishedAt": "2026-11-27T17:41:19.969032+00:00"
+  },
+  {
+    "id": "hn-50668145",
+    "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+    "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+    "domain": "infohawk.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "infohawk.com",
+    "score": 99,
+    "commentsCount": 16,
+    "publishedAt": "2026-11-27T17:41:20.067472+00:00"
+  },
+  {
+    "id": "hn-50657392",
+    "title": "First images of the impact of DART asteroid deflection experiment",
+    "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+    "domain": "arstechnica.com",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "arstechnica.com",
+    "score": 110,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-27T17:41:20.161875+00:00"
+  },
+  {
+    "id": "hn-50667989",
+    "title": "False computer-checked proofs",
+    "url": "https://cr.yp.to/proofs/falseccp.html",
+    "domain": "cr.yp.to",
+    "category": "Technology",
+    "tags": [
+      "Technology",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "cr.yp.to",
+    "score": 62,
+    "commentsCount": 7,
+    "publishedAt": "2026-11-27T17:41:20.283226+00:00"
+  },
+  {
+    "id": "hn-50663595",
+    "title": "Group chat where your AI talks behind your back",
+    "url": "https://construct22.com/",
+    "domain": "construct22.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "diseasescuredbyai.com",
-    "score": 96,
-    "commentsCount": 16,
-    "publishedAt": "2026-11-26T18:17:29.345249+00:00"
+    "source": "construct22.com",
+    "score": 567,
+    "commentsCount": 233,
+    "publishedAt": "2026-11-27T17:41:20.379064+00:00"
   },
   {
-    "id": "hn-50657265",
-    "title": "AMD Specific Patches for Llama.cpp",
-    "url": "https://devnull.land/amd-specific-llama-cpp",
-    "domain": "devnull.land",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "devnull.land",
-    "score": 65,
-    "commentsCount": 8,
-    "publishedAt": "2026-11-26T18:17:29.436255+00:00"
-  },
-  {
-    "id": "hn-50657530",
-    "title": "YouTube Ad Punisher – Bypass anti-adblock",
-    "url": "https://github.com/antonpictures/youtube-punisher",
-    "domain": "github.com",
+    "id": "hn-50665968",
+    "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
+    "url": "https://eprint.iacr.org/2026/3020.pdf",
+    "domain": "eprint.iacr.org",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "github.com",
-    "score": 27,
-    "commentsCount": 15,
-    "publishedAt": "2026-11-26T18:17:29.525486+00:00"
+    "source": "eprint.iacr.org",
+    "score": 178,
+    "commentsCount": 19,
+    "publishedAt": "2026-11-27T17:41:20.476814+00:00"
   },
   {
-    "id": "hn-50657059",
-    "title": "NP_R ≠ PAR_R",
-    "url": "https://github.com/samueleverett01/bss-permanent-separations",
-    "domain": "github.com",
-    "category": "Technology",
-    "tags": [
-      "Technology",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 77,
-    "commentsCount": 12,
-    "publishedAt": "2026-11-26T18:17:29.616910+00:00"
-  },
-  {
-    "id": "hn-50657645",
-    "title": "CTO of 'RansomwareHelp' Indicted for Wire Fraud",
-    "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-    "domain": "krebsonsecurity.com",
-    "category": "Cybersecurity",
-    "tags": [
-      "Cybersecurity",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "krebsonsecurity.com",
-    "score": 13,
-    "commentsCount": 2,
-    "publishedAt": "2026-11-26T18:17:29.702931+00:00"
-  },
-  {
-    "id": "hn-50653667",
-    "title": "Intel One Mono font",
-    "url": "https://github.com/intel/intel-one-mono",
-    "domain": "github.com",
-    "category": "Hardware",
-    "tags": [
-      "Hardware",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "github.com",
-    "score": 363,
-    "commentsCount": 61,
-    "publishedAt": "2026-11-26T18:17:29.790474+00:00"
-  },
-  {
-    "id": "hn-50656036",
-    "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
-    "url": "https://michidk.github.io/sidebyside/",
-    "domain": "michidk.github.io",
+    "id": "hn-50660180",
+    "title": "AI made self-hosting fun again",
+    "url": "https://janlukas.blog/posts/ai-self-hosting",
+    "domain": "janlukas.blog",
     "category": "OS",
     "tags": [
       "OS",
       "Breaking",
       "TechNews"
     ],
-    "source": "michidk.github.io",
-    "score": 49,
-    "commentsCount": 9,
-    "publishedAt": "2026-11-26T18:17:29.889124+00:00"
+    "source": "janlukas.blog",
+    "score": 978,
+    "commentsCount": 151,
+    "publishedAt": "2026-11-27T17:41:20.574118+00:00"
+  },
+  {
+    "id": "hn-50665920",
+    "title": "Kimi for Science: More scientific ideas, made possible",
+    "url": "https://www.kimi.ai/news/kimi-for-science-program",
+    "domain": "kimi.ai",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "kimi.ai",
+    "score": 144,
+    "commentsCount": 14,
+    "publishedAt": "2026-11-27T17:41:20.702834+00:00"
   }
 ]
