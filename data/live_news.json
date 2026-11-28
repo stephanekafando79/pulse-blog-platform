@@ -1,130 +1,130 @@
 [
   {
-    "id": "hn-50667726",
-    "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
-    "url": "https://bouncemarket.minhanhday.com/",
-    "domain": "bouncemarket.minhanhday.com",
+    "id": "hn-50676672",
+    "title": "Farewell",
+    "url": "https://github.com/p-e-w/heretic/issues/601",
+    "domain": "github.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "bouncemarket.minhanhday.com",
-    "score": 221,
-    "commentsCount": 36,
-    "publishedAt": "2026-11-27T17:59:11.782413+00:00"
+    "source": "github.com",
+    "score": 661,
+    "commentsCount": 30,
+    "publishedAt": "2026-11-28T16:26:39.886773+00:00"
   },
   {
-    "id": "hn-50668145",
-    "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
-    "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
-    "domain": "infohawk.com",
+    "id": "hn-50676723",
+    "title": "Audible removes download option for purchased audiobooks",
+    "url": "https://consumerrights.wiki/w/Audible_removes_download_option_for_purchased_audiobooks",
+    "domain": "consumerrights.wiki",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "infohawk.com",
-    "score": 111,
-    "commentsCount": 16,
-    "publishedAt": "2026-11-27T17:59:11.878623+00:00"
+    "source": "consumerrights.wiki",
+    "score": 331,
+    "commentsCount": 57,
+    "publishedAt": "2026-11-28T16:26:39.999638+00:00"
   },
   {
-    "id": "hn-50669561",
-    "title": "I'm Scared of AI",
-    "url": "https://thesoapbox.email/archive/3",
-    "domain": "thesoapbox.email",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "thesoapbox.email",
-    "score": 23,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-27T17:59:11.983232+00:00"
-  },
-  {
-    "id": "hn-50667989",
-    "title": "False computer-checked proofs",
-    "url": "https://cr.yp.to/proofs/falseccp.html",
-    "domain": "cr.yp.to",
+    "id": "hn-50676390",
+    "title": "Claude Code sabotage: preliminary benchmarking",
+    "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html",
+    "domain": "xinyadu.github.io",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "cr.yp.to",
-    "score": 75,
-    "commentsCount": 8,
-    "publishedAt": "2026-11-27T17:59:12.082313+00:00"
+    "source": "xinyadu.github.io",
+    "score": 387,
+    "commentsCount": 63,
+    "publishedAt": "2026-11-28T16:26:40.111392+00:00"
   },
   {
-    "id": "hn-50657392",
-    "title": "First images of the impact of DART asteroid deflection experiment",
-    "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
-    "domain": "arstechnica.com",
+    "id": "hn-50678273",
+    "title": "Physics Breakthrough Simulator",
+    "url": "https://pages.ethanmdavidson.com/ai-physics-breakthrough",
+    "domain": "pages.ethanmdavidson.com",
     "category": "Technology",
     "tags": [
       "Technology",
       "Breaking",
       "TechNews"
     ],
-    "source": "arstechnica.com",
-    "score": 115,
+    "source": "pages.ethanmdavidson.com",
+    "score": 59,
     "commentsCount": 7,
-    "publishedAt": "2026-11-27T17:59:12.183750+00:00"
+    "publishedAt": "2026-11-28T16:26:40.228725+00:00"
   },
   {
-    "id": "hn-50663595",
-    "title": "Group chat where your AI talks behind your back",
-    "url": "https://construct22.com/",
-    "domain": "construct22.com",
+    "id": "hn-50676752",
+    "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
+    "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+    "domain": "malspark.com",
     "category": "AI & ML",
     "tags": [
       "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "construct22.com",
-    "score": 583,
-    "commentsCount": 233,
-    "publishedAt": "2026-11-27T17:59:12.286040+00:00"
+    "source": "malspark.com",
+    "score": 110,
+    "commentsCount": 11,
+    "publishedAt": "2026-11-28T16:26:40.339480+00:00"
   },
   {
-    "id": "hn-50660180",
-    "title": "AI made self-hosting fun again",
-    "url": "https://janlukas.blog/posts/ai-self-hosting",
-    "domain": "janlukas.blog",
-    "category": "OS",
+    "id": "hn-50679023",
+    "title": "If AI takes every job who will buy things?",
+    "url": "https://coryalthoff.com/essays/if-ai-takes-every-job-who-will-buy-things",
+    "domain": "coryalthoff.com",
+    "category": "AI & ML",
     "tags": [
-      "OS",
+      "AI & ML",
       "Breaking",
       "TechNews"
     ],
-    "source": "janlukas.blog",
-    "score": 988,
-    "commentsCount": 151,
-    "publishedAt": "2026-11-27T17:59:12.384181+00:00"
+    "source": "coryalthoff.com",
+    "score": 6,
+    "commentsCount": 2,
+    "publishedAt": "2026-11-28T16:26:40.464857+00:00"
   },
   {
-    "id": "hn-50665968",
-    "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
-    "url": "https://eprint.iacr.org/2026/3020.pdf",
-    "domain": "eprint.iacr.org",
-    "category": "Technology",
+    "id": "hn-50677091",
+    "title": "Show HN: Luciole Mono – terminal font designed for legibility",
+    "url": "https://scriptor-pro.github.io/luciole-mono/",
+    "domain": "scriptor-pro.github.io",
+    "category": "APPs",
     "tags": [
-      "Technology",
+      "APPs",
       "Breaking",
       "TechNews"
     ],
-    "source": "eprint.iacr.org",
-    "score": 181,
-    "commentsCount": 19,
-    "publishedAt": "2026-11-27T17:59:12.497944+00:00"
+    "source": "scriptor-pro.github.io",
+    "score": 83,
+    "commentsCount": 23,
+    "publishedAt": "2026-11-28T16:26:40.576276+00:00"
+  },
+  {
+    "id": "hn-50677861",
+    "title": "Why stop at Emacs? Native apps you or an AI reprogram in Clojure while they run",
+    "url": "https://github.com/RiccardoSottini/AffrescoUI",
+    "domain": "github.com",
+    "category": "APPs",
+    "tags": [
+      "APPs",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "github.com",
+    "score": 29,
+    "commentsCount": 9,
+    "publishedAt": "2026-11-28T16:26:40.691507+00:00"
   }
 ]
