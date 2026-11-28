@@ -1,6 +1,6 @@
 /**
  * Pulse Live Tech News Feed
- * Last Updated: 2026-11-28T16:26:40.691923+00:00
+ * Last Updated: 2026-11-28T16:44:55.311885+00:00
  */
 window.PULSE_LIVE_NEWS = [
   {
@@ -15,9 +15,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "github.com",
-    "score": 661,
-    "commentsCount": 30,
-    "publishedAt": "2026-11-28T16:26:39.886773+00:00"
+    "score": 706,
+    "commentsCount": 31,
+    "publishedAt": "2026-11-28T16:44:54.574708+00:00"
   },
   {
     "id": "hn-50676723",
@@ -31,9 +31,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "consumerrights.wiki",
-    "score": 331,
-    "commentsCount": 57,
-    "publishedAt": "2026-11-28T16:26:39.999638+00:00"
+    "score": 367,
+    "commentsCount": 66,
+    "publishedAt": "2026-11-28T16:44:54.706103+00:00"
   },
   {
     "id": "hn-50676390",
@@ -47,9 +47,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "xinyadu.github.io",
-    "score": 387,
-    "commentsCount": 63,
-    "publishedAt": "2026-11-28T16:26:40.111392+00:00"
+    "score": 420,
+    "commentsCount": 64,
+    "publishedAt": "2026-11-28T16:44:54.817411+00:00"
   },
   {
     "id": "hn-50678273",
@@ -63,9 +63,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "pages.ethanmdavidson.com",
-    "score": 59,
-    "commentsCount": 7,
-    "publishedAt": "2026-11-28T16:26:40.228725+00:00"
+    "score": 62,
+    "commentsCount": 8,
+    "publishedAt": "2026-11-28T16:44:54.959936+00:00"
   },
   {
     "id": "hn-50676752",
@@ -79,25 +79,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "malspark.com",
-    "score": 110,
-    "commentsCount": 11,
-    "publishedAt": "2026-11-28T16:26:40.339480+00:00"
-  },
-  {
-    "id": "hn-50679023",
-    "title": "If AI takes every job who will buy things?",
-    "url": "https://coryalthoff.com/essays/if-ai-takes-every-job-who-will-buy-things",
-    "domain": "coryalthoff.com",
-    "category": "AI & ML",
-    "tags": [
-      "AI & ML",
-      "Breaking",
-      "TechNews"
-    ],
-    "source": "coryalthoff.com",
-    "score": 6,
-    "commentsCount": 2,
-    "publishedAt": "2026-11-28T16:26:40.464857+00:00"
+    "score": 121,
+    "commentsCount": 12,
+    "publishedAt": "2026-11-28T16:44:55.028986+00:00"
   },
   {
     "id": "hn-50677091",
@@ -111,9 +95,9 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "scriptor-pro.github.io",
-    "score": 83,
+    "score": 86,
     "commentsCount": 23,
-    "publishedAt": "2026-11-28T16:26:40.576276+00:00"
+    "publishedAt": "2026-11-28T16:44:55.102177+00:00"
   },
   {
     "id": "hn-50677861",
@@ -127,8 +111,24 @@ window.PULSE_LIVE_NEWS = [
       "TechNews"
     ],
     "source": "github.com",
-    "score": 29,
+    "score": 35,
     "commentsCount": 9,
-    "publishedAt": "2026-11-28T16:26:40.691507+00:00"
+    "publishedAt": "2026-11-28T16:44:55.237345+00:00"
+  },
+  {
+    "id": "hn-50674218",
+    "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+    "url": "https://unkernel.dev",
+    "domain": "unkernel.dev",
+    "category": "OS",
+    "tags": [
+      "OS",
+      "Breaking",
+      "TechNews"
+    ],
+    "source": "unkernel.dev",
+    "score": 488,
+    "commentsCount": 53,
+    "publishedAt": "2026-11-28T16:44:55.311526+00:00"
   }
 ];
